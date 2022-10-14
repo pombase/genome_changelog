@@ -1,0 +1,6 @@
+/.venv
+*.pyc
+/diffs
+/revision_files
+.DS_Store
+

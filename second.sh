@@ -1,0 +1,1 @@
+svn cat -r r8485 svn+ssh://manu@curation.pombase.org/var/svn-repos/pombe-embl/trunk/chromosome1.contig
