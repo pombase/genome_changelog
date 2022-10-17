@@ -2,8 +2,8 @@ from genericpath import isfile
 import os
 
 with open('revision_numbers.txt') as ins:
-    newer_revision = ins.readline().strip()
-    older_revision = ins.readline().strip()
+    newer_revision = ins.readline().strip().split()[0]
+    older_revision = ins.readline().strip().split()[0]
     i = 0
     while older_revision:
         i += 1

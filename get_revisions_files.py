@@ -1,12 +1,10 @@
 import os
 
-with open('revision_numbers.txt') as ins:
+with open('revisions_chromosome1.txt') as ins:
     i = 0
     for line in ins:
-        revision = line.strip()
+        revision = line.strip().split()[0]
         i += 1
-        if i > 100:
-            break
 
         outfile = f'revision_files/chromosome1_{revision}.txt'
         if os.path.isfile(outfile):
