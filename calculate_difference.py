@@ -55,72 +55,52 @@ with open('revisions_chromosome1.txt') as f:
     revisions = f.read().splitlines()[::-1]
 
 
-print('revision','user', 'date','systematic_id', 'change' , 'feature_type', 'old_value', 'new_value',sep='\t')
+print('revision','user', 'date','systematic_id', 'feature_type', 'change', 'old_value', 'new_value',sep='\t')
 
 def format_location_change(feature, label):
     if type(feature) == list:
         for f in feature:
             return f'list:{label}', f.location
     else:
-        return label, f.location
+        return label, feature.location
+
 
 
 while new_features:
     revision = revisions.pop().split()
     for systematic_id in set(list(new_features.keys()) + list(old_features.keys())):
         if systematic_id not in new_features:
-            print(*revision, systematic_id, 'removed', sep='\t')
+            for feature_type in old_features[systematic_id]:
+                print(*revision, systematic_id,*format_location_change(old_features[systematic_id][feature_type], 'removed'))
         elif systematic_id not in old_features:
-            print(*revision, systematic_id, 'added', sep='\t')
+            for feature_type in new_features[systematic_id]:
+                print(*revision, systematic_id,*format_location_change(new_features[systematic_id][feature_type], 'added'))
         else:
             if old_features[systematic_id] != new_features[systematic_id]:
                 new_annotation = new_features[systematic_id]
                 old_annotation = old_features[systematic_id]
                 for feature_type in set(list(new_annotation.keys()) + list(old_annotation.keys())):
                     if feature_type not in new_annotation:
-                        if type(old_annotation[feature_type]) == list:
-                            for old_feature in old_annotation[feature_type]:
-                                print(*revision, systematic_id, 'list:removed', feature_type, old_feature.location, sep='\t')
-                        else:
-                            old_feature = old_annotation[feature_type]
-                            print(*revision, systematic_id, 'removed', feature_type, old_feature.location, sep='\t')
+                        print(*revision, systematic_id,*format_location_change(old_annotation[feature_type], 'removed'))
                     elif feature_type not in old_annotation:
-                        if type(new_annotation[feature_type]) == list:
-                            for new_feature in new_annotation[feature_type]:
-                                print(*revision, systematic_id, 'list:added', feature_type,'', new_feature.location, sep='\t')
-                        else:
-                            new_feature = new_annotation[feature_type]
-                            print(*revision, systematic_id, 'added', feature_type, '', new_feature.location, sep='\t')
+                        print(*revision, systematic_id,*format_location_change(new_annotation[feature_type], 'added'))
                     else:
                         old_feature = old_annotation[feature_type]
                         new_feature = new_annotation[feature_type]
-                        if type(old_feature) == list or type(new_feature) == list:
-                            old_feature_list = old_feature if type(old_feature) == list else [old_feature]
-                            new_feature_list = new_feature if type(new_feature) == list else [new_feature]
-                            for new_feature in new_feature_list:
-                                if new_feature not in old_feature_list:
-                                    print(*revision, systematic_id, 'list:added_location', feature_type, '', new_feature.location, sep='\t')
-                            for old_feature in old_feature_list:
-                                if old_feature not in new_feature_list:
-                                    print(*revision, systematic_id, 'list:removed_location', feature_type, old_feature.location, '', sep='\t')
-                            continue
+                        print(*revision, systematic_id,*format_location_change(old_annotation[feature_type], 'removed'))
+                        print(*revision, systematic_id,*format_location_change(new_annotation[feature_type], 'added'))
+                        # old_qualifiers = set([old_feature.qualifiers]) if type(old_feature.qualifiers) != list else set([f.qualifiers])
                         if old_feature.qualifiers != new_feature.qualifiers:
-
                             for new_qualifier_name in new_feature.qualifiers:
                                 if (new_qualifier_name not in old_feature.qualifiers) or (old_feature.qualifiers[new_qualifier_name] != new_feature.qualifiers[new_qualifier_name]):
-                                    print(*revision, systematic_id, 'qualifier:added', feature_type, '', f'{new_qualifier_name}:{new_feature.qualifiers[new_qualifier_name]}' , sep='\t')
+                                    print(*revision, systematic_id, feature_type, 'qualifier:added',  f'{new_qualifier_name}:{new_feature.qualifiers[new_qualifier_name]}' , sep='\t')
                             for old_qualifier_name in old_feature.qualifiers:
                                 if (old_qualifier_name not in new_feature.qualifiers) or (old_feature.qualifiers[old_qualifier_name] != new_feature.qualifiers[old_qualifier_name]):
-                                    print(*revision, systematic_id, 'qualifier:removed', feature_type, f'{old_qualifier_name}:{old_feature.qualifiers[old_qualifier_name]}' , sep='\t')
-                        if old_feature.location != new_feature.location:
-                            print(*revision, systematic_id, 'location modified' , feature_type, old_feature.location, new_feature.location, sep='\t')
+                                    print(*revision, systematic_id, feature_type, 'qualifier:removed', f'{old_qualifier_name}:{old_feature.qualifiers[old_qualifier_name]}' , sep='\t')
 
     old_features = new_features
     if len(all_files):
-        try:
-            new_features = build_seqfeature_dict(SeqIO.read(all_files.pop(),'embl'))
-        except ValueError as e:
-            print(*revision, e, sep='\t')
+        new_features = build_seqfeature_dict(SeqIO.read(all_files.pop(),'embl'))
     else:
         break
 
