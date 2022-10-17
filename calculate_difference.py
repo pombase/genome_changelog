@@ -37,19 +37,17 @@ def build_seqfeature_dict(genome: SeqRecord):
         if gene_id not in out_dict:
             out_dict[gene_id] = dict()
         feature_type = feature.type
-        if feature_type in out_dict[gene_id]:
-            if type(out_dict[gene_id][feature_type]) != list:
-                out_dict[gene_id][feature_type] = [out_dict[gene_id][feature_type]]
-            out_dict[gene_id][feature_type].append(feature)
-        else:
-            out_dict[gene_id][feature_type] = feature
+        if feature_type not in out_dict[gene_id]:
+            out_dict[gene_id][feature_type] = list()
+        out_dict[gene_id][feature_type].append(feature)
+
 
     return out_dict
 
 #TODO proper sorting
 all_files = sorted(glob.glob('revision_files/chromosome*.txt'))
-new_features = build_seqfeature_dict(SeqIO.read(all_files.pop(),'embl'))
-old_features = build_seqfeature_dict(SeqIO.read(all_files.pop(),'embl'))
+new_genome_dict = build_seqfeature_dict(SeqIO.read(all_files.pop(),'embl'))
+old_genome_dict = build_seqfeature_dict(SeqIO.read(all_files.pop(),'embl'))
 
 with open('revisions_chromosome1.txt') as f:
     revisions = f.read().splitlines()[::-1]
@@ -57,50 +55,67 @@ with open('revisions_chromosome1.txt') as f:
 
 print('revision','user', 'date','systematic_id', 'feature_type', 'change', 'old_value', 'new_value',sep='\t')
 
-def format_location_change(feature, label):
-    if type(feature) == list:
-        for f in feature:
-            return f'list:{label}', f.location
-    else:
-        return label, feature.location
+def format_location_change(revision, features, label):
+    out_str = ''
+    for f in features:
+        print(*revision, systematic_id,*format_location_change(old_genome_dict[systematic_id], 'removed'))
+    return out_str
 
 
 
-while new_features:
+
+while new_genome_dict:
     revision = revisions.pop().split()
-    for systematic_id in set(list(new_features.keys()) + list(old_features.keys())):
-        if systematic_id not in new_features:
-            for feature_type in old_features[systematic_id]:
-                print(*revision, systematic_id,*format_location_change(old_features[systematic_id][feature_type], 'removed'))
-        elif systematic_id not in old_features:
-            for feature_type in new_features[systematic_id]:
-                print(*revision, systematic_id,*format_location_change(new_features[systematic_id][feature_type], 'added'))
-        else:
-            if old_features[systematic_id] != new_features[systematic_id]:
-                new_annotation = new_features[systematic_id]
-                old_annotation = old_features[systematic_id]
-                for feature_type in set(list(new_annotation.keys()) + list(old_annotation.keys())):
-                    if feature_type not in new_annotation:
-                        print(*revision, systematic_id,*format_location_change(old_annotation[feature_type], 'removed'))
-                    elif feature_type not in old_annotation:
-                        print(*revision, systematic_id,*format_location_change(new_annotation[feature_type], 'added'))
-                    else:
-                        old_feature = old_annotation[feature_type]
-                        new_feature = new_annotation[feature_type]
-                        print(*revision, systematic_id,*format_location_change(old_annotation[feature_type], 'removed'))
-                        print(*revision, systematic_id,*format_location_change(new_annotation[feature_type], 'added'))
-                        # old_qualifiers = set([old_feature.qualifiers]) if type(old_feature.qualifiers) != list else set([f.qualifiers])
-                        if old_feature.qualifiers != new_feature.qualifiers:
-                            for new_qualifier_name in new_feature.qualifiers:
-                                if (new_qualifier_name not in old_feature.qualifiers) or (old_feature.qualifiers[new_qualifier_name] != new_feature.qualifiers[new_qualifier_name]):
-                                    print(*revision, systematic_id, feature_type, 'qualifier:added',  f'{new_qualifier_name}:{new_feature.qualifiers[new_qualifier_name]}' , sep='\t')
-                            for old_qualifier_name in old_feature.qualifiers:
-                                if (old_qualifier_name not in new_feature.qualifiers) or (old_feature.qualifiers[old_qualifier_name] != new_feature.qualifiers[old_qualifier_name]):
-                                    print(*revision, systematic_id, feature_type, 'qualifier:removed', f'{old_qualifier_name}:{old_feature.qualifiers[old_qualifier_name]}' , sep='\t')
+    locations_added = list()
+    locations_removed = list()
 
-    old_features = new_features
+    # Only in the new
+    for systematic_id in set(new_genome_dict.keys()) - set(old_genome_dict.keys()):
+        locations_added += list(new_genome_dict[systematic_id].values())
+
+    # Only in the old
+    for systematic_id in set(old_genome_dict.keys()) - set(new_genome_dict.keys()):
+        locations_removed += list(old_genome_dict[systematic_id].values())
+
+    # The shared ones
+    for systematic_id in set(old_genome_dict.keys()).intersection(set(new_genome_dict.keys())):
+
+        if old_genome_dict[systematic_id] != new_genome_dict[systematic_id]:
+            new_annotation = new_genome_dict[systematic_id]
+            old_annotation = old_genome_dict[systematic_id]
+
+            # Only in the new
+            for feature_type in set(new_annotation.keys()) - set(old_annotation.keys()):
+                locations_added += new_genome_dict[systematic_id][feature_type]
+
+            # Only in the old
+            for feature_type in set(old_annotation.keys()) - set(new_annotation.keys()):
+                locations_removed += old_genome_dict[systematic_id][feature_type]
+
+            # The shared ones
+            for feature_type in set(old_annotation.keys()).intersection(new_annotation.keys()):
+                old_locations = [f.location for f in old_annotation[feature_type]]
+                new_locations = [f.location for f in new_annotation[feature_type]]
+
+                locations_added += [f for f in sum(list(new_genome_dict[systematic_id].values()),[]) if f.location not in old_locations]
+                locations_removed += [f for f in sum(list(old_genome_dict[systematic_id].values()),[]) if f.location not in new_locations]
+
+                old_qualifiers = set()
+                new_qualifiers = set()
+
+                for f in old_annotation[feature_type]:
+                    old_qualifiers.update( set([(key, tuple(value)) for key, value in f.qualifiers.items()]))
+                for f in new_annotation[feature_type]:
+                    new_qualifiers.update( set([(key, tuple(value)) for key, value in f.qualifiers.items()]))
+
+                for key, value in new_qualifiers - old_qualifiers:
+                    print(*revision, systematic_id, feature_type, 'qualifier:added',  f'{key}:{value}' , sep='\t')
+                for key, value in old_qualifiers - new_qualifiers:
+                    print(*revision, systematic_id, feature_type, 'qualifier:added',  f'{key}:{value}' , sep='\t')
+
+    old_genome_dict = new_genome_dict
     if len(all_files):
-        new_features = build_seqfeature_dict(SeqIO.read(all_files.pop(),'embl'))
+        new_genome_dict = build_seqfeature_dict(SeqIO.read(all_files.pop(),'embl'))
     else:
         break
 
