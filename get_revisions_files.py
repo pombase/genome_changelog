@@ -1,16 +1,20 @@
 import os
+import glob
 
-with open('revisions_chromosome1.txt') as ins:
-    i = 0
-    for line in ins:
-        revision = line.strip().split()[0]
-        i += 1
+revision_files = glob.glob('./data/*/revisions.txt')
 
-        outfile = f'revision_files/chromosome1_{revision}.txt'
-        if os.path.isfile(outfile):
-            continue
-        print(f'downloading {revision}')
-        os.system(f'svn cat -r {revision} svn+ssh://manu@curation.pombase.org/var/svn-repos/pombe-embl/trunk/chromosome1.contig > {outfile}')
+for f in revision_files:
+    output_dir = os.path.dirname(f)
+
+    with open(f'{output_dir}/revisions.txt') as ins:
+        for line in ins:
+            revision = line.strip().split()[0]
+            contig = output_dir.split('/')[-1]
+            outfile = f'{output_dir}/{revision}.contig'
+            if os.path.isfile(outfile):
+                continue
+            print(f'downloading {revision} at {output_dir}')
+            os.system(f'svn cat -r {revision} svn+ssh://manu@curation.pombase.org/var/svn-repos/pombe-embl/trunk/{contig}.contig > {outfile}')
 
 
 
