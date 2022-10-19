@@ -15,3 +15,4 @@ for f in revision_files:
                 continue
             print(f'downloading {revision} at {output_dir}')
             os.system(f'svn cat -r {revision} svn+ssh://manu@curation.pombase.org/var/svn-repos/pombe-embl/trunk/{contig}.contig > {outfile}')
+            

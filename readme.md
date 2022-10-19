@@ -27,6 +27,23 @@ poetry shell
 
 Now when you call `python`, it will be the one from the `.venv`.
 
+## Calculating differences between two genomes
+
+Most of the repository was made for a one-time analysis, in which many diffs of pombe genome were compared. If you are here only to quickly compare two genomes, you can run the script:
+
+```
+python two_genomes_diff.py --new_genome data/chromosome1/8485.contig --old_genome data/chromosome1/8338.contig --output_locations_file 'a.tsv' --output_qualifiers_file 'b.tsv'
+```
+
+Arguments:
+
+* `--new_genome` and `--old_genome`: files to be compared, in embl format.
+* `--revision_string`: a string with 3 space-separated revision-related values (revision number, user, date). If not provided, it is not printed.
+* `--output_locations_file`: the file where the diff in locations will be stored.
+* `--output_qualifiers_file`: the file where the diff in qualifiers will be stored.
+
+From now on the instructions, are to perform the analysis for all pombase svn revisions.
+
 ## Getting the data
 
 > **WARNING:** Downloading all revisions and generating the full diffs will require ~100GB of space.
@@ -127,7 +144,7 @@ For running the analysis:
 # If you haven't activated the environment
 poetry shell
 
-python calculate_difference.py
+python pombe_svn_full_diff.py
 ```
 
 This will generate the following output:

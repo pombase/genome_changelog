@@ -11,7 +11,7 @@ ID   chromosome_1    standard; DNA; FUN;  5579133BP.
 ID   chromosome_1    standard; DNA; FUN;  5579133 BP.
 ```
 
-To support this, we override the function `EmblScanner._feed_seq_length` from `BioPython` in `calculate_difference.py`.
+To support this, we override the function `EmblScanner._feed_seq_length` from `BioPython` in `pombe_svn_full_diff.py`.
 
 ## Other errors
 
@@ -22,4 +22,4 @@ Some of the files need fixing. This was done manually:
 
 ## Incomplete files
 
-Some files have a premature EOF, likely because Artemis was closed before finishing saving them. They are excluded from the analysis, listed in the dictionary `skip_files` in `calculate_difference.py`.
+Some files have a premature EOF, likely because Artemis was closed before finishing saving them. They are excluded from the analysis, listed in the dictionary `skip_files` in `pombe_svn_full_diff.py`.
