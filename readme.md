@@ -60,4 +60,117 @@ poetry shell
 bash coordinate_changelog.sh
 ```
 
-This will create a directory structure
+This will create a directory structure:
+
+```
+data
+├── chromosome1
+│   ├── change_log
+│   │   ├── locations
+│   │   └── qualifiers
+│   └── revisions.txt
+├── chromosome2
+│   ├── change_log
+│   │   ├── locations
+│   │   └── qualifiers
+│   └── revisions.txt
+├── chromosome3
+│   ├── change_log
+│   │   ├── locations
+│   │   └── qualifiers
+│   └── revisions.txt
+├── mating_type_region
+│   ├── change_log
+│   │   ├── locations
+│   │   └── qualifiers
+│   └── revisions.txt
+└── pMIT
+    ├── change_log
+    │   ├── locations
+    │   └── qualifiers
+    └── revisions.txt
+```
+
+In each `revisions.txt` file there is information about the revisions that affect a given chromosome space separated (revision user date), e.g.:
+```
+8485 vw253 2022-10-08
+```
+
+After this, you can download all versions each contig file where changes were made by running:
+
+```
+python get_revisions_files.py
+```
+
+The generated folder tree looks like this:
+
+```
+data
+├── chromosome1
+│   ├── 10.contig
+│   ├── 1000.contig
+│   ├── 1002.contig
+│   ├── 1007.contig
+...
+```
+Where `data/chromosome1/10.contig` is the file `chromosome1.contig` at revision 10, etc.
+
+### Known errors
+
+There are known erros in the downloaded contig files, some of which will require manual fixing if you are to run the analysis pipeline. See [`known_errors.md`](known_errors.md).
+
+## Running the analysis
+
+For running the analysis:
+
+```bash
+# If you haven't activated the environment
+poetry shell
+
+python calculate_difference.py
+```
+
+This will generate the following output:
+
+```
+data
+├── chromosome1
+│   ├── change_log
+│   │   ├── locations
+│   │   │   ├── 10.tsv
+│   │   │   ├── 1000.tsv
+..........................
+│   │   └── qualifiers
+│   │       ├── 10.tsv
+│   │       ├── 1000.tsv
+..........................
+```
+
+Where `data/chromosome1/change_log/locations/xxx.tsv` contains changes in location that were introduced in revision `xxx`. The file might be empty if no changes where made in that revision. Otherwise it contains:
+
+* Coordinates of removed/added features.
+* Changes in coordinates of features that are present in both versions.
+
+The output looks like this:
+
+```tsv
+revision	user	date	systematic_id	primary_name	feature_type	added_or_removed	value
+8462	vw253	2022-09-27	SPNCRNA.145		ncRNA	removed	239730..240571
+8462	vw253	2022-09-27	SPNCRNA.18		ncRNA	removed	complement(3699381..3700010)
+8462	vw253	2022-09-27	SPNCRNA.193		ncRNA	removed	2404684..2405924
+8462	vw253	2022-09-27	SPNCRNA.884		ncRNA	removed	complement(3084619..3086087)
+8462	vw253	2022-09-27	SPNCRNA.951		ncRNA	removed	3951825..3952588
+```
+
+`data/chromosome1/change_log/qualifiers/xxx.tsv` contains changes introduced in revision `xxx` to qualifiers of features that existed in revision `xxx` and the previous one. The output looks like this:
+
+```tsv
+revision	user	date	systematic_id	primary_name	feature_type	qualifier_type	added_or_removed	value
+7940	vw253	2022-01-04	SPAC20G4.09		intron	controlled_curation	added	('term=misc, confirmed intron',)
+7940	vw253	2022-01-04	SPAC20G4.09		intron	controlled_curation	removed	('misc, confirmed',)
+7940	vw253	2022-01-04	SPAC23D3.16		intron	controlled_curation	added	('term=misc, confirmed intron',)
+7940	vw253	2022-01-04	SPAC23D3.16		intron	controlled_curation	removed	('term=misc, confirmed',)
+7940	vw253	2022-01-04	SPAC25G10.03		intron	controlled_curation	added	('term=misc, confirmed intron',)
+7940	vw253	2022-01-04	SPAC25G10.03		intron	controlled_curation	removed	('term=misc, confirmed',)
+```
+
