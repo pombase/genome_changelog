@@ -179,6 +179,12 @@ revision	user	date	systematic_id	primary_name	feature_type	added_or_removed	valu
 8462	vw253	2022-09-27	SPNCRNA.951		ncRNA	removed	3951825..3952588
 ```
 
+To combine all the changes in a single file, you can then run:
+
+```
+python create_single_coordinate_changes_file.py>all_coordinate_changes_file.tsv
+```
+
 `data/chromosome1/change_log/qualifiers/xxx.tsv` contains changes introduced in revision `xxx` to qualifiers of features that existed in revision `xxx` and the previous one. The output looks like this:
 
 ```tsv
