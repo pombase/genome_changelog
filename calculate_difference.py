@@ -5,6 +5,21 @@ from Bio.SeqFeature import SeqFeature
 from Bio.SeqRecord import SeqRecord
 import glob
 from Bio.SeqIO.InsdcIO import _insdc_location_string as format_location
+from Bio.GenBank.Scanner import EmblScanner
+import re
+
+# We override this method to allow no space between number and BP
+@staticmethod
+def permissive_seq_length_scanner(consumer, text):
+    length_parts = text.split()
+    if len(length_parts) == 1:
+        length_parts = re.match('(\d+)([^\d]+)',text).groups()
+    assert len(length_parts) == 2, "Invalid sequence length string %r" % text
+    assert length_parts[1].upper() in ["BP", "BP.", "AA", "AA."]
+    consumer.size(length_parts[0])
+
+EmblScanner._feed_seq_length = permissive_seq_length_scanner
+
 
 def features_are_equal(self, other):
     if not isinstance(other, SeqFeature):
@@ -144,58 +159,83 @@ def format_qualifier_change(qualifier_tuple, change, revision):
         str(qualifier_tuple[4])
     ))
 
-folder = 'data/chromosome1'
-output_folder = f'{folder}/change_log'
+# Known errors
+skip_files = {
+    'chromosome1': ['7485', '963','217'],
+    'chromosome2': ['7477','1809', '1783','1395','1394','139','137','136','25','23'],
+    'chromosome3': ['49'],
+    }
 
-with open(f'{folder}/revisions.txt') as f:
-    revisions = f.read().splitlines()
+for folder in glob.glob('data/*'):
+    output_folder = f'{folder}/change_log'
+    contig_file_name = folder.replace('data/','')
+    with open(f'{folder}/revisions.txt') as f:
+        revisions = f.read().splitlines()
 
-# Prepare first iteration
-old_genome_dict = None
+    # Remove the known errors
+    if contig_file_name in skip_files:
+        revisions = [r for r in revisions if r.split()[0] not in skip_files[contig_file_name]]
 
-for i in range(len(revisions[1:])-1):
+    # Prepare first iteration
+    old_genome_dict = None
 
-    new_revision_list = revisions[i].split()
-    old_revision_list = revisions[i+1].split()
-    locations_output_file = f'{output_folder}/locations/{new_revision_list[0]}.tsv'
-    qualifiers_output_file = f'{output_folder}/qualifiers/{new_revision_list[0]}.tsv'
+    for i in range(len(revisions[1:])-1):
 
-    # Check if output files exist, if so skip
-    if os.path.isfile(locations_output_file) and os.path.isfile(qualifiers_output_file):
-        print(f'skipped diff {new_revision_list[0]} & {old_revision_list[0]}')
-        # Next genome will have to be read
-        old_genome_dict = None
-        continue
+        new_revision_list = revisions[i].split()
+        old_revision_list = revisions[i+1].split()
 
-    print(f'performing diff {new_revision_list[0]} & {old_revision_list[0]}')
+        # Known errors in files
 
-    # Keep data from last iteration to avoid re-reading contig file
-    new_genome_file = f'{folder}/{new_revision_list[0]}.contig'
-    if old_genome_dict is not None:
-        new_genome_dict = old_genome_dict
-    else:
-        new_genome_dict = build_seqfeature_dict(SeqIO.read(new_genome_file,'embl'))
+        if (contig_file_name , new_revision_list[0]) in skip_files:
+            # Next genome will have to be read
+            print(f'{folder}, known error, skipped diff {new_revision_list[0]} & {old_revision_list[0]}')
+            old_genome_dict = None
+            continue
 
-    old_genome_file = f'{folder}/{old_revision_list[0]}.contig'
-    old_genome_dict = build_seqfeature_dict(SeqIO.read(old_genome_file,'embl'))
+        locations_output_file = f'{output_folder}/locations/{new_revision_list[0]}.tsv'
+        qualifiers_output_file = f'{output_folder}/qualifiers/{new_revision_list[0]}.tsv'
 
-    # Get diffs
-    locations_added, locations_removed, qualifiers_added, qualifiers_removed = genome_dict_diff(new_genome_dict, old_genome_dict)
+        # Check if output files exist, if so skip
+        if os.path.isfile(locations_output_file) and os.path.isfile(qualifiers_output_file):
+            print(f'{folder}, skipped diff {new_revision_list[0]} & {old_revision_list[0]}')
+            # Next genome will have to be read
+            old_genome_dict = None
+            continue
 
-    # Format diffs for output
-    locations_output = [format_location_change(f, 'added', new_revision_list) for f in locations_added]
-    locations_output += [format_location_change(f, 'removed', new_revision_list) for f in locations_removed]
-    qualifiers_output = [format_qualifier_change(q, 'added', new_revision_list) for q in qualifiers_added]
-    qualifiers_output += [format_qualifier_change(q, 'removed', new_revision_list) for q in qualifiers_removed]
+        print(f'{folder}, performing diff {new_revision_list[0]} & {old_revision_list[0]}')
 
-    # Write the output to text files
+        # Keep data from last iteration to avoid re-reading contig file
+        new_genome_file = f'{folder}/{new_revision_list[0]}.contig'
+        if old_genome_dict is not None:
+            new_genome_dict = old_genome_dict
+        else:
+            # Avoids some encoding errors
+            with open(new_genome_file, errors='replace') as ins:
+                new_genome_dict = build_seqfeature_dict(SeqIO.read(ins,'embl'))
 
-    with open(locations_output_file,'w') as out:
-        out.write('\t'.join(['revision', 'user', 'date', 'systematic_id', 'primary_name', 'feature_type', 'added_or_removed', 'value' ]) + '\n')
-        out.write('\n'.join(sorted(locations_output)))
-    with open(qualifiers_output_file,'w') as out:
-        out.write('\t'.join(['revision', 'user', 'date', 'systematic_id', 'primary_name', 'feature_type', 'qualifier_type', 'added_or_removed', 'value' ]) + '\n')
-        out.write('\n'.join(sorted(qualifiers_output)))
+        old_genome_file = f'{folder}/{old_revision_list[0]}.contig'
+
+        # Avoids some encoding errors
+        with open(old_genome_file, errors='replace') as ins:
+            old_genome_dict = build_seqfeature_dict(SeqIO.read(ins,'embl'))
+
+        # Get diffs
+        locations_added, locations_removed, qualifiers_added, qualifiers_removed = genome_dict_diff(new_genome_dict, old_genome_dict)
+
+        # Format diffs for output
+        locations_output = [format_location_change(f, 'added', new_revision_list) for f in locations_added]
+        locations_output += [format_location_change(f, 'removed', new_revision_list) for f in locations_removed]
+        qualifiers_output = [format_qualifier_change(q, 'added', new_revision_list) for q in qualifiers_added]
+        qualifiers_output += [format_qualifier_change(q, 'removed', new_revision_list) for q in qualifiers_removed]
+
+        # Write the output to text files
+
+        with open(locations_output_file,'w') as out:
+            out.write('\t'.join(['revision', 'user', 'date', 'systematic_id', 'primary_name', 'feature_type', 'added_or_removed', 'value' ]) + '\n')
+            out.write('\n'.join(sorted(locations_output)))
+        with open(qualifiers_output_file,'w') as out:
+            out.write('\t'.join(['revision', 'user', 'date', 'systematic_id', 'primary_name', 'feature_type', 'qualifier_type', 'added_or_removed', 'value' ]) + '\n')
+            out.write('\n'.join(sorted(qualifiers_output)))
 
 
 
