@@ -1,0 +1,6 @@
+revision	user	date	chromosome	systematic_id	primary_name	feature_type	qualifier_type	added_or_removed	value
+8485	vw253	2022-10-08	II	SPBC1709.15c	cft2	CDS	product	added	('mRNA cleavage and polyadenylation specificity factor complex, metallo-beta-lactamase/beta-CASP protein Cft2',)
+8485	vw253	2022-10-08	II	SPBC1709.15c	cft2	CDS	product	removed	('mRNA cleavage and polyadenylation specificity factor complex Cft2 CPSF-73 (predicted)',)
+8485	vw253	2022-10-08	II	SPBC646.04	pla1	CDS	fasta_file	removed	('fasta/chromosome2.contig.seq.02620.out',)
+8485	vw253	2022-10-08	II	SPBC646.04	pla1	CDS	product	added	('mRNA cleavage and polyadenylation specificity factor poly(A) polymerase Pla1',)
+8485	vw253	2022-10-08	II	SPBC646.04	pla1	CDS	product	removed	('poly(A) polymerase Pla1',)

@@ -2,12 +2,27 @@
 
 This repository contains scripts for:
 
-* Downloading all previous versions of `.contig` files in the svn repository `curation.pombase.org/var/svn-repos/pombe-embl`.
+* Downloading previous versions of `.contig` files in the svn repository `curation.pombase.org/var/svn-repos/pombe-embl`.
 * Summarise the differences between subsequent versions of the contig files, namely:
   * Coordinates of removed/added features.
   * Changes in coordinates of features that are present in both versions.
   * Changes in qualifiers of features that are present in both versions.
+* It also contains a script to perform the diff for any two embl files (`two_genomes_diff.py`)
 
+## TL;DR; to update diff files
+
+```bash
+# install dependencies
+poetry install
+
+# activate venv
+poetry shell
+
+# run this script
+bash update_file.sh
+
+# Commit changes
+```
 
 ## Installing dependencies
 
@@ -29,7 +44,7 @@ Now when you call `python`, it will be the one from the `.venv`.
 
 ## Calculating differences between two genomes
 
-Most of the repository was made for a one-time analysis, in which many diffs of pombe genome were compared. If you are here only to quickly compare two genomes, you can run the script:
+Most of the repository was made for a pombe genome analysis, in which many diffs of pombe genome were compared. If you are here only to quickly compare two genomes, you can run the script:
 
 ```
 python two_genomes_diff.py --new_genome data/chromosome1/8485.contig --old_genome data/chromosome1/8338.contig --output_locations_file 'a.tsv' --output_qualifiers_file 'b.tsv'
@@ -42,7 +57,7 @@ Arguments:
 * `--output_locations_file`: the file where the diff in locations will be stored.
 * `--output_qualifiers_file`: the file where the diff in qualifiers will be stored.
 
-From now on the instructions, are to perform the analysis for all pombase svn revisions.
+From now on the instructions, are to perform the analysis for pombase svn revisions.
 
 ## Getting the data
 
@@ -67,14 +82,19 @@ exit
 ssh-copy-id username@curation.pombase.org
 ```
 
-### Getting the different revisions
+### Getting the revisions that you want to analyse
 
 ```bash
 # If you haven't, activate the local python environment
 poetry shell
 
 # Create the basic folder structure, and download the information about revisions
-bash coordinate_changelog.sh
+
+# If you want to download last revisions (since last revision mentioned in either all_qualifier_changes_file or all_coordinate_changes_file.tsv)
+bash get_revisions_where_contigs_changed.sh last
+
+# If you want to download ALL revisions (~100 GB)
+bash get_revisions_where_contigs_changed.sh all
 ```
 
 This will create a directory structure:
@@ -84,27 +104,32 @@ data
 ├── chromosome1
 │   ├── change_log
 │   │   ├── locations
-│   │   └── qualifiers
+│   │   ├── qualifiers
+│   │   └── diff
 │   └── revisions.txt
 ├── chromosome2
 │   ├── change_log
 │   │   ├── locations
-│   │   └── qualifiers
+│   │   ├── qualifiers
+│   │   └── diff
 │   └── revisions.txt
 ├── chromosome3
 │   ├── change_log
 │   │   ├── locations
-│   │   └── qualifiers
+│   │   ├── qualifiers
+│   │   └── diff
 │   └── revisions.txt
 ├── mating_type_region
 │   ├── change_log
 │   │   ├── locations
-│   │   └── qualifiers
+│   │   ├── qualifiers
+│   │   └── diff
 │   └── revisions.txt
 └── pMIT
     ├── change_log
-    │   ├── locations
-    │   └── qualifiers
+    │   ├── locations 
+    │   ├── qualifiers
+    │   └── diff
     └── revisions.txt
 ```
 
@@ -132,6 +157,8 @@ data
 ```
 Where `data/chromosome1/10.contig` is the file `chromosome1.contig` at revision 10, etc.
 
+You can also download the svn diffs by running `python get_svn_diff.py`
+
 ### Known errors
 
 There are known erros in the downloaded contig files, some of which will require manual fixing if you are to run the analysis pipeline. See [`known_errors.md`](known_errors.md).
@@ -144,7 +171,7 @@ For running the analysis:
 # If you haven't activated the environment
 poetry shell
 
-python pombe_svn_full_diff.py
+python pombe_svn_diff.py
 ```
 
 This will generate the following output:
@@ -182,7 +209,7 @@ revision	user	date	systematic_id	primary_name	feature_type	added_or_removed	valu
 To combine all the changes in a single file, you can then run:
 
 ```
-python create_single_coordinate_changes_file.py>all_coordinate_changes_file.tsv
+python create_single_coordinate_changes_file.py>yourfile.tsv
 ```
 
 `data/chromosome1/change_log/qualifiers/xxx.tsv` contains changes introduced in revision `xxx` to qualifiers of features that existed in revision `xxx` and the previous one. The output looks like this:
@@ -197,3 +224,8 @@ revision	user	date	systematic_id	primary_name	feature_type	qualifier_type	added_
 7940	vw253	2022-01-04	SPAC25G10.03		intron	controlled_curation	removed	('term=misc, confirmed',)
 ```
 
+To combine all the changes in a single file, you can then run:
+
+```
+python create_single_qualifier_changes_file.py>yourfile.tsv
+```

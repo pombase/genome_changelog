@@ -3,7 +3,7 @@ import os
 from genome_functions import genome_dict_diff, build_seqfeature_dict
 from formatting_functions import write_diff_to_files
 import glob
-
+from custom_biopython import SeqIO
 
 # Known errors
 skip_files = {
@@ -25,7 +25,7 @@ for folder in glob.glob('data/*'):
     # Prepare first iteration
     old_genome_dict = None
 
-    for i in range(len(revisions[1:])-1):
+    for i in range(len(revisions)-1):
 
         new_revision_list = revisions[i].split()
         old_revision_list = revisions[i+1].split()

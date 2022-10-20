@@ -12,7 +12,7 @@ all_lines = list()
 for folder in glob.glob('data/*'):
     contig_file_name = folder.replace('data/','')
     chromosome = skip_files[contig_file_name]
-    for f in glob.glob(f'{folder}/change_log/locations/*.tsv'):
+    for f in glob.glob(f'{folder}/change_log/qualifiers/*.tsv'):
         with open(f) as ins:
             # Skip first line
             ins.readline()
@@ -21,7 +21,7 @@ for folder in glob.glob('data/*'):
                 d = data_lines[0]
             all_lines.extend('\t'.join(d[:3] + [chromosome] + d[3:]) for d in data_lines)
 
-print('revision', 'user', 'date', 'chromosome', 'systematic_id', 'primary_name', 'feature_type', 'added_or_removed', 'value',sep='\t')
+print('revision', 'user', 'date', 'chromosome', 'systematic_id', 'primary_name', 'feature_type', 'qualifier_type', 'added_or_removed', 'value' ,sep='\t')
 if len(all_lines):
     print(*sorted(all_lines, reverse=True, key= lambda l: int(l.split('\t')[0])),sep='\n')
 

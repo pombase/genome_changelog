@@ -436,7 +436,7 @@ python-versions = "*"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.9"
-content-hash = "c278f30099b79b729e5070612538eba32595c748a52063fa34b9e3f8a94b6cf5"
+content-hash = "0b4701d014a22f60a9802e8f3eb3f6e6de79ab2cb45c814a7f64cfbfa11ddc86"
 
 [metadata.files]
 appnope = [
