@@ -24,6 +24,8 @@ bash update_file.sh
 # Commit changes
 ```
 
+A github action is there, but it won't work since the svn repo is not public.
+
 ## Installing dependencies
 
 To install the dependencies, we used poetry (see [poetry installation instructions](https://python-poetry.org/docs/)).
