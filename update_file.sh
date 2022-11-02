@@ -1,3 +1,5 @@
+set -e
+
 # Remove possible old data
 rm -rf data/*/change_log/*/*.tsv
 
@@ -13,10 +15,8 @@ python pombe_svn_diff.py
 # Merge them with the existing lists
 python create_single_coordinate_changes_file.py > temp.tsv
 tail -n+2 all_coordinate_changes_file.tsv >>temp.tsv
-cat temp.tsv > all_coordinate_changes_file.tsv
-rm temp.tsv
+mv temp.tsv all_coordinate_changes_file.tsv
 
 python create_single_qualifier_changes_file.py > temp.tsv
 tail -n+2 all_qualifier_changes_file.tsv >>temp.tsv
-cat temp.tsv > all_qualifier_changes_file.tsv
-rm temp.tsv
+mv temp.tsv all_qualifier_changes_file.tsv

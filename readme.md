@@ -129,7 +129,7 @@ data
 │   └── revisions.txt
 └── pMIT
     ├── change_log
-    │   ├── locations 
+    │   ├── locations
     │   ├── qualifiers
     │   └── diff
     └── revisions.txt
@@ -230,4 +230,23 @@ To combine all the changes in a single file, you can then run:
 
 ```
 python create_single_qualifier_changes_file.py>yourfile.tsv
+```
+
+## Pre-svn data
+
+Some of the contig files pre-date the use of SVN, to download them and calculate the differences, they are in the ftp server of PomBase: https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/. The full list of those that pre-date svn are in the file ![pre_svn_folder_list.tsv]([pre_svn_folder_list.tsv]). The output files are attached in the release.
+
+```bash
+# Download files from first revision of svn and prepare directory structure (pre_svn_data)
+bash prepare_pre_svn_folder.sh
+
+# Download the contig files from ftp site and produce an equivalent to the revisions.txt described above
+python get_ftp_site_files.py
+
+# Run the diffs on the pre_svn_data directory
+python pombe_svn_diff.py --data_folder pre_svn_data/
+
+# Combine in single files
+python create_single_coordinate_changes_file.py --data_folder pre_svn_data/ > pre_svn_coordinate_changes_file.tsv
+python create_single_qualifier_changes_file.py --data_folder pre_svn_data/> pre_svn_qualifier_changes_file.tsv
 ```
