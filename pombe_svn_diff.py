@@ -1,20 +1,29 @@
-#%%
+"""
+Calculate the differences between genome versions, relies on the folder structure defined in the readme.
+"""
 import os
 from genome_functions import genome_dict_diff, build_seqfeature_dict
 from formatting_functions import write_diff_to_files
 import glob
 from custom_biopython import SeqIO
+import argparse
+class Formatter(argparse.ArgumentDefaultsHelpFormatter, argparse.RawDescriptionHelpFormatter):
+    pass
 
-# Known errors
+
+parser = argparse.ArgumentParser(description=__doc__, formatter_class=Formatter)
+parser.add_argument('--data_folder', default='data', help='folder where the analysis will be ran.')
+args = parser.parse_args()
+# Known errors (revision number)
 skip_files = {
     'chromosome1': ['7485', '963','217'],
     'chromosome2': ['7477','1809', '1783','1395','1394','139','137','136','25','23'],
     'chromosome3': ['49'],
     }
 
-for folder in glob.glob('data/*'):
+for folder in glob.glob(f'{args.data_folder}/*'):
     output_folder = f'{folder}/change_log'
-    contig_file_name = folder.replace('data/','')
+    contig_file_name = folder.replace(f'{args.data_folder}/','')
     with open(f'{folder}/revisions.txt') as f:
         revisions = f.read().splitlines()
 

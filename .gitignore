@@ -4,4 +4,6 @@
 /revision_files
 .DS_Store
 /data
+/pre_svn_data
 temp.tsv
+pre_svn_qualifier_changes_file.tsv
