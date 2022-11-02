@@ -250,3 +250,14 @@ python pombe_svn_diff.py --data_folder pre_svn_data/
 python create_single_coordinate_changes_file.py --data_folder pre_svn_data/ > pre_svn_coordinate_changes_file.tsv
 python create_single_qualifier_changes_file.py --data_folder pre_svn_data/> pre_svn_qualifier_changes_file.tsv
 ```
+
+## Summarising changes to existing features only
+
+[only_modified_coordinates.tsv](only_modified_coordinates.tsv) contains a table where only coordinate modifications are shown (modifications as in changes to gene coordinates, rather than new additions or removals of features). It combines the data from the svn server and the pre-svn data. To make the list run:
+
+```bash
+python get_modifications_on_main_features_only.py
+```
+
+
+This can be particularly useful for alleles that refer to previous gene coordinates. This is used in the repository https://github.com/pombase/allele_qc.
