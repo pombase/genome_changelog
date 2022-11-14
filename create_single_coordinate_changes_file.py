@@ -34,7 +34,7 @@ if len(all_lines):
     if args.data_folder == 'data':
         sorting_fun = lambda l: int(l.split('\t')[0])
     else:
-        sorting_fun = lambda l: l
+        sorting_fun = lambda l: int(l.split('\t')[0]) if l.split('\t')[0] != 'svn_2' else 100000000000
     print(*sorted(all_lines, reverse=True, key=sorting_fun),sep='\n')
 
 
