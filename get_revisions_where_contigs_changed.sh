@@ -19,11 +19,15 @@ do
     last_revision_included=$(( $last_revision_coordinates > $last_revision_qualifiers ? $last_revision_coordinates : $last_revision_qualifiers ))
 
     # Download
-    echo "downloading ${contig} revisions from ${last_revision_included}..."
     if [ $1 == 'all' ];then
+        echo "downloading ${contig} revisions from ${last_revision_included}..."
         svn log -q svn+ssh://manu@curation.pombase.org/var/svn-repos/pombe-embl trunk/${contig}.contig |awk 'NR%2==0'|cut -d ' ' -f1,3,5|sed 's/^.\{1\}//' > data/${contig}/revisions.txt
     elif [ $1 == 'last' ];then
+        echo "downloading ${contig} revisions from ${last_revision_included}..."
         svn log -q -r HEAD:${last_revision_included}  svn+ssh://manu@curation.pombase.org/var/svn-repos/pombe-embl trunk/${contig}.contig |awk 'NR%2==0'|cut -d ' ' -f1,3,5|sed 's/^.\{1\}//' > data/${contig}/revisions.txt
+    else
+        echo 'you must provide an additional argument: either "all" or "last"'
+        exit 1
     fi
 
 done
