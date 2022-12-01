@@ -8,3 +8,4 @@
 temp.tsv
 pre_svn_qualifier_changes_file.tsv
 /valid_ids_data
+/gene_changes_comments_and_pmids/*.tsv

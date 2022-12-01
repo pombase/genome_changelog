@@ -1,9 +1,0 @@
-revision	user	date	chromosome	systematic_id	primary_name	feature_type	added_or_removed	value
-7957	kmr44	2022-01-12	I	SPNCRNA.2002		ncRNA	added	2448..2760
-4250	mah79	2017-08-23	III	SPNCRNA.2002	adh1-antisense-2	ncRNA	removed	complement(1590089..1593983)
-7957	kmr44	2022-01-12	I	SPNCRNA.2001		ncRNA	added	2118..2347
-4250	mah79	2017-08-23	III	SPNCRNA.2001	adh1-antisense-1	ncRNA	removed	complement(1590025..1593983)
-7957	kmr44	2022-01-12	II	SPNCRNA.103		ncRNA	added	complement(339346..340012)
-6674	mah79	2020-11-16	II	SPNCRNA.103	sme2	ncRNA	removed	complement(339346..340907)
-1924	vw253	2014-07-11	I	SPAC1A6.03c		CDS	added	complement(1070139..1072127)
-1914	antonia	2014-07-09	I	SPAC1A6.03c		CDS	removed	complement(join(1070061..1070138,1070205..1072127))
