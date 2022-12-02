@@ -1,9 +1,15 @@
 import os
 import glob
+import argparse
+class Formatter(argparse.ArgumentDefaultsHelpFormatter, argparse.RawDescriptionHelpFormatter):
+    pass
 
-revision_files = glob.glob('./data/*/revisions.txt')
 
-for f in revision_files:
+parser = argparse.ArgumentParser(description=__doc__, formatter_class=Formatter)
+parser.add_argument('--revision_files', nargs='+', default=glob.glob('./data/*/revisions.txt'), help='revision text file')
+args = parser.parse_args()
+
+for f in args.revision_files:
     output_dir = os.path.dirname(f)
 
     with open(f'{output_dir}/revisions.txt') as ins:

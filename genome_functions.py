@@ -1,5 +1,6 @@
 from custom_biopython import SeqRecord, SeqFeature
-
+import pandas
+from custom_biopython import SeqIO
 
 def build_seqfeature_dict(genome: SeqRecord):
     """
@@ -101,3 +102,61 @@ def genome_dict_diff(new_genome_dict, old_genome_dict) -> tuple[list[SeqFeature]
                 qualifiers_removed.extend(old_qualifiers - new_qualifiers)
 
     return locations_added, locations_removed, qualifiers_added, qualifiers_removed
+
+def make_synonym_dict(gene_ids_file):
+    data = pandas.read_csv(gene_ids_file,sep='\t',na_filter=False)
+    synonyms = dict()
+    for i,row in data.iterrows():
+        for synonym in row['synonyms'].split(','):
+            if len(synonym):
+                if synonym in synonyms:
+                    synonyms[synonym].append(row['systematic_id'])
+                else:
+                    synonyms[synonym] = [row['systematic_id']]
+
+    return synonyms
+
+
+def read_pombe_genome(file_handle, format, gene_ids_file, all_systematic_ids_ever):
+    """
+    Runs SeqIO.read on the file (with tweaks, see custom_biopython file), and then
+    for features that do not have a systematic_id qualifier:
+        * If they have a `\gene` qualifier with a current systematic id, add a systematic_id
+        qualifier with that value.
+        * If not, see if a `\gene` qualifier starting with `SP` is a UNIQUE synonym of a systematic_id, then use that.
+        * If neither, see if there is a single `\gene` qualifier that starts by `SP`, this may mean that
+        it corresponds to a systematic_id that was deleted.
+    """
+    with open(all_systematic_ids_ever) as f:
+        valid_ids = set([line.rstrip('\n') for line in f])
+
+    synonyms = make_synonym_dict(gene_ids_file)
+    contig = SeqIO.read(file_handle,format)
+
+    for feature in contig.features:
+        if 'systematic_id' not in feature.qualifiers and 'gene' in feature.qualifiers:
+
+            # The gene qualifier contains a current systematic_id
+            systematic_ids = [value for value in feature.qualifiers['gene'] if value in valid_ids]
+            if len(systematic_ids) > 0:
+                if len(systematic_ids) > 1:
+                    raise ValueError('\gene qualifier contains more than one systematic_id')
+                feature.qualifiers['systematic_id'] = systematic_ids
+                continue
+
+            # The gene qualifier contains a value starting with SP which is a unique synonym of a current systematic_id
+            systematic_ids = set([value for value in feature.qualifiers['gene'] if (value.startswith('SP') and value in synonyms)])
+            if len(systematic_ids) > 0:
+                if len(systematic_ids) > 1:
+                    print('skipped feature with gene qualifiers',feature.qualifiers['gene'],'because it\'s a synonym of two current systematic_ids', [synonyms[i] for i in feature.qualifiers['gene'] if i in synonyms])
+                else:
+                    feature.qualifiers['systematic_id'] = systematic_ids
+                continue
+
+
+            for value in feature.qualifiers['gene']:
+                if value.startswith('SP'):
+                    print('a value in \gene qualifier starts with SP but was never a systematic_id, skipping -> ', value)
+                    for qualifier_type in feature.qualifiers:
+                        print('   ',qualifier_type,'-',feature.qualifiers[qualifier_type])
+

@@ -1,0 +1,1 @@
+grep --no-filename '/systematic_id' pre_svn_data/*/*.contig | sort | uniq|cut -c38-|rev | cut -c 2- | rev > valid_ids_data/all_systematic_ids_ever.txt

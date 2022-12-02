@@ -2,10 +2,9 @@
 Calculate the differences between genome versions, relies on the folder structure defined in the readme.
 """
 import os
-from genome_functions import genome_dict_diff, build_seqfeature_dict
+from genome_functions import genome_dict_diff, build_seqfeature_dict,read_pombe_genome
 from formatting_functions import write_diff_to_files
 import glob
-from custom_biopython import SeqIO
 import argparse
 class Formatter(argparse.ArgumentDefaultsHelpFormatter, argparse.RawDescriptionHelpFormatter):
     pass
@@ -66,13 +65,13 @@ for folder in glob.glob(f'{args.data_folder}/*'):
         else:
             # Avoids some encoding errors
             with open(new_genome_file, errors='replace') as ins:
-                new_genome_dict = build_seqfeature_dict(SeqIO.read(ins,'embl'))
+                new_genome_dict = build_seqfeature_dict(read_pombe_genome(ins, 'embl', 'valid_ids_data/gene_IDs_names.tsv'))
 
         old_genome_file = f'{folder}/{old_revision_list[0]}.contig'
 
         # Avoids some encoding errors
         with open(old_genome_file, errors='replace') as ins:
-            old_genome_dict = build_seqfeature_dict(SeqIO.read(ins,'embl'))
+            old_genome_dict = build_seqfeature_dict(read_pombe_genome(ins, 'embl', 'valid_ids_data/gene_IDs_names.tsv'))
 
         # Get diffs
         locations_added, locations_removed, qualifiers_added, qualifiers_removed = genome_dict_diff(new_genome_dict, old_genome_dict)

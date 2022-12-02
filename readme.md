@@ -140,7 +140,7 @@ In each `revisions.txt` file there is information about the revisions that affec
 8485 vw253 2022-10-08
 ```
 
-After this, you can download all versions each contig file where changes were made by running:
+After this, you can download all versions each contig file where changes were made by running (note that you can run each chromosome in parallel to speed up):
 
 ```
 python get_revisions_files.py
