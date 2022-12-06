@@ -3,7 +3,7 @@ import pandas
 
 with open('valid_ids_data/all_systematic_ids_ever.txt') as f:
     valid_ids = set([line.strip() for line in f])
-with open('valid_ids_data/all_genes_ever.txt') as f:
+with open('valid_ids_data/all_genes_starting_with_SP_ever.txt') as f:
     all_genes = set([line.strip() for line in f])
 
 obsoleted_ids = set(pandas.read_csv('valid_ids_data/obsoleted_ids.tsv',sep='\t')['obsolete_id'])

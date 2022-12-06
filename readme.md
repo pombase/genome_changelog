@@ -261,3 +261,13 @@ python get_modifications_on_main_features_only.py
 
 
 This can be particularly useful for alleles that refer to previous gene coordinates. This is used in the repository https://github.com/pombase/allele_qc.
+
+## Genome QC part
+
+```
+bash get_all_systematic_ids_ever.sh
+bash get_all_genes_starting_with_SP_ever.sh
+python gather_obsoleted_names.py > valid_ids_data/obsoleted_ids.tsv
+bash get_orphan_synonyms.sh
+
+```
