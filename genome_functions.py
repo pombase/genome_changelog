@@ -17,7 +17,7 @@ def build_seqfeature_dict(genome: SeqRecord):
     out_dict = dict()
 
     for normal_feature in genome.features:
-        feature = CustomSeqFeature(normal_feature)
+        feature = CustomSeqFeature.from_parent(normal_feature, genome)
         if 'systematic_id' not in feature.qualifiers:
             continue
         gene_id = feature.qualifiers['systematic_id'][0]
