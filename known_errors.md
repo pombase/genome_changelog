@@ -15,10 +15,11 @@ To support this, we override the function `EmblScanner._feed_seq_length` from `B
 
 ## Other errors
 
-Some of the files need fixing. This was done manually:
-* Remove `disorders;` from first line in chromosome1 in revision 3219.
-* chomosome2: 5338, 5334, 26 missing header.
-* chromosome3: revisions 40-28 are missing the header.
+Some of the files need fixing. This can be done by running the script:
+
+```
+python fix_known_errors_svn_files.py
+```
 
 ## Incomplete files
 
