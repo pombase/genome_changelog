@@ -63,11 +63,11 @@ for folder in glob.glob(f'{args.data_folder}/*'):
         if old_genome_dict is not None:
             new_genome_dict = old_genome_dict
         else:
-            new_genome_dict = build_seqfeature_dict(read_pombe_genome(new_genome_file, 'embl', 'valid_ids_data/gene_IDs_names.tsv'))
+            new_genome_dict = build_seqfeature_dict(read_pombe_genome(new_genome_file, 'embl', 'valid_ids_data/gene_IDs_names.tsv', 'valid_ids_data/all_systematic_ids_ever.txt','valid_ids_data/known_exceptions.tsv'))
 
         old_genome_file = f'{folder}/{old_revision_list[0]}.contig'
 
-        old_genome_dict = build_seqfeature_dict(read_pombe_genome(old_genome_file, 'embl', 'valid_ids_data/gene_IDs_names.tsv'))
+        old_genome_dict = build_seqfeature_dict(read_pombe_genome(old_genome_file, 'embl', 'valid_ids_data/gene_IDs_names.tsv', 'valid_ids_data/all_systematic_ids_ever.txt','valid_ids_data/known_exceptions.tsv'))
 
         # Get diffs
         locations_added, locations_removed, qualifiers_added, qualifiers_removed = genome_dict_diff(new_genome_dict, old_genome_dict)
