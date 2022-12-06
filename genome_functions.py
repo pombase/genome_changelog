@@ -1,4 +1,4 @@
-from custom_biopython import SeqRecord, SeqFeature, SeqIO
+from custom_biopython import SeqRecord, SeqFeature, SeqIO, CustomSeqFeature
 import pandas
 from copy import deepcopy
 import warnings
@@ -16,8 +16,8 @@ def build_seqfeature_dict(genome: SeqRecord):
     """
     out_dict = dict()
 
-    for feature in genome.features:
-        feature: SeqFeature
+    for normal_feature in genome.features:
+        feature = CustomSeqFeature(normal_feature)
         if 'systematic_id' not in feature.qualifiers:
             continue
         gene_id = feature.qualifiers['systematic_id'][0]
@@ -34,11 +34,12 @@ def build_seqfeature_dict(genome: SeqRecord):
 def get_primary_name(f: SeqFeature):
     return f.qualifiers['primary_name'][0] if 'primary_name' in f.qualifiers else ''
 
+
 def genome_dict_diff(new_genome_dict, old_genome_dict) -> tuple[list[SeqFeature],list[SeqFeature],list,list]:
     """
     Takes two genome dictionaries as input, returns:
-    - locations_added: list of SeqFeatures in new_genome_dict that have been added or their location has changed.
-    - locations_removed: list of SeqFeatures in old_genome_dict that have been removed or their location has changed.
+    - locations_added: list of SeqFeatures in new_genome_dict that have been added or their sequence has changed (sequence, not feature location since updates in genome sequence may shift multiple features, even the annotation is identical).
+    - locations_removed: list of SeqFeatures in old_genome_dict that have been removed or their sequence has changed (sequence, not feature location since updates in genome sequence may shift multiple features, even the annotation is identical).
     - qualifiers_added: list of qualifiers that have been added or modified for (systematic_id, feature_type) pairs that existed in old_genome_dict.
     - qualifiers_removed: list of qualifiers that have been removed or modified for (systematic_id, feature_type) pairs that remain in new_genome_dict.
     The qualifiers are stored as tuples of 5 elements that contain the following elements:
@@ -83,12 +84,12 @@ def genome_dict_diff(new_genome_dict, old_genome_dict) -> tuple[list[SeqFeature]
                 old_features = old_annotation[feature_type]
                 new_features = new_annotation[feature_type]
 
-                ## First - changes to location
-                old_locations = [f.location for f in old_features]
-                new_locations = [f.location for f in new_features]
+                ## First - changes to the feature sequence
+                old_sequences = [f.feature_sequence for f in old_features]
+                new_sequences = [f.feature_sequence for f in new_features]
 
-                locations_added += [f for f in new_features if f.location not in old_locations]
-                locations_removed += [f for f in old_features if f.location not in new_locations]
+                locations_added += [f for f in new_features if f.feature_sequence not in old_sequences]
+                locations_removed += [f for f in old_features if f.feature_sequence not in new_sequences]
 
                 ## Second - changes to qualifiers
                 old_qualifiers = set()
