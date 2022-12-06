@@ -1,1 +1,0 @@
-grep --no-filename '/gene' pre_svn_data/*/*.contig | sort | uniq|cut -c29-|rev | cut -c 2- | rev|grep SP|grep -v '=' > valid_ids_data/all_genes_starting_with_SP_ever.txt

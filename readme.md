@@ -262,12 +262,6 @@ python get_modifications_on_main_features_only.py
 
 This can be particularly useful for alleles that refer to previous gene coordinates. This is used in the repository https://github.com/pombase/allele_qc.
 
-## Genome QC part
+## Find missing synonyms
 
-```
-bash get_all_systematic_ids_ever.sh
-bash get_all_genes_starting_with_SP_ever.sh
-python gather_obsoleted_names.py > valid_ids_data/obsoleted_ids.tsv
-bash get_orphan_synonyms.sh
-
-```
+Some of the code was used to finding missing synonyms of genes and gather them into "tsv dictionaries" (see files `valid_ids_data/missing_synonyms.tsv` and `valid_ids_data/obsoleted_ids.tsv`). The code is in `find_missing_synonyms.sh` and the python scripts called within. To run it you need to have the pre_svn data as well as the latest version of the pombe genome.
