@@ -262,6 +262,14 @@ python get_modifications_on_main_features_only.py
 
 This can be particularly useful for alleles that refer to previous gene coordinates. This is used in the repository https://github.com/pombase/allele_qc.
 
+## Associating publications with changes in gene features.
+
+Pombase-specific perhaps, do two things:
+
+* We had a list in PomBase where we listed some (not all) of the gene feature changes, and the reasons that led to them (a publication, personal communication, etc.). The script tries to match the changes in the genome with those reported in the table to keep those comments in our records.
+* See if in a given revision where a change was made to a gene structure, a dbxref was added / removed. This likely indicates that the updated gene structure comes from that publication.
+
+
 ## Find missing synonyms
 
 Some of the code was used to finding missing synonyms of genes and gather them into "tsv dictionaries" (see files `valid_ids_data/missing_synonyms.tsv` and `valid_ids_data/obsoleted_ids.tsv`). The code is in `find_missing_synonyms.sh` and the python scripts called within. To run it you need to have the pre_svn data as well as the latest version of the pombe genome.
