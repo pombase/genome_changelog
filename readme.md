@@ -232,6 +232,13 @@ To combine all the changes in a single file, you can then run:
 python create_single_qualifier_changes_file.py>yourfile.tsv
 ```
 
+### Delete analysis data
+
+```
+rm pre_svn_data/*/change_log/*/*.tsv
+rm data/*/change_log/*/*.tsv
+```
+
 ## Pre-svn data
 
 Some of the contig files pre-date the use of SVN, to download them and calculate the differences, they are in the ftp server of PomBase: https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/. The full list of those that pre-date svn are in the file ![pre_svn_folder_list.tsv]([pre_svn_folder_list.tsv]). The output files are attached in the release.
