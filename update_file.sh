@@ -1,5 +1,8 @@
 set -e
 
+# Download synonyms from PomBase
+bash get_valid_ids.sh
+
 # Remove possible old data
 rm -rf data/*/change_log/*/*.tsv
 

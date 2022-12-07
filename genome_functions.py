@@ -3,7 +3,7 @@ import pandas
 from copy import deepcopy
 import warnings
 
-def build_seqfeature_dict(genome: SeqRecord):
+def build_seqfeature_dict(genome: SeqRecord, use_custom_feature):
     """
     Creates a "feature dictionary" where they keys are the systematic_id, and the values are
     "gene dictionaries". In the "gene dictionary" the keys are the types of features
@@ -17,7 +17,10 @@ def build_seqfeature_dict(genome: SeqRecord):
     out_dict = dict()
 
     for normal_feature in genome.features:
-        feature = CustomSeqFeature.from_parent(normal_feature, genome)
+        if use_custom_feature:
+            feature = CustomSeqFeature.from_parent(normal_feature, genome)
+        else:
+            feature = normal_feature
         if 'systematic_id' not in feature.qualifiers:
             continue
         gene_id = feature.qualifiers['systematic_id'][0]
@@ -35,11 +38,13 @@ def get_primary_name(f: SeqFeature):
     return f.qualifiers['primary_name'][0] if 'primary_name' in f.qualifiers else ''
 
 
-def genome_dict_diff(new_genome_dict, old_genome_dict) -> tuple[list[SeqFeature],list[SeqFeature],list,list]:
+def genome_dict_diff(new_genome_dict, old_genome_dict, compare_sequence) -> tuple[list[SeqFeature],list[SeqFeature],list,list]:
     """
     Takes two genome dictionaries as input, returns:
-    - locations_added: list of SeqFeatures in new_genome_dict that have been added or their sequence has changed (sequence, not feature location since updates in genome sequence may shift multiple features, even the annotation is identical).
-    - locations_removed: list of SeqFeatures in old_genome_dict that have been removed or their sequence has changed (sequence, not feature location since updates in genome sequence may shift multiple features, even the annotation is identical).
+    - locations_added: list of SeqFeatures in new_genome_dict that have been added or their sequence has changed (if genome
+      sequence has not changed we just compare the location -much faster when building the genome dictionary-, otherwise we also
+      compare the sequence -compare_sequence = True-).
+    - locations_removed: list of SeqFeatures in old_genome_dict that have been removed or their sequence has changed (see above).
     - qualifiers_added: list of qualifiers that have been added or modified for (systematic_id, feature_type) pairs that existed in old_genome_dict.
     - qualifiers_removed: list of qualifiers that have been removed or modified for (systematic_id, feature_type) pairs that remain in new_genome_dict.
     The qualifiers are stored as tuples of 5 elements that contain the following elements:
@@ -84,12 +89,19 @@ def genome_dict_diff(new_genome_dict, old_genome_dict) -> tuple[list[SeqFeature]
                 old_features = old_annotation[feature_type]
                 new_features = new_annotation[feature_type]
 
-                ## First - changes to the feature sequence
-                old_sequences = [f.feature_sequence for f in old_features]
-                new_sequences = [f.feature_sequence for f in new_features]
+                if compare_sequence:
+                    old_sequences = [f.feature_sequence for f in old_features]
+                    new_sequences = [f.feature_sequence for f in new_features]
 
-                locations_added += [f for f in new_features if f.feature_sequence not in old_sequences]
-                locations_removed += [f for f in old_features if f.feature_sequence not in new_sequences]
+                    locations_added += [f for f in new_features if f.feature_sequence not in old_sequences]
+                    locations_removed += [f for f in old_features if f.feature_sequence not in new_sequences]
+                else:
+                    # If the genome sequence was identical, we only compare locations, which is much faster
+                    old_locations = [f.location for f in old_features]
+                    new_locations = [f.location for f in new_features]
+
+                    locations_added += [f for f in new_features if f.location not in old_locations]
+                    locations_removed += [f for f in old_features if f.location not in new_locations]
 
                 ## Second - changes to qualifiers
                 old_qualifiers = set()
@@ -105,21 +117,30 @@ def genome_dict_diff(new_genome_dict, old_genome_dict) -> tuple[list[SeqFeature]
 
     return locations_added, locations_removed, qualifiers_added, qualifiers_removed
 
-def make_synonym_dict(gene_ids_file):
+def make_synonym_dict(gene_ids_file, obsolete_ids_file=None, missing_synonyms_file=None):
     data = pandas.read_csv(gene_ids_file,sep='\t',na_filter=False)
     synonyms = dict()
     for i,row in data.iterrows():
         for synonym in [row['primary_name']] + row['synonyms'].split(','):
             if len(synonym):
                 if synonym in synonyms:
-                    synonyms[synonym].append(row['systematic_id'])
+                    synonyms[synonym].add(row['systematic_id'])
                 else:
-                    synonyms[synonym] = [row['systematic_id']]
+                    synonyms[synonym] = set([row['systematic_id']])
+    for file_name, synonym_field in zip([obsolete_ids_file, missing_synonyms_file], ['obsolete_id', 'orphan_id']):
+        if file_name is not None:
+            data = pandas.read_csv(file_name,sep='\t',na_filter=False)
+            for i,row in data.iterrows():
+                synonym = row[synonym_field]
+                if synonym in synonyms:
+                    synonyms[synonym].add(row['systematic_id'])
+                else:
+                    synonyms[synonym] = set([row['systematic_id']])
 
     return synonyms
 
 
-def read_pombe_genome(file_name, format, gene_ids_file, all_systematic_ids_ever, known_exceptions) -> SeqRecord:
+def read_pombe_genome(file_name, format, synonym_dictionary, all_systematic_ids_ever, known_exceptions) -> SeqRecord:
     """
     Runs SeqIO.read on the file (with tweaks, see custom_biopython file), and then
     for features that do not have a systematic_id qualifier:
@@ -137,8 +158,6 @@ def read_pombe_genome(file_name, format, gene_ids_file, all_systematic_ids_ever,
     with open(all_systematic_ids_ever) as f:
         valid_ids = set([line.rstrip('\n') for line in f])
 
-    synonyms = make_synonym_dict(gene_ids_file)
-
     # Avoids some encoding errors
     with open(file_name, errors='replace') as ins:
         contig = SeqIO.read(ins,format)
@@ -153,10 +172,10 @@ def read_pombe_genome(file_name, format, gene_ids_file, all_systematic_ids_ever,
             if len(systematic_ids) > 0:
                 original_systematic_ids = systematic_ids
                 # Substitute all values by their synonym + keep unique values only
-                systematic_ids = list(set(synonyms[i][0] if i in synonyms else i for i in systematic_ids))
+                systematic_ids = list(set(synonym_dictionary[i][0] if i in synonym_dictionary else i for i in systematic_ids))
 
                 for i in systematic_ids:
-                    if i in synonyms and len(synonyms[i])> 1:
+                    if i in synonym_dictionary and len(synonym_dictionary[i])> 1:
                         # Send a warning if we are using a synonym with multiple possibilities
                         warnings.warn(f'using a synonym with more than one possibility:\n{feature}')
 
@@ -177,10 +196,10 @@ def read_pombe_genome(file_name, format, gene_ids_file, all_systematic_ids_ever,
                 continue
 
             # The gene qualifier contains a value starting with SP which is a unique synonym of a current systematic_id
-            systematic_ids = set([value for value in feature.qualifiers['gene'] if (value.startswith('SP') and value in synonyms)])
+            systematic_ids = set([value for value in feature.qualifiers['gene'] if (value.startswith('SP') and value in synonym_dictionary)])
             if len(systematic_ids) > 0:
                 if len(systematic_ids) > 1:
-                    print('skipped feature with gene qualifiers',feature.qualifiers['gene'],'because it\'s a synonym of two current systematic_ids', [synonyms[i] for i in feature.qualifiers['gene'] if i in synonyms])
+                    print('skipped feature with gene qualifiers',feature.qualifiers['gene'],'because it\'s a synonym of two current systematic_ids', [synonym_dictionary[i] for i in feature.qualifiers['gene'] if i in synonym_dictionary])
                 else:
                     feature.qualifiers['systematic_id'] = systematic_ids
                 continue
@@ -196,3 +215,24 @@ def read_pombe_genome(file_name, format, gene_ids_file, all_systematic_ids_ever,
     contig.features.extend(extra_features)
 
     return contig
+
+def genome_sequences_are_different(file1, file2):
+    """
+    Compares sequences only, returns the lines if they are different
+    """
+    with open(file1, errors='replace') as ins1:
+        # Read lines until sequence line is reached (that should typically be enough)
+        for line in ins1:
+            if line.startswith('SQ'):
+                sq_line1 = line
+        with open(file2, errors='replace') as ins2:
+            for line in ins2:
+                if line.startswith('SQ'):
+                    sq_line2 = line
+            if sq_line1 != sq_line2:
+                return f'{sq_line1.strip()} <---> {sq_line2.strip()}'
+            for line1,line2 in zip(ins1,ins2):
+                if line1 != line2:
+                    return f'{line1.strip()} <---> {line2.strip()}'
+
+    return ''

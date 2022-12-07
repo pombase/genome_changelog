@@ -65,6 +65,11 @@ From now on the instructions, are to perform the analysis for pombase svn revisi
 
 > **WARNING:** Downloading all revisions and generating the full diffs will require ~100GB of space.
 
+No matter what you do, you need to download the synonyms list:
+```
+bash get_valid_ids.sh
+```
+
 ### Access to the svn repository
 
 You will need to make many calls to the svn server to download the files, you should set up ssh access:
@@ -251,7 +256,7 @@ bash prepare_pre_svn_folder.sh
 python get_ftp_site_files.py
 
 # Run the diffs on the pre_svn_data directory
-python pombe_svn_diff.py --data_folder pre_svn_data/
+python pombe_svn_diff.py --data_folders pre_svn_data/*
 
 # Combine in single files
 python create_single_coordinate_changes_file.py --data_folder pre_svn_data/ > pre_svn_coordinate_changes_file.tsv

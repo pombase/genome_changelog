@@ -28,3 +28,14 @@ for rev in [28, 30, 31, 33, 34, 35, 39, 40]:
         with open(f, 'w') as out:
             out.writelines(lines)
 
+for rev in [25, 26]:
+    f = f'data/chromosome2/{rev}.contig'
+
+    with open(f, errors='replace') as ins:
+        lines = ins.readlines()
+    if 'ID' not in lines[0]:
+        missing_header = 'ID   chromosome_2    standard; DNA; FUN; 4539804 BP.\nXX\nAC   chromosome_2;\nXX\nFH   Key             Location/Qualifiers\nFH\n'
+        lines = [missing_header] + lines
+        with open(f, 'w') as out:
+            out.writelines(lines)
+

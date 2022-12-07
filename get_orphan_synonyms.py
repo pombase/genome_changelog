@@ -1,5 +1,5 @@
 import pandas
-from genome_functions import read_pombe_genome
+from genome_functions import read_pombe_genome, make_synonym_dict
 
 
 with open('valid_ids_data/all_orphan_synonyms.txt') as ins:
@@ -25,8 +25,8 @@ for orphan_id in pandas.unique(data['orphan_id']):
     for i, row in data_subset.iterrows():
         file_name = row['file_name']
         print('looking for',orphan_id,'in',file_name)
-
-        seq_record = read_pombe_genome(file_name,'embl','valid_ids_data/gene_IDs_names.tsv', 'valid_ids_data/all_systematic_ids_ever.txt','valid_ids_data/known_exceptions.tsv')
+        synonym_dictionary = make_synonym_dict('valid_ids_data/gene_IDs_names.tsv')
+        seq_record = read_pombe_genome(file_name,'embl',synonym_dictionary, 'valid_ids_data/all_systematic_ids_ever.txt','valid_ids_data/known_exceptions.tsv')
         for feature in seq_record.features:
             if (row['type'] in feature.qualifiers) and (orphan_id in feature.qualifiers[row['type']]):
                 if 'systematic_id' in feature.qualifiers:

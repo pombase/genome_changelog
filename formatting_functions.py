@@ -33,11 +33,11 @@ def write_diff_to_files(locations_added, locations_removed, qualifiers_added, qu
 
     with open(locations_output_file,'w') as out:
         if len(new_revision_list):
-            out.write('\t'.join(['revision', 'user', 'date']))
+            out.write('\t'.join(['revision', 'user', 'date']) + '\t')
         out.write('\t'.join(['systematic_id', 'primary_name', 'feature_type', 'added_or_removed', 'value' ]) + '\n')
         out.write('\n'.join(sorted(locations_output)))
     with open(qualifiers_output_file,'w') as out:
         if len(new_revision_list):
-            out.write('\t'.join(['revision', 'user', 'date']))
+            out.write('\t'.join(['revision', 'user', 'date']) + '\t')
         out.write('\t'.join(['systematic_id', 'primary_name', 'feature_type', 'qualifier_type', 'added_or_removed', 'value' ]) + '\n')
         out.write('\n'.join(sorted(qualifiers_output)))
