@@ -22,7 +22,7 @@ def permissive_seq_length_scanner(consumer, text):
 EmblScanner._feed_seq_length = permissive_seq_length_scanner
 
 
-def features_are_equal(self, other):
+def features_are_equal(self: SeqFeature, other):
     if not isinstance(other, SeqFeature):
         return False
     return (
@@ -38,3 +38,17 @@ def features_are_equal(self, other):
 
 ## Override equality test
 SeqFeature.__eq__ = features_are_equal
+
+class CustomSeqFeature(SeqFeature):
+
+    def __init__(self, location=None, type="", location_operator="", strand=None, id="<unknown id>", qualifiers=None, sub_features=None, ref=None, ref_db=None, reference_sequence: SeqRecord =None):
+        super().__init__(location, type, location_operator, strand, id, qualifiers, sub_features, ref, ref_db)
+        self.reference_sequence = reference_sequence
+        self.feature_sequence = self.extract(self.reference_sequence).seq
+
+    def __eq__(self, other):
+        return super().__eq__(other) and (self.reference_sequence.seq == other.reference_sequence.seq)
+
+    @classmethod
+    def from_parent(cls, parent_instance: SeqFeature, reference_sequence: SeqRecord):
+        return cls(parent_instance.location, parent_instance.type, parent_instance.location_operator, parent_instance.strand, parent_instance.id, parent_instance.qualifiers, None, parent_instance.ref, parent_instance.ref_db, reference_sequence)
