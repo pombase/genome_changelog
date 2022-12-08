@@ -1,6 +1,7 @@
 """
 Downloads the record of genome changes that was manually kept and merges the qualifier_changes changelog (from the repository and the latest release).
 """
+set -e
 
 mkdir -p gene_changes_comments_and_pmids/
 
