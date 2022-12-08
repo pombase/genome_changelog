@@ -10,6 +10,15 @@ def main(output_file):
 
     # Data from pombase comments
     changelog_pombase = pandas.read_csv('gene_changes_comments_and_pmids/gene-coordinate-change-data.tsv',sep='\t',na_filter=False)
+
+    # Remove known repetitions (see https://github.com/pombase/genome_changelog/issues/7)
+    changelog_pombase = changelog_pombase[~((changelog_pombase['systematic_id'] == 'SPBC16E9.16c') & (changelog_pombase['date'] == '2007-01-03'))]
+    changelog_pombase = changelog_pombase[~((changelog_pombase['systematic_id'] == 'SPAC23D3.08') & (changelog_pombase['date'] == '2007-02-05'))]
+    changelog_pombase = changelog_pombase[~((changelog_pombase['systematic_id'] == 'SPBC4.02c') & (changelog_pombase['date'] == '2008-05-02'))]
+
+    # Remove changes that have not been included in the genome (Chr_I:682993!TC->T)
+    changelog_pombase = changelog_pombase[~((changelog_pombase['systematic_id'] == 'SPAC22F3.11c') & (changelog_pombase['date'] == '2017-04-04'))]
+
     # Fill in empty dates with the closest
     changelog_pombase['date'][changelog_pombase['date'] == ''] = pandas.NaT
     changelog_pombase['date'] = changelog_pombase['date'].fillna(method='bfill')
@@ -88,7 +97,7 @@ def main(output_file):
 
     output_data = output_data.drop_duplicates()
     output_data.sort_values(['original_index'], inplace=True)
-    output_data.drop(columns=['original_index','db_xref', 'pombase_reference', 'pombase_comments']).to_csv(output_file,sep='\t', index=False)
+    output_data.drop(columns=['original_index']).to_csv(output_file,sep='\t', index=False)
 
 
 if __name__ == '__main__':
