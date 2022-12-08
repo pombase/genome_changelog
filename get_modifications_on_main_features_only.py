@@ -12,4 +12,5 @@ output_data = data[~data['feature_type'].isin(["5'UTR","3'UTR",'intron','promote
 d = output_data.drop(columns=['value', 'added_or_removed'])
 logi = d.duplicated(keep=False)
 
-output_data[logi].to_csv('only_modified_coordinates.tsv', sep='\t', index=False)
+output_data = output_data[logi].copy()
+output_data.to_csv('only_modified_coordinates.tsv', sep='\t', index=False)

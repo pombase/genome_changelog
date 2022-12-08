@@ -124,18 +124,22 @@ def make_synonym_dict(gene_ids_file, obsolete_ids_file=None, missing_synonyms_fi
         for synonym in [row['primary_name']] + row['synonyms'].split(','):
             if len(synonym):
                 if synonym in synonyms:
-                    synonyms[synonym].add(row['systematic_id'])
+                    synonyms[synonym].append(row['systematic_id'])
+                    # Ensure unique
+                    synonyms[synonym] = list(set(synonyms[synonym]))
                 else:
-                    synonyms[synonym] = set([row['systematic_id']])
+                    synonyms[synonym] = [row['systematic_id']]
     for file_name, synonym_field in zip([obsolete_ids_file, missing_synonyms_file], ['obsolete_id', 'orphan_id']):
         if file_name is not None:
             data = pandas.read_csv(file_name,sep='\t',na_filter=False)
             for i,row in data.iterrows():
                 synonym = row[synonym_field]
                 if synonym in synonyms:
-                    synonyms[synonym].add(row['systematic_id'])
+                    synonyms[synonym].append(row['systematic_id'])
+                    # Ensure unique
+                    synonyms[synonym] = list(set(synonyms[synonym]))
                 else:
-                    synonyms[synonym] = set([row['systematic_id']])
+                    synonyms[synonym] = [row['systematic_id']]
 
     return synonyms
 
@@ -169,8 +173,8 @@ def read_pombe_genome(file_name, format, synonym_dictionary, all_systematic_ids_
 
             # The gene qualifier contains a current systematic_id (we use a set because sometimes there are duplicated qualifiers)
             systematic_ids = list(set(value for value in feature.qualifiers['gene'] if value in valid_ids))
+            original_systematic_ids = systematic_ids[:]
             if len(systematic_ids) > 0:
-                original_systematic_ids = systematic_ids
                 # Substitute all values by their synonym + keep unique values only
                 systematic_ids = list(set(synonym_dictionary[i][0] if i in synonym_dictionary else i for i in systematic_ids))
 
@@ -182,8 +186,10 @@ def read_pombe_genome(file_name, format, synonym_dictionary, all_systematic_ids_
                 if len(systematic_ids) > 1:
                     if frozenset(original_systematic_ids) in known_exception_dict:
                         value = known_exception_dict[frozenset(original_systematic_ids)]
-                        if value == 'duplicate':
-                            original_systematic_ids = value[:1]
+                        if value == 'skip':
+                            continue
+                        elif value == 'duplicate':
+                            systematic_ids = value[:1]
                             for systematic_id in value[1:]:
                                 copied_feature = deepcopy(feature)
                                 copied_feature.qualifiers['systematic_id'] = [systematic_id]
@@ -196,10 +202,24 @@ def read_pombe_genome(file_name, format, synonym_dictionary, all_systematic_ids_
                 continue
 
             # The gene qualifier contains a value starting with SP which is a unique synonym of a current systematic_id
-            systematic_ids = set([value for value in feature.qualifiers['gene'] if (value.startswith('SP') and value in synonym_dictionary)])
+            list_of_lists = [synonym_dictionary[value] for value in feature.qualifiers['gene'] if (value.startswith('SP') and (value in synonym_dictionary))]
+            systematic_ids = list(set(sum(list_of_lists,[])))
             if len(systematic_ids) > 0:
                 if len(systematic_ids) > 1:
-                    print('skipped feature with gene qualifiers',feature.qualifiers['gene'],'because it\'s a synonym of two current systematic_ids', [synonym_dictionary[i] for i in feature.qualifiers['gene'] if i in synonym_dictionary])
+                    if frozenset(systematic_ids) in known_exception_dict:
+                        value = known_exception_dict[frozenset(systematic_ids)]
+                        if value == 'skip':
+                            continue
+                        elif value == 'duplicate':
+                            systematic_ids = value[:1]
+                            for systematic_id in value[1:]:
+                                copied_feature = deepcopy(feature)
+                                copied_feature.qualifiers['systematic_id'] = [systematic_id]
+                                extra_features.append(copied_feature)
+                        else:
+                            systematic_ids = value
+                    else:
+                        raise ValueError('\\gene qualifier contains more than one systematic_id and not included in known_exceptions', systematic_ids, f'gene qualifiers were {feature.qualifiers["gene"]}')
                 else:
                     feature.qualifiers['systematic_id'] = systematic_ids
                 continue
@@ -207,10 +227,9 @@ def read_pombe_genome(file_name, format, synonym_dictionary, all_systematic_ids_
 
             for value in feature.qualifiers['gene']:
                 if value.startswith('SP'):
-                    pass
-                    # print('a value in \gene qualifier starts with SP but was never a systematic_id, skipping -> ', value)
-                    # for qualifier_type in feature.qualifiers:
-                    #     print('   ',qualifier_type,'-',feature.qualifiers[qualifier_type])
+                    print('a value in \gene qualifier starts with SP but was never a systematic_id, skipping -> ', value)
+                    for qualifier_type in feature.qualifiers:
+                        print('   ',qualifier_type,'-',feature.qualifiers[qualifier_type])
 
     contig.features.extend(extra_features)
 

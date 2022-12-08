@@ -7,3 +7,6 @@ SPAC8E11.03c,SPAC8E11.02c	duplicate	this was considered to be polycistronic
 SPAC1556.06.1,SPAC1556.06.2,SPAC1556.06	SPAC1556.06	multiple transcripts
 SPCC1450.08c,wtf8	SPCC1450.08c
 wtf1,SPCC1906.03	SPCC1906.03
+SPAP17D4.01,SPAC1834.12	SPAC17D4.01	the dubious has no peroxisome-related function and thats what's indicated for the CDS
+SPAC1348.14c,SPAPB8B6.01c	skip	wrong chromosome (should be on chromosome 2 -coordinates exactly match current ght7 in chromosome 2-)
+SPAC17D4.01,SPAC1834.13	SPAC17D4.01	the dubious has no peroxisome-related function and thats what's indicated for the CDS

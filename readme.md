@@ -216,7 +216,7 @@ revision	user	date	systematic_id	primary_name	feature_type	added_or_removed	valu
 To combine all the changes in a single file, you can then run:
 
 ```
-python create_single_coordinate_changes_file.py>yourfile.tsv
+python create_single_coordinate_changes_file.py --output_file the_file.tsv
 ```
 
 `data/chromosome1/change_log/qualifiers/xxx.tsv` contains changes introduced in revision `xxx` to qualifiers of features that existed in revision `xxx` and the previous one. The output looks like this:
@@ -234,7 +234,7 @@ revision	user	date	systematic_id	primary_name	feature_type	qualifier_type	added_
 To combine all the changes in a single file, you can then run:
 
 ```
-python create_single_qualifier_changes_file.py>yourfile.tsv
+python create_single_qualifier_changes_file.py --output_file the_file.tsv
 ```
 
 ### Delete analysis data
@@ -259,8 +259,8 @@ python get_ftp_site_files.py
 python pombe_svn_diff.py --data_folders pre_svn_data/*
 
 # Combine in single files
-python create_single_coordinate_changes_file.py --data_folder pre_svn_data/ > pre_svn_coordinate_changes_file.tsv
-python create_single_qualifier_changes_file.py --data_folder pre_svn_data/> pre_svn_qualifier_changes_file.tsv
+python create_single_coordinate_changes_file.py --data_folder pre_svn_data/  --output_file pre_svn_coordinate_changes_file.tsv
+python create_single_qualifier_changes_file.py --data_folder pre_svn_data/ --output_file pre_svn_qualifier_changes_file.tsv
 ```
 
 ## Summarising changes to existing features only

@@ -16,11 +16,11 @@ python get_revisions_files.py
 python pombe_svn_diff.py
 
 # Merge them with the existing lists
-python create_single_coordinate_changes_file.py > temp.tsv
+python create_single_coordinate_changes_file.py --output_file temp.tsv
 tail -n+2 all_coordinate_changes_file.tsv >>temp.tsv
 mv temp.tsv all_coordinate_changes_file.tsv
 
-python create_single_qualifier_changes_file.py > temp.tsv
+python create_single_qualifier_changes_file.py --output_file temp.tsv
 tail -n+2 all_qualifier_changes_file.tsv >>temp.tsv
 mv temp.tsv all_qualifier_changes_file.tsv
 
