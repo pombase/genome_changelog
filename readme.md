@@ -276,12 +276,33 @@ This can be particularly useful for alleles that refer to previous gene coordina
 
 ## Associating publications with changes in gene features.
 
-Pombase-specific perhaps, do two things:
+Pombase-specific. Links changes in genome coordinates in the file `only_modified_coordinates.tsv` to either:
 
-* We had a list in PomBase where we listed some (not all) of the gene feature changes, and the reasons that led to them (a publication, personal communication, etc.). The script tries to match the changes in the genome with those reported in the table to keep those comments in our records.
-* See if in a given revision where a change was made to a gene structure, a dbxref was added / removed. This likely indicates that the updated gene structure comes from that publication.
+* Comments from PomBase website. The file from PomBase [curation repository]() lists some (not all) of the gene feature changes, and the reasons that led to them (a publication, personal communication, etc.).
+* Changes in `dbxref` that occurred in the same revision as a change recorded in `only_modified_coordinates.tsv`.
 
+To run this:
+```bash
+# Download qualifier changes from latest release
+bash get_data_gene_changes_comments_and_pmids.sh
+
+# Make the associations
+python associate_comments_with_genome_changes.py --output only_modified_coordinates_with_comments.tsv
+
+# Merge with existing file
+#TODO
+```
 
 ## Find missing synonyms
 
 Some of the code was used to finding missing synonyms of genes and gather them into "tsv dictionaries" (see files `valid_ids_data/missing_synonyms.tsv` and `valid_ids_data/obsoleted_ids.tsv`). The code is in `find_missing_synonyms.sh` and the python scripts called within. To run it you need to have the pre_svn data as well as the latest version of the pombe genome.
+
+## Listing revisions where genome sequence changed
+
+```bash
+# Make the list
+python get_revisions_where_genome_sequence_changes.py --data data/* --output_file genome_changes_svn.tsv
+
+# Merge with existing file
+#TODO
+```

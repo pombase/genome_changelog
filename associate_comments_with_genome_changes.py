@@ -105,6 +105,6 @@ if __name__ == '__main__':
         pass
 
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=Formatter)
-    parser.add_argument('--output', default='only_modified_coordinates_with_comments.tsv')
+    parser.add_argument('--output')
     args = parser.parse_args()
     main(args.output)
