@@ -44,8 +44,9 @@ for folder in args.data_folders:
 
         # Check if genome sequence has changed, in that case we use a custom SeqFeature that takes longer to load
         if genome_sequences_are_different(new_genome_file, old_genome_file):
-            all_changes.append([contig_file_name, new_revision_list[0]])
+            all_changes.append([new_revision_list[0], new_revision_list[2], contig_file_name])
 
-output = pandas.DataFrame(all_changes, columns=['chromosome', 'revision'])
+output = pandas.DataFrame(all_changes, columns=['revision', 'date', 'chromosome'])
+output.sort_values(['date','revision', 'chromosome'], ascending=[False, False, True],inplace=True)
 
 output.to_csv(args.output_file, sep='\t', index=False)

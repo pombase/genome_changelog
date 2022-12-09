@@ -9,22 +9,23 @@ from formatting_functions import write_diff_to_files
 from custom_biopython import SeqIO
 
 class Formatter(argparse.ArgumentDefaultsHelpFormatter, argparse.RawDescriptionHelpFormatter):
-        pass
+    pass
 
-parser = argparse.ArgumentParser(description='Return difference between two genome versions.')
+parser = argparse.ArgumentParser(description=__doc__, formatter_class=Formatter)
 parser.add_argument('--new_genome', type=str)
 parser.add_argument('--old_genome', type=str)
 parser.add_argument('--revision_string', type=str, default='')
+parser.add_argument('--format', type=str, default='embl', help='Format of the genomes (to be passed to SeqIO.read)')
 parser.add_argument('--output_locations_file', type=str)
 parser.add_argument('--output_qualifiers_file', type=str)
 
 args = parser.parse_args()
 
 with open(args.new_genome, errors='replace') as ins:
-    new_genome_dict = build_seqfeature_dict(SeqIO.read(ins,'embl'), False)
+    new_genome_dict = build_seqfeature_dict(SeqIO.read(ins,args.format), False)
 
 with open(args.old_genome, errors='replace') as ins:
-    old_genome_dict = build_seqfeature_dict(SeqIO.read(ins,'embl'), False)
+    old_genome_dict = build_seqfeature_dict(SeqIO.read(ins,args.format), False)
 
 locations_added, locations_removed, qualifiers_added, qualifiers_removed = genome_dict_diff(new_genome_dict, old_genome_dict, False)
 write_diff_to_files(locations_added, locations_removed, qualifiers_added, qualifiers_removed, args.revision_string.split(), args.output_locations_file, args.output_qualifiers_file)

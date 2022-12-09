@@ -8,8 +8,11 @@ This repository contains scripts for:
   * Changes in coordinates of features that are present in both versions.
   * Changes in qualifiers of features that are present in both versions.
 * It also contains a script to perform the diff for any two embl files (`two_genomes_diff.py`)
+* More PomBase-specific stuff
 
-## TL;DR; to update diff files
+## TL;DR; to update diff files ⏩
+
+All the steps below that need to be re-ran are in [update_file.sh](update_file.sh).
 
 ```bash
 # install dependencies
@@ -59,7 +62,18 @@ Arguments:
 * `--output_locations_file`: the file where the diff in locations will be stored.
 * `--output_qualifiers_file`: the file where the diff in qualifiers will be stored.
 
-From now on the instructions, are to perform the analysis for pombase svn revisions.
+Before using this, read the next section.
+
+### Feature unique identifiers ⚠️
+
+In order to assess whether a feature has changed or not, the script [two_genomes_diff.py](two_genomes_diff.py) needs to use some unique identifier of a feature to compare it between
+two genome versions. For PomBase, that is the feature qualifier `\systematic_id`. Old genomes did not have this qualifier, and used `\gene` instead. However, the `\gene` qualifier
+does not have to be unique, and there are some revisions were the usage of both is mixed.
+This is handled for the PomBase case in the function `read_pombe_genome` in [genome_functions.py](genome_functions.py).
+The data used for this was generated with the pre-svn pombe genomes and with the script [find_missing_synonyms.sh](find_missing_synonyms.sh) and is in the directory
+[valid_ids_data](valid_ids_data).
+
+The same unique identifier can refer to multiple features sometimes, such as introns. In that case, what we report the ones that are removed or added.
 
 ## Getting the data
 
@@ -237,6 +251,42 @@ To combine all the changes in a single file, you can then run:
 python create_single_qualifier_changes_file.py --output_file the_file.tsv
 ```
 
+### Listing changes on main features
+
+`get_modifications_on_main_features_only.py` generates [only_modified_coordinates.tsv](only_modified_coordinates.tsv), a table listing only the changes in gene locations (addition and removal in the same revision) for the main types of features (`CDS`,`ncRNA`,`snRNA`,`repeat_region`,`rRNA`,`tRNA`,`snoRNA`,`misc_RNA`).
+
+```
+python get_modifications_on_main_features_only.py --input_files all_coordinate_changes_file.tsv pre_svn_coordinate_changes_file.tsv --output_file only_modified_coordinates.tsv
+```
+
+This can be particularly useful for alleles that refer to previous gene coordinates. This is used in the repository https://github.com/pombase/allele_qc.
+
+ contains a table where only coordinate modifications are shown (modifications as in changes to gene coordinates, rather than new additions or removals of features). It combines the data from the svn server and the pre-svn data.
+
+### Associating publications with changes in gene features.
+
+Pombase-specific. Links changes in genome coordinates in the file `only_modified_coordinates.tsv` to either:
+
+* Comments from PomBase website. The file from PomBase [curation repository]() lists some (not all) of the gene feature changes, and the reasons that led to them (a publication, personal communication, etc.).
+* Changes in `dbxref` that occurred in the same revision as a change recorded in `only_modified_coordinates.tsv`.
+
+To run this:
+```bash
+# Download qualifier changes from latest release
+bash get_data_gene_changes_comments_and_pmids.sh
+
+# Make the associations
+python associate_comments_with_genome_changes.py --output only_modified_coordinates_with_comments.tsv
+```
+
+### Listing revisions where genome sequence changed
+
+Output in the style of [genome_changes_svn](genome_changes_svn.tsv).
+
+```bash
+python get_revisions_where_genome_sequence_changes.py --data data/* --output_file output.tsv
+```
+
 ### Delete analysis data
 
 ```
@@ -263,46 +313,7 @@ python create_single_coordinate_changes_file.py --data_folder pre_svn_data/  --o
 python create_single_qualifier_changes_file.py --data_folder pre_svn_data/ --output_file pre_svn_qualifier_changes_file.tsv
 ```
 
-## Summarising changes to existing features only
-
-[only_modified_coordinates.tsv](only_modified_coordinates.tsv) contains a table where only coordinate modifications are shown (modifications as in changes to gene coordinates, rather than new additions or removals of features). It combines the data from the svn server and the pre-svn data. To make the list run:
-
-```bash
-python get_modifications_on_main_features_only.py
-```
-
-
-This can be particularly useful for alleles that refer to previous gene coordinates. This is used in the repository https://github.com/pombase/allele_qc.
-
-## Associating publications with changes in gene features.
-
-Pombase-specific. Links changes in genome coordinates in the file `only_modified_coordinates.tsv` to either:
-
-* Comments from PomBase website. The file from PomBase [curation repository]() lists some (not all) of the gene feature changes, and the reasons that led to them (a publication, personal communication, etc.).
-* Changes in `dbxref` that occurred in the same revision as a change recorded in `only_modified_coordinates.tsv`.
-
-To run this:
-```bash
-# Download qualifier changes from latest release
-bash get_data_gene_changes_comments_and_pmids.sh
-
-# Make the associations
-python associate_comments_with_genome_changes.py --output only_modified_coordinates_with_comments.tsv
-
-# Merge with existing file
-#TODO
-```
-
-## Find missing synonyms
+### Find missing synonyms
 
 Some of the code was used to finding missing synonyms of genes and gather them into "tsv dictionaries" (see files `valid_ids_data/missing_synonyms.tsv` and `valid_ids_data/obsoleted_ids.tsv`). The code is in `find_missing_synonyms.sh` and the python scripts called within. To run it you need to have the pre_svn data as well as the latest version of the pombe genome.
 
-## Listing revisions where genome sequence changed
-
-```bash
-# Make the list
-python get_revisions_where_genome_sequence_changes.py --data data/* --output_file genome_changes_svn.tsv
-
-# Merge with existing file
-#TODO
-```

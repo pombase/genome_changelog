@@ -39,20 +39,20 @@ class CustomFeatureTest(unittest.TestCase):
         # Underlying sequence is the same but coordinates change
         dict_old = {'same': {'CDS': [custom_feature]}, 'different': {'CDS': [custom_feature]}}
         dict_new = {'same': {'CDS': [custom_feature_equal]}, 'different': {'CDS': [custom_feature_different_coords]}}
-        locations_added, locations_removed, qualifiers_added, qualifiers_removed = genome_dict_diff(dict_new, dict_old)
+        locations_added, locations_removed, qualifiers_added, qualifiers_removed = genome_dict_diff(dict_new, dict_old, True)
         self.assertEqual(locations_added[0],custom_feature_different_coords)
         self.assertEqual(locations_removed[0],custom_feature)
 
         # Underlying sequence is different but coordinates are the same
         dict_old = {'same': {'CDS': [custom_feature]}, 'different': {'CDS': [custom_feature]}}
         dict_new = {'same': {'CDS': [custom_feature_equal]}, 'different': {'CDS': [custom_feature_different_sequence]}}
-        locations_added, locations_removed, qualifiers_added, qualifiers_removed = genome_dict_diff(dict_new, dict_old)
+        locations_added, locations_removed, qualifiers_added, qualifiers_removed = genome_dict_diff(dict_new, dict_old, True)
         self.assertEqual(locations_added[0],custom_feature_different_sequence)
         self.assertEqual(locations_removed[0],custom_feature)
 
         # Sequence and coordinates change, but feature sequence doesn't
         dict_old = {'same': {'CDS': [custom_feature]}, 'different': {'CDS': [custom_feature_different_sequence]}}
         dict_new = {'same': {'CDS': [custom_feature_equal]}, 'different': {'CDS': [custom_feature_equal_though_changes]}}
-        locations_added, locations_removed, qualifiers_added, qualifiers_removed = genome_dict_diff(dict_new, dict_old)
+        locations_added, locations_removed, qualifiers_added, qualifiers_removed = genome_dict_diff(dict_new, dict_old, True)
         self.assertEqual(locations_added,[])
         self.assertEqual(locations_removed,[])
