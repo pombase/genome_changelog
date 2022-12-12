@@ -29,6 +29,7 @@ def main(output_file):
 
     # Data generated from
     db_xref_script = pandas.read_csv('gene_changes_comments_and_pmids/qualifier_changes.tsv',sep='\t',na_filter=False)
+    db_xref_script = db_xref_script['qualifier_type' == 'db_xref']
     db_xref_script.rename(columns={'value': 'db_xref'}, inplace=True)
     # We find the db_xref that match a change in coordinates (same revision). To not have duplicated columns we keep the added only
     matches = pandas.merge(changelog_script[changelog_script['added_or_removed'] == 'added'].drop(columns=['added_or_removed']), db_xref_script[['systematic_id', 'revision', 'feature_type', 'db_xref','added_or_removed']],on=['systematic_id', 'revision', 'feature_type'])

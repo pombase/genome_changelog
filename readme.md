@@ -253,10 +253,16 @@ python create_single_qualifier_changes_file.py --output_file the_file.tsv
 
 ### Listing changes on main features
 
-`get_modifications_on_main_features_only.py` generates [only_modified_coordinates.tsv](only_modified_coordinates.tsv), a table listing only the changes in gene locations (addition and removal in the same revision) for the main types of features (`CDS`,`ncRNA`,`snRNA`,`repeat_region`,`rRNA`,`tRNA`,`snoRNA`,`misc_RNA`).
+> **NOTE** You need to run this first:
+> ```
+> bash get_data_gene_changes_comments_and_pmids.sh
+> ```
+>
+
+`get_info_from_changes.py` generates [only_modified_coordinates.tsv](only_modified_coordinates.tsv), a table listing only the changes in gene locations (addition and removal in the same revision) for the main types of features (`CDS`,`ncRNA`,`snRNA`,`repeat_region`,`rRNA`,`tRNA`,`snoRNA`,`misc_RNA`).
 
 ```
-python get_modifications_on_main_features_only.py --input_files all_coordinate_changes_file.tsv pre_svn_coordinate_changes_file.tsv --output_file only_modified_coordinates.tsv
+python get_info_from_changes.py --input_files all_coordinate_changes_file.tsv pre_svn_coordinate_changes_file.tsv --output_modified_coordinates only_modified_coordinates.tsv
 ```
 
 This can be particularly useful for alleles that refer to previous gene coordinates. This is used in the repository https://github.com/pombase/allele_qc.
