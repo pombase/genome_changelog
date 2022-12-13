@@ -108,9 +108,12 @@ def genome_dict_diff(new_genome_dict, old_genome_dict, compare_sequence) -> tupl
                 new_qualifiers = set()
 
                 for f in old_features:
-                    old_qualifiers.update( set([(systematic_id, get_primary_name(f), feature_type, key, tuple(value)) for key, value in f.qualifiers.items()]))
+                    for key, values in f.qualifiers.items():
+                        old_qualifiers.update( set([(systematic_id, get_primary_name(f), feature_type, key, value) for value in values]))
+
                 for f in new_features:
-                    new_qualifiers.update( set([(systematic_id, get_primary_name(f), feature_type, key, tuple(value)) for key, value in f.qualifiers.items()]))
+                    for key, values in f.qualifiers.items():
+                        new_qualifiers.update( set([(systematic_id, get_primary_name(f), feature_type, key, value) for value in values]))
 
                 qualifiers_added.extend(new_qualifiers - old_qualifiers)
                 qualifiers_removed.extend(old_qualifiers - new_qualifiers)

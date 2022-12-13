@@ -17,7 +17,7 @@ def format_qualifier_change(qualifier_tuple, change, revision):
         *revision,
         *qualifier_tuple[:4],
         change,
-        str(qualifier_tuple[4])
+        qualifier_tuple[4]
     ))
 
 def write_diff_to_files(locations_added, locations_removed, qualifiers_added, qualifiers_removed, new_revision_list, locations_output_file, qualifiers_output_file):
