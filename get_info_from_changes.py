@@ -103,4 +103,9 @@ data_subset2 = data_subset2.merge(merged_data[['systematic_id','merged_into']], 
 
 # Rename categories where merged happenned
 data_subset2['category'] = data_subset2.apply(lambda row: row.category.replace('removed','merged') if not pandas.isna(row.merged_into) else row.category, axis=1)
+
+# Add extra column indicating what types of feature the systematic_id has ever contained
+extra_column_dataset = main_features_data[['systematic_id', 'feature_type']].groupby('systematic_id', as_index=False).agg({'feature_type': lambda x: ','.join(sorted(list(set(x))))})
+data_subset2 = data_subset2.merge(extra_column_dataset, on='systematic_id')
+data_subset2 = data_subset2[['systematic_id','chromosome','primary_name','feature_type','category','merged_into']]
 data_subset2.to_csv(args.output_summary, sep='\t', index=False)
