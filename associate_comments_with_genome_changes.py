@@ -19,6 +19,7 @@ def main(output_file):
     # Remove changes that have not been included in the genome (Chr_I:682993!TC->T)
     changelog_pombase = changelog_pombase[~((changelog_pombase['systematic_id'] == 'SPAC22F3.11c') & (changelog_pombase['date'] == '2017-04-04'))]
 
+
     # Fill in empty dates with the closest
     changelog_pombase['date'][changelog_pombase['date'] == ''] = pandas.NaT
     changelog_pombase['date'] = changelog_pombase['date'].fillna(method='bfill')
@@ -27,45 +28,22 @@ def main(output_file):
     changelog_script = pandas.read_csv('only_modified_coordinates.tsv',sep='\t',na_filter=False)
     changelog_script['original_index'] = changelog_script.index
 
-    # Data generated from
-    db_xref_script = pandas.read_csv('gene_changes_comments_and_pmids/qualifier_changes.tsv',sep='\t',na_filter=False)
-    db_xref_script = db_xref_script['qualifier_type' == 'db_xref']
+    # Data about changes in qualifiers
+    db_xref_script = pandas.concat([
+        pandas.read_csv(f, delimiter='\t', na_filter=False, dtype=str) for f in ['all_qualifier_changes_file.tsv','gene_changes_comments_and_pmids/pre_svn_qualifier_changes_file.tsv']
+    ])
+
+    # Only the relevant columns, only db_xref qualifiers
+    db_xref_script = db_xref_script[db_xref_script['qualifier_type'] == 'db_xref']
+    db_xref_script = db_xref_script[['systematic_id', 'revision', 'feature_type', 'value','added_or_removed']]
+    # Rename value column to db_xref, that will be the final column in the output file
     db_xref_script.rename(columns={'value': 'db_xref'}, inplace=True)
-    # We find the db_xref that match a change in coordinates (same revision). To not have duplicated columns we keep the added only
-    matches = pandas.merge(changelog_script[changelog_script['added_or_removed'] == 'added'].drop(columns=['added_or_removed']), db_xref_script[['systematic_id', 'revision', 'feature_type', 'db_xref','added_or_removed']],on=['systematic_id', 'revision', 'feature_type'])
 
-    # We merge multiple lines that have several additions / removals on separate lines
-    d = matches.drop(columns=['db_xref'])
-    logi = d.duplicated(keep=False)
+    # Combine multiple db_xref changes in one line (comma separated)
+    unique_identifier_cols = ['systematic_id', 'revision', 'feature_type','added_or_removed']
+    db_xref_script = db_xref_script.groupby(unique_identifier_cols).agg({'db_xref': ','.join})
 
-    multi_row_data = matches[logi].copy()
-
-    unique_identifier_cols = ['systematic_id', 'revision','added_or_removed','feature_type']
-
-    def aggregating_function(values: str):
-        out_set = set()
-        for value in values:
-            # Value would be a string in a list in this format ('PMID:18641648', 'PMID:20118936'), we can read it using the json module
-            value_replaced = value.replace('(','[').replace(')',']').replace("'",'"').replace(',]',']')
-            out_set.update(json.loads(value_replaced))
-
-        # Reformat in the same format again
-        # Add the single quotes
-        out_set = [f'\'{i}\'' for i in out_set]
-
-        return f'({",".join(out_set)})'
-
-    dbxref2include = multi_row_data.groupby(unique_identifier_cols).agg({'db_xref': aggregating_function})
-
-    data2merge = matches.merge(dbxref2include,on=unique_identifier_cols,how='outer')
-
-    replace_logical_index =  ~pandas.isna(data2merge['db_xref_y'])
-
-    data2merge.loc[replace_logical_index,'db_xref_x'] = data2merge['db_xref_y'][replace_logical_index]
-    data2merge.drop(columns=['db_xref_y'],inplace=True)
-    data2merge.rename(columns={'db_xref_x': 'db_xref'}, inplace=True)
-
-    output_data = changelog_script.merge(data2merge[unique_identifier_cols + ['db_xref']], on=unique_identifier_cols,how='outer')
+    output_data = changelog_script.merge(db_xref_script, on=unique_identifier_cols, how='left')
 
     output_data['date'] = pandas.to_datetime(output_data['date'],utc=True)
     changelog_pombase['date'] = pandas.to_datetime(changelog_pombase['date'],utc=True)
@@ -76,16 +54,22 @@ def main(output_file):
     # A note on this: merge_asof(left, right) finds for every row in left the nearest row in right, so to have a single match between
     # comments in changelog_pombase to output_data rows, we have to do it like this
     temp_data = pandas.merge_asof(changelog_pombase[['systematic_id','reference','comments', 'date']],output_data, by=['systematic_id'], on=['date'], direction='nearest')
+    temp_data.to_csv('dummy.tsv', sep='\t', index=False)
 
+    # We know some comments cannot be matched, but we check if any is left out unintendedly
     orphan_lines = temp_data[temp_data['revision'].isna()].copy()
+    known_orphan_ids = set(pandas.read_csv('gene_changes_comments_and_pmids/known_orphan_comments.tsv', sep='\t')['systematic_id'])
+    orphan_lines = orphan_lines[~orphan_lines['systematic_id'].isin(known_orphan_ids)].copy()
+
     if not orphan_lines.empty:
         orphan_file = 'gene_changes_comments_and_pmids/orphan_comments.tsv'
-        yellow='\033[1;33m'
-        no_color='\033[0m' # No Color
-        msg =f'{yellow}Some of the comments in gene-coordinate-change-data.tsv don\'t match any row in only_modified_coordinates.tsv. They have been printed to the file {orphan_file}{no_color}'
+        msg =f'\033[1;33mSome of the comments in gene-coordinate-change-data.tsv don\'t match any row in only_modified_coordinates.tsv. They have been printed to the file {orphan_file}\033[0m'
         warnings.warn(msg,RuntimeWarning)
         orphan_lines.to_csv(orphan_file,sep='\t', index=False)
         temp_data = temp_data[~temp_data['revision'].isna()].copy()
+
+    # Remove the orphan lines
+    temp_data = temp_data[~temp_data['revision'].isna()]
 
     output_data = pandas.merge(output_data,temp_data[['original_index', 'reference','comments']], on='original_index',how='outer')
 

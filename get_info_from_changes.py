@@ -1,13 +1,14 @@
 import pandas
 import argparse
-import json
+from genome_functions import make_synonym_dict
 
 class Formatter(argparse.ArgumentDefaultsHelpFormatter, argparse.RawDescriptionHelpFormatter):
     pass
 
 
 parser = argparse.ArgumentParser(description=__doc__, formatter_class=Formatter)
-parser.add_argument('--input_files', nargs='+', help='coordinate changes file (in order that you want them concatenated)')
+parser.add_argument('--coordinate_changes_files', nargs='+', help='coordinate changes file (in order that you want them concatenated)')
+parser.add_argument('--qualifier_changes_files', nargs='+', default=['all_qualifier_changes_file.tsv','gene_changes_comments_and_pmids/pre_svn_qualifier_changes_file.tsv'], help='Qualifier changes tsv files')
 parser.add_argument('--output_modified_coordinates',default='only_modified_coordinates.tsv', help='output tsv file')
 parser.add_argument('--output_summary',default='genome_changes_summary.tsv', help='output tsv file')
 
@@ -15,23 +16,25 @@ args = parser.parse_args()
 
 # Load coordinate changes
 data = pandas.concat([
-    pandas.read_csv(f, delimiter='\t', na_filter=False) for f in args.input_files
+    pandas.read_csv(f, delimiter='\t', na_filter=False, dtype=str) for f in args.coordinate_changes_files
 ])
 
-# We only consider CDS features in genes that have alleles with sequence errors
+# Main features only
 main_features_data = data[~data['feature_type'].isin(["5'UTR","3'UTR",'intron','promoter','LTR', 'misc_feature']) & data.systematic_id.str.startswith('SP')].copy()
 
 # Make sure they are sorted properly (below, earliest_modification relies on 'added' rows being on top of 'removed' ones)
 main_features_data['date'] = pandas.to_datetime(main_features_data['date'],utc=True)
-main_features_data.sort_values(['date','revision','chromosome','systematic_id','feature_type','added_or_removed'],inplace=True, ascending=[False, False,True, True, True, True])
+# We add a special column for all types of RNA, because often in a revision both coordinates and feature_type would be changed
+main_features_data['feature_type_temp'] = main_features_data['feature_type'].apply(lambda x: 'RNA' if 'RNA' in x else x)
+main_features_data.sort_values(['date','revision','chromosome','systematic_id','feature_type_temp','added_or_removed'],inplace=True, ascending=[False, False,True, True, True, True])
 main_features_data['date'] = main_features_data['date'].dt.date
 
 # See the columns that only differ in value and added_removed > coordinates were modified
-d = main_features_data.drop(columns=['value', 'added_or_removed'])
+d = main_features_data.drop(columns=['value', 'added_or_removed', 'primary_name', 'feature_type'])
 modification_logical_index = d.duplicated(keep=False)
 
 # See the columns that only differ in value and added_removed > coordinates were modified
-modification_data = main_features_data[modification_logical_index].copy()
+modification_data = main_features_data[modification_logical_index].copy().drop(columns=['feature_type_temp'])
 modification_data.to_csv(args.output_modified_coordinates, sep='\t', index=False)
 
 ## Classify genes by type of change =====================================================================================
@@ -69,40 +72,15 @@ if not uneven_changes.empty:
 data_subset2.drop(columns=['net_change', 'earliest_modification','nb_changes', 'abs_change'], inplace=True)
 
 ## Find merges as removal of feature + added as synonym of another  =====================================================================================
-synonym_data = pandas.read_csv('gene_changes_comments_and_pmids/qualifier_changes.tsv',sep='\t',na_filter=False)
-synonym_data = synonym_data[synonym_data['qualifier_type'] == 'synonym']
 
-# Explode rows that contain multiple synonyms
-synonym_data = synonym_data[synonym_data['qualifier_type'] == 'synonym'].copy()
-def qualifier_value_to_list(value: str):
-    # Convert a list like this: ('PMID:18641648', 'PMID:20118936') to a python string list using json module
-    value_replaced = value.replace('(','[').replace(')',']').replace("'",'"').replace(',]',']')
-    return json.loads(value_replaced)
-synonym_data['value'] = synonym_data['value'].apply(qualifier_value_to_list)
-synonym_data = synonym_data.explode('value')
+synonym_dict = make_synonym_dict('valid_ids_data/gene_IDs_names.tsv', 'valid_ids_data/obsoleted_ids.tsv', 'valid_ids_data/missing_synonyms.tsv')
 
-# Exclude values that appear on added and removed (not actually changed)
-d = synonym_data.drop(columns=['primary_name', 'added_or_removed'])
-logi = d.duplicated(keep=False)
-synonym_data = synonym_data[~logi].copy()
+merged_logi = data_subset2['category'].str.contains('removed') & data_subset2['systematic_id'].isin(synonym_dict)
 
-# Keep only the synonyms that start with SP for merge
-synonym_data = synonym_data[synonym_data.value.str.startswith('SP')].copy()
-synonym_data.rename(columns={'value': 'synonym_id'},inplace=True)
-
-# Have to convert them to string to do the join for some reason
-removed_or_merged_ids = set(data_subset2['systematic_id'][data_subset2['category'].str.contains('removed')])
-removed_merged_data = main_features_data[main_features_data['systematic_id'].isin(removed_or_merged_ids)].copy()
-removed_merged_data['revision'] = removed_merged_data['revision'].astype(str).copy()
-synonym_data['revision'] = synonym_data['revision'].astype(str).copy()
-
-merged_data = pandas.merge(removed_merged_data, synonym_data[['systematic_id', 'synonym_id', 'revision']], left_on=['systematic_id', 'revision'], right_on=['synonym_id', 'revision'], how='inner')
-merged_data.rename(columns={'systematic_id_x': 'systematic_id', 'systematic_id_y': 'merged_into'}, inplace=True)
-
-data_subset2 = data_subset2.merge(merged_data[['systematic_id','merged_into']], on=['systematic_id'], how='outer')
-
-# Rename categories where merged happenned
-data_subset2['category'] = data_subset2.apply(lambda row: row.category.replace('removed','merged') if not pandas.isna(row.merged_into) else row.category, axis=1)
+# Rename categories where merged happened
+data_subset2.loc[merged_logi,'category'] = data_subset2.loc[merged_logi,'category'].apply(lambda x: x.replace('remove','merge'))
+data_subset2['merged_into'] = ''
+data_subset2.loc[merged_logi,'merged_into'] = data_subset2.loc[merged_logi,'systematic_id'].apply(lambda x: synonym_dict[x][0])
 
 # Add extra column indicating what types of feature the systematic_id has ever contained
 extra_column_dataset = main_features_data[['systematic_id', 'feature_type']].groupby('systematic_id', as_index=False).agg({'feature_type': lambda x: ','.join(sorted(list(set(x))))})
