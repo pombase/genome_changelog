@@ -3,6 +3,9 @@ set -e
 # Download synonyms from PomBase
 bash get_valid_ids.sh
 
+# Download data to link comments / changes in db_xref qualifiers with coordinate changes
+bash get_data_gene_changes_comments_and_pmids.sh
+
 # Remove possible old data
 rm -rf data/*/change_log/*/*.tsv
 
@@ -23,9 +26,6 @@ mv temp.tsv all_coordinate_changes_file.tsv
 python create_single_qualifier_changes_file.py --output_file temp.tsv
 tail -n+2 all_qualifier_changes_file.tsv >>temp.tsv
 mv temp.tsv all_qualifier_changes_file.tsv
-
-# Download data to link comments / changes in db_xref qualifiers with coordinate changes
-bash get_data_gene_changes_comments_and_pmids.sh
 
 # Update the changes on main features only
 python get_info_from_changes.py --input_files all_coordinate_changes_file.tsv pre_svn_coordinate_changes_file.tsv --output_modified_coordinates only_modified_coordinates.tsv

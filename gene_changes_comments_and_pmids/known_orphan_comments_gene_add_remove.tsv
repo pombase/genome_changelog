@@ -1,0 +1,33 @@
+systematic_id	reason	type
+SPBC1709.20	predates_changelog
+SPAC7D4.15c	predates_changelog
+SPBC119.18	predates_changelog
+SPAC16C4.21	unknown
+SPAC222.17c	never was a systematic_id
+SPCC63.09	never was a systematic_id
+SPBC19G7.12c	never was a systematic_id
+SPAC3F10.14	never was a systematic_id
+SPBC428.09c	unknown
+SPBC9B6.01c	never was a systematic_id
+SPCC794.14c	unknown
+SPNCRNA.9061	unknown
+SPAC212.10	removed, but re-added	removed_only
+SPAC959.06c	removed, but re-added	removed_only
+SPBC18E5.09c	removed, but re-added	removed_only
+SPBC651.07	removed, but re-added	removed_only
+SPBPB21E7.10	multi_systematic_id	removed_only
+SPNCRNA.1038	removed, but re-added	removed_only
+SPNCRNA.125	removed, but re-added	removed_only
+SPNCRNA.135	removed, but re-added	removed_only
+SPNCRNA.1394	removed, but re-added	removed_only
+SPNCRNA.1436	removed, but re-added	removed_only
+SPNCRNA.252	removed, but re-added	removed_only
+SPNCRNA.582	removed, but re-added	removed_only
+SPNCRNA.600	removed, but re-added	removed_only
+SPNCRNA.64	removed, but re-added	removed_only
+SPNCRNA.723	removed, but re-added	removed_only
+SPNCRNA.814	removed, but re-added	removed_only
+SPNCRNA.866	removed, but re-added	removed_only
+SPNCRNA.867	removed, but re-added	removed_only
+SPNCRNA.906	removed, but re-added	removed_only
+

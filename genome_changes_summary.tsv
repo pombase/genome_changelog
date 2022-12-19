@@ -396,7 +396,7 @@ SPAPB1A10.05	I		CDS	changed
 SPAPB1A10.08	I		CDS	changed	
 SPAPB1A10.15	I	arv1	CDS	changed	
 SPAPB1A10.16	I		CDS	added_and_changed	
-SPAPB1A11.05	I		CDS	added_and_merged	SPAPB1A11.06
+SPAPB1A11.05	I		CDS	added_and_merged	SPAC31G5.01
 SPAPB1A11.06	I		CDS	added	
 SPAPB1E7.05	I	gde1	CDS	changed	
 SPAPB1E7.06c	I	eme1	CDS	changed	
@@ -8615,7 +8615,7 @@ SPRRNA.04	III		rRNA	added
 SPRRNA.05	III		rRNA	added	
 SPRRNA.06	III		rRNA	added	
 SPRRNA.07	III		rRNA	added	
-SPRRNA.08	III		rRNA	added_and_merged	SPRRNA.49
+SPRRNA.08	III		rRNA	added_and_merged	SPRRNA.52
 SPRRNA.09	III		rRNA	added_and_merged	SPRRNA.45
 SPRRNA.10	I		rRNA	added	
 SPRRNA.11	I		rRNA	added	
@@ -8627,9 +8627,9 @@ SPRRNA.17	I		rRNA	added
 SPRRNA.18	I		rRNA	added	
 SPRRNA.19	I		rRNA	added	
 SPRRNA.20	I		rRNA	added	
-SPRRNA.21	III		rRNA	added_and_merged	SPRRNA.42
+SPRRNA.21	III		rRNA	added_and_merged	SPRRNA.47
 SPRRNA.22	III		rRNA	added_and_removed	
-SPRRNA.23	III		rRNA	added_and_merged	SPRRNA.44
+SPRRNA.23	III		rRNA	added_and_merged	SPRRNA.51
 SPRRNA.24	III		rRNA	added	
 SPRRNA.25	III		rRNA	removed	
 SPRRNA.26	III		rRNA	added	
