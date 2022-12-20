@@ -11,7 +11,7 @@ class Formatter(argparse.ArgumentDefaultsHelpFormatter, argparse.RawDescriptionH
 
 parser = argparse.ArgumentParser(description=__doc__, formatter_class=Formatter)
 parser.add_argument('--data_folders', nargs='+', default=glob.glob('data/*'), help='folders where the analysis will be ran.')
-parser.add_argument('--output_file', help='folders where the analysis will be ran.')
+parser.add_argument('--output_file', help='output file')
 args = parser.parse_args()
 # Known errors (revision number)
 skip_files = {
@@ -44,9 +44,9 @@ for folder in args.data_folders:
 
         # Check if genome sequence has changed, in that case we use a custom SeqFeature that takes longer to load
         if genome_sequences_are_different(new_genome_file, old_genome_file):
-            all_changes.append([new_revision_list[0], new_revision_list[2], contig_file_name])
+            all_changes.append([old_revision_list[0], new_revision_list[0], new_revision_list[2], contig_file_name])
 
-output = pandas.DataFrame(all_changes, columns=['revision', 'date', 'chromosome'])
-output.sort_values(['date','revision', 'chromosome'], ascending=[False, False, True],inplace=True)
+output = pandas.DataFrame(all_changes, columns=['previous_revision', 'new_revision', 'date', 'chromosome'])
+output.sort_values(['date','new_revision', 'chromosome'], ascending=[False, False, True],inplace=True)
 
 output.to_csv(args.output_file, sep='\t', index=False)
