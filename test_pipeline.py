@@ -1,19 +1,41 @@
 import unittest
-from tempfile import TemporaryDirectory
-from associate_comments_with_genome_changes import main as associate_comments
 import pandas
+import glob
+import re
+from Bio import SeqIO
+
 class PipelineTest(unittest.TestCase):
 
-    def test_associate_comments(self):
+    def test_gene_summary(self):
         """
-        Ensure that the script associate_comments_with_genome_changes does not alter any value in pre-existing columns, or change the number of rows.
+        Check that the info in genome_changes_summary.tsv is correct
         """
+        # Get all systematic_id values in the last genome
+        all_systematic_ids = set()
+        for chromosome in glob.glob('data/*/'):
+            latest_revision = sorted(glob.glob(f'{chromosome}/*.contig'), reverse=True, key= lambda x: int(re.match(r'.+\/(\d+).contig', x).groups()[0]))[0]
+            this_chromosome = SeqIO.read(latest_revision,'embl')
+            for feature in this_chromosome.features:
+                if 'systematic_id' in feature.qualifiers:
+                    all_systematic_ids.update(feature.qualifiers['systematic_id'])
 
-        with TemporaryDirectory() as d:
-            associate_comments(f'{d}/comments_associated.tsv')
-            new_data = pandas.read_csv(f'{d}/comments_associated.tsv', sep ='\t', na_filter=False)
-            old_data = pandas.read_csv(f'only_modified_coordinates.tsv', sep ='\t', na_filter=False)
-            new_data.drop(columns=['db_xref', 'pombase_reference', 'pombase_comments'], inplace=True)
-            self.assertEqual(new_data.shape,old_data.shape,'The shapes of the datasets differ. Likely because associate_comments_with_genome_changes adds additional rows')
+        # load summary data
+        data = pandas.read_csv('genome_changes_summary.tsv', sep='\t', na_filter=False)
+        print(pandas.unique(data.category))
+        # The ones with these categories should be present in the chromosome file
+        changed_or_added = data.category.isin(['changed', 'added', 'added_and_changed'])
+        # The ones that are present in the chromosome file
+        present_in_contig = data.systematic_id.isin(all_systematic_ids)
+
+        if any(changed_or_added != present_in_contig):
+            msg = '\nids listed as added or changed that are not present in the contig:\n'
+            msg = msg + "\n".join(data.systematic_id[changed_or_added & ~present_in_contig])
+            msg = msg + '\nids listed as removed or merged that are present in the contig:\n'
+            msg = msg + "\n".join(data.systematic_id[~changed_or_added & present_in_contig])
+            msg = msg + "\n".join(data.category[~changed_or_added & present_in_contig])
+            self.fail(msg)
+        # print(len(all_systematic_ids))
+
+
 
 

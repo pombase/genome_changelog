@@ -1,0 +1,338 @@
+systematic_id	reference	comments	date	revision	user	chromosome	primary_name	feature_type	added_or_removed	value	original_index	db_xref
+SPCC1442.13c	pers. comm. Val Wood	C terminal exon added; new exon extends G-patch domain	2002-04-15 00:00:00+00:00	20020905	-	III		CDS	added	complement(join(1792096..1792185,1792276..1792809))	4987.0	
+SPBC6B1.09c	pers. comm. Val Wood	prediction extended by 4 N- terminal exons, this identified FHA domain	2002-04-22 00:00:00+00:00	20020905	-	II		CDS	added	complement(join(2569344..2569607,2569654..2570944,2570984..2571147,2571237..2571325,2571364..2571417,2571477..2571513))	4981.0	
+SPBC1604.17c	pers. comm. Val Wood		2002-04-29 00:00:00+00:00	20020905	-	II		CDS	added	join(3820646..3820720,3820765..3821745,3821818..3822141)	4979.0	
+SPAC1296.04	pers. comm. Val Wood	has 2 additional N-terminal exons	2002-04-29 00:00:00+00:00	20020905	-	I		CDS	added	join(766918..766973,767021..767159,767432..767584,767661..768059)	4967.0	
+SPAC23C11.10	pers. comm. Val Wood	found 3 additional C-terminal exons by eye	2002-06-18 00:00:00+00:00	20020905	-	I		CDS	added	join(2202062..2202182,2202222..2202320,2202368..2202566,2202618..2202780,2202824..2203039)	4969.0	
+SPAC2F3.12c	pers. comm. Val Wood	created from the C-terminal of SPAC2F3.13c	2002-06-30 00:00:00+00:00	20020905	-	I		CDS	added	complement(join(3994120..3994431,3994473..3994548,3994597..3994683,3994728..3994880,3994925..3995136))	4971.0	
+SPAC2F3.13c	pers. comm. Val Wood	split to create SPAC2F3.13c and SPAC2F3.12c	2002-06-30 00:00:00+00:00	20020905	-	I		CDS	added	complement(join(3995247..3996111,3996187..3996368))	4973.0	
+SPAC29A4.14c	pers. comm. Val Wood	N-terminal extended	2002-09-11 00:00:00+00:00	20030814	-	I		CDS	added	join(5115324..5115481,5115538..5115984,5116092..5116527)	4933.0	
+SPBC1347.05c	pers. comm. Val Wood	new C-terminal exon	2002-10-11 00:00:00+00:00	20030814	-	II		CDS	added	complement(join(4071085..4071134,4071190..4072166,4072222..4072340))	4939.0	
+SPCC320.13c	PMID:12676091	trimmed to 2nd Met	2003-01-08 00:00:00+00:00	20030814	-	III		CDS	added	141662..142729	4957.0	
+SPAC31G5.07	pers. comm. Henar Valdivieso Montero	N terminal extended to use longest ORF in the absence of homology	2003-01-08 00:00:00+00:00	20030814	-	I		CDS	added	2998354..2999058	4937.0	
+SPBP23A10.04	pers. comm. Hyun-Joo Yoon	coordinates updated additional in-frame splice at 5325, 5371	2003-02-04 00:00:00+00:00	20030814	-	II		CDS	added	join(2002935..2004170,2004215..2004834,2004880..2005069)	4949.0	
+SPBC6B1.09c	pers. comm. Charly Chahwan	additional intron 25664..25705, and exon extension 25974..25988	2003-03-07 00:00:00+00:00	20030814	-	II		CDS	added	complement(join(2650545..2650808,2650855..2652023,2652066..2652145,2652185..2652333,2652438..2652526,2652565..2652618,2652678..2652714))	4947.0	
+SPAC16A10.04	PMID:12653963	N-terminal exon replaced	2003-03-31 00:00:00+00:00	20030814	-	I		CDS	added	join(3087939..3087957,3088028..3088069,3088131..3088177,3088285..3088488,3088605..3088739,3088796..3088945)	4919.0	
+SPAC23C4.08	PMID:12653963	N-terminal exon removed	2003-03-31 00:00:00+00:00	20030814	-	I		CDS	added	join(1042435..1042498,1042573..1042645,1042970..1043450)	4931.0	
+SPAC11E3.03	PMID:12689592	N terminal truncated, removed exon 9067..9103, truncated from 9149 to 9211 start	2003-04-13 00:00:00+00:00	20030814	-	I		CDS	added	join(5281940..5282213,5282257..5282472,5282528..5282706)	4917.0	
+SPAC19B12.06c	pers. comm. Val Wood	added exon 18153..18218	2003-04-22 00:00:00+00:00	20030814	-	I		CDS	added	complement(join(4889750..4890056,4890100..4890165,4890271..4890487,4890538..4890724))	4925.0	
+SPAC19B12.05c	pers. comm. Val Wood	additional exon	2003-04-22 00:00:00+00:00									
+SPAC22F3.03c	pers. comm. Mike Catlett	4th exon extended by altering acceptor in intron 3 cosmid coordinates 34092-33923	2003-05-09 00:00:00+00:00	20030814	-	I		CDS	added	join(704689..704867,704915..705013,705105..705180,705222..705436,705473..705663,705716..705789,705825..705956,705995..706058,706095..706193,706233..706390,706429..706501,706537..707152,707192..707261,707304..707552,707588..707728)	4929.0	
+SPAC2F3.13c	pers. comm. Val Wood	annotated as SPAC2F3.13c putative tRNA-ribosyltransferase, but actually a gene merge. Split to create SPAC2F3.13c the tRNA-ribosyltransferase and new CDS SPAC2F3.17c was created from the C-terminal	2003-06-30 00:00:00+00:00	20020905	-	I		CDS	removed	complement(join(3972358..3972669,3972711..3972786,3972835..3972921,3972966..3973118,3973163..3973474,3973522..3974349,3974425..3974606))	4974.0	
+SPAC29B12.08	pers. comm. Aengus Stewart	new N-terminal exon	2003-09-09 00:00:00+00:00	20040915	-	I		CDS	added	join(5429685..5429782,5430021..5431971)	4891.0	
+SPAC959.05c	pers. comm. Val Wood	extended N-terminal to first methionine	2003-09-14 00:00:00+00:00	20040915	-	I		CDS	added	complement(join(3396585..3398227,3398283..3398538))	4893.0	
+SPBC15D4.02	pers. comm. Val Wood	trimmed N terminal 28.10.03; looked overextended as large low complexity region in front in zinc finger which is usually N-term; alignment looks better	2003-10-28 00:00:00+00:00	20040915	-	II		CDS	added	3015118..3016377	4899.0	
+SPCC1223.15c	PMID:16079914	4 amino acid extension at N-terminus	2005-09-09 00:00:00+00:00	20060103	-	III	spc19	CDS	added	complement(join(1847115..1847513,1847563..1847605,1847646..1847662))	4847.0	
+SPAC17H9.20	PMID:16207082	added intron at 37250..37297	2005-10-10 00:00:00+00:00	20060103	-	I		CDS	added	join(2037303..2037567,2037613..2037725,2037764..2037859,2037908..2038317,2038368..2039967,2040016..2040420)	4837.0	
+SPAC31G5.06	pers. comm. Val Wood	added N-teminal exon to extend prediction	2005-11-01 00:00:00+00:00	20060103	-	I		CDS	added	join(2997204..2997303,2997354..2997958)	4839.0	
+SPAC9.05	pers. comm. Anke Schürer	second intron acceptor extended by 15 bp	2006-01-19 00:00:00+00:00	20060219	-	I		CDS	added	join(1471060..1472508,1472554..1473383,1473440..1473665)	4809.0	
+SPBC3B9.22c	Pfam	added new C-terminal exon based on Pfam protein family	2006-02-01 00:00:00+00:00	20060219	-	II	dad4	CDS	added	complement(join(4006057..4006170,4006230..4006334))	4821.0	
+SPCC4G3.05c	pers. comm. Fred Kippert	added N terminal exon	2006-02-17 00:00:00+00:00	20060219	-	III		CDS	added	join(462720..462815,462984..464714)	4835.0	
+SPAC1D4.11c	PMID:12565823	lengthened to 690 a.a.	2006-04-12 00:00:00+00:00	20060219	-	I		CDS	removed	complement(657660..659387)	4804.0	
+SPBCPT2R1.08c	pers. comm. Liew Li Phing	truncated to 1919 a.a.; removed truncated version of a malate transporter fused to gene, not known whether these residues are included in translation	2006-04-13 00:00:00+00:00	20060219	-	II		CDS	removed	4528142..4534444	4826.0	
+SPAC6G9.13c	PMID:16615890	Additional C terminal exon	2006-05-03 00:00:00+00:00	20060219	-	I	bqt1	CDS	removed	complement(3273294..3273599)	4808.0	
+SPAC21E11.05c	pers. comm. Trevor Pemberton (via Ivo Pedruzzi, UniProt)	Single base insertion allowed first 2 exons to be merged and extended (GAGT[G]GCA)	2006-05-22 00:00:00+00:00	20060517	-	I		CDS	removed	complement(join(4255729..4256152,4256218..4257132,4257273..4257484))	4782.0	
+SPCPJ732.03	PMID:11376151	new coordinates as per publication	2006-06-12 00:00:00+00:00									
+SPCC4B3.05c	pers. comm. Val Wood	Improves Homology	2006-06-12 00:00:00+00:00	20060626	-	III	hem12	CDS	added	join(1167471..1167504,1167562..1167596,1167643..1167667,1167715..1168223,1168273..1168737)	4777.0	
+SPAC12D12.09	pers. comm. Nicole Kosarek	added new exon to insert KCIDIFGEF	2006-08-01 00:00:00+00:00									
+SPAC12D12.09	pers. comm. Nicole Kosarek	truncated penultimate exon to remove GIN	2006-08-01 00:00:00+00:00									
+SPBC30B4.08	PMID:16797182	gene structure updated	2006-09-22 00:00:00+00:00	20061006	-	II		CDS	added	join(1321592..1321719,1321797..1321904,1321966..1322371,1322434..1322733)	4751.0	
+SPAPB17E12.08	pers. comm. Val Wood	Improved homology	2006-12-12 00:00:00+00:00	20061218	-	I		CDS	added	join(1280392..1280406,1280482..1280544,1280720..1280769,1280853..1281225)	4745.0	
+SPCC1223.10c	PMID:17150956	Added exons	2006-12-14 00:00:00+00:00	20061218	-	III	eaf1	CDS	added	complement(join(1861667..1862158,1862283..1862369,1862535..1862626,1862729..1862813))	4747.0	
+SPBP22H7.09c	PMID:15369671	updated sequence coordinates	2007-01-05 00:00:00+00:00	20070111	-	II	mis15	CDS	added	complement(join(1449715..1450274,1450328..1450690,1450749..1451055))	4743.0	
+SPNCRNA.82	pers. comm. Val Wood	upon realisation that this corresponded to RNase MRP	2007-02-07 00:00:00+00:00	20070226	-	I	mrp1	misc_RNA	added	1234451..1234849	4741.0	EMBL:EF424786,EMBL:SPC10292
+SPAC13G7.07	PMID:17310250	changed second exon 3’ boundary and added C-terminal exons	2007-03-23 00:00:00+00:00	20070412	-	I		CDS	added	join(2309026..2309212,2309259..2309569,2309610..2309667,2309714..2309958)	4735.0	
+SPAC29E6.04	PMID:17035632	Sequence frameshifted at 4410192, new coordinates give an N terminal extension from 4410194..4410391 (NOTE: Still needs resequencing and underlying sequence changing)	2007-05-16 00:00:00+00:00	20070531	-	I		CDS	added	join(4409773..4410192,4410194..4410391)	4733.0	
+SPAC23C4.04c	pers. comm. Val Wood	altered to include stop codon and trimmed to methionine	2007-06-19 00:00:00+00:00	20070705	-	I		CDS	added	1036033..1036347	4719.0	
+SPBC409.12c	pers. comm. C. Chahwan	N-terminal extended by 2 exons	2007-07-06 00:00:00+00:00	20060922	-	II		CDS	removed	complement(1162796..1163485)	4756.0	
+SPAC9E9.02	pers. comm. Val Wood	altered to include stop codon	2007-07-19 00:00:00+00:00	20070705	-	I		CDS	removed	complement(4435620..4435913)	4722.0	
+SPAC22F8.07c	EMBL:AJ627891	Two in-frame splices added	2007-08-28 00:00:00+00:00	20070904	-	I	rtf1	CDS	added	complement(join(4797267..4797376,4797424..4797575,4797621..4797953,4797992..4798103,4798143..4798230,4798276..4798442,4798490..4798928))	4717.0	
+SPCC1529.01		Solexa transcript data; new exon added	2007-10-12 00:00:00+00:00	20071109	-	III		CDS	added	join(237554..237923,237975..238080,238139..238533,238588..239092,239151..239250)	4713.0	
+SPCC1020.11c		Solexa transcript data	2007-10-12 00:00:00+00:00	20071109	-	III		CDS	added	join(757365..757424,757506..757802)	4711.0	
+SPBPB2B2.07c		Solexa transcript data	2007-11-22 00:00:00+00:00	20071219	-	II		CDS	added	complement(join(4474145..4474403,4474438..4474931))	4695.0	
+SPAC6G9.16c		Solexa transcript data	2007-11-22 00:00:00+00:00	20071219	-	I		CDS	added	complement(join(3278951..3279367,3279420..3279539,3279683..3279819,3279865..3279985))	4665.0	
+SPBC354.07c		Solexa transcript data; additional exon added	2007-11-28 00:00:00+00:00	20071219	-	II		CDS	added	complement(join(558335..559225,559273..559474,559942..560028,560151..560163,560231..560246))	4693.0	
+SPAC631.02		Solexa transcript data	2007-11-28 00:00:00+00:00	20071219	-	I		CDS	added	join(2107470..2107515,2107860..2110123)	4661.0	
+SPCC18.18c		Solexa transcript data	2007-11-29 00:00:00+00:00	20071219	-	III	fum1	CDS	added	complement(join(1988631..1990100,1990630..1990722))	4705.0	
+SPBC21C3.07c		Solexa intron data; removed final exon, not supported by data	2007-12-02 00:00:00+00:00	20071219	-	II		CDS	added	complement(join(3807920..3808607,3808665..3808795))	4689.0	
+SPAC23D3.08		Solexa intron data; removed final exon, not supported by data	2007-12-02 00:00:00+00:00	20071219	-	I	usp108	CDS	added	join(4352514..4353359,4353410..4353577)	4653.0	
+SPBC16A3.14		Solexa intron data; removed final exon, unsupported by data	2007-12-02 00:00:00+00:00	20071219	-	II		CDS	added	complement(4271131..4271937)	4679.0	
+SPBC1604.17c		Solexa intron data; updated, better donor (GTAATA instead of GTTAGT); original intron prediction not supported by Solexa data	2007-12-02 00:00:00+00:00	20071219	-	II		CDS	added	join(3900047..3900121,3900166..3901170,3901219..3901542)	4677.0	
+SPBC29A3.07c		Solexa intron data; final exon deleted, not supported by Solexa intron data; homology improved	2007-12-02 00:00:00+00:00	20071219	-	II		CDS	added	complement(join(2050258..2050358,2050452..2050695))	4691.0	
+SPBC21B10.02		Solexa intron data; intron unsupported by Solexa transcript data, removed final exon	2007-12-02 00:00:00+00:00	20071219	-	II		CDS	added	complement(1669719..1670144)	4687.0	
+SPCC736.05		Solexa intron data; removed final exon,  not supported by data	2007-12-02 00:00:00+00:00	20071219	-	III	wtf7	CDS	added	join(320617..320755,320964..321335,321387..321523)	4709.0	
+SPAC16A10.06c		Solexa intron data; revised intron structure/original intron absent from Solexa data	2007-12-02 00:00:00+00:00	20071219	-	I	nse2	CDS	added	complement(join(3089583..3090047,3090112..3090285,3090533..3090697))	4647.0	
+SPCC1450.09c		Solexa intron data; original intron absent from Solexa data; C terminal exon unsupported so exon deleted	2007-12-02 00:00:00+00:00	20071219	-	III		CDS	added	complement(1741588..1743459)	4701.0	
+SPAC56F8.05c		Solexa intron data; revised intron structure/original intron absent from Solexa data. N terminal exon unsupported and had no branch site so exon deleted	2007-12-02 00:00:00+00:00	20071219	-	I	mug64	CDS	added	complement(join(1134697..1135061,1135195..1135402,1135517..1135684,1135729..1135776,1135932..1136003))	4659.0	
+SPAPB1A10.15		Solexa intron data; revised intron structure/original intron absent from Solexa data so small C-term exon deleted	2007-12-02 00:00:00+00:00	20071219	-	I		CDS	added	join(1892554..1892640,1892926..1893060,1893098..1893694)	4673.0	
+SPAPB17E12.08		Solexa intron data; revised intron structure/original intron absent from Solexa data so small N-term exon deleted	2007-12-02 00:00:00+00:00	20071219	-	I		CDS	added	join(1279573..1279644,1279820..1279869,1279953..1280325)	4669.0	
+SPAC17C9.08		Solexa intron data; revised intron structure/original intron absent from Solexa data and unsupported from mRNA data so final exon deleted	2007-12-02 00:00:00+00:00	20071219	-	I	pnu1	CDS	added	complement(join(4484835..4485274,4485350..4485596,4485713..4485994))	4649.0	
+SPAC227.11c		Solexa intron data; removed final exon,  not supported by data	2007-12-02 00:00:00+00:00	20071219	-	I		CDS	added	complement(join(514552..515082,515222..515482,515534..515659))	4651.0	
+SPAC29E6.03c		Solexa intron data; changed internal splice site, better intron, slightly improved homology; deleted final small exon, unsupported	2007-12-03 00:00:00+00:00	20071219	-	I	uso1	CDS	added	complement(join(4405990..4407375,4407447..4409096,4409171..4409338))	4655.0	
+SPAC688.08		Solexa intron data; removed final exon, not supported by data	2007-12-03 00:00:00+00:00	20071219	-	I	srb8	CDS	added	join(3123163..3125057,3125099..3126310,3126356..3126653)	4663.0	
+SPAC823.04		Solexa intron data; changed first intron acceptor, which gave a different N-term exon and improved homology	2007-12-03 00:00:00+00:00	20071219	-	I		CDS	added	join(2587729..2587897,2588085..2588620)	4667.0	
+SPCC622.14		Solexa intron data; altered donor for intron 3, improved donor consensus	2007-12-03 00:00:00+00:00	20071219	-	III		CDS	added	join(1427098..1427310,1427632..1427709,1427788..1428216,1428277..1428522)	4707.0	
+SPCC1494.02c		Solexa intron data; 2 C-terminal exons removed, not supported by homology	2007-12-03 00:00:00+00:00	20071219	-	III	taf13	CDS	added	complement(join(2318335..2318508,2318579..2318676,2318903..2318966))	4703.0	
+SPAPB1A10.03		Solexa intron data; SPAPB1A10.03 split to create SPAPB1A10.03 and SPAPB1A10.16; new coordinates 1863363..1863381, 1863434..1863762 and 1863972..1864388	2007-12-03 00:00:00+00:00	20071219	-	I	nxt1	CDS	added	join(1863363..1863381,1863434..1863762)	4671.0	
+SPBC11B10.03		Solexa intron data; removed N-teminal exon, poor donor, did not improve homology	2007-12-03 00:00:00+00:00	20071219	-	II	cog8	CDS	added	1490611..1491747	4675.0	
+SPBC16H5.04		Solexa intron data; altered intron 2 donor and acceptor, improved homology	2007-12-03 00:00:00+00:00	20071219	-	II		CDS	added	complement(join(2293393..2293775,2293877..2294039,2294087..2294125))	4683.0	
+SPAC4C5.01		Solexa intron data` altered intron 5 to improve donor and acceptor, improved homology	2007-12-03 00:00:00+00:00	20071219	-	I		CDS	added	join(1192545..1192592,1192662..1192704,1192779..1192841,1192916..1193010,1193062..1193145,1193197..1193613)	4657.0	
+SPCC1442.13c		Solexa intron data; deleted final exon, improved homology	2007-12-03 00:00:00+00:00	20071219	-	III		CDS	added	complement(1791346..1791909)	4699.0	
+SPAC806.09c		Solexa transcript data	2007-12-07 00:00:00+00:00									
+SPBC19G7.06		Christopher J. McInerny	2007-12-07 00:00:00+00:00	20071219	-	II	mbx1	CDS	added	join(2359429..2359479,2359547..2359693,2359845..2359928,2360001..2361092)	4685.0	
+SPBC16D10.10		Solexa intron data; exon 4 splice altered	2007-12-07 00:00:00+00:00	20071219	-	II		CDS	added	join(3618117..3618179,3618228..3618617,3618658..3618702,3618747..3618971,3619077..3619321,3619366..3619540)	4681.0	
+SPBC16E9.16c	PMID:18079165	gene structure revised to remove introns, genome sequence contains 2 frameshifts	2008-01-03 00:00:00+00:00	20080123	-	II	lsd90	CDS	added	complement(join(1947985..1948953,1948955..1950050,1950053..1950255))	4579.0	
+SPCC338.08	pers. comm. Paul Russell; PMID:18378696	in accordance with paper	2008-01-12 15:08:00+00:00	20080123	-	III	ctp1	CDS	added	complement(join(1358885..1359082,1359121..1359819))	4637.0	
+SPBC16C6.02c	PMID:18367542	also adds new gene SPBC16C6.14, complement(4322221..4322622)	2008-04-02 00:00:00+00:00	20080418	-	II	vps1302	CDS	added	complement(join(4322829..4331555,4331641..4331793,4331856..4331968,4332007..4332028))	4469.0	
+SPCC16C4.16c		Solexa transread data; added 3’ intron/exon, improved homology	2008-05-02 00:00:00+00:00	20080123	-	III		CDS	removed	complement(join(697862..698127,698180..698399))	4634.0	
+SPAC23H3.04		Solexa intron data; changed 5’ 1st and 2nd exon, improved homology	2008-05-02 00:00:00+00:00	20080123	-	I		CDS	removed	join(2499035..2499164,2499325..2499353,2499443..2499824,2499875..2500236)	4516.0	
+SPAC1B3.10c		Solexa intron data; removed 3’ exon, unsupported	2008-05-02 00:00:00+00:00	20080123	-	I		CDS	removed	complement(join(4945933..4945984,4946094..4948084))	4508.0	
+SPAC1751.02c		Solexa intron data; remove 5’ exon, trimmed to new Met, improved homology	2008-05-02 00:00:00+00:00	20080123	-	I	rsm19	CDS	removed	complement(join(385755..385887,385938..386043,386107..386179,386296..386310))	4502.0	
+SPAC11D3.07c		Solexa intron data; removed in-frame splice, not required or supported	2008-05-02 00:00:00+00:00	20080123	-	I		CDS	removed	complement(join(118195..119827,119930..120108))	4484.0	
+SPAC1142.01		Solexa intron data; removed 5’ exon and trimmed to new Met, improved homology	2008-05-02 00:00:00+00:00	20080123	-	I		CDS	removed	join(3625447..3625460,3625555..3627544)	4482.0	
+SPAC1093.03		Solexa intron data; improved distance between branch and acceptor, intron 2	2008-05-02 00:00:00+00:00	20080123	-	I		CDS	removed	join(4613627..4613686,4613723..4614081,4614152..4614378,4614438..4614954,4614996..4616331)	4480.0	
+SPCC16C4.01		Solexa transread data; added 3’ intron which changed frame of final exon, shorter product, improved homology	2008-05-02 00:00:00+00:00	20080123	-	III	sif2	CDS	removed	join(658832..659139,659223..659488,659567..659628,659709..660413)	4632.0	
+SPBC16D10.10		Solexa transread data; changed 2 introns (existing 4 and 5) to create a new exon 5, improved homology	2008-05-02 00:00:00+00:00	20080123	-	II		CDS	removed	join(3618117..3618179,3618228..3618617,3618658..3618702,3618747..3618971,3619077..3619321,3619366..3619540)	4578.0	
+SPAC26H5.04		Solexa intron data	2008-05-02 00:00:00+00:00	20080123	-	I		CDS	removed	join(4122149..4123354,4123535..4124518)	4520.0	
+SPAC15A10.12c		Solexa transread data	2008-05-02 00:00:00+00:00	20080123	-	I		CDS	removed	complement(3709451..3709804)	4496.0	
+SPCC1620.10		Solexa transread data; added 3’ exon encoding single methionine	2008-05-02 00:00:00+00:00	20080123	-	III	cwf26	CDS	removed	2163205..2164122	4630.0	
+SPCC1620.09c		Solexa transread data; added 5’ exon, improved homology	2008-05-02 00:00:00+00:00	20080123	-	III	tfg1	CDS	removed	complement(join(2161527..2162363,2162405..2162500,2162584..2163123))	4628.0	
+SPCC1442.08c		Solexa transread data; added 2 small 5’ exons, improved homology	2008-05-02 00:00:00+00:00	20080123	-	III	cox12	CDS	removed	complement(join(1781505..1781563,1781637..1781744,1781830..1781914))	4624.0	
+SPCC1020.11c		Solexa transread data; added 3’intron/exon	2008-05-02 00:00:00+00:00	20080123	-	III		CDS	removed	join(757365..757424,757506..757802)	4620.0	
+SPAPB18E9.01		Solexa transread data; added small 3’ exon, improved homology	2008-05-02 00:00:00+00:00	20080123	-	I	trm5	CDS	removed	join(3974310..3974485,3974541..3974629,3974674..3974775,3974879..3975132,3975193..3975429,3975485..3975832,3975882..3975983)	4562.0	
+SPAC2C4.06c		Solexa intron data; replaced 2 internal exons with a different single exon	2008-05-02 00:00:00+00:00	20080123	-	I		CDS	removed	complement(join(4269367..4270554,4270587..4270593,4270638..4270674,4270736..4270871))	4522.0	
+SPCC736.12c		Solexa transread data; added 3’ exon, improved homology	2008-05-02 00:00:00+00:00	20080123	-	III	mmi1	CDS	removed	complement(join(338026..338178,338232..338347,338395..339354,339483..339567))	4642.0	
+SPAC3A12.05c		Solexa intron data; improved distance between branch and acceptor	2008-05-02 00:00:00+00:00	20080123	-	I	taf2	CDS	removed	complement(join(1426213..1427148,1427189..1429617,1429709..1429836,1429882..1429913))	4534.0	
+SPCC962.05	pers. comm. Matthew O’Connell		2008-05-02 00:00:00+00:00	20080716	-	III	ast1	CDS	added	join(554521..554744,554865..556200)	4465.0	
+SPCC63.10c		Solexa intron data; deleted 2nd and 3rd introns, were not required or supported	2008-05-02 00:00:00+00:00	20080123	-	III		CDS	removed	complement(join(854651..855695,855766..855800,855839..855926,855984..856213))	4640.0	
+SPCC1827.02c		Solexa intron data; deleted first exon, unsupported	2008-05-02 00:00:00+00:00	20080123	-	III		CDS	removed	complement(join(2377039..2378078,2378197..2378221))	4636.0	
+SPCC1450.14c		Solexa intron data; deleted first exon, unsupported	2008-05-02 00:00:00+00:00	20080123	-	III	ero12	CDS	removed	complement(join(1759295..1760998,1761117..1761128))	4626.0	
+SPCC1393.06c		Solexa intron data; changed first intron and added a new 2nd exon, improved homology, also confirmed by transread data	2008-05-02 00:00:00+00:00	20080123	-	III		CDS	removed	complement(join(804627..805627,805678..805800,805907..806009))	4622.0	
+SPBP35G2.06c		Solexa intron data; changed donor for intron 3	2008-05-02 00:00:00+00:00	20080123	-	II	nup131	CDS	removed	complement(join(973049..974181,974223..974577,974617..975002,975044..975137,975172..976632))	4610.0	
+SPBC32H8.08c		Solexa intron data; removed 5’ intron/exon (unsupported) and trimmed to next met	2008-05-02 00:00:00+00:00	20080123	-	II		CDS	removed	complement(join(1465811..1466035,1466138..1467057,1467311..1467456,1467514..1467539))	4598.0	
+SPAC328.05		Solexa intron data; removed in-frame splice (exon 5), unsupported	2008-05-02 00:00:00+00:00	20080123	-	I		CDS	removed	join(3484695..3484698,3484752..3485065,3485241..3485342,3485382..3485528,3485582..3485807,3485910..3485974,3486056..3486502)	4532.0	
+SPBC21.03c		Solexa intron data; changed 2 internal introns, now agrees with transread data, but still potential to be incorrect	2008-05-02 00:00:00+00:00	20080123	-	II		CDS	removed	complement(join(3217985..3218424,3218467..3218491,3218693..3218947))	4586.0	
+SPBC16C6.03c		Solexa intron data; final exon, unsupported removed	2008-05-02 00:00:00+00:00	20080123	-	II		CDS	removed	complement(join(4332356..4332454,4332746..4333123))	4574.0	
+SPBC15D4.13c		Solexa intron data; better donor for first intron	2008-05-02 00:00:00+00:00	20080123	-	II		CDS	removed	complement(join(3032492..3032710,3032761..3032822,3032865..3033222))	4572.0	
+SPAPB17E12.03		Solexa intron data; removed in-frame splice, unsupported, improved homology	2008-05-02 00:00:00+00:00	20080123	-	I		CDS	removed	join(1271889..1271972,1272015..1272386,1272483..1272962)	4558.0	
+SPAC9G1.13c		Solexa intron data; added a new 3rd exon, improved homology	2008-05-02 00:00:00+00:00	20080123	-	I		CDS	removed	complement(join(1995208..1996148,1996325..1996413,1996478..1996683))	4556.0	
+SPAC8C9.19		Solexa intron data; deleted final exon, unsupported, improved length and alignment to orthologs	2008-05-02 00:00:00+00:00	20080123	-	I		CDS	removed	join(3660430..3660438,3660491..3660556,3660607..3660713,3660784..3660886)	4552.0	
+SPAC6F12.08c		Solexa intron data; improved branch acceptor for intron 1	2008-05-02 00:00:00+00:00	20080123	-	I		CDS	removed	complement(join(1322439..1323955,1323999..1324140,1324195..1324234,1324299..1324336))	4544.0	
+SPAC589.02c		Solexa intron data; improved branch/acceptor for 1st intron	2008-05-02 00:00:00+00:00	20080123	-	I	med13	CDS	removed	complement(join(3095075..3098590,3098626..3098775,3098878..3098883))	4540.0	
+SPBC19G7.06		Solexa intron data; altered 3rd intron branch acceptor to agree with published	2008-05-02 00:00:00+00:00	20080222	-	II	mbx1	CDS	removed	join(2359429..2359479,2359547..2359693,2359845..2359928,2360064..2361092)	4472.0	
+SPBPB2B2.18		Solexa transread data; changed 5’ intron/exon	2008-05-02 00:00:00+00:00	20080123	-	II		CDS	removed	join(4502439..4502463,4502712..4502857,4503068..4503286,4503527..4503664)	4616.0	
+SPAC630.11		Solexa transread data; changed internal intron acceptor, improved homology	2008-05-02 00:00:00+00:00	20080123	-	I	vps55	CDS	removed	join(366801..366817,366873..366891,366968..367040,367123..367189,367293..367348,367395..367531)	4542.0	
+SPBC31F10.12		Solexa transread data; added new 5’ intron and exon	2008-05-02 00:00:00+00:00	20080123	-	II		CDS	removed	join(3773353..3773525,3773581..3773678,3773795..3773999,3774059..3774116,3774192..3774212)	4596.0	
+SPAC1556.01c		Solexa transread data; added small 3’ intron and exon	2008-05-02 00:00:00+00:00	20080123	-	I	rad50	CDS	removed	complement(join(3791855..3792229,3792267..3795557,3795601..3795684,3795734..3795856))	4490.0	
+SPBC21C3.07c		Solexa transread data; added two 3’ exons	2008-05-02 00:00:00+00:00	20080222	-	II		CDS	removed	complement(join(3807920..3808607,3808665..3808795))	4474.0	
+SPAC16E8.12c		Solexa transread data; added 2 5’ exons	2008-05-02 00:00:00+00:00	20080123	-	I		CDS	removed	complement(join(3523136..3523644,3524027..3524030))	4500.0	
+SPAPB2B4.06		Solexa transread data; added new 3’ intron/exon, improved homology	2008-05-02 00:00:00+00:00	20080123	-	I		CDS	removed	join(2722735..2723210,2723273..2723300,2723349..2723582)	4566.0	
+SPAC823.09c		Solexa transread data; added new 3’ intron/exon	2008-05-02 00:00:00+00:00	20080123	-	I		CDS	removed	complement(join(2594922..2595693,2595734..2595819))	4548.0	
+SPAC823.04		Solexa transread data	2008-05-02 00:00:00+00:00	20080123	-	I		CDS	removed	join(2587729..2587897,2588085..2588620)	4546.0	
+SPAPB1A10.16		Solexa transread data	2008-05-02 00:00:00+00:00	20080123	-	I		CDS	removed	1863972..1864388	4564.0	
+SPAC1556.03		Solexa transread data; added new 5’ intron and exon/improved homology	2008-05-02 00:00:00+00:00	20080123	-	I	azr1	CDS	removed	join(3799244..3799680,3799731..3800160)	4492.0	
+SPAC17A5.02c		Solexa transread data	2008-05-02 00:00:00+00:00	20080123	-	I	dbr1	CDS	removed	complement(join(1754109..1754310,1754350..1755118,1755164..1755285,1755331..1755638))	4504.0	
+SPAPB17E12.08		Solexa transread data; changed first donor to make n-terminal exon longer, improved homology	2008-05-02 00:00:00+00:00	20080123	-	I		CDS	removed	join(1279573..1279644,1279820..1279869,1279953..1280325)	4560.0	
+SPAC56F8.04c		Solexa transread data; added 5’ intron/exon	2008-05-02 00:00:00+00:00	20080123	-	I	coq2	CDS	removed	complement(1133226..1134302)	4538.0	
+SPAC1A6.03c		Solexa transread data; new 3’ intron/exon, improved homology	2008-05-02 00:00:00+00:00	20080123	-	I		CDS	removed	complement(1070139..1072013)	4506.0	
+SPAC23C4.04c		Solexa transread data; added intron	2008-05-02 00:00:00+00:00	20080123	-	I		CDS	removed	1036033..1036347	4514.0	
+SPAC24H6.01c		Solexa transread data; added new 3’ intron/exon, improved homology	2008-05-02 00:00:00+00:00	20080123	-	I		CDS	removed	join(490016..490262,490338..490771,490812..490931,490979..491149,491186..491980)	4518.0	
+SPAC1639.01c		Solexa transread data; added new 3’ intron/exon	2008-05-02 00:00:00+00:00	20080123	-	I		CDS	removed	complement(join(251726..252337,252392..252752,253590..253630))	4498.0	
+SPAC13G6.04		Solexa transread data	2008-05-02 00:00:00+00:00	20080123	-	I	tim8	CDS	removed	join(180423..180528,180586..180776)	4486.0	
+SPAC9.06c		Solexa transread data	2008-05-02 00:00:00+00:00	20080123	-	I		CDS	removed	complement(join(1473692..1473885,1473939..1474105,1474153..1474212,1474264..1474341,1474460..1474539))	4554.0	
+SPAC1F12.08		Solexa transread data; added new intron, in-frame splice in final exon, improved homology	2008-05-02 00:00:00+00:00	20080123	-	I		CDS	removed	join(3817464..3817803,3817851..3817991,3818035..3818543)	4510.0	
+SPAC15A10.10		Solexa transread data; added in-frame intron	2008-05-02 00:00:00+00:00	20080123	-	I	mde6	CDS	removed	join(3697508..3697752,3697795..3698368,3698421..3698527,3698570..3699538,3699582..3699837)	4494.0	
+SPAC2C4.11c		Solexa transread data; added small N term in-frame intron	2008-05-02 00:00:00+00:00	20080123	-	I	rbp28	CDS	removed	complement(4278729..4279505)	4524.0	
+SPBC13G1.04c		Solexa transread data; added new 3’ intron and exon, improved homology	2008-05-02 00:00:00+00:00	20080123	-	II		CDS	removed	complement(3732941..3733762)	4570.0	
+SPBC16D10.02		Solexa transread data; added new 3’ intron/exon	2008-05-02 00:00:00+00:00	20080123	-	II	trm11	CDS	removed	join(3588806..3589595,3589639..3589803,3589845..3590123,3590163..3590287)	4576.0	
+SPBC2D10.16		Solexa transread data; added new intron in second exon, which created a new 3rd exon, and identified homology with Cenp-S (was previously sequence orphan)	2008-05-02 00:00:00+00:00	20080123	-	II		CDS	removed	join(2996452..2996463,2996509..2996904)	4594.0	
+SPBC2D10.15c		Solexa transread data	2008-05-02 00:00:00+00:00	20080123	-	II		CDS	removed	complement(join(2995324..2995579,2995619..2995923,2995971..2996066))	4592.0	
+SPBC2A9.07c		Solexa transread data; added in-frame intron, improved homology	2008-05-02 00:00:00+00:00	20080123	-	II		CDS	removed	complement(2959078..2959902)	4590.0	
+SPAC2F3.18c		Solexa transread data; added small N term in-frame intron	2008-05-02 00:00:00+00:00	20080123	-	I		CDS	removed	complement(3942398..3942730)	4526.0	
+SPBC8D2.17		Solexa transread data; added new 3’ intron/exon	2008-05-02 00:00:00+00:00	20080123	-	II		CDS	removed	1390183..1391238	4606.0	
+SPBPJ4664.05		Solexa transread data; added new 5’ intron and exon, improved homology	2008-05-02 00:00:00+00:00	20080123	-	II		CDS	removed	706175..706666	4618.0	
+SPBC947.03c		Solexa transread data; added 5’ inton/exon, improved homology	2008-05-02 00:00:00+00:00	20080123	-	II		CDS	removed	676629..676931	4608.0	
+SPBP4H10.12		Solexa transread data; added new 3’ intron/exon, improved homology	2008-05-02 00:00:00+00:00	20080123	-	II		CDS	removed	join(2895855..2895863,2896001..2896507)	4612.0	
+SPBC106.05c		Solexa transread data; changed 5’ exon	2008-05-02 00:00:00+00:00	20080123	-	II	tim11	CDS	removed	complement(join(383527..383612,383703..383874,383980..384012))	4568.0	
+SPAC22E12.10c		Solexa transread data; added in-frame splice	2008-05-02 00:00:00+00:00	20080123	-	I	etp1	CDS	removed	complement(5037208..5039103)	4512.0	
+SPAC890.07c		Solexa transread data; added small N terminal exon, which added a single conserved cysteine	2008-05-02 00:00:00+00:00	20080123	-	I	rmt1	CDS	removed	complement(join(5016072..5016215,5016262..5016596,5016649..5016943,5016994..5017059,5017138..5017252,5017421..5017433,5017700..5017703,5017782..5017829))	4550.0	
+SPAC4F10.08		Solexa transread data; added new 3’ intron/exon	2008-05-02 00:00:00+00:00	20080123	-	I	mug126	CDS	removed	join(4844855..4845824,4845863..4846203)	4536.0	
+SPAC144.17c		Solexa transread data; added 3’ intron and exon, improved homology	2008-05-02 00:00:00+00:00	20080123	-	I		CDS	removed	complement(join(4687483..4688462,4688513..4688831))	4488.0	
+SPAC30C2.05		Solexa transread data; added new 5’ intron/exon, improved homology	2008-05-02 00:00:00+00:00	20080123	-	I	erv14	CDS	removed	join(4639916..4640020,4640076..4640365,4640447..4640477)	4530.0	
+SPAC30.03c		Solexa transread data; added in-frame intron to (previous) 2nd exon, improved homology	2008-05-02 00:00:00+00:00	20080123	-	I	tsn1	CDS	removed	complement(join(4394707..4394741,4394799..4394967,4395010..4395092,4395131..4395491,4395530..4395592))	4528.0	
+SPBC582.04c		Solexa transread data; added in-frame intron to (existing) exon 3	2008-05-02 00:00:00+00:00	20080123	-	II		CDS	removed	complement(join(423269..423598,423669..423738,423782..423871,423912..424373,424424..424872,424921..425160,425223..425350,425410..425446))	4602.0	
+SPAC6F6.16c	PMID:18535244	merged with SPAC6F6.18c and five introns added	2008-06-09 00:00:00+00:00	20080716	-	I	tpz1	CDS	added	complement(join(2763686..2764572,2764611..2764752,2764791..2764825,2764872..2765122,2765166..2765263,2765320..2765433))	4455.0	
+SPBC2G2.09c	pers. comm. Charley Chahwan	added new C-terminal exon, deleted exon 3452822..3452877, extended intron 2 by 4 nucleotides	2008-07-09 00:00:00+00:00	20080716	-	II	crs1	CDS	added	complement(join(3452323..3452540,3452589..3452769,3452922..3453077,3453119..3453406))	4459.0	
+SPBC31F10.08	pers. comm. Charley Chahwan		2008-07-18 00:00:00+00:00	20080827	-	II	mde2	CDS	added	join(3764820..3765437,3765491..3765709)	4449.0	
+SPBC651.06	pers. comm. Charley Chahwan	merged with SPBC651.07	2008-07-26 00:00:00+00:00	20080827	-	II	mug166	CDS	added	join(1247484..1248086,1248158..1248241,1248381..1248481,1248692..1248921,1248991..1249073,1249135..1249617)	4451.0	
+SPBC18E5.14c	pers. comm. Charley Chahwan	merged with SPBC18E5.09c	2008-07-31 00:00:00+00:00	20080827	-	II		CDS	added	complement(join(2089944..2090330,2090431..2090556,2090620..2090943))	4447.0	
+SPNCRNA.445	pers. comm. J. Matthews	updated to extend 3’ and added splice and identified as snR6	2008-08-08 00:00:00+00:00	20080922	-	II	snoR61	snoRNA	added	complement(join(3874254..3874461,3874798..3874906))	4443.0	
+SPAC959.05c	pers. comm. Charley Chahwan	merged with SPAC959.06c; splicing is tentative	2008-08-15 00:00:00+00:00	20080827	-	I		CDS	added	complement(join(3395685..3397327,3397383..3397579,3397681..3397852,3398029..3398701))	4445.0	
+SPBC11B10.10c	pers. comm. L Buchanan and F Stewart	N terminal shortened to 2nd methionine; starting coordinate changed from 1503157 to 1503064	2008-09-05 00:00:00+00:00	20080922	-	II	pht1	CDS	added	complement(1502642..1503064)	4441.0	
+SPAC27D7.12c	PMID:14623327	extended N-terminal to use first MET as start	2008-11-11 00:00:00+00:00	20040915	-	I		CDS	removed	complement(4529168..4529698)	4890.0	
+SPCC962.05	pers comm. M. O’Connell	intron position moved	2008-12-06 00:00:00+00:00	20080716	-	III		CDS	removed	join(554521..554722,554792..556200)	4466.0	
+SPAPB1E7.14	PMID:19040720		2008-12-18 00:00:00+00:00	20090114	-	I	iec5	CDS	added	join(3321979..3322018,3322071..3322331,3322379..3322512)	4433.0	
+SPAC31G5.12c	PMID:15590667		2008-12-19 00:00:00+00:00	20090114	-	I	maf1	CDS	added	complement(join(3008184..3008795,3009160..3009258,3009312..3009317))	4431.0	
+SPBC725.12	pers. comm. Kathy Gould		2009-01-30 00:00:00+00:00	20090219	-	II	nbl1	CDS	added	join(1227762..1227876,1227926..1228094,1228166..1228307)	4427.0	SPD:01/01H12
+SPAC1F8.07c	PMID:16823372	frameshifted	2009-02-02 00:00:00+00:00	20090219	-	I		CDS	added	complement(join(101836..101872,101872..103544))	4411.0	SPD:45/45G12
+SPAC22F3.11c	PMID:16823372	frameshifted	2009-02-02 00:00:00+00:00	20090219	-	I	snu23	CDS	added	join(682874..682994,682996..683109,683160..683446)	4413.0	SPD:06/06A12
+SPBC1A4.06c	PMID:16823372	frameshifted; C term exon changed from 1987076..1987675 to 1987044..1987675	2009-02-02 00:00:00+00:00	20090219	-	II		CDS	added	complement(join(1987044..1987102,1987102..1987675,1987737..1988015,1988081..1988353))	4421.0	SPD:44/44B06
+SPCC1442.04c	PMID:16823372	frameshifted	2009-02-02 00:00:00+00:00	20090219	-	III		CDS	added	complement(join(1773925..1774239,1774236..1775429))	4429.0	SPD:19/19F02
+SPBC13E7.01	PMID:16823372	frameshifted	2009-02-02 00:00:00+00:00	20090219	-	II	cwf22	CDS	added	join(3037988..3040331,3040331..3040650)	4417.0	SPD:29/29B01
+SPBC23G7.06c	PMID:16823372	frameshifted; now a single exon	2009-02-02 00:00:00+00:00	20090219	-	II		CDS	added	complement(join(2106448..2108181,2108181..2108786))	4423.0	SPD:28/28D07
+SPBC14C8.09c	PMID:16823372	merged with SPBC14C8.08c; frameshifted	2009-02-02 00:00:00+00:00	20090219	-	II		CDS	added	complement(join(2219430..2219937,2219937..2220322))	4419.0	SPD:03/03F09
+SPBC29A3.08	PMID:16823372	frameshifted; truncated to 2048336..2049892, 2049894..2049896	2009-02-02 00:00:00+00:00	20090819	-	II	pof4	CDS	added	join(2053033..2053517,2053519..2053600)	4393.0	
+SPCC548.04	pers. comm. Marc Feuermann, Uniprot (SIB)	final exon 223687..223852 to 223687..223796, 223853.223860	2009-02-23 00:00:00+00:00	20090501	-	III	urm1	CDS	added	join(223385..223407,223451..223603,223687..223796,223853..223860)	4409.0	SPD:04/04C07
+SPBP23A10.07	pers. comm. Val Wood	truncated N-term to agree with orthologs; 2007960 -> 2008119	2009-03-30 00:00:00+00:00	20090501	-	II	rpa2	CDS	added	2008119..2011643	4407.0	
+SPBC800.02	pers. comm. Rob de Bruin	increased intron by 42bp 	2009-07-27 00:00:00+00:00	20090730	-	II	whi5	CDS	added	join(253148..253231,253352..253984)	4401.0	
+SPBC800.02	pers. comm. Rob de Bruin	increased intron by 42bp 	2009-07-27 00:00:00+00:00	20090730	-	II	whi5	CDS	added	join(253148..253231,253352..253984)	4401.0	
+SPBC18H10.08c	pers. comm. I. Kouranti	missing 2 N-terminal exons	2009-09-10 00:00:00+00:00	20091023	-	II	ubp4	CDS	added	complement(join(1784219..1785748,1785937..1786080,1786141..1786248))	4375.0	
+SPBC2A9.07c	pers. comm. Cathrine Arnason Boe	removed intron	2009-09-10 00:00:00+00:00	20091023	-	II		CDS	added	complement(2959078..2959902)	4377.0	
+SPAC29B12.08	pers. comm. Val Wood	replaced exon 5428786..5428883 with 5429038.. 5429045	2009-12-14 00:00:00+00:00	20100129	-	I		CDS	added	join(5429038..5429045,5429119..5431072)	4351.0	
+SPAC458.04c	pers. comm. Val Wood		2010-02-19 00:00:00+00:00	20100520	-	I	dil1	CDS	added	complement(join(4737605..4738147,4738189..4738283,4738330..4738740,4738779..4738854))	4339.0	
+SPCC5E4.10c	pers. comm. K. Gould		2010-03-19 00:00:00+00:00	20100520	-	III		CDS	added	complement(join(651622..651905,651973..652045,652115..652225,652280..652371,652419..652455))	4345.0	
+SPAC26H5.02c	pers. comm. Val Wood	second intron extended to 115 nt	2010-08-20 00:00:00+00:00	20050705	-	I		CDS	removed	complement(join(4118248..4119100,4119145..4119162,4119208..4119238,4119282..4119873))	4864.0	
+SPAC27F1.09c	PMID:9837997	added intron to match fully spliced	2010-09-27 00:00:00+00:00	20101015	-	I	prp10	CDS	added	complement(join(4333170..4336555,4336622..4336726,4336778..4336787))	4313.0	
+SPAC22G7.04	pers. comm. James Iben		2010-10-20 00:00:00+00:00	20101209	-	I	ubp13	CDS	added	join(732880..732897,732942..733040,733085..733251,733369..733495,733536..734113,734151..735457,735495..736465)	4309.0	
+SPAC3H1.04c	PMID:16823372		2010-10-21 00:00:00+00:00									
+SPBC12D12.09	pers. comm. Nicole Kosarek		2010-10-21 00:00:00+00:00	20060905	-	II		CDS	removed	join(2315344..2315374,2315494..2315544,2315585..2315697,2315740..2315855,2315904..2316016,2316077..2316276)	4760.0	
+SPBC1348.12	pers. comm. Val Wood	pseudo->coding	2010-10-21 00:00:00+00:00	20100129	-	II		CDS	removed	35223..36658	4358.0	
+SPBC1778.02	pers. comm. Yasushi Hiraoka		2010-10-21 00:00:00+00:00									
+SPBC3E7.04c	pers. comm. Val Wood	pseudo->coding	2010-10-21 00:00:00+00:00	20110324	-	II		CDS	added	complement(join(2662488..2662650,2662697..2662759,2662838..2663575,2663638..2663774,2663828..2663941,2664036..2664236,2664476..2664652))	4063.0	
+SPBC8D2.07c	pers. comm. Val Wood		2010-10-21 00:00:00+00:00									
+SPBPB21E7.02c	pers. comm. Val Wood	pseudo->coding	2010-10-21 00:00:00+00:00	20110324	-	II		CDS	added	complement(join(60553..61107,61119..61205))	4141.0	
+SPCC306.10	pers. comm. Val Wood	pseudo->coding	2010-10-21 00:00:00+00:00	20100520	-	III	wtf8	CDS	removed	join(427445..427583,427752..427997,428047..428290,428336..428527,428568..428630,428681..428763)	4344.0	
+SPCC622.17	PMID:21193357	added 2 5’ exons	2011-01-06 00:00:00+00:00	20110204	-	III	apn1	CDS	added	join(1435178..1435181,1435272..1435335,1435596..1435850,1435923..1436649)	4307.0	
+SPBC16H5.12c	PMID:21270388		2011-02-03 00:00:00+00:00	20110204	-	II		CDS	added	join(2274073..2274084,2274139..2274301,2274610..2274721,2274781..2276707)	4289.0	
+SPAC3A11.03	PMID:21270388		2011-02-03 00:00:00+00:00	20110204	-	I		CDS	added	join(3466462..3466483,3466772..3467472,3467608..3467835)	4277.0	
+SPBC1711.10c	PMID:21270388		2011-02-03 00:00:00+00:00	20110204	-	II	npl4	CDS	added	complement(join(2152462..2152575,2152627..2154144,2154207..2154287,2154333..2154335))	4293.0	
+SPBC1709.12	PMID:21270388		2011-02-03 00:00:00+00:00	20110204	-	II	rid1	CDS	added	join(1122828..1123246,1123385..1123532,1123601..1124133,1124183..1124285)	4291.0	
+SPBC4F6.10	PMID:21270388		2011-02-03 00:00:00+00:00	20110204	-	II	vps901	CDS	added	join(2708076..2709415,2709418..2709793)	4299.0	
+SPAC18B11.05	PMID:21270388		2011-02-03 00:00:00+00:00	20110204	-	I	gpi18	CDS	added	complement(join(308381..309719,309751..309806))	4273.0	
+SPAC18B11.05	PMID:21270388		2011-02-03 00:00:00+00:00	20110204	-	I	gpi18	CDS	added	complement(join(308381..309719,309751..309806))	4273.0	
+SPACUNK4.14	PMID:21270388		2011-02-03 00:00:00+00:00	20110204	-	I	mdb1	CDS	added	complement(join(2883184..2883489,2883542..2884783,2884840..2884932,2884987..2885220))	4285.0	
+SPAC13F5.07c	PMID:21270388		2011-02-03 00:00:00+00:00	20110204	-	I		CDS	added	complement(join(2184865..2185282,2185472..2185551))	4271.0	
+SPBC13E7.01	PMID:21270388		2011-02-03 00:00:00+00:00	20090819	-	II	cwf22	CDS	removed	join(3037988..3040331,3040331..3040650)	4386.0	
+SPBP8B7.31	PMID:21270388		2011-02-03 00:00:00+00:00	20110204	-	II		CDS	added	join(3698333..3698414,3698473..3698724,3698800..3698919,3698973..3699037)	4301.0	
+SPCC4G3.12c	PMID:21270388		2011-02-03 00:00:00+00:00									
+SPAC688.11	PMID:21270388		2011-02-03 00:00:00+00:00	20110204	-	I	end4	CDS	added	3135125..3138433	4281.0	
+SPAC688.04c	PMID:21270388		2011-02-03 00:00:00+00:00	20110204	-	I	gst3	CDS	added	complement(3116067..3116795)	4279.0	
+SPAPB17E12.14c	PMID:21270388		2011-02-03 00:00:00+00:00	20110204	-	I		CDS	added	complement(1286916..1288922)	4287.0	
+SPBC29A10.17	PMID:21270388		2011-02-03 00:00:00+00:00	20110204	-	II		CDS	added	join(2573866..2573903,2573998..2574093,2574137..2574214,2574277..2574487)	4297.0	
+SPAC29A4.03c	PMID:21270388		2011-02-03 00:00:00+00:00	20110204	-	I		CDS	added	join(5142407..5142628,5142631..5143224)	4275.0	
+SPBC651.06	PMID:21270388		2011-02-03 00:00:00+00:00	20110324	-	II	mug166	CDS	added	1247484..1248188	4087.0	
+SPBC25H2.11c	PMID:21270388		2011-02-03 00:00:00+00:00	20110204	-	II	spt7	CDS	added	join(3263377..3263950,3263992..3264191,3264246..3264284,3264337..3264438,3264481..3264619,3264667..3265910,3265950..3266093,3266137..3266351,3266397..3266718)	4295.0	
+SPAC29A4.03c	PMID:21270388		2011-02-03 00:00:00+00:00	20110204	-	I		CDS	added	join(5142407..5142628,5142631..5143224)	4275.0	
+SPAC823.04	PMID:21270388		2011-02-03 00:00:00+00:00	20110204	-	I		CDS	added	join(2587729..2587897,2587952..2588028,2588031..2588143,2588182..2588620)	4283.0	
+SPCC1322.16	PMID:21270388		2011-02-03 00:00:00+00:00	20110204	-	III	phb2	CDS	added	join(1323844..1324147,1324355..1324621,1324678..1324746,1324796..1325022)	4303.0	
+SPBC947.10	pers. comm. E. Stewart	N-terminal extended to use upstream methionine	2011-02-04 00:00:00+00:00	20110304	-	II	dsc1	CDS	added	complement(join(653091..653363,653432..655246))	4267.0	
+SPAC22F3.11c	PMID:21511999	gene structure updated	2011-03-11 00:00:00+00:00	20110324	-	I	snu23	CDS	added	join(682874..683034,683102..683109,683160..683446)	3749.0	
+SPAC1006.03c		intron donor corrected	2011-03-11 00:00:00+00:00	20110304	-	I		CDS	removed	complement(join(5071212..5071417,5071456..5073188,5073389..5073449,5073728..5073872))	4264.0	SPD:38/38H01
+SPCC4B3.05c		N terminal extended by 4 amino acids based on homology	2012-01-05 00:00:00+00:00	185	vw253	III	hem12	CDS	removed	join(1166571..1166604,1166662..1166696,1166743..1166767,1166815..1167323,1167373..1167837)	3552.0	
+SPBC29A3.06		N terminal extended	2012-01-05 00:00:00+00:00	185	vw253	II		CDS	removed	join(2048336..2049892,2049894..2049896)	3544.0	
+SPCC1281.07c		N terminal extended by 24 amino acids	2012-01-05 00:00:00+00:00	185	vw253	III		CDS	removed	complement(1397625..1398566)	3550.0	
+SPAC2F3.13c		removed N terminal region overlapping with plp1	2012-12-07 00:00:00+00:00	771	vw253	I		CDS	removed	complement(join(3947930..3948241,3948283..3948358,3948407..3948493,3948538..3948690,3948735..3949046,3949094..3949921,3949997..3950178))	3524.0	
+SPAC9G1.15c	PMID:23885124, PMID:24006493	N-terminal shortened to use downstream methionine	2013-11-01 00:00:00+00:00	1357	mah79	I	mzt1	CDS	removed	complement(1985350..1985643)	432.0	
+SPBC25B2.07c	PMID:21856157	N-terminal shortened to use downstream methionine	2013-12-06 00:00:00+00:00	1381	vw253	II	mmb1	CDS	removed	complement(2609038..2610591)	430.0	
+SPBC3D6.04c	pers. comm. Silke Hauf	N-terminal shortened to use downstream methionine; removed 13 amino acids	2013-12-06 00:00:00+00:00	1383	vw253	II	mad1	CDS	removed	complement(join(1274979..1276897,1276948..1277098))	428.0	
+SPAC5H10.06c	PMID:24003116	N-terminal shortened to use downstream methionine; removed 43 amino acids; UTR exon annotated	2014-01-07 00:00:00+00:00	1464	mah79	I	adh4	CDS	removed	complement(156548..157816)	426.0	
+SPNCRNA.98	PMID:2837764, PMID:16453822	represents the actual functional RNA	2014-06-12 00:00:00+00:00	1800	mah79	I	srp7	ncRNA	removed	4268566..4269064	420.0	
+SPSNRNA.01	PMID:2188102	represents the actual functional RNA	2014-06-19 00:00:00+00:00	1825	mah79	II	snu1	snRNA	removed	3019819..3020472	412.0	
+SPSNRNA.02	PMID:3244367	represents the actual functional RNA	2014-06-19 00:00:00+00:00	1825	mah79	I	snu2	snRNA	removed	complement(959305..959770)	406.0	
+SPSNRNA.03	PMID:3194197	represents the actual functional RNA	2014-06-19 00:00:00+00:00	1825	mah79	I	snu3	snRNA	removed	complement(987631..988266)	408.0	
+SPSNRNA.04	PMID:2795654	represents the actual functional RNA	2014-06-19 00:00:00+00:00	1825	mah79	II	snu4	snRNA	removed	complement(467025..467823)	414.0	
+SPSNRNA.05	PMID:2587274	represents the actual functional RNA	2014-06-19 00:00:00+00:00	1825	mah79	II	snu5	snRNA	removed	3236617..3237051	416.0	
+SPSNRNA.06	PMID:2909894	represents the actual functional RNA	2014-06-19 00:00:00+00:00	1825	mah79	I	snu6	snRNA	removed	complement(join(2562085..2562323,2562374..2562559))	410.0	
+SPSNRNA.07	PMID:1560765	represents the actual functional RNA	2014-06-19 00:00:00+00:00	1825	mah79	II	snu32	snRNA	removed	complement(3958768..3959174)	418.0	
+SPBC27B12.10c	PMID:24929437	based on ribosome profiling	2014-07-04 00:00:00+00:00	1903	vw253	II	tom7	CDS	removed	complement(join(1344032..1344157,1344214..1344237))	398.0	
+SPCC417.03	PMID:24929437	based on ribosome profiling	2014-07-04 00:00:00+00:00	1899	mah79	III		CDS	removed	join(1672003..1672051,1672111..1672364)	404.0	
+SPCC162.07	PMID:24929437	based on ribosome profiling	2014-07-04 00:00:00+00:00	1899	mah79	III	ent1	CDS	removed	complement(join(1571648..1573733,1574016..1574050))	402.0	
+SPBC146.01	PMID:24929437	based on ribosome profiling	2014-07-04 00:00:00+00:00	1903	vw253	II	med15	CDS	removed	join(996843..997019,997066..1000080)	396.0	
+SPCC320.09	PMID:24929437	based on ribosome profiling	2014-07-04 00:00:00+00:00	1904	mah79	III	hem15	CDS	added	complement(join(149153..150163,150279..150323,150374..150589))	393.0	
+SPBC839.02	PMID:24929437	based on ribosome profiling	2014-07-04 00:00:00+00:00	1903	vw253	II		CDS	removed	join(597611..599124,599256..599334)	400.0	
+SPAC110.05	PMID:24929437	based on ribosome profiling	2014-07-04 00:00:00+00:00									
+SPAC823.02	PMID:24929437	based on ribosome profiling	2014-07-04 00:00:00+00:00									
+SPAC1D4.08	PMID:24929437	based on ribosome profiling	2014-07-04 00:00:00+00:00	1909	antonia	I	pis1	CDS	added	join(650488..650545,651193..651848)	389.0	
+SPAC22F3.04	PMID:24929437	based on ribosome profiling	2014-07-04 00:00:00+00:00	1909	antonia	I	mug62	CDS	added	complement(join(698033..698177,698223..698441,698480..698841,698884..699104,699148..699363,699410..702557,702603..702755))	391.0	
+SPAC1486.05	pers. comm. Y. Hiraoka		2015-04-14 00:00:00+00:00	2716	vw253	I	nup189	CDS	removed	join(3197028..3197443,3197530..3202450)	366.0	
+SPBC13G1.04c	PMID:22365419	N-terminal shortened to use downstream methionine	2015-10-13 00:00:00+00:00	2995	vw253	II	abh1	CDS	added	complement(join(3732806..3732930,3732994..3733762))	361.0	
+SPAC29A4.23	PMID:26494834	Frameshifted; intron/exon boundary changes; coordinates changed	2015-11-28 00:00:00+00:00	3370	vw253	I		CDS	added	join(5139024..5139190,5139192..5139424,5139427..5139575)	355.0	
+SPAC22F3.11c	PMID:22365419, PMID:24929437	based on ribosome profiling	2016-03-17 00:00:00+00:00	3370	vw253	I	snu23	CDS	removed	join(682874..683034,683102..683109,683160..683446)	354.0	
+SPBC21B10.12	PMID:26917764		2016-04-19 00:00:00+00:00	3419	vw253	II	rec6	CDS	removed	complement(join(1649038..1649472,1649558..1649671))	352.0	
+SPAC12B10.09	PMID:26615217; pers. comm. Li-Lin Du		2017-04-04 00:00:00+00:00	3985	vw253	I	pet801	CDS	added	join(4588487..4588510,4588567..4588723,4588869..4589323,4589410..4589574)	307.0	
+SPBC16D10.10	PMID:26615217; pers. comm. Li-Lin Du	Frameshifted by Chr_II:3619003!A→AG	2017-04-04 00:00:00+00:00	3985	vw253	II	tad2	CDS	added	join(3618117..3618179,3618228..3618617,3618658..3618702,3618747..3618920,3618968..3619003,3619003..3619071,3619113..3619321,3619366..3619540)	327.0	
+SPBC13E7.01	PMID:26615217; pers. comm. Li-Lin Du	Frameshifted by Chr_II:3040332!C→CG	2017-04-04 00:00:00+00:00	3985	vw253	II	cwf22	CDS	added	join(3037988..3040332,3040332..3040650)	323.0	
+SPBC32F12.08c	PMID:26615217; pers. comm. Li-Lin Du	Frameshifted by Chr_II:2798040!CT→C	2017-04-04 00:00:00+00:00	3985	vw253	II	duo1	CDS	added	complement(join(2797652..2798040,2798042..2798507))	339.0	
+SPBC4F6.10	PMID:26615217; pers. comm. Li-Lin Du	Frameshifted by Chr_II:2709414!G→GC	2017-04-04 00:00:00+00:00	3985	vw253	II	vps901	CDS	added	join(2708076..2709414,2709414..2709793)	341.0	
+SPBC14C8.09c	PMID:26615217; pers. comm. Li-Lin Du	Frameshifted by Chr_II:2219928!A→AT	2017-04-04 00:00:00+00:00	3985	vw253	II	dbl3	CDS	added	complement(join(2219430..2219928,2219928..2220322))	325.0	
+SPBC23G7.06c	PMID:26615217; pers. comm. Li-Lin Du	Frameshifted by Chr_II:2108180!T→TA	2017-04-04 00:00:00+00:00	3985	vw253	II		CDS	added	complement(join(2106448..2108180,2108180..2108786))	335.0	
+SPBC29A3.08	PMID:26615217; pers. comm. Li-Lin Du	Frameshifted by Chr_II:2053516!G→GC	2017-04-04 00:00:00+00:00	3985	vw253	II	pof4	CDS	added	join(2053033..2053517,2053517..2053823)	337.0	
+SPBC1E8.03c	PMID:26615217; pers. comm. Li-Lin Du	Frameshifted by Chr_II:1960392!A→AG	2017-04-04 00:00:00+00:00	3985	vw253	II		CDS	added	complement(join(1960166..1960392,1960392..1961817))	333.0	
+SPBC1A4.06c	PMID:26615217; pers. comm. Li-Lin Du	Frameshifted by Chr_II:1987101!CG→C and Chr_II:1987117!TG→T	2017-04-04 00:00:00+00:00	3985	vw253	II	tam41	CDS	added	complement(join(1987044..1987100,1987102..1987117,1987119..1987675,1987737..1988015,1988081..1988353))	331.0	
+SPAC3A12.04c	PMID:26615217, pers. comm. Li-Lin Du	Frameshifted by Chr_I:1424708!CA→C	2017-04-04 00:00:00+00:00	3969	vw253	I	rpp1	CDS	removed	complement(join(1424697..1425161,1425231..1425329,1425372..1425430,1425478..1425562))	346.0	
+SPAC29A4.03c	PMID:26615217; pers. comm. Li-Lin Du	Frameshifted by Chr_I:5142627!A→AG	2017-04-04 00:00:00+00:00	3985	vw253	I	mrps9	CDS	added	join(5142407..5142626,5142626..5143224)	311.0	SPD:03/03A08
+SPAP27G11.10c	PMID:26615217; pers. comm. Li-Lin Du	Frameshifted by Chr_I:1625092!T→TC	2017-04-04 00:00:00+00:00	3969	vw253	I	nup184	CDS	removed	complement(join(1625076..1629753,1629825..1629841))	350.0	
+SPAC17G8.01c	PMID:26615217; pers. comm. Li-Lin Du	Frameshifted by Chr_I:2343703!G→GA	2017-04-04 00:00:00+00:00	3969	vw253	I	trl1	CDS	removed	complement(join(2341346..2343706,2343754..2343756))	344.0	
+SPAC823.04	PMID:26615217; pers. comm. Li-Lin Du	Frameshifted by Chr_I:2588066!C→CA and Chr_I:2588021!C→CA	2017-04-04 00:00:00+00:00	3969	vw253	I	rrp36	CDS	removed	join(2587729..2587897,2587952..2588028,2588031..2588143,2588182..2588620)	348.0	
+SPAC688.08	PMID:26615217; pers. comm. Li-Lin Du	Frameshifted by Chr_I:3125118!A→AT	2017-04-04 00:00:00+00:00	3985	vw253	I	srb8	CDS	added	join(3123163..3125118,3125118..3126310,3126356..3126653)	321.0	
+SPBC16E9.16c	PMID:26615217; pers. comm. Li-Lin Du	Frameshifted by Chr_II:1948953!GA→G and Chr_II:1950050!A→AG	2017-04-04 00:00:00+00:00	3985	vw253	II	lsd90	CDS	added	complement(join(1947985..1948952,1948954..1950048,1950048..1950255))	329.0	
+SPAC3A11.09	PMID:26615217; pers. comm. Li-Lin Du	Frameshifted by Chr_I:3450130!GT→G	2017-04-04 00:00:00+00:00	3985	vw253	I	sod22	CDS	added	complement(join(3450056..3450130,3450132..3452269,3452485..3452608))	319.0	
+SPAC1071.01c	PMID:26615217; pers. comm. Li-Lin Du	Frameshifted by Chr_I:3855790!GT→G	2017-04-04 00:00:00+00:00	3985	vw253	I	pta1	CDS	added	complement(join(3855626..3855790,3855792..3857792))	305.0	
+SPAC29E6.03c	PMID:26615217; pers. comm. Li-Lin Du	Frameshifted by Chr_I:4407494!T→TG	2017-04-04 00:00:00+00:00	3985	vw253	I	uso1	CDS	added	complement(join(4405990..4407494,4407494..4409096,4409171..4409338))	313.0	
+SPAC29E6.04	PMID:26615217; pers. comm. Li-Lin Du	Frameshifted by Chr_I:4410191!CG→C	2017-04-04 00:00:00+00:00	3985	vw253	I	nnf1	CDS	added	join(4409773..4410190,4410192..4410391)	315.0	
+SPAC1486.05	PMID:26615217; pers. comm. Li-Lin Du	Frameshifted by Chr_I:3197528!A→AG	2017-04-04 00:00:00+00:00	3985	vw253	I	nup189	CDS	added	join(3197028..3197529,3197529..3202450)	309.0	
+SPAC3A11.06	PMID:26615217; pers. comm. Li-Lin Du	Frameshifted by Chr_I:3460318!T→T	2017-04-06 00:00:00+00:00	3985	vw253	I	mvp1	CDS	added	complement(join(3459233..3459436,3459492..3459665,3459705..3459897,3459941..3460185,3460234..3460318,3460318..3460372,3460425..3460442,3460508..3460560,3460642..3461263,3461323..3461583,3461766..3461859))	317.0	
+SPBC530.13	PMID:26615217; pers. comm. Li-Lin Du	Frameshifted by Chr_II:825012!G→A	2017-04-17 00:00:00+00:00	3988	vw253	II	lsc1	CDS	removed	join(824374..824534,824579..824660,824874..825011,825065..825188,825245..825747)	304.0	
+SPSNORNA.41	pers. comm. Francois Bachand	Switched from + strand to - strand	2017-05-25 00:00:00+00:00	4041	vw253	III	snR46	snoRNA	removed	1717920..1718087	300.0	
+SPBC577.05c	PMID:28469148		2017-09-14 00:00:00+00:00	4294	vw253	II	rec27	CDS	removed	complement(join(757566..757746,757796..757951,758130..758197))	292.0	
+SPNCRNA.103	PMID:24920274		2019-11-08 00:00:00+00:00	5921	antonia	II	sme2	ncRNA	removed	complement(339346..340012)	274.0	
+SPAC2E12.05	PMID:28631610	pseudo->coding	2020-05-01 00:00:00+00:00	6246	vw253	I	wtf1	CDS	removed	5064305..5066231	188.0	
+SPBC1706.02c	PMID:28631610, PMID:30991417		2020-05-01 00:00:00+00:00	6246	vw253	II	wtf2	CDS	removed	complement(join(593188..593261,593311..593368,593437..593575))	190.0	
+SPCC548.02c	PMID:28631610, PMID:30991417		2020-05-01 00:00:00+00:00	6246	vw253	III	wtf3	CDS	removed	complement(join(219185..219261,219294..219368,219409..219684,219734..219979,220148..220283))	200.0	
+SPCC548.03c	PMID:28631610, PMID:30991417		2020-05-01 00:00:00+00:00	6246	vw253	III	wtf4	CDS	removed	complement(join(221199..221335,221395..221457,221498..221689,221726..222016,222065..222337,222566..222701))	202.0	
+SPCC553.05c	PMID:28631610, PMID:30991417	introduces stop codon at position 25	2020-05-01 00:00:00+00:00	6246	vw253	III	wtf6	CDS	removed	complement(join(297354..297655,297705..297950,298119..298194))	204.0	
+SPCC736.05	PMID:28631610, PMID:30991417		2020-05-01 00:00:00+00:00	6246	vw253	III	wtf7	CDS	removed	join(320608..320755,320964..321335,321387..321523)	210.0	
+SPCC622.21	PMID:30991417	introduces stop codon at position 274	2020-05-01 00:00:00+00:00	6246	vw253	III	wtf12	CDS	removed	join(1401530..1401668,1401900..1402172,1402490..1402551,1402553..1402672)	208.0	
+SPCC162.04c	PMID:28631610, PMID:30991417		2020-05-01 00:00:00+00:00	6246	vw253	III	wtf13	CDS	removed	complement(join(1580123..1580613,1580650..1581006,1581055..1581327,1581559..1581694))	192.0	
+SPCC285.06c	PMID:28631610, PMID:30991417		2020-05-01 00:00:00+00:00	6246	vw253	III	wtf17	CDS	removed	complement(join(1805166..1805242,1805299..1805352,1805393..1805614,1805664..1805909,1806076..1806225,1806411..1806450))	194.0	
+SPCC285.07c	PMID:28631610, PMID:30991417		2020-05-01 00:00:00+00:00	6246	vw253	III	wtf18	CDS	removed	complement(join(1807004..1807131,1807182..1807244,1807285..1807476,1807513..1807726,1807760..1807836,1807885..1808157,1808396..1808534))	196.0	
+SPCC576.16c	PMID:28631610	introduces stop codon at position 50	2020-05-01 00:00:00+00:00	6246	vw253	III	wtf22	CDS	removed	complement(join(2109181..2109395,2109432..2109608,2109645..2109923,2109973..2110221,2110391..2110528))	206.0	
+SPCC830.02	PMID:28631610, PMID:30991417	introduces stop codon at position 145	2020-05-01 00:00:00+00:00	6246	vw253	III	wtf24	CDS	removed	join(2181204..2181342,2181510..2181758,2181808..2182031,2182077..2182371,2182422..2182504)	212.0	
+SPCC306.09c	PMID:28631610, PMID:30991417	introduces stop codon at position 138	2020-05-01 00:00:00+00:00									
+SPAC22A12.08c	PMID:29958934	Splicing of all introns produces only a mitochondrial hydrolase; retention of intron IV produces a tandem fusion with cardiolipin.	2021-04-23 00:00:00+00:00									
+SPAC30D11.03		trim to MET at AA41	2021-06-11 00:00:00+00:00	8148	vw253	I	ddx27	CDS	added	complement(join(1116057..1116202,1116247..1116367,1116415..1118292))	157.0	
+SPAC56F8.04c			2021-06-11 00:00:00+00:00	8148	vw253	I	ppt1	CDS	added	complement(1133226..1134302)	167.0	
+SPAC56E4.04c		trim to MET at AA34	2021-06-11 00:00:00+00:00	8148	vw253	I	cut6	CDS	added	complement(join(1246095..1252807,1253430..1253460))	165.0	
+SPAC630.14c			2021-06-11 00:00:00+00:00	8148	vw253	I	tup12	CDS	added	complement(join(374683..375830,376094..376446,376844..376931,376993..377116))	171.0	
+SPAC4G8.07c			2021-06-11 00:00:00+00:00	8148	vw253	I	trm2	CDS	added	complement(join(774000..774023,774155..774403,774453..775290,775414..775513,775641..775863))	163.0	
+SPAC2F7.08c			2021-06-11 00:00:00+00:00	8148	vw253	I	snf5	CDS	added	complement(546664..548460)	155.0	
+SPAC1A6.10		truncate at MAG (AA20)	2021-06-11 00:00:00+00:00	8148	vw253	I	tcd1	CDS	added	1090729..1092135	151.0	
+SPAC227.11c			2021-06-11 00:00:00+00:00	8148	vw253	I	yos9	CDS	added	complement(join(514552..515082,515222..515482))	153.0	
+SPAC1565.08			2021-06-11 00:00:00+00:00	8148	vw253	I	cdc48	CDS	added	join(1306457..1306512,1306569..1308942)	145.0	
+SPAC57A7.12			2021-06-11 00:00:00+00:00	8148	vw253	I	ssz1	CDS	added	complement(join(1515089..1516663,1516789..1516866))	169.0	
+SPAC23E2.02			2021-06-11 00:00:00+00:00	8408	vw253	I	lsd2	CDS	added	join(446770..449241,449295..450530)	15.0	
+SPAC167.04			2021-06-23 00:00:00+00:00	8148	vw253	I	pam17	CDS	added	complement(join(1554001..1554072,1554135..1554166,1554214..1554292,1554381..1554791))	147.0	
+SPAC1002.01		remove final exon	2021-06-25 00:00:00+00:00	8148	vw253	I	mrx11	CDS	added	1798347..1798835	139.0	
+SPAC1002.12c			2021-06-25 00:00:00+00:00	8148	vw253	I		CDS	added	complement(1818695..1820191)	141.0	
+SPAC17A5.02c		trim to MRVGVQGC	2021-06-25 00:00:00+00:00	8148	vw253	I	dbr1	CDS	added	complement(join(1754033..1754145,1754186..1754310,1754350..1755118,1755164..1755285,1755331..1755593))	149.0	
+SPAC3H1.12c			2021-06-25 00:00:00+00:00	8148	vw253	I	snt2	CDS	added	complement(1961710..1965063)	161.0	
+SPAC3H1.05		new start MGIL	2021-06-25 00:00:00+00:00	8148	vw253	I	ste24	CDS	added	join(1938990..1939004,1939075..1940394)	159.0	
+SPAC1002.17c		change MSTTTTVSAIRTVEE to MSNITISSHPV	2021-06-25 00:00:00+00:00	8148	vw253	I	urg2	CDS	added	complement(1831012..1831581)	143.0	
+SPAC4F10.02	PMID:34169534		2021-07-27 00:00:00+00:00	7483	mah79	I	aap1	CDS	removed	join(4832929..4833160,4833257..4834428)	174.0	
+SPAC19A8.06			2021-10-23 00:00:00+00:00	8403	vw253	I	pbr1	CDS	added	complement(2475966..2477096)	97.0	
+SPAC4G9.11c			2021-10-23 00:00:00+00:00	8403	vw253	I	cmb1	CDS	added	complement(2275578..2276177)	117.0	
+SPAC23C11.17		remove MKYPRTHIQFPS	2021-10-23 00:00:00+00:00	8403	vw253	I	mdm28	CDS	added	join(2167206..2167245,2167302..2168683)	107.0	
+SPAC1B2.03c		remove MDLTGAH to get /score=2039.31	2021-11-03 00:00:00+00:00	8403	vw253	I	elo2	CDS	added	complement(join(2811438..2812368,2812412..2812464))	99.0	
+SPAC26A3.09c			2021-11-03 00:00:00+00:00	8403	vw253	I	rga2	CDS	added	complement(3348569..3352258)	111.0	
+SPAC2F3.04c		truncated 14 AA	2021-11-03 00:00:00+00:00									
+SPAC589.02c		truncated 40 AA	2021-11-03 00:00:00+00:00	8403	vw253	I	med13	CDS	added	complement(join(3095075..3098590,3098626..3098667))	123.0	
+SPAC4H3.06			2021-11-04 00:00:00+00:00	8403	vw253	I		CDS	added	join(3837449..3837519,3837568..3837751,3837811..3837890,3837940..3838000)	119.0	
+SPAC17H9.04c		remove MSKLPSPT	2021-11-04 00:00:00+00:00	8403	vw253	I	dri1	CDS	added	complement(2009905..2011695)	91.0	
+SPAC1071.09c			2021-11-04 00:00:00+00:00	8403	vw253	I		CDS	added	complement(3870660..3871427)	89.0	
+SPAC1F12.09			2021-11-04 00:00:00+00:00	8403	vw253	I	gpi17	CDS	added	join(3818803..3818907,3818954..3819677,3819720..3820420)	103.0	
+SPAPB18E9.01			2021-11-05 00:00:00+00:00	8403	vw253	I	trm5	CDS	added	join(3974340..3974485,3974541..3974629,3974674..3974775,3974879..3975132,3975193..3975429,3975485..3975832,3975882..3975962,3976014..3976079)	131.0	
+SPAC25B8.08			2021-11-05 00:00:00+00:00	8403	vw253	I		CDS	added	4168263..4169984	109.0	
+SPAC637.09			2021-11-10 00:00:00+00:00	8403	vw253	I	rex1	CDS	added	4555423..4557294	125.0	
+SPAC22F8.10c			2021-11-10 00:00:00+00:00	8403	vw253	I	sap145	CDS	added	complement(4804630..4806387)	105.0	
+SPSNRNA.04	PMID:2795654	Jennifer Porat flagged it	2022-05-25 00:00:00+00:00	8238	manu	II	snu4	snRNA	removed	complement(467233..467361)	136.0	
+SPSNRNA.06	PMID:2909894	Jennifer Porat flagged it	2022-05-25 00:00:00+00:00	8238	manu	I	snu6	snRNA	removed	complement(join(2562276..2562323,2562374..2562427))	134.0	
