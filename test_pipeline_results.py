@@ -16,8 +16,10 @@ class PipelineTest(unittest.TestCase):
             latest_revision = sorted(glob.glob(f'{chromosome}/*.contig'), reverse=True, key= lambda x: int(re.match(r'.+\/(\d+).contig', x).groups()[0]))[0]
             this_chromosome = SeqIO.read(latest_revision,'embl')
             for feature in this_chromosome.features:
-                if 'systematic_id' in feature.qualifiers:
-                    all_systematic_ids.update(feature.qualifiers['systematic_id'])
+                # Only main features (mRNA seems to have been used only very few times)
+                if feature.type not in ["5'UTR","3'UTR",'intron','promoter','LTR', 'misc_feature', 'mRNA']:
+                    if 'systematic_id' in feature.qualifiers:
+                        all_systematic_ids.update(feature.qualifiers['systematic_id'])
 
         # load summary data
         data = pandas.read_csv('genome_changes_summary.tsv', sep='\t', na_filter=False)

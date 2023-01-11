@@ -7,7 +7,7 @@ class Formatter(argparse.ArgumentDefaultsHelpFormatter, argparse.RawDescriptionH
 
 
 parser = argparse.ArgumentParser(description=__doc__, formatter_class=Formatter)
-parser.add_argument('--coordinate_changes_files', nargs='+', help='coordinate changes file (in order that you want them concatenated)')
+parser.add_argument('--coordinate_changes_files', nargs='+', default=['all_coordinate_changes_file.tsv','pre_svn_coordinate_changes_file.tsv'], help='coordinate changes file (in order that you want them concatenated)')
 parser.add_argument('--qualifier_changes_files', nargs='+', default=['all_qualifier_changes_file.tsv','gene_changes_comments_and_pmids/pre_svn_qualifier_changes_file.tsv'], help='Qualifier changes tsv files')
 parser.add_argument('--output_modified_coordinates',default='only_modified_coordinates.tsv', help='output tsv file')
 parser.add_argument('--output_summary',default='genome_changes_summary.tsv', help='output tsv file')
@@ -19,8 +19,8 @@ data = pandas.concat([
     pandas.read_csv(f, delimiter='\t', na_filter=False, dtype=str) for f in args.coordinate_changes_files
 ])
 
-# Main features only
-main_features_data = data[~data['feature_type'].isin(["5'UTR","3'UTR",'intron','promoter','LTR', 'misc_feature']) & data.systematic_id.str.startswith('SP')].copy()
+# Main features only (mRNA was only used a few times)
+main_features_data = data[~data['feature_type'].isin(["5'UTR","3'UTR",'intron','promoter','LTR', 'misc_feature', 'mRNA']) & data.systematic_id.str.startswith('SP')].copy()
 
 # Make sure they are sorted properly (below, earliest_modification relies on 'added' rows being on top of 'removed' ones)
 main_features_data['date'] = pandas.to_datetime(main_features_data['date'],utc=True)

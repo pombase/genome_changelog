@@ -209,7 +209,6 @@ SPAC26F1.14c	I	aif1	CDS	changed
 SPAC26H5.02c	I		CDS	changed	
 SPAC26H5.04	I		CDS	changed	
 SPAC26H5.12	I	rpo41	CDS	changed	
-SPAC27D7.04	I		mRNA	added_and_removed	
 SPAC27D7.09c	I		CDS	removed	
 SPAC27D7.10c	I		CDS	added_and_merged	SPAC27D7.09c
 SPAC27D7.12c	I		CDS	changed	
@@ -349,8 +348,8 @@ SPAC890.07c	I	rmt1	CDS	changed
 SPAC8C9.11	I		CDS	changed	
 SPAC8C9.19	I		CDS	added_and_changed	
 SPAC8C9.20	I		CDS	added_and_removed	
-SPAC8E11.02c	I		CDS,mRNA	changed	
-SPAC8E11.03c	I	rad24	CDS,mRNA	added_changed_and_removed	
+SPAC8E11.02c	I	rad24	CDS	changed	
+SPAC8E11.03c	I	rad24	CDS	added_and_removed	
 SPAC8E11.08c	I		CDS	added_and_changed	
 SPAC8E11.09c	I		CDS	added_changed_and_removed	
 SPAC8E11.12	I		CDS	added	
@@ -396,7 +395,7 @@ SPAPB1A10.05	I		CDS	changed
 SPAPB1A10.08	I		CDS	changed	
 SPAPB1A10.15	I	arv1	CDS	changed	
 SPAPB1A10.16	I		CDS	added_and_changed	
-SPAPB1A11.05	I		CDS	added_and_merged	SPAC31G5.01
+SPAPB1A11.05	I		CDS	added_and_merged	SPAPB1A11.06
 SPAPB1A11.06	I		CDS	added	
 SPAPB1E7.05	I	gde1	CDS	changed	
 SPAPB1E7.06c	I	eme1	CDS	changed	
@@ -642,7 +641,7 @@ SPBC30B4.08	II	eri1	CDS	changed
 SPBC30B4.09	II		CDS	added	
 SPBC30D10.04	II		CDS	changed	
 SPBC30D10.08	II	mgm101	CDS	changed	
-SPBC30D10.09c	II	hva22	CDS,mRNA	added_changed_and_removed	
+SPBC30D10.09c	II	hva22	CDS	changed	
 SPBC30D10.16	II	pha2	CDS	changed	
 SPBC30D10.21	II	new18	CDS	added	
 SPBC31A8.02	II		CDS	added_and_changed	
@@ -756,8 +755,6 @@ SPBP19A11.07c	II		CDS	changed
 SPBP22H7.07	II		CDS	removed	
 SPBP22H7.08	II		CDS	added	
 SPBP22H7.09c	II	mis15	CDS	changed	
-SPBP22H7.09c-1	II		mRNA	added_and_removed	
-SPBP22H7.09c-2	II		mRNA	added_and_removed	
 SPBP23A10.04	II		CDS	changed	
 SPBP23A10.07	II	rpa2	CDS	changed	
 SPBP23A10.16	II	sdh4	CDS	changed	
@@ -873,7 +870,6 @@ SPCC1223.10c	III	eaf1	CDS	changed
 SPCC1223.15c	III	spc19	CDS	added_and_changed	
 SPCC1235.03	III		CDS	changed	
 SPCC1235.10c	III	sec6	CDS	changed	
-SPCC1235.11	III		mRNA	added_and_removed	
 SPCC1235.15	III		CDS	changed	
 SPCC1235.16	III	vma21	CDS	added	
 SPCC1235.17	III		CDS	added	
@@ -920,7 +916,7 @@ SPCC16C4.01	III	sif2	CDS	changed
 SPCC16C4.15	III	rml2	CDS	changed	
 SPCC16C4.16c	III		CDS	changed	
 SPCC16C4.21	III		CDS	added_and_changed	
-SPCC16C4.22	III		CDS,mRNA	added_and_changed	
+SPCC16C4.22	III		CDS	added	
 SPCC1739.03	III	hrr1	CDS	changed	
 SPCC1739.04c	III		CDS	changed	
 SPCC1795.08c	III	vid21	CDS	changed	
@@ -2402,7 +2398,7 @@ SPNCRNA.2446	I		ncRNA	added
 SPNCRNA.2447	I		ncRNA	added	
 SPNCRNA.2448	I		ncRNA	added	
 SPNCRNA.2449	I		ncRNA	added	
-SPNCRNA.245	I		mRNA,misc_RNA	added_changed_and_merged	SPAC23D3.17
+SPNCRNA.245	I		misc_RNA	added_and_merged	SPAC23D3.17
 SPNCRNA.2450	I		ncRNA	added	
 SPNCRNA.2451	I		ncRNA	added	
 SPNCRNA.2452	I		ncRNA	added	
@@ -4423,7 +4419,7 @@ SPNCRNA.4297	I		ncRNA	added
 SPNCRNA.4298	I		ncRNA	added	
 SPNCRNA.4299	I		ncRNA	added	
 SPNCRNA.43	I	prl43	misc_RNA,ncRNA	added_and_changed	
-SPNCRNA.430	II		mRNA,misc_RNA	added_changed_and_merged	SPBC1604.25
+SPNCRNA.430	II		misc_RNA	added_and_merged	SPBC1604.25
 SPNCRNA.4300	I		ncRNA	added	
 SPNCRNA.4301	I		ncRNA	added	
 SPNCRNA.4302	I		ncRNA	added	
@@ -5432,7 +5428,6 @@ SPNCRNA.5216	II		ncRNA	added
 SPNCRNA.5217	II		ncRNA	added	
 SPNCRNA.5218	II		ncRNA	added	
 SPNCRNA.5219	II		ncRNA	added	
-SPNCRNA.522	III		mRNA	added_and_merged	SPCC569.09
 SPNCRNA.5220	II		ncRNA	added	
 SPNCRNA.5221	II		ncRNA	added	
 SPNCRNA.5222	II		ncRNA	added	
@@ -5532,7 +5527,7 @@ SPNCRNA.5306	II		ncRNA	added
 SPNCRNA.5307	II		ncRNA	added	
 SPNCRNA.5308	II		ncRNA	added	
 SPNCRNA.5309	II		ncRNA	added	
-SPNCRNA.531	I		mRNA,misc_RNA	added_changed_and_merged	SPAC4G9.22
+SPNCRNA.531	I		misc_RNA	added_and_merged	SPAC4G9.22
 SPNCRNA.5310	II		ncRNA	added	
 SPNCRNA.5311	II		ncRNA	added	
 SPNCRNA.5312	II		ncRNA	added	
@@ -8627,9 +8622,9 @@ SPRRNA.17	I		rRNA	added
 SPRRNA.18	I		rRNA	added	
 SPRRNA.19	I		rRNA	added	
 SPRRNA.20	I		rRNA	added	
-SPRRNA.21	III		rRNA	added_and_merged	SPRRNA.47
+SPRRNA.21	III		rRNA	added_and_merged	SPRRNA.50
 SPRRNA.22	III		rRNA	added_and_removed	
-SPRRNA.23	III		rRNA	added_and_merged	SPRRNA.51
+SPRRNA.23	III		rRNA	added_and_merged	SPRRNA.44
 SPRRNA.24	III		rRNA	added	
 SPRRNA.25	III		rRNA	removed	
 SPRRNA.26	III		rRNA	added	
