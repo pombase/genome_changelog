@@ -3,12 +3,12 @@ gene	SPBCPT2R1.02,SPBPB2B2.08	SPBCPT2R1.02
 gene	Tf2-11,SPAPB15E9.03c	SPAPB15E9.03c
 gene	wtf13,SPCC548.03c	SPCC548.03c
 gene	wtf2,SPCC970.11c	SPCC970.11c
-gene	SPAC8E11.03c,SPAC8E11.02c	duplicate	this was considered to be polycistronic
+gene	SPAC8E11.03c,SPAC8E11.02c	duplicate	this was considered to be polycistronic, so the same mRNA feature had both gene ids
 gene	SPAC1556.06.1,SPAC1556.06.2,SPAC1556.06	SPAC1556.06	multiple transcripts
 gene	SPCC1450.08c,wtf8	SPCC1450.08c
 gene	wtf1,SPCC1906.03	SPCC1906.03
 gene	SPAP17D4.01,SPAC1834.12	SPAC17D4.01	the dubious has no peroxisome-related function and thats what's indicated for the CDS
-gene	SPAC1348.14c,SPAPB8B6.01c	skip	wrong chromosome (should be on chromosome 2 -coordinates exactly match current ght7 in chromosome 2-)
+gene	SPAC1348.14c,SPAPB8B6.01c	skip	wrong chromosome (should be on chromosome 2 -coordinates exactly match current ght7 in chromosome 2-). This is not used, because none of them was ever a systematic_id
 gene	SPAC17D4.01,SPAC1834.13	SPAC17D4.01	the dubious has no peroxisome-related function and thats what's indicated for the CDS
 systematic_id	SPBC24E9.15c,SPAC23A1.10	SPAC23A1.10	in some revisions both systematic ids were used, even if SPBC24E9.15c was obsoleted
 systematic_id	SPAC8E11.03c,SPAC8E11.02c	SPAC8E11.02c	in some revisions both systematic ids were used for SPAC8E11.02c (we know it's that because the coordinates of the feature with both systematic_ids match the current coordinates)

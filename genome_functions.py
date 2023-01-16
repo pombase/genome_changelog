@@ -162,7 +162,7 @@ def read_pombe_genome(file_name, format, synonym_dictionary, all_systematic_ids_
     known_exception_dict_systematic_id_qualifiers = dict()
     for i,row in known_exceptions_tsv.iterrows():
         if row['qualifier_type'] == 'gene':
-            known_exception_dict_gene_qualifiers[frozenset(row['qualifier_value'].split(','))] = [row['change_to']]
+            known_exception_dict_gene_qualifiers[frozenset(row['qualifier_value'].split(','))] = row['change_to']
         if row['qualifier_type'] == 'systematic_id':
             known_exception_dict_systematic_id_qualifiers[frozenset(row['qualifier_value'].split(','))] = row['change_to']
 
