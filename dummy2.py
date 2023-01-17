@@ -6,3 +6,5 @@ contig = read_pombe_genome('pre_svn_data/chromosome1/20070531.contig','embl',syn
 for feature in contig.features:
     if 'systematic_id' in feature.qualifiers and feature.qualifiers['systematic_id'][0] == 'SPAC6F6.16c':
         print(feature)
+    if 'systematic_id' in feature.qualifiers and feature.qualifiers['systematic_id'][0] == 'SPAC6F6.18c':
+        print(feature)

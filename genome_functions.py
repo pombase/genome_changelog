@@ -201,7 +201,6 @@ def read_pombe_genome(file_name, format, synonym_dictionary, all_systematic_ids_
             if new_systematic_id:
                 feature.qualifiers['systematic_id'] = new_systematic_id
         elif 'systematic_id' not in feature.qualifiers and 'gene' in feature.qualifiers:
-            # TODO check what makes more sense here (I think it's probably best to not subsitute by a synonym if the id was always a valid systematic_id)
             # The gene qualifier contains a current systematic_id (we use a set because sometimes there are duplicated qualifiers)
             systematic_ids = list(set(value for value in feature.qualifiers['gene'] if value in valid_ids))
             if len(systematic_ids) > 0:
