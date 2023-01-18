@@ -4,12 +4,13 @@ set -e
 bash get_valid_ids.sh
 
 # Download data to link comments / changes in db_xref qualifiers with coordinate changes (into folder gene_changes_comments_and_pmids)
+# It also downloads the qualifier changelog for the pre-svn data into the same folder (this is used by get_info_from_changes.py)
 bash get_data_gene_changes_comments_and_pmids.sh
 
 # Remove possible old data
 rm -rf data/*/change_log/*/*.tsv
 
-# Download the list of revisions where the last changes were made
+# Download the list of revisions where the last changes were made (finds it using results/all_coordinate_changes_file.tsv and results/all_qualifier_changes_file.tsv)
 bash get_revisions_where_contigs_changed.sh last
 
 # Download the contig files
@@ -20,15 +21,15 @@ python pombe_svn_diff.py
 
 # Merge them with the existing lists
 python create_single_coordinate_changes_file.py --output_file temp.tsv
-tail -n+2 all_coordinate_changes_file.tsv >>temp.tsv
-mv temp.tsv all_coordinate_changes_file.tsv
+tail -n+2 results/all_coordinate_changes_file.tsv >>temp.tsv
+mv temp.tsv results/all_coordinate_changes_file.tsv
 
 python create_single_qualifier_changes_file.py --output_file temp.tsv
-tail -n+2 all_qualifier_changes_file.tsv >>temp.tsv
-mv temp.tsv all_qualifier_changes_file.tsv
+tail -n+2 results/all_qualifier_changes_file.tsv >>temp.tsv
+mv temp.tsv results/all_qualifier_changes_file.tsv
 
 # Update the changes on main features only
-python get_info_from_changes.py --input_files all_coordinate_changes_file.tsv pre_svn_coordinate_changes_file.tsv --output_modified_coordinates only_modified_coordinates.tsv
+python get_info_from_changes.py
 
 # Link changes in structures to changes in db_xref or pombase comments
 python associate_comments_with_genome_changes.py

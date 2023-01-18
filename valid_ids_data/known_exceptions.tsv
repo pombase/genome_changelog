@@ -13,3 +13,4 @@ gene	SPAC17D4.01,SPAC1834.13	SPAC17D4.01	the dubious has no peroxisome-related f
 systematic_id	SPBC24E9.15c,SPAC23A1.10	SPAC23A1.10	in some revisions both systematic ids were used, even if SPBC24E9.15c was obsoleted
 systematic_id	SPAC8E11.03c,SPAC8E11.02c	SPAC8E11.02c	in some revisions both systematic ids were used for SPAC8E11.02c (we know it's that because the coordinates of the feature with both systematic_ids match the current coordinates)
 systematic_id	SPAC26A3.16,SPBC3B8.05	SPAC26A3.16	SPBC3B8.05 is in chromosome 2, and the feature with SPAC26A3.16,SPBC3B8.05 was on chromosome 1
+systematic_id	SPNCRNA.772,SPNCRNA.557	SPNCRNA.772	previous and next revision have only SPNCRNA.772 for the same feature

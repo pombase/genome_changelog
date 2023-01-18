@@ -7,12 +7,12 @@ class Formatter(argparse.ArgumentDefaultsHelpFormatter, argparse.RawDescriptionH
 
 
 parser = argparse.ArgumentParser(description=__doc__, formatter_class=Formatter)
-parser.add_argument('--coordinate_changes_files', nargs='+', default=['all_coordinate_changes_file.tsv','pre_svn_coordinate_changes_file.tsv'], help='coordinate changes file (in order that you want them concatenated)')
-parser.add_argument('--qualifier_changes_files', nargs='+', default=['all_qualifier_changes_file.tsv','gene_changes_comments_and_pmids/pre_svn_qualifier_changes_file.tsv'], help='Qualifier changes tsv files')
-parser.add_argument('--output_modified_coordinates',default='only_modified_coordinates.tsv', help='output tsv file')
-parser.add_argument('--output_summary',default='genome_changes_summary.tsv', help='output tsv file')
+parser.add_argument('--coordinate_changes_files', nargs='+', default=['results/all_coordinate_changes_file.tsv','results/pre_svn_coordinate_changes_file.tsv'], help='coordinate changes file (in order that you want them concatenated)')
+parser.add_argument('--qualifier_changes_files', nargs='+', default=['results/all_qualifier_changes_file.tsv','gene_changes_comments_and_pmids/pre_svn_qualifier_changes_file.tsv'], help='Qualifier changes tsv files')
 parser.add_argument('--genes_in_wrong_chromosomes',default='valid_ids_data/genes_in_wrong_chromosomes.tsv', help='file with wrong chromosomes')
 parser.add_argument('--systematic_ids_with_two_CDS',default='valid_ids_data/systematic_ids_associated_with_two_CDS.tsv', help='file with wrong chromosomes')
+parser.add_argument('--output_modified_coordinates',default='results/only_modified_coordinates.tsv', help='output tsv file')
+parser.add_argument('--output_summary',default='results/genome_changes_summary.tsv', help='output tsv file')
 
 args = parser.parse_args()
 

@@ -23,12 +23,12 @@ changelog_pombase['date'][changelog_pombase['date'] == ''] = pandas.NaT
 changelog_pombase['date'] = changelog_pombase['date'].fillna(method='bfill')
 
 # Data generated from get_modifications_on_main_features_only.py
-changelog_script = pandas.read_csv('only_modified_coordinates.tsv',sep='\t',na_filter=False)
+changelog_script = pandas.read_csv('results/only_modified_coordinates.tsv',sep='\t',na_filter=False)
 changelog_script['original_index'] = changelog_script.index
 
 # Data about changes in qualifiers
 db_xref_script = pandas.concat([
-    pandas.read_csv(f, delimiter='\t', na_filter=False, dtype=str) for f in ['all_qualifier_changes_file.tsv','gene_changes_comments_and_pmids/pre_svn_qualifier_changes_file.tsv']
+    pandas.read_csv(f, delimiter='\t', na_filter=False, dtype=str) for f in ['results/all_qualifier_changes_file.tsv','gene_changes_comments_and_pmids/pre_svn_qualifier_changes_file.tsv']
 ])
 
 # Only the relevant columns, only db_xref qualifiers
@@ -52,7 +52,6 @@ changelog_pombase = changelog_pombase.sort_values(['date'],ascending=[True])
 # A note on this: merge_asof(left, right) finds for every row in left the nearest row in right, so to have a single match between
 # comments in changelog_pombase to output_data rows, we have to do it like this
 temp_data = pandas.merge_asof(changelog_pombase[['systematic_id','reference','comments', 'date']],output_data, by=['systematic_id'], on=['date'], direction='nearest')
-temp_data.to_csv('dummy.tsv', sep='\t', index=False)
 
 # We know some comments cannot be matched, but we check if any is left out unintendedly
 orphan_lines = temp_data[temp_data['revision'].isna()].copy()
@@ -80,13 +79,13 @@ output_data.rename(columns={'comments': 'pombase_comments'}, inplace=True)
 
 output_data = output_data.drop_duplicates()
 output_data.sort_values(['original_index'], inplace=True)
-output_data.drop(columns=['original_index']).to_csv('only_modified_coordinates_with_comments.tsv',sep='\t', index=False)
+output_data.drop(columns=['original_index']).to_csv('results/only_modified_coordinates_with_comments.tsv',sep='\t', index=False)
 
 ## 2. GENE REMOVAL / ADDITION ############################################
 
 # Associate with comments from pombase for removal / addition
 
-data = pandas.read_csv('genome_changes_summary.tsv', sep='\t', na_filter=False)
+data = pandas.read_csv('results/genome_changes_summary.tsv', sep='\t', na_filter=False)
 
 comments_new_genes = pandas.read_csv(
     'gene_changes_comments_and_pmids/new-gene-data.tsv', sep='\t', na_filter=False
@@ -110,4 +109,4 @@ data = data.merge(comments_removed_genes, on='systematic_id', how='outer')
 
 data.fillna('', inplace=True)
 
-data.to_csv('genome_changes_summary_with_comments.tsv', sep='\t', index=False)
+data.to_csv('results/genome_changes_summary_with_comments.tsv', sep='\t', index=False)

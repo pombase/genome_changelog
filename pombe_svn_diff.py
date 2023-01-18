@@ -15,9 +15,9 @@ parser.add_argument('--data_folders', nargs='+', default=glob.glob('data/*'), he
 args = parser.parse_args()
 # Known errors (revision number)
 skip_files = {
-    'chromosome1': ['7485', '963','217'],
-    'chromosome2': ['7477','1809', '1783','1395','1394','139','137','136','25','23'],
-    'chromosome3': ['49'],
+    'chromosome1': ['8645','7485', '963','217'],
+    'chromosome2': ['8648','8645','7477','1809', '1783','1395','1394','139','137','136','25','23'],
+    'chromosome3': ['8645','49'],
     }
 
 synonym_dict = make_synonym_dict('valid_ids_data/gene_IDs_names.tsv', 'valid_ids_data/obsoleted_ids.tsv', 'valid_ids_data/missing_synonyms.tsv')

@@ -187,7 +187,7 @@ You can also download the svn diffs by running `python get_svn_diff.py`
 
 ### Known errors
 
-There are known erros in the downloaded contig files, some of which will require manual fixing if you are to run the analysis pipeline. See [`known_errors.md`](known_errors.md).
+There are known erros in the old contig files, some of which need fixing if you are to run the analysis pipeline. See [`known_errors.md`](known_errors.md).
 
 ## Running the analysis
 
@@ -241,13 +241,12 @@ python create_single_coordinate_changes_file.py --output_file the_file.tsv
 `data/chromosome1/change_log/qualifiers/xxx.tsv` contains changes introduced in revision `xxx` to qualifiers of features that existed in revision `xxx` and the previous one. The output looks like this:
 
 ```tsv
-revision	user	date	systematic_id	primary_name	feature_type	qualifier_type	added_or_removed	value
-7940	vw253	2022-01-04	SPAC20G4.09		intron	controlled_curation	added	('term=misc, confirmed intron',)
-7940	vw253	2022-01-04	SPAC20G4.09		intron	controlled_curation	removed	('misc, confirmed',)
-7940	vw253	2022-01-04	SPAC23D3.16		intron	controlled_curation	added	('term=misc, confirmed intron',)
-7940	vw253	2022-01-04	SPAC23D3.16		intron	controlled_curation	removed	('term=misc, confirmed',)
-7940	vw253	2022-01-04	SPAC25G10.03		intron	controlled_curation	added	('term=misc, confirmed intron',)
-7940	vw253	2022-01-04	SPAC25G10.03		intron	controlled_curation	removed	('term=misc, confirmed',)
+revision	user	date	chromosome	systematic_id	primary_name	feature_type	qualifier_type	added_or_removed	value
+8659	vw253	2023-01-16	I	SPAC15A10.04c	zpr1	CDS	product	added	EF-1 alpha folding chaperone, zinc finger protein Zpr1
+8659	vw253	2023-01-16	I	SPAC15A10.04c	zpr1	CDS	product	removed	EF-1 alpha binding zinc finger protein Zpr1 (predicted)
+8656	vw253	2023-01-15	I	SPAC589.05c	qng1	CDS	controlled_curation	added	term=complementation, functionally complemented by human QNG1; db_xref=PMID:24911101; date=20140610
+8656	vw253	2023-01-15	I	SPAC589.05c	qng1	CDS	controlled_curation	added	term=human QNG1 ortholog; date=19700101
+8656	vw253	2023-01-15	I	SPAC589.05c	qng1	CDS	controlled_curation	removed	term=complementation, functionally complemented by human C9orf64; db_xref=PMID:24911101; date=20140610
 ```
 
 To combine all the changes in a single file, you can then run:
@@ -264,15 +263,10 @@ python create_single_qualifier_changes_file.py --output_file the_file.tsv
 > ```
 >
 
-`get_info_from_changes.py` generates [only_modified_coordinates.tsv](only_modified_coordinates.tsv), a table listing only the changes in gene locations (addition and removal in the same revision) for the main types of features (`CDS`,`ncRNA`,`snRNA`,`repeat_region`,`rRNA`,`tRNA`,`snoRNA`,`misc_RNA`).
-
-```
-python get_info_from_changes.py --input_files all_coordinate_changes_file.tsv pre_svn_coordinate_changes_file.tsv --output_modified_coordinates only_modified_coordinates.tsv
-```
+`get_info_from_changes.py` generates [only_modified_coordinates.tsv](only_modified_coordinates.tsv), a table listing only the changes in gene locations (addition and removal in the same revision) for the main types of features (`CDS`,`ncRNA`,`snRNA`,`repeat_region`,`rRNA`,`tRNA`,`snoRNA`,`misc_RNA`). It combines the data from the svn server and the pre-svn data.
+The script takes several inputs that should be there if you are using `update_file.sh`, but some might be missing.
 
 This can be particularly useful for alleles that refer to previous gene coordinates. This is used in the repository https://github.com/pombase/allele_qc.
-
- contains a table where only coordinate modifications are shown (modifications as in changes to gene coordinates, rather than new additions or removals of features). It combines the data from the svn server and the pre-svn data.
 
 ### Associating publications with changes in gene features.
 
