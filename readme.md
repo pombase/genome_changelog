@@ -71,7 +71,7 @@ In order to assess whether a feature has changed or not, the script [two_genomes
 two genome versions. For PomBase, that is the feature qualifier `\systematic_id`. Old genomes did not have this qualifier, and used `\gene` instead. However, the `\gene` qualifier
 does not have to be unique, and there are some revisions were the usage of both is mixed.
 This is handled for the PomBase case in the function `read_pombe_genome` in [genome_functions.py](genome_functions.py).
-The data used for this was generated with the pre-svn pombe genomes and with the script [find_missing_synonyms.sh](find_missing_synonyms.sh) and is in the directory
+The data used for this was generated with the pre-svn pombe genomes and with the script [old_scripts/find_missing_synonyms.sh](find_missing_synonyms.sh) and is in the directory
 [valid_ids_data](valid_ids_data).
 
 The same unique identifier can refer to multiple features sometimes, such as introns. In that case, we report the ones that are removed or added.
@@ -322,3 +322,7 @@ python create_single_qualifier_changes_file.py --data_folder pre_svn_data/ --out
 
 Some of the code was used to finding missing synonyms of genes and gather them into "tsv dictionaries" (see files `valid_ids_data/missing_synonyms.tsv` and `valid_ids_data/obsoleted_ids.tsv`). The code is in `find_missing_synonyms.sh` and the python scripts called within. To run it you need to have the pre_svn data as well as the latest version of the pombe genome.
 
+
+### Oher useful scripts
+
+`get_all_entries_for_systematic_id.sh`
