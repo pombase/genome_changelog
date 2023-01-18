@@ -9,6 +9,7 @@ This repository contains scripts for:
   * Changes in qualifiers of features that are present in both versions.
 * It also contains a script to perform the diff for any two embl files (`two_genomes_diff.py`)
 * More PomBase-specific stuff
+  * Download versions that pre-date the use of svn from the PomBase FTP server.
 
 ## TL;DR; to update diff files ⏩
 
@@ -21,7 +22,7 @@ poetry install
 # activate venv
 poetry shell
 
-# run this script
+# run this script (The comments explain what it does)
 bash update_file.sh
 
 # Commit changes
@@ -47,7 +48,7 @@ poetry shell
 
 Now when you call `python`, it will be the one from the `.venv`.
 
-## Calculating differences between two genomes
+## Using the code to calculate differences between two genomes (non-PomBase use-case)
 
 Most of the repository was made for a pombe genome analysis, in which many diffs of pombe genome were compared. If you are here only to quickly compare two genomes, you can run the script:
 
@@ -73,13 +74,13 @@ This is handled for the PomBase case in the function `read_pombe_genome` in [gen
 The data used for this was generated with the pre-svn pombe genomes and with the script [find_missing_synonyms.sh](find_missing_synonyms.sh) and is in the directory
 [valid_ids_data](valid_ids_data).
 
-The same unique identifier can refer to multiple features sometimes, such as introns. In that case, what we report the ones that are removed or added.
+The same unique identifier can refer to multiple features sometimes, such as introns. In that case, we report the ones that are removed or added.
 
 ### Resolving conflicts for a feature with multiple unique identifiers
 
 Sometimes, there have been features that were associated with a single 
 
-## Getting the data
+## Getting the data (PomBase)
 
 > **WARNING:** Downloading all revisions and generating the full diffs will require ~100GB of space.
 

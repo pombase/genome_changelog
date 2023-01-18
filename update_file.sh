@@ -1,9 +1,9 @@
 set -e
 
-# Download synonyms from PomBase
+# Download synonyms from PomBase (into folder valid_ids_data)
 bash get_valid_ids.sh
 
-# Download data to link comments / changes in db_xref qualifiers with coordinate changes
+# Download data to link comments / changes in db_xref qualifiers with coordinate changes (into folder gene_changes_comments_and_pmids)
 bash get_data_gene_changes_comments_and_pmids.sh
 
 # Remove possible old data
