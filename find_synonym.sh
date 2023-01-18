@@ -1,0 +1,1 @@
+grep $1 valid_ids_data/missing_synonyms.tsv valid_ids_data/obsoleted_ids.tsv valid_ids_data/gene_IDs_names.tsv

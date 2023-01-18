@@ -75,6 +75,10 @@ The data used for this was generated with the pre-svn pombe genomes and with the
 
 The same unique identifier can refer to multiple features sometimes, such as introns. In that case, what we report the ones that are removed or added.
 
+### Resolving conflicts for a feature with multiple unique identifiers
+
+Sometimes, there have been features that were associated with a single 
+
 ## Getting the data
 
 > **WARNING:** Downloading all revisions and generating the full diffs will require ~100GB of space.

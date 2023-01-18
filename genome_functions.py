@@ -158,9 +158,13 @@ def read_pombe_genome(file_name, format, synonym_dictionary, all_systematic_ids_
         it corresponds to a systematic_id that was deleted.
     """
     known_exceptions_tsv = pandas.read_csv(known_exceptions,sep='\t')
-    known_exception_dict = dict()
+    known_exception_dict_gene_qualifiers = dict()
+    known_exception_dict_systematic_id_qualifiers = dict()
     for i,row in known_exceptions_tsv.iterrows():
-        known_exception_dict[frozenset(row['gene_qualifiers'].split(','))] = row['change_to']
+        if row['qualifier_type'] == 'gene':
+            known_exception_dict_gene_qualifiers[frozenset(row['qualifier_value'].split(','))] = row['change_to']
+        if row['qualifier_type'] == 'systematic_id':
+            known_exception_dict_systematic_id_qualifiers[frozenset(row['qualifier_value'].split(','))] = row['change_to']
 
     with open(all_systematic_ids_ever) as f:
         valid_ids = set([line.rstrip('\n') for line in f])
@@ -169,72 +173,79 @@ def read_pombe_genome(file_name, format, synonym_dictionary, all_systematic_ids_
     with open(file_name, errors='replace') as ins:
         contig = SeqIO.read(ins,format)
 
-    # Features to be added to the contig file (duplicated systematic_ids)
-    extra_features = list()
-    for feature in contig.features:
-        if 'systematic_id' not in feature.qualifiers and 'gene' in feature.qualifiers:
+    # Function to resolve when multiple identifiers are present for the same feature, we define it here to avoid code duplication
+    def resolve_multiple_indentifiers(systematic_ids, known_exception_dict):
+        if frozenset(systematic_ids) in known_exception_dict:
+            value = known_exception_dict[frozenset(systematic_ids)]
+            if value == 'skip':
+                # Skip this feature
+                contig.features.remove(feature)
+                return
+            elif value == 'duplicate':
+                # Duplicate the feature for each extra systematic id
+                for systematic_id in systematic_ids[1:]:
+                    copied_feature = deepcopy(feature)
+                    copied_feature.qualifiers['systematic_id'] = [systematic_id]
+                    contig.features.append(copied_feature)
+                # Return to the first systematic_id to be assigned to the original feature
+                return systematic_ids[:1]
+            else:
+                # Return the value in 'change_to' column
+                return [value]
+        else:
+            raise ValueError('\\gene or systematic_id qualifier contains more than one systematic_id and not included in known_exceptions', systematic_ids)
 
+    for feature in contig.features:
+        if 'systematic_id' in feature.qualifiers and len(feature.qualifiers['systematic_id']) > 1:
+            new_systematic_id = resolve_multiple_indentifiers(feature.qualifiers['systematic_id'], known_exception_dict_systematic_id_qualifiers)
+            if new_systematic_id:
+                feature.qualifiers['systematic_id'] = new_systematic_id
+        elif 'systematic_id' not in feature.qualifiers and 'gene' in feature.qualifiers:
             # The gene qualifier contains a current systematic_id (we use a set because sometimes there are duplicated qualifiers)
             systematic_ids = list(set(value for value in feature.qualifiers['gene'] if value in valid_ids))
-            original_systematic_ids = systematic_ids[:]
             if len(systematic_ids) > 0:
-                # Substitute all values by their synonym + keep unique values only
-                systematic_ids = list(set(synonym_dictionary[i][0] if i in synonym_dictionary else i for i in systematic_ids))
+                if len(systematic_ids) == 1:
+                    feature.qualifiers['systematic_id'] = systematic_ids
+                    continue
+
+                # If more than one value, substitute all values by their synonym + keep unique values only
+                synonym_systematic_ids = list(set(synonym_dictionary[i][0] if i in synonym_dictionary else i for i in systematic_ids))
 
                 for i in systematic_ids:
                     if i in synonym_dictionary and len(synonym_dictionary[i])> 1:
                         # Send a warning if we are using a synonym with multiple possibilities
                         warnings.warn(f'using a synonym with more than one possibility:\n{feature}')
 
-                if len(systematic_ids) > 1:
-                    if frozenset(original_systematic_ids) in known_exception_dict:
-                        value = known_exception_dict[frozenset(original_systematic_ids)]
-                        if value == 'skip':
-                            continue
-                        elif value == 'duplicate':
-                            systematic_ids = value[:1]
-                            for systematic_id in value[1:]:
-                                copied_feature = deepcopy(feature)
-                                copied_feature.qualifiers['systematic_id'] = [systematic_id]
-                                extra_features.append(copied_feature)
-                        else:
-                            systematic_ids = value
-                    else:
-                        raise ValueError('\\gene qualifier contains more than one systematic_id and not included in known_exceptions', systematic_ids)
-                feature.qualifiers['systematic_id'] = systematic_ids
-                continue
+                if len(synonym_systematic_ids) == 1:
+                    feature.qualifiers['systematic_id'] = synonym_systematic_ids
+                    continue
 
-            # The gene qualifier contains a value starting with SP which is a unique synonym of a current systematic_id
-            list_of_lists = [synonym_dictionary[value] for value in feature.qualifiers['gene'] if (value.startswith('SP') and (value in synonym_dictionary))]
-            systematic_ids = list(set(sum(list_of_lists,[])))
-            if len(systematic_ids) > 0:
+                # Finally, it might be one of the known exceptions
                 if len(systematic_ids) > 1:
-                    if frozenset(systematic_ids) in known_exception_dict:
-                        value = known_exception_dict[frozenset(systematic_ids)]
-                        if value == 'skip':
-                            continue
-                        elif value == 'duplicate':
-                            systematic_ids = value[:1]
-                            for systematic_id in value[1:]:
-                                copied_feature = deepcopy(feature)
-                                copied_feature.qualifiers['systematic_id'] = [systematic_id]
-                                extra_features.append(copied_feature)
-                        else:
-                            systematic_ids = value
+                    new_systematic_id = resolve_multiple_indentifiers(systematic_ids, known_exception_dict_gene_qualifiers)
+                    if new_systematic_id:
+                        feature.qualifiers['systematic_id'] = new_systematic_id
+
+            else:
+
+                # The gene qualifier contains a value starting with SP which is a unique synonym of a current systematic_id
+                list_of_lists = [synonym_dictionary[value] for value in feature.qualifiers['gene'] if (value.startswith('SP') and (value in synonym_dictionary))]
+                systematic_ids = list(set(sum(list_of_lists,[])))
+
+                if len(systematic_ids) > 0:
+                    if len(systematic_ids) > 1:
+                        # TODO not sure if this is needed here
+                        new_systematic_id = resolve_multiple_indentifiers(systematic_ids, known_exception_dict_gene_qualifiers)
+                        if new_systematic_id:
+                            feature.qualifiers['systematic_id'] = new_systematic_id
                     else:
-                        raise ValueError('\\gene qualifier contains more than one systematic_id and not included in known_exceptions', systematic_ids, f'gene qualifiers were {feature.qualifiers["gene"]}')
+                        feature.qualifiers['systematic_id'] = systematic_ids
                 else:
-                    feature.qualifiers['systematic_id'] = systematic_ids
-                continue
-
-
-            for value in feature.qualifiers['gene']:
-                if value.startswith('SP'):
-                    print('a value in \gene qualifier starts with SP but was never a systematic_id, skipping -> ', value)
-                    for qualifier_type in feature.qualifiers:
-                        print('   ',qualifier_type,'-',feature.qualifiers[qualifier_type])
-
-    contig.features.extend(extra_features)
+                    for value in feature.qualifiers['gene']:
+                        if value.startswith('SP'):
+                            print('a value in \gene qualifier starts with SP but was never a systematic_id, skipping -> ', value)
+                            for qualifier_type in feature.qualifiers:
+                                print('   ',qualifier_type,'-',feature.qualifiers[qualifier_type])
 
     return contig
 

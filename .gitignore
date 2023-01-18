@@ -10,3 +10,4 @@ pre_svn_qualifier_changes_file.tsv
 /valid_ids_data/*.tsv
 /valid_ids_data/*.txt
 /gene_changes_comments_and_pmids/*.tsv
+/test_folder

@@ -31,7 +31,7 @@ SPAC1250.07	I		CDS	added
 SPAC1296.04	I		CDS	changed	
 SPAC1296.06	I	tah18	CDS	changed	
 SPAC12B10.09	I	pet801	CDS	changed	
-SPAC12D12.09	II	rev7	CDS	added_and_merged	SPBC12D12.09
+SPAC12D12.09	II	rev7	CDS	changed_and_merged	SPBC12D12.09
 SPAC12G12.13c	I		CDS	changed	
 SPAC12G12.15	I	sif3	CDS	changed	
 SPAC12G12.17	I		CDS	added	
@@ -55,7 +55,7 @@ SPAC14C4.09	I	agn1	CDS,CDS_AFTER	changed
 SPAC14C4.16	I		CDS	added	
 SPAC1556.01c	I	rad50	CDS	changed	
 SPAC1556.03	I	azr1	CDS	changed	
-SPAC1556.06	I	meu1	CDS	changed_and_removed	
+SPAC1556.06	I	meu1	CDS	multi_CDS	
 SPAC1556.06.1	I	meu1	CDS	added_changed_and_merged	SPAC1556.06
 SPAC1556.06.2	I	meu1-2	CDS	added_changed_and_removed	
 SPAC1565.08	I	cdc48	CDS	changed	
@@ -88,7 +88,6 @@ SPAC17A5.02c	I	dbr1	CDS	changed
 SPAC17A5.07c	I	ulp2	CDS	changed	
 SPAC17A5.19	I		CDS	added	
 SPAC17C9.08	I	pnu1	CDS	changed	
-SPAC17D4.01	I		CDS	added	
 SPAC17D4.04	I		CDS	changed	
 SPAC17G6.02c	I	tco1	CDS	removed	
 SPAC17G6.02c.1	I	tco1	CDS	added	
@@ -169,7 +168,7 @@ SPAC22E12.15	I		CDS	removed
 SPAC22E12.17c	I	glo3	CDS	changed	
 SPAC22F3.03c	I		CDS	changed	
 SPAC22F3.04	I	mug62	CDS	changed	
-SPAC22F3.11c	I	snu23	CDS	added_changed_and_removed	
+SPAC22F3.11c	I	snu23	CDS	multi_CDS	
 SPAC22F3.15	I		CDS	added	
 SPAC22F8.07c	I	rtf1	CDS	changed	
 SPAC22F8.10c	I	sap145	CDS	changed	
@@ -177,7 +176,6 @@ SPAC22G7.04	I	ubp13	CDS	changed
 SPAC22G7.07c	I		CDS	changed	
 SPAC22H10.02	I		CDS	changed	
 SPAC22H10.03c	I	kap114	CDS	changed	
-SPAC23A1.10	I	tef102	CDS	changed	
 SPAC23A1.18c	I	mrp51	CDS	changed	
 SPAC23A1.20	I	new11	CDS	added_and_changed	
 SPAC23C11.04c	I	pnk1	CDS	changed	
@@ -209,9 +207,7 @@ SPAC26F1.14c	I	aif1	CDS	changed
 SPAC26H5.02c	I		CDS	changed	
 SPAC26H5.04	I		CDS	changed	
 SPAC26H5.12	I	rpo41	CDS	changed	
-SPAC27D7.04	I		mRNA	added_and_removed	
-SPAC27D7.09c	I		CDS	removed	
-SPAC27D7.10c	I		CDS	added_and_merged	SPAC27D7.09c
+SPAC27D7.10c	I		CDS	merged	SPAC27D7.09c
 SPAC27D7.12c	I		CDS	changed	
 SPAC27E2.12	I		CDS	added	
 SPAC27E2.13	I		CDS	added_changed_and_removed	
@@ -233,9 +229,9 @@ SPAC2C4.11c	I	rbp28	CDS	changed
 SPAC2C4.12c	I		CDS	changed	
 SPAC2E12.02	I		CDS	added	
 SPAC2E12.05	I	wtf1	CDS	changed	
-SPAC2F3.12c	I		CDS	changed_and_removed	
+SPAC2F3.12c	I		CDS	added	
 SPAC2F3.13c	I		CDS	changed	
-SPAC2F3.17c	I	lsm6	CDS	added	
+SPAC2F3.17c	I		CDS	multi_CDS	SPAC2F3.12c
 SPAC2F3.18c	I		CDS	added_and_changed	
 SPAC2F7.08c	I	snf5	CDS	changed	
 SPAC2G11.09	I		CDS	changed	
@@ -294,7 +290,7 @@ SPAC4G9.22	I		CDS	added_and_changed
 SPAC4H3.06	I		CDS	changed	
 SPAC4H3.07c	I		CDS	changed	
 SPAC4H3.12c	I		CDS	removed	
-SPAC4H3.16	I		CDS,misc_RNA	added_and_changed	
+SPAC4H3.16	I		CDS	added	
 SPAC4H3.17	I		CDS	added	
 SPAC521.02	I	wss1	CDS	changed	
 SPAC56E4.04c	I	cut6	CDS	changed	
@@ -325,8 +321,8 @@ SPAC6B12.18	I		CDS	added_and_changed
 SPAC6B12.19	I	rsa3	CDS	added	
 SPAC6C3.04	I	cit1	CDS	changed	
 SPAC6F12.08c	I		CDS	changed	
-SPAC6F6.16c	I	tpz1	CDS	changed_and_removed	
-SPAC6F6.18c	I	mug169	CDS	added_and_merged	SPAC6F6.16c
+SPAC6F6.16c	I	tpz1	CDS	changed	
+SPAC6F6.18c	I	mug169	CDS	merged	SPAC6F6.16c
 SPAC6F6.19	I		CDS	added	
 SPAC6G10.08	I	idp1	CDS	changed	
 SPAC6G9.03c	I	mug183	CDS	changed	
@@ -340,17 +336,15 @@ SPAC806.06c	I		CDS	changed
 SPAC806.08c	I	mod21	CDS	changed	
 SPAC806.11	I		CDS	added_and_changed	
 SPAC821.07c	I	moc3	CDS	changed	
-SPAC823.02	I		CDS	added_and_merged	SPAC823.17
+SPAC823.02	I		CDS	merged	SPAC823.17
 SPAC823.04	I	rrp36	CDS	changed	
 SPAC823.09c	I		CDS	changed	
-SPAC823.17	I		CDS	changed	
+SPAC823.17	I		CDS	added	
 SPAC869.11	I	cat1	CDS	changed	
 SPAC890.07c	I	rmt1	CDS	changed	
 SPAC8C9.11	I		CDS	changed	
 SPAC8C9.19	I		CDS	added_and_changed	
 SPAC8C9.20	I		CDS	added_and_removed	
-SPAC8E11.02c	I		CDS,mRNA	changed	
-SPAC8E11.03c	I	rad24	CDS,mRNA	added_changed_and_removed	
 SPAC8E11.08c	I		CDS	added_and_changed	
 SPAC8E11.09c	I		CDS	added_changed_and_removed	
 SPAC8E11.12	I		CDS	added	
@@ -359,8 +353,8 @@ SPAC9.06c	I		CDS	changed
 SPAC9.12c	I	atp12	CDS	changed	
 SPAC922.09	I		CDS	added	
 SPAC926.10	I	new9	CDS	added	
-SPAC959.05c	I		CDS	changed_and_removed	
-SPAC959.06c	I		CDS	added_and_changed	
+SPAC959.05c	I		CDS	changed	
+SPAC959.06c	I		CDS	changed	
 SPAC959.09c	I	apc5	CDS	changed	
 SPAC959.10	I		CDS	added	
 SPAC959.11	I		CDS	added	
@@ -380,7 +374,6 @@ SPAP4C9.02	I		CDS	added
 SPAP8A3.12c	I	tpp2	CDS	changed	
 SPAPB15E9.01c	I		CDS	changed	
 SPAPB15E9.02c	I		CDS	added	
-SPAPB15E9.03c	I	Tf2-5	CDS	added	
 SPAPB15E9.06	I		CDS	added	
 SPAPB17E12.03	I		CDS	changed	
 SPAPB17E12.06	I		CDS	changed	
@@ -396,7 +389,7 @@ SPAPB1A10.05	I		CDS	changed
 SPAPB1A10.08	I		CDS	changed	
 SPAPB1A10.15	I	arv1	CDS	changed	
 SPAPB1A10.16	I		CDS	added_and_changed	
-SPAPB1A11.05	I		CDS	added_and_merged	SPAC31G5.01
+SPAPB1A11.05	I		CDS	added_and_merged	SPAC31G5.01,SPAPB1A11.06
 SPAPB1A11.06	I		CDS	added	
 SPAPB1E7.05	I	gde1	CDS	changed	
 SPAPB1E7.06c	I	eme1	CDS	changed	
@@ -485,29 +478,29 @@ SPBC1271.09	II	tgp1	CDS	changed
 SPBC1271.15c	II		CDS	changed	
 SPBC1289.12	II	usp109	CDS	changed	
 SPBC12D12.07c	II	trx2	CDS	changed	
-SPBC12D12.09	II	rev7	CDS	changed	
+SPBC12D12.09	II	rev7	CDS	added	
 SPBC1347.05c	II		CDS	changed	
 SPBC1347.07	II	rex2	CDS	changed	
 SPBC1347.14c	II		CDS	added	
-SPBC1348.01	I		CDS	added_and_removed	
-SPBC1348.02	I		CDS	added_and_removed	
-SPBC1348.03	I		CDS	added_and_removed	
-SPBC1348.04	I		CDS	added_and_removed	
-SPBC1348.05	I		CDS	added_and_removed	
-SPBC1348.06c	I		CDS	added_and_removed	
-SPBC1348.07	I		CDS	added_and_removed	
-SPBC1348.08c	I		CDS	added_and_removed	
-SPBC1348.09	I		CDS	added_and_removed	
-SPBC1348.10c	I		CDS	added_and_removed	
-SPBC1348.11	II		CDS	added_changed_and_removed	
-SPBC1348.12	II		CDS	added_changed_and_removed	
+SPBC1348.01	II		CDS	added	
+SPBC1348.02	II		CDS	added	
+SPBC1348.03	II		CDS	added	
+SPBC1348.04	II		CDS	added	
+SPBC1348.05	II		CDS	added	
+SPBC1348.06c	II		CDS	added	
+SPBC1348.07	II		CDS	added	
+SPBC1348.08c	II		CDS	added	
+SPBC1348.09	II		CDS	added	
+SPBC1348.10c	II		CDS	added	
+SPBC1348.11	II		CDS	added_and_changed	
+SPBC1348.12	II		CDS	added_and_changed	
 SPBC1348.13	II		CDS	changed_and_merged	SPNUMT.1
-SPBC1348.14c	I		CDS	changed	
+SPBC1348.14c	II		CDS	added	
 SPBC1348.15	II		CDS	added	
 SPBC13A2.02	II	nup82	CDS	changed	
 SPBC13E7.01	II	cwf22	CDS	changed	
 SPBC13E7.04	II	atp16	CDS	changed	
-SPBC13E7.07	II		CDS	added_and_removed	
+SPBC13E7.07	II		CDS	multi_CDS	
 SPBC13E7.10c	II	brf1	CDS	changed	
 SPBC13G1.04c	II	abh1	CDS	changed	
 SPBC13G1.12	II	did2	CDS	changed	
@@ -517,8 +510,8 @@ SPBC146.01	II	med15	CDS	changed
 SPBC146.11c	II	mug97	CDS	changed	
 SPBC146.12	II	coq6	CDS	changed	
 SPBC14C8.01c	II	cut2	CDS	changed	
-SPBC14C8.08c	II		CDS	added_and_merged	SPBC14C8.09c
-SPBC14C8.09c	II	dbl3	CDS	changed_and_removed	
+SPBC14C8.08c	II		CDS	merged	SPBC14C8.09c
+SPBC14C8.09c	II	dbl3	CDS	changed	
 SPBC14C8.11c	II		CDS	changed	
 SPBC14C8.19	II	tam10	CDS	added	
 SPBC15C4.02	II		CDS	changed	
@@ -580,7 +573,7 @@ SPBC18H10.10c	II	saf4	CDS	changed
 SPBC18H10.19	II	atg14	CDS	changed	
 SPBC18H10.21c	II		CDS	removed	
 SPBC19C7.11	II		CDS	changed	
-SPBC19F8.07	II	mcs6	CDS,CDS_before	added_changed_and_removed	
+SPBC19F8.07	II	mcs6	CDS	changed	
 SPBC19G7.01c	II	msh2	CDS	changed	
 "SPBC19G7.01c /controlled_curation=""term=disease associated, cancer; date=20060724"	II	msh2	CDS	added_and_removed	
 SPBC19G7.04	II		CDS	changed	
@@ -605,7 +598,6 @@ SPBC21C3.07c	II		CDS	changed
 SPBC21D10.11c	II	nfs1	CDS	changed	
 SPBC23G7.06c	II		CDS	changed	
 SPBC24C6.13	II	new16	CDS	added	
-SPBC24E9.15c	I	ef1a-b	CDS	added_and_merged	SPAC23A1.10
 SPBC25B2.07c	II	mmb1	CDS	changed	
 SPBC25D12.05	II	trm1	CDS	changed	
 SPBC25D12.06	II		CDS	changed	
@@ -642,7 +634,7 @@ SPBC30B4.08	II	eri1	CDS	changed
 SPBC30B4.09	II		CDS	added	
 SPBC30D10.04	II		CDS	changed	
 SPBC30D10.08	II	mgm101	CDS	changed	
-SPBC30D10.09c	II	hva22	CDS,mRNA	added_changed_and_removed	
+SPBC30D10.09c	II	hva22	CDS	changed	
 SPBC30D10.16	II	pha2	CDS	changed	
 SPBC30D10.21	II	new18	CDS	added	
 SPBC31A8.02	II		CDS	added_and_changed	
@@ -693,7 +685,7 @@ SPBC530.16	II	ksh1	CDS	added
 SPBC56F2.11	II	met6	CDS	changed	
 SPBC56F2.14	II	mrpl44	CDS	added	
 SPBC56F2.15	II	tam13	CDS	added	
-SPBC577.05c	II	rec27	CDS	changed_and_removed	
+SPBC577.05c	II	rec27	CDS	multi_CDS	
 SPBC582.04c	II		CDS	changed	
 SPBC582.05c	II	brc1	CDS	changed	
 SPBC582.07c	II	rpn7	CDS	changed	
@@ -736,7 +728,7 @@ SPBC8D2.03c	II		CDS	changed
 SPBC8D2.10c	II	rmt3	CDS	changed	
 SPBC8D2.17	II		CDS	changed	
 SPBC8D2.23	II	new15	CDS	added	
-SPBC8E4.02c	II	prt2	CDS,ncRNA	added_changed_and_merged	SPNCRNA.9001
+SPBC8E4.02c	II	prt2	CDS,ncRNA	changed_and_merged	SPNCRNA.9001
 SPBC8E4.12c	II	ecl3	CDS	added	
 SPBC902.05c	II	idh2	CDS	changed	
 SPBC947.03c	II	naa38	CDS	changed	
@@ -753,11 +745,9 @@ SPBCPT2R1.09c	II		CDS	added_changed_and_removed
 SPBCPT2R1.10	II		CDS	added_and_changed	
 SPBP18G5.02	II		CDS	changed	
 SPBP19A11.07c	II		CDS	changed	
-SPBP22H7.07	II		CDS	removed	
+SPBP22H7.07	II		CDS	multi_CDS	
 SPBP22H7.08	II		CDS	added	
 SPBP22H7.09c	II	mis15	CDS	changed	
-SPBP22H7.09c-1	II		mRNA	added_and_removed	
-SPBP22H7.09c-2	II		mRNA	added_and_removed	
 SPBP23A10.04	II		CDS	changed	
 SPBP23A10.07	II	rpa2	CDS	changed	
 SPBP23A10.16	II	sdh4	CDS	changed	
@@ -808,7 +798,7 @@ SPBTRNAASN.01	II		tRNA	added
 SPBTRNAASN.02	II		tRNA	added	
 SPBTRNAASN.03	II		tRNA	added	
 SPBTRNAASN.04	II		tRNA	added	
-SPBTRNAASP.03	II		tRNA	added_changed_and_merged	SPBTRNAARG.06
+SPBTRNAASP.03	II		tRNA	added_changed_and_merged	SPBTRNAARG.06,SPBTRNAASP.05
 SPBTRNAASP.04	II		tRNA	added	
 SPBTRNAASP.05	II		tRNA	added	
 SPBTRNAGLN.01	II		tRNA	added	
@@ -873,7 +863,6 @@ SPCC1223.10c	III	eaf1	CDS	changed
 SPCC1223.15c	III	spc19	CDS	added_and_changed	
 SPCC1235.03	III		CDS	changed	
 SPCC1235.10c	III	sec6	CDS	changed	
-SPCC1235.11	III		mRNA	added_and_removed	
 SPCC1235.15	III		CDS	changed	
 SPCC1235.16	III	vma21	CDS	added	
 SPCC1235.17	III		CDS	added	
@@ -891,7 +880,7 @@ SPCC1442.08c	III	cox12	CDS	changed
 SPCC1442.12	III	pps1	CDS	changed	
 SPCC1442.13c	III		CDS	changed	
 SPCC1442.19	III		CDS	added	
-SPCC1450.08c	III	wtf16	CDS	added_and_changed	
+SPCC1450.08c	III	wtf16	CDS	changed	
 SPCC1450.09c	III		CDS	changed	
 SPCC1450.14c	III	ero12	CDS	changed	
 SPCC1450.15	III		CDS	changed	
@@ -905,7 +894,7 @@ SPCC162.04c.1	III	wtf13	CDS	added
 SPCC162.04c.2	III	wtf13	CDS	added	
 SPCC162.05	III	coq3	CDS	changed	
 SPCC162.07	III	ent1	CDS	changed	
-SPCC162.09c	III	hmg1	CDS,CDS_BEFORE	added_changed_and_removed	
+SPCC162.09c	III	hmg1	CDS	changed	
 SPCC1620.02	III	wtf23	CDS	removed	
 SPCC1620.02.1	III	wtf23	CDS	added	
 SPCC1620.02.2	III	wtf23	CDS	added	
@@ -920,7 +909,7 @@ SPCC16C4.01	III	sif2	CDS	changed
 SPCC16C4.15	III	rml2	CDS	changed	
 SPCC16C4.16c	III		CDS	changed	
 SPCC16C4.21	III		CDS	added_and_changed	
-SPCC16C4.22	III		CDS,mRNA	added_and_changed	
+SPCC16C4.22	III		CDS	added	
 SPCC1739.03	III	hrr1	CDS	changed	
 SPCC1739.04c	III		CDS	changed	
 SPCC1795.08c	III	vid21	CDS	changed	
@@ -951,7 +940,7 @@ SPCC1884.02	III	nic1	CDS	changed
 SPCC18B5.02c	III		CDS	changed	
 SPCC18B5.07c	III	nup61	CDS	changed	
 SPCC18B5.12	III		CDS	added_and_merged	SPCC14G10.01
-SPCC1906.03	III	wtf19	CDS	added_and_removed	
+SPCC1906.03	III	wtf19	CDS	removed	
 SPCC1906.03.1	III	wtf19	CDS	added	
 SPCC1906.03.2	III	wtf19	CDS	added	
 SPCC1919.14c	III	bdp1	CDS	changed	
@@ -987,7 +976,7 @@ SPCC4G3.15c	III	not2	CDS	changed
 SPCC4G3.19	III		CDS	changed	
 SPCC4G3.20	III		CDS	added	
 SPCC548.02c	III	wtf3	CDS	changed	
-SPCC548.03c	III	wtf4	CDS	added_changed_and_removed	
+SPCC548.03c	III	wtf4	CDS	changed_and_removed	
 SPCC548.03c.1	III	wtf4	CDS	added	
 SPCC548.03c.2	III	wtf4	CDS	added	
 SPCC548.04	III	urm1	CDS	changed	
@@ -1007,7 +996,7 @@ SPCC622.05	III		CDS	removed
 SPCC622.11	III	lmb1	CDS	changed	
 SPCC622.14	III		CDS	changed	
 SPCC622.17	III	apn1	CDS	changed	
-SPCC622.21	III	wtf12	CDS	changed_and_removed	
+SPCC622.21	III	wtf12	CDS	changed	
 SPCC63.03	III		CDS	changed	
 SPCC63.10c	III	sec59	CDS	changed	
 SPCC645.02	III	gep4	CDS	changed	
@@ -1024,14 +1013,13 @@ SPCC757.15	III		CDS	added
 SPCC777.02	III		CDS	changed	
 SPCC777.13	III	vps35	CDS	changed	
 SPCC790.03	III		CDS	changed	
-SPCC794.07	III	lat1	CDS	added_and_removed	
+SPCC794.07	III	lat1	CDS	multi_CDS	
 SPCC794.16	III		CDS	added_and_removed	
 SPCC825.04c	III	naa40	CDS	changed	
 SPCC830.02	III	wtf24	CDS	changed	
 SPCC962.05	III	ast1	CDS	changed	
 SPCC970.01	III	rad16	CDS	changed	
 SPCC970.09	III	sec8	CDS	changed	
-SPCC970.11c	III	wtf9	CDS	added	
 SPCC970.12	III	mis18	CDS	changed	
 SPCP1E11.06	III	apl4	CDS	changed	
 SPCP20C8.03	III		CDS	changed	
@@ -1095,8 +1083,8 @@ SPMIT.11	mitochondrial	cox2	CDS	changed
 SPMITNCRNA.01	mitochondrial	RnpB	ncRNA	added	
 SPMITTRNAARG.01	mitochondrial		tRNA	changed	
 SPMITTRNAGLU.01	mitochondrial		tRNA	changed	
-SPMTR.03	mating_type_region	mat3-Mi	CDS,gene	added_and_removed	
-SPMTR.04	mating_type_region	mat3-Mc	CDS,gene	added_and_removed	
+SPMTR.03	mating_type_region	mat3-Mi	CDS	removed	
+SPMTR.04	mating_type_region	mat3-Mc	CDS	removed	
 SPNCRNA.01	I	prl1	misc_RNA,ncRNA	added_changed_and_removed	
 SPNCRNA.02	III	prl2	misc_RNA,ncRNA	added_and_changed	
 SPNCRNA.03	I	prl3	misc_RNA,ncRNA	added_and_changed	
@@ -2402,7 +2390,7 @@ SPNCRNA.2446	I		ncRNA	added
 SPNCRNA.2447	I		ncRNA	added	
 SPNCRNA.2448	I		ncRNA	added	
 SPNCRNA.2449	I		ncRNA	added	
-SPNCRNA.245	I		mRNA,misc_RNA	added_changed_and_merged	SPAC23D3.17
+SPNCRNA.245	I		misc_RNA	added_and_merged	SPAC23D3.17
 SPNCRNA.2450	I		ncRNA	added	
 SPNCRNA.2451	I		ncRNA	added	
 SPNCRNA.2452	I		ncRNA	added	
@@ -4423,7 +4411,7 @@ SPNCRNA.4297	I		ncRNA	added
 SPNCRNA.4298	I		ncRNA	added	
 SPNCRNA.4299	I		ncRNA	added	
 SPNCRNA.43	I	prl43	misc_RNA,ncRNA	added_and_changed	
-SPNCRNA.430	II		mRNA,misc_RNA	added_changed_and_merged	SPBC1604.25
+SPNCRNA.430	II		misc_RNA	added_and_merged	SPBC1604.25
 SPNCRNA.4300	I		ncRNA	added	
 SPNCRNA.4301	I		ncRNA	added	
 SPNCRNA.4302	I		ncRNA	added	
@@ -5432,7 +5420,6 @@ SPNCRNA.5216	II		ncRNA	added
 SPNCRNA.5217	II		ncRNA	added	
 SPNCRNA.5218	II		ncRNA	added	
 SPNCRNA.5219	II		ncRNA	added	
-SPNCRNA.522	III		mRNA	added_and_merged	SPCC569.09
 SPNCRNA.5220	II		ncRNA	added	
 SPNCRNA.5221	II		ncRNA	added	
 SPNCRNA.5222	II		ncRNA	added	
@@ -5532,7 +5519,7 @@ SPNCRNA.5306	II		ncRNA	added
 SPNCRNA.5307	II		ncRNA	added	
 SPNCRNA.5308	II		ncRNA	added	
 SPNCRNA.5309	II		ncRNA	added	
-SPNCRNA.531	I		mRNA,misc_RNA	added_changed_and_merged	SPAC4G9.22
+SPNCRNA.531	I		misc_RNA	added_and_merged	SPAC4G9.22
 SPNCRNA.5310	II		ncRNA	added	
 SPNCRNA.5311	II		ncRNA	added	
 SPNCRNA.5312	II		ncRNA	added	
@@ -7692,7 +7679,7 @@ SPNCRNA.7266	III		ncRNA	added
 SPNCRNA.7267	III		ncRNA	added	
 SPNCRNA.7268	III		ncRNA	added	
 SPNCRNA.7269	III		ncRNA	added	
-SPNCRNA.727	I		misc_RNA,ncRNA	added_changed_and_merged	SPNCRNA.82
+SPNCRNA.727	I		misc_RNA,ncRNA	added_changed_and_merged	SPNCRNA.82,SPSNORNA.10
 SPNCRNA.7270	III		ncRNA	added	
 SPNCRNA.7271	III		ncRNA	added	
 SPNCRNA.7272	III		ncRNA	added	
@@ -8389,7 +8376,7 @@ SPNCRNA.898	I		misc_RNA,ncRNA	added_and_changed
 SPNCRNA.899	I		misc_RNA,ncRNA	added_and_changed	
 SPNCRNA.90	I		misc_RNA,ncRNA	added_and_changed	
 SPNCRNA.900	I		misc_RNA,ncRNA	added_and_changed	
-SPNCRNA.9001	II	prt2	CDS,ncRNA	changed	
+SPNCRNA.9001	II	prt2	ncRNA	added	
 SPNCRNA.901	I		misc_RNA,ncRNA	added_and_changed	
 SPNCRNA.902	I		misc_RNA,ncRNA	added_and_changed	
 SPNCRNA.903	I		misc_RNA,ncRNA	added_and_changed	
@@ -8500,7 +8487,6 @@ SPNCRNA.998	I		misc_RNA,ncRNA	added_and_changed
 SPNCRNA.999	I		misc_RNA,ncRNA	added_and_changed	
 SPNCRNA15	II		misc_RNA	added_and_removed	
 SPNCTRNA.25	II		misc_RNA	added_and_removed	
-SPNUMT.1	II		CDS	added_and_removed	
 SPRPTA.1	I		repeat_region	added_and_removed	
 SPRPTA.10	I		repeat_region	added	
 SPRPTA.11	I		repeat_region	added	
@@ -8608,14 +8594,14 @@ SPRPTCENC.6	III	dh3.3	repeat_region	added
 SPRPTCENC.7	III	dg3.3	repeat_region	added	
 SPRPTCENC.8	III		repeat_region	added	
 SPRPTCENC.9	III	dh3.4	repeat_region	added	
-SPRRNA.01	mitochondrial	rnl	rRNA	added_changed_and_removed	
+SPRRNA.01	mitochondrial	rnl	rRNA	changed	
 SPRRNA.02	mitochondrial	rns	rRNA	changed	
 SPRRNA.03	III		rRNA	added	
 SPRRNA.04	III		rRNA	added	
 SPRRNA.05	III		rRNA	added	
 SPRRNA.06	III		rRNA	added	
 SPRRNA.07	III		rRNA	added	
-SPRRNA.08	III		rRNA	added_and_merged	SPRRNA.52
+SPRRNA.08	III		rRNA	added_and_merged	SPRRNA.46,SPRRNA.49,SPRRNA.52
 SPRRNA.09	III		rRNA	added_and_merged	SPRRNA.45
 SPRRNA.10	I		rRNA	added	
 SPRRNA.11	I		rRNA	added	
@@ -8627,9 +8613,9 @@ SPRRNA.17	I		rRNA	added
 SPRRNA.18	I		rRNA	added	
 SPRRNA.19	I		rRNA	added	
 SPRRNA.20	I		rRNA	added	
-SPRRNA.21	III		rRNA	added_and_merged	SPRRNA.47
+SPRRNA.21	III		rRNA	added_and_merged	SPRRNA.42,SPRRNA.43,SPRRNA.47,SPRRNA.50
 SPRRNA.22	III		rRNA	added_and_removed	
-SPRRNA.23	III		rRNA	added_and_merged	SPRRNA.51
+SPRRNA.23	III		rRNA	added_and_merged	SPRRNA.44,SPRRNA.48,SPRRNA.51
 SPRRNA.24	III		rRNA	added	
 SPRRNA.25	III		rRNA	removed	
 SPRRNA.26	III		rRNA	added	
