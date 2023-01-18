@@ -17,13 +17,14 @@ class PipelineTest(unittest.TestCase):
             this_chromosome = SeqIO.read(latest_revision,'embl')
             for feature in this_chromosome.features:
                 # Only main features (mRNA seems to have been used only very few times)
-                if feature.type not in ["5'UTR","3'UTR",'intron','promoter','LTR', 'misc_feature', 'mRNA']:
+                if feature.type not in ["5'UTR","3'UTR",'intron','promoter','LTR', 'misc_feature', 'mRNA','CDS_before','CDS_BEFORE','gene']:
                     if 'systematic_id' in feature.qualifiers:
                         all_systematic_ids.update(feature.qualifiers['systematic_id'])
 
         # load summary data
         data = pandas.read_csv('genome_changes_summary.tsv', sep='\t', na_filter=False)
-        print(pandas.unique(data.category))
+        # Exclude the multi-CDS case
+        data = data.loc[data.category != 'multi_CDS', :]
         # The ones with these categories should be present in the chromosome file
         changed_or_added = data.category.isin(['changed', 'added', 'added_and_changed'])
         # The ones that are present in the chromosome file

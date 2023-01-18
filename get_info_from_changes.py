@@ -11,6 +11,8 @@ parser.add_argument('--coordinate_changes_files', nargs='+', default=['all_coord
 parser.add_argument('--qualifier_changes_files', nargs='+', default=['all_qualifier_changes_file.tsv','gene_changes_comments_and_pmids/pre_svn_qualifier_changes_file.tsv'], help='Qualifier changes tsv files')
 parser.add_argument('--output_modified_coordinates',default='only_modified_coordinates.tsv', help='output tsv file')
 parser.add_argument('--output_summary',default='genome_changes_summary.tsv', help='output tsv file')
+parser.add_argument('--genes_in_wrong_chromosomes',default='valid_ids_data/genes_in_wrong_chromosomes.tsv', help='file with wrong chromosomes')
+parser.add_argument('--systematic_ids_with_two_CDS',default='valid_ids_data/systematic_ids_associated_with_two_CDS.tsv', help='file with wrong chromosomes')
 
 args = parser.parse_args()
 
@@ -19,8 +21,8 @@ data = pandas.concat([
     pandas.read_csv(f, delimiter='\t', na_filter=False, dtype=str) for f in args.coordinate_changes_files
 ])
 
-# Main features only (mRNA was only used a few times)
-main_features_data = data[~data['feature_type'].isin(["5'UTR","3'UTR",'intron','promoter','LTR', 'misc_feature', 'mRNA']) & data.systematic_id.str.startswith('SP')].copy()
+# Main features only (mRNA was only used a few times, gene is a special one used only in the mating type region)
+main_features_data = data[~data['feature_type'].isin(["5'UTR","3'UTR",'intron','promoter','LTR', 'misc_feature', 'mRNA','CDS_before','CDS_BEFORE','gene']) & data.systematic_id.str.startswith('SP')].copy()
 
 # Make sure they are sorted properly (below, earliest_modification relies on 'added' rows being on top of 'removed' ones)
 main_features_data['date'] = pandas.to_datetime(main_features_data['date'],utc=True)
@@ -44,6 +46,14 @@ modification_data.to_csv(args.output_modified_coordinates, sep='\t', index=False
 # Also, some are added and then edited, some are edited and then deleted.
 
 data_subset = main_features_data[['systematic_id','chromosome', 'primary_name', 'added_or_removed']].copy()
+
+# We remove known errors
+error_data = pandas.read_csv(args.genes_in_wrong_chromosomes, delimiter='\t', na_filter=False, dtype=str)
+error_data['known_error'] = True
+data_subset = data_subset.merge(error_data,on=['systematic_id', 'chromosome'], how='outer')
+data_subset = data_subset[data_subset['known_error'] != True]
+data_subset.drop(columns=['known_error'])
+
 data_subset['net_change'] = 0
 data_subset['nb_changes'] = 1
 data_subset.loc[data_subset['added_or_removed'] == 'added','net_change'] = 1
@@ -80,7 +90,13 @@ merged_logi = data_subset2['category'].str.contains('removed') & data_subset2['s
 # Rename categories where merged happened
 data_subset2.loc[merged_logi,'category'] = data_subset2.loc[merged_logi,'category'].apply(lambda x: x.replace('remove','merge'))
 data_subset2['merged_into'] = ''
-data_subset2.loc[merged_logi,'merged_into'] = data_subset2.loc[merged_logi,'systematic_id'].apply(lambda x: synonym_dict[x][0])
+data_subset2.loc[merged_logi,'merged_into'] = data_subset2.loc[merged_logi,'systematic_id'].apply(lambda x: ','.join(sorted(synonym_dict[x])))
+
+# Some systematic ids have been associated with two CDSs in the past, and this messes up the count. This is only relevant if data from the pre-svn folder is used.
+if 'svn_2' in main_features_data['revision'].values:
+    with open(args.systematic_ids_with_two_CDS) as f:
+        multi_cds_ids = [line.rstrip('\n') for line in f]
+    data_subset2.loc[data_subset2.systematic_id.isin(multi_cds_ids),'category'] = 'multi_CDS'
 
 # Add extra column indicating what types of feature the systematic_id has ever contained
 extra_column_dataset = main_features_data[['systematic_id', 'feature_type']].groupby('systematic_id', as_index=False).agg({'feature_type': lambda x: ','.join(sorted(list(set(x))))})
