@@ -303,7 +303,7 @@ rm data/*/change_log/*/*.tsv
 
 ## Pre-svn data
 
-Some of the contig files pre-date the use of SVN, to download them and calculate the differences, they are in the ftp server of PomBase: https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/. The full list of those that pre-date svn are in the file ![results/pre_svn_folder_list.tsv]([results/pre_svn_folder_list.tsv]). The output files are attached in the release.
+Some of the contig files pre-date the use of SVN, to download them and calculate the differences, they are in the ftp server of PomBase: https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/. The full list of those that pre-date svn are in the file ![results/pre_svn_folder_list.tsv]([results/pre_svn_folder_list.tsv]). The output coordinates file can be found in [results/pre_svn_coordinate_changes_file.tsv](results/pre_svn_coordinate_changes_file.tsv). The qualifier changes file is too big, and can be found in the latest release ([gene_changes_comments_and_pmids/pre_svn_qualifier_changes_file.tsv](https://github.com/pombase/genome_changelog/releases/latest/download/pre_svn_qualifier_changes_file.tsv)). The file is used by `update_file.sh` (see above), and for that it is downloaded from the latest release.
 
 ```bash
 # Download files from first revision of svn and prepare directory structure (pre_svn_data)
@@ -323,4 +323,4 @@ python create_single_qualifier_changes_file.py --data_folder pre_svn_data/ --out
 
 ### Oher useful scripts
 
-`get_all_entries_for_systematic_id.sh`
+`get_all_entries_for_systematic_id.sh`, takes one argument, a systematic_id.

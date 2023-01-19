@@ -17,4 +17,4 @@ echo 'systematic_id	comment_addition	reference_addition	date' > gene_changes_com
 curl -k https://raw.githubusercontent.com/pombase/curation/master/data_files/new-gene-data.tsv|tail -n+2 >> gene_changes_comments_and_pmids/new-gene-data.tsv
 
 # qualifier_changes from pre-svn downloaded from release
-curl -L https://github.com/pombase/genome_changelog/releases/download/v0.1/pre_svn_qualifier_changes_file.tsv > gene_changes_comments_and_pmids/pre_svn_qualifier_changes_file.tsv
+curl -L https://github.com/pombase/genome_changelog/releases/latest/download/pre_svn_qualifier_changes_file.tsv > gene_changes_comments_and_pmids/pre_svn_qualifier_changes_file.tsv
