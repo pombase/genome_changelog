@@ -2,7 +2,7 @@
 
 ## Skipping versions
 
-Sometimes some version has formatting errors that make it impossible to read the contig files. For example, some old svn files have a premature EOF, likely because Artemis was closed before finishing saving them. You can simply exclude those files from the analysis. For that, add them to the dictionary in `skip_files` in the script `pombe_svn_diff.py`.
+Sometimes some version has formatting errors that make it impossible to read the contig files. For example, some old svn files have a premature EOF, likely because Artemis was closed before finishing saving them. You can simply exclude those files from the analysis. For that, add them to the file [valid_ids_data/revisions2skip.tsv](valid_ids_data/revisions2skip.tsv).
 
 ## Some fixed errors
 

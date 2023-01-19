@@ -17,6 +17,9 @@ bash get_revisions_where_contigs_changed.sh last
 # Download the contig files of those revisions with new changes
 python get_revisions_files.py
 
+# From the latest contigs of svn, load the obsolote_name field and create a tsv dictionary
+python gather_obsoleted_names.py > valid_ids_data/obsoleted_ids.tsv
+
 # Calculate differences between subsequent versions of the genome
 python pombe_svn_diff.py
 

@@ -14,11 +14,11 @@ parser.add_argument('--data_folders', nargs='+', default=glob.glob('data/*'), he
 parser.add_argument('--output_file', help='output file')
 args = parser.parse_args()
 # Known errors (revision number)
-skip_files = {
-    'chromosome1': ['7485', '963','217'],
-    'chromosome2': ['7477','1809', '1783','1395','1394','139','137','136','25','23'],
-    'chromosome3': ['49'],
-    }
+skip_files = dict()
+with open('valid_ids_data/revisions2skip.tsv') as ins:
+    for line in ins:
+        ls = line.strip().split('\t')
+        skip_files[ls[0]] = ls[1].split(',')
 
 all_changes = list()
 for folder in args.data_folders:
