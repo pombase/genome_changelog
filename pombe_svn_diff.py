@@ -13,12 +13,13 @@ class Formatter(argparse.ArgumentDefaultsHelpFormatter, argparse.RawDescriptionH
 parser = argparse.ArgumentParser(description=__doc__, formatter_class=Formatter)
 parser.add_argument('--data_folders', nargs='+', default=glob.glob('data/*'), help='folders where the analysis will be ran.')
 args = parser.parse_args()
+
 # Known errors (revision number)
-skip_files = {
-    'chromosome1': ['7485', '963','217'],
-    'chromosome2': ['7477','1809', '1783','1395','1394','139','137','136','25','23'],
-    'chromosome3': ['49'],
-    }
+skip_files = dict()
+with open('valid_ids_data/revisions2skip.tsv') as ins:
+    for line in ins:
+        ls = line.strip().split('\t')
+        skip_files[ls[0]] = ls[1].split(',')
 
 synonym_dict = make_synonym_dict('valid_ids_data/gene_IDs_names.tsv', 'valid_ids_data/obsoleted_ids.tsv', 'valid_ids_data/missing_synonyms.tsv')
 

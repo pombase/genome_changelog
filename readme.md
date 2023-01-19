@@ -2,13 +2,12 @@
 
 This repository contains scripts for:
 
-* Downloading previous versions of `.contig` files in the svn repository `curation.pombase.org/var/svn-repos/pombe-embl`.
+* Downloading multiple versions of `.contig` files in the svn repository `curation.pombase.org/var/svn-repos/pombe-embl` or PomBase FTP server.
 * Summarise the differences between subsequent versions of the contig files, namely:
   * Coordinates of removed/added features.
   * Changes in coordinates of features that are present in both versions.
   * Changes in qualifiers of features that are present in both versions.
-* It also contains a script to perform the diff for any two embl files (`two_genomes_diff.py`)
-* More PomBase-specific stuff
+* It also contains a script to perform the diff for any two embl files (`two_genomes_diff.py`). This might be useful outside of PomBase.
 
 ## TL;DR; to update diff files ⏩
 
@@ -21,7 +20,7 @@ poetry install
 # activate venv
 poetry shell
 
-# run this script
+# run this script (The comments explain what it does)
 bash update_file.sh
 
 # Commit changes
@@ -47,7 +46,7 @@ poetry shell
 
 Now when you call `python`, it will be the one from the `.venv`.
 
-## Calculating differences between two genomes
+## Using the code to calculate differences between two genomes (non-PomBase use-case)
 
 Most of the repository was made for a pombe genome analysis, in which many diffs of pombe genome were compared. If you are here only to quickly compare two genomes, you can run the script:
 
@@ -70,16 +69,12 @@ In order to assess whether a feature has changed or not, the script [two_genomes
 two genome versions. For PomBase, that is the feature qualifier `\systematic_id`. Old genomes did not have this qualifier, and used `\gene` instead. However, the `\gene` qualifier
 does not have to be unique, and there are some revisions were the usage of both is mixed.
 This is handled for the PomBase case in the function `read_pombe_genome` in [genome_functions.py](genome_functions.py).
-The data used for this was generated with the pre-svn pombe genomes and with the script [find_missing_synonyms.sh](find_missing_synonyms.sh) and is in the directory
+The data used for this was generated with the pre-svn pombe genomes and with the script [old_scripts/find_missing_synonyms.sh](find_missing_synonyms.sh) and is in the directory
 [valid_ids_data](valid_ids_data).
 
-The same unique identifier can refer to multiple features sometimes, such as introns. In that case, what we report the ones that are removed or added.
+The same unique identifier can refer to multiple features sometimes, such as introns. In that case, we report the ones that are removed or added.
 
-### Resolving conflicts for a feature with multiple unique identifiers
-
-Sometimes, there have been features that were associated with a single 
-
-## Getting the data
+## Getting the data (PomBase)
 
 > **WARNING:** Downloading all revisions and generating the full diffs will require ~100GB of space.
 
@@ -184,9 +179,17 @@ Where `data/chromosome1/10.contig` is the file `chromosome1.contig` at revision 
 
 You can also download the svn diffs by running `python get_svn_diff.py`
 
-### Known errors
+### Known errors and inconsistencies
 
-There are known erros in the downloaded contig files, some of which will require manual fixing if you are to run the analysis pipeline. See [`known_errors.md`](known_errors.md).
+There are known erros in the old contig files, some of which need fixing if you are to run the analysis pipeline. See [`known_errors.md`](known_errors.md).
+
+In addition, some previous inconsistencies are fixed using data from the following files:
+
+* [valid_ids_data/genes_in_wrong_chromosomes.tsv](valid_ids_data/genes_in_wrong_chromosomes.tsv): Some features were sometimes added to the wrong chromosome (see [issue 22](https://github.com/pombase/genome_changelog/issues/22#issue-1503090111)), and then move to the right chromosome. This may mess up the generation of [results/genome_changes_summary.tsv](results/genome_changes_summary.tsv), so we remove them from the table when running [get_info_from_changes.py](get_info_from_changes.py).
+* [valid_ids_data/known_exceptions.tsv](valid_ids_data/known_exceptions.tsv): Some features have been associated with two systematic_ids at the same time in certain revisions. This file allows the function `read_pombe_genome` (in [genome_functions.py](genome_functions.py)) to choose one of the two as unique identifier of the feature.
+* [valid_ids_data/missing_synonyms.tsv](valid_ids_data/missing_synonyms.tsv): Some of the synonyms are not included in the current genome, and they have been extracted from old genomes (pre_svn), by co-occurence as gene qualifiers, or as synonym qualifiers that are not longer included (see type column). This was generated using [old_scripts/find_missing_synonyms.sh](old_scripts/find_missing_synonyms.sh), but it can be updated manually if something is missing.
+* [valid_ids_data/obsoleted_ids.tsv](valid_ids_data/obsoleted_ids.tsv): Generated by [gather_obsoleted_names.py](gather_obsoleted_names.py). Obsoleted ids along with the gene they were merged into. Used to create a synonym dictionary that was used for old data as well as for [get_info_from_changes.py](get_info_from_changes.py).
+* [valid_ids_data/systematic_ids_associated_with_two_CDS.tsv](valid_ids_data/systematic_ids_associated_with_two_CDS.tsv): Some systematic_ids have been previously associated with two CDS features at the same time (this was sometimes used to represent multiple transcripts for a given gene, but not always). This messes up the count in [get_info_from_changes.py](get_info_from_changes.py). The ids in the file are used to solve the problem.
 
 ## Running the analysis
 
@@ -240,13 +243,12 @@ python create_single_coordinate_changes_file.py --output_file the_file.tsv
 `data/chromosome1/change_log/qualifiers/xxx.tsv` contains changes introduced in revision `xxx` to qualifiers of features that existed in revision `xxx` and the previous one. The output looks like this:
 
 ```tsv
-revision	user	date	systematic_id	primary_name	feature_type	qualifier_type	added_or_removed	value
-7940	vw253	2022-01-04	SPAC20G4.09		intron	controlled_curation	added	('term=misc, confirmed intron',)
-7940	vw253	2022-01-04	SPAC20G4.09		intron	controlled_curation	removed	('misc, confirmed',)
-7940	vw253	2022-01-04	SPAC23D3.16		intron	controlled_curation	added	('term=misc, confirmed intron',)
-7940	vw253	2022-01-04	SPAC23D3.16		intron	controlled_curation	removed	('term=misc, confirmed',)
-7940	vw253	2022-01-04	SPAC25G10.03		intron	controlled_curation	added	('term=misc, confirmed intron',)
-7940	vw253	2022-01-04	SPAC25G10.03		intron	controlled_curation	removed	('term=misc, confirmed',)
+revision	user	date	chromosome	systematic_id	primary_name	feature_type	qualifier_type	added_or_removed	value
+8659	vw253	2023-01-16	I	SPAC15A10.04c	zpr1	CDS	product	added	EF-1 alpha folding chaperone, zinc finger protein Zpr1
+8659	vw253	2023-01-16	I	SPAC15A10.04c	zpr1	CDS	product	removed	EF-1 alpha binding zinc finger protein Zpr1 (predicted)
+8656	vw253	2023-01-15	I	SPAC589.05c	qng1	CDS	controlled_curation	added	term=complementation, functionally complemented by human QNG1; db_xref=PMID:24911101; date=20140610
+8656	vw253	2023-01-15	I	SPAC589.05c	qng1	CDS	controlled_curation	added	term=human QNG1 ortholog; date=19700101
+8656	vw253	2023-01-15	I	SPAC589.05c	qng1	CDS	controlled_curation	removed	term=complementation, functionally complemented by human C9orf64; db_xref=PMID:24911101; date=20140610
 ```
 
 To combine all the changes in a single file, you can then run:
@@ -263,15 +265,10 @@ python create_single_qualifier_changes_file.py --output_file the_file.tsv
 > ```
 >
 
-`get_info_from_changes.py` generates [only_modified_coordinates.tsv](only_modified_coordinates.tsv), a table listing only the changes in gene locations (addition and removal in the same revision) for the main types of features (`CDS`,`ncRNA`,`snRNA`,`repeat_region`,`rRNA`,`tRNA`,`snoRNA`,`misc_RNA`).
-
-```
-python get_info_from_changes.py --input_files all_coordinate_changes_file.tsv pre_svn_coordinate_changes_file.tsv --output_modified_coordinates only_modified_coordinates.tsv
-```
+`get_info_from_changes.py` generates [only_modified_coordinates.tsv](only_modified_coordinates.tsv), a table listing only the changes in gene locations (addition and removal in the same revision) for the main types of features (`CDS`,`ncRNA`,`snRNA`,`repeat_region`,`rRNA`,`tRNA`,`snoRNA`,`misc_RNA`). It combines the data from the svn server and the pre-svn data.
+The script takes several inputs that should be there if you are using `update_file.sh`, but some might be missing.
 
 This can be particularly useful for alleles that refer to previous gene coordinates. This is used in the repository https://github.com/pombase/allele_qc.
-
- contains a table where only coordinate modifications are shown (modifications as in changes to gene coordinates, rather than new additions or removals of features). It combines the data from the svn server and the pre-svn data.
 
 ### Associating publications with changes in gene features.
 
@@ -286,12 +283,12 @@ To run this:
 bash get_data_gene_changes_comments_and_pmids.sh
 
 # Make the associations
-python associate_comments_with_genome_changes.py --output only_modified_coordinates_with_comments.tsv
+python associate_comments_with_genome_changes.py
 ```
 
 ### Listing revisions where genome sequence changed
 
-Output in the style of [genome_changes_svn](genome_changes_svn.tsv).
+From all genomes stored in data/*, see if in any of them the genome SEQUENCE changed (not the features). This is normally output into [results/genome_sequence_changes.tsv](results/genome_sequence_changes.tsv)
 
 ```bash
 python get_revisions_where_genome_sequence_changes.py --data data/* --output_file output.tsv
@@ -306,24 +303,24 @@ rm data/*/change_log/*/*.tsv
 
 ## Pre-svn data
 
-Some of the contig files pre-date the use of SVN, to download them and calculate the differences, they are in the ftp server of PomBase: https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/. The full list of those that pre-date svn are in the file ![pre_svn_folder_list.tsv]([pre_svn_folder_list.tsv]). The output files are attached in the release.
+Some of the contig files pre-date the use of SVN, to download them and calculate the differences, they are in the ftp server of PomBase: https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/. The full list of those that pre-date svn are in the file ![results/pre_svn_folder_list.tsv]([results/pre_svn_folder_list.tsv]). The output coordinates file can be found in [results/pre_svn_coordinate_changes_file.tsv](results/pre_svn_coordinate_changes_file.tsv). The qualifier changes file is too big, and can be found in the latest release ([gene_changes_comments_and_pmids/pre_svn_qualifier_changes_file.tsv](https://github.com/pombase/genome_changelog/releases/latest/download/pre_svn_qualifier_changes_file.tsv)). The file is used by `update_file.sh` (see above), and for that it is downloaded from the latest release.
 
 ```bash
 # Download files from first revision of svn and prepare directory structure (pre_svn_data)
 bash prepare_pre_svn_folder.sh
 
-# Download the contig files from ftp site and produce an equivalent to the revisions.txt described above
+# Download the contig files from ftp site and produce an equivalent to the revisions.txt described above, also fix known errors
 python get_ftp_site_files.py
 
 # Run the diffs on the pre_svn_data directory
 python pombe_svn_diff.py --data_folders pre_svn_data/*
 
 # Combine in single files
-python create_single_coordinate_changes_file.py --data_folder pre_svn_data/  --output_file pre_svn_coordinate_changes_file.tsv
-python create_single_qualifier_changes_file.py --data_folder pre_svn_data/ --output_file pre_svn_qualifier_changes_file.tsv
+python create_single_coordinate_changes_file.py --data_folder pre_svn_data/  --output_file coordinate_changes_file.tsv
+python create_single_qualifier_changes_file.py --data_folder pre_svn_data/ --output_file qualifier_changes_file.tsv
 ```
 
-### Find missing synonyms
 
-Some of the code was used to finding missing synonyms of genes and gather them into "tsv dictionaries" (see files `valid_ids_data/missing_synonyms.tsv` and `valid_ids_data/obsoleted_ids.tsv`). The code is in `find_missing_synonyms.sh` and the python scripts called within. To run it you need to have the pre_svn data as well as the latest version of the pombe genome.
+### Oher useful scripts
 
+`get_all_entries_for_systematic_id.sh`, takes one argument, a systematic_id.

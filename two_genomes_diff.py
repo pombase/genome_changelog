@@ -14,7 +14,7 @@ class Formatter(argparse.ArgumentDefaultsHelpFormatter, argparse.RawDescriptionH
 parser = argparse.ArgumentParser(description=__doc__, formatter_class=Formatter)
 parser.add_argument('--new_genome', type=str)
 parser.add_argument('--old_genome', type=str)
-parser.add_argument('--revision_string', type=str, default='')
+parser.add_argument('--revision_string', type=str, default='', help='Revision identifier associated with the diff. In the example cases, the svn revision or FTP folder name.')
 parser.add_argument('--format', type=str, default='embl', help='Format of the genomes (to be passed to SeqIO.read)')
 parser.add_argument('--output_locations_file', type=str)
 parser.add_argument('--output_qualifiers_file', type=str)

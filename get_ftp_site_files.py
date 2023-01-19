@@ -6,7 +6,7 @@ main_url = 'https://www.pombase.org/data/genome_sequence_and_features/artemis_fi
 
 contigs = ['chromosome1','chromosome2','chromosome3','mating_type_region','pMIT']
 
-with open('pre_svn_folder_list.tsv') as ins:
+with open('results/pre_svn_folder_list.tsv') as ins:
 
     ftp_folders = [l.strip() for l in ins.readlines()]
 

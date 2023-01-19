@@ -12,8 +12,8 @@ do
     mkdir -p "data/${contig}/change_log/qualifiers"
     mkdir -p "data/${contig}/diff"
 
-    last_revision_coordinates=$(sed -n '2p' all_coordinate_changes_file.tsv|cut -d$'\t' -f1)
-    last_revision_qualifiers=$(sed -n '2p' all_qualifier_changes_file.tsv|cut -d$'\t' -f1)
+    last_revision_coordinates=$(sed -n '2p' results/all_coordinate_changes_file.tsv|cut -d$'\t' -f1)
+    last_revision_qualifiers=$(sed -n '2p' results/all_qualifier_changes_file.tsv|cut -d$'\t' -f1)
 
     # Get the maximum of the two
     last_revision_included=$(( $last_revision_coordinates > $last_revision_qualifiers ? $last_revision_coordinates : $last_revision_qualifiers ))

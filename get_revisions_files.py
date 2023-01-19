@@ -2,6 +2,7 @@ import os
 import glob
 import argparse
 from multiprocessing import Pool
+import subprocess
 
 class Formatter(argparse.ArgumentDefaultsHelpFormatter, argparse.RawDescriptionHelpFormatter):
     pass
@@ -19,7 +20,9 @@ def download(arg_tuple):
     if os.path.isfile(outfile):
         return
     print(f'downloading {revision} at {output_dir}')
-    os.system(f'svn cat -r {revision} svn+ssh://manu@curation.pombase.org/var/svn-repos/pombe-embl/trunk/{contig}.contig > {outfile}')
+    proc = subprocess.Popen([f'svn cat -r {revision} svn+ssh://manu@curation.pombase.org/var/svn-repos/pombe-embl/trunk/{contig}.contig > {outfile}'], shell=True)
+    proc.wait()
+    proc.terminate()
 
 if __name__ == '__main__':
 
