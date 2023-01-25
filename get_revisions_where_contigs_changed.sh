@@ -20,7 +20,7 @@ do
 
     # Download
     if [ $1 == 'all' ];then
-        echo "downloading ${contig} revisions from ${last_revision_included}..."
+        echo "downloading ALL revisions..."
         svn log -q svn+ssh://manu@curation.pombase.org/var/svn-repos/pombe-embl trunk/${contig}.contig |awk 'NR%2==0'|cut -d ' ' -f1,3,5|sed 's/^.\{1\}//' > data/${contig}/revisions.txt
     elif [ $1 == 'last' ];then
         echo "downloading ${contig} revisions from ${last_revision_included}..."
