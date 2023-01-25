@@ -3,6 +3,8 @@ import pandas
 import glob
 import re
 from Bio import SeqIO
+import os
+import subprocess
 
 class PipelineTest(unittest.TestCase):
 
@@ -10,11 +12,25 @@ class PipelineTest(unittest.TestCase):
         """
         Check that the info in genome_changes_summary.tsv is correct
         """
+        chromosomes = ['chromosome1','chromosome2','chromosome3','mating_type_region','pMIT']
+        if not os.path.isdir('test_folder'):
+            os.mkdir('test_folder')
+
+        coords = pandas.read_csv('results/all_coordinate_changes_file.tsv',sep='\t',na_filter=False)
+        qualifiers = pandas.read_csv('results/all_qualifier_changes_file.tsv',sep='\t',na_filter=False)
+        revision = max(coords.revision.max(), qualifiers.revision.max())
+
         # Get all systematic_id values in the last genome
         all_systematic_ids = set()
-        for chromosome in glob.glob('data/*/'):
-            latest_revision = sorted(glob.glob(f'{chromosome}/*.contig'), reverse=True, key= lambda x: int(re.match(r'.+\/(\d+).contig', x).groups()[0]))[0]
-            this_chromosome = SeqIO.read(latest_revision,'embl')
+
+        for chromosome in chromosomes:
+            contig_file = f'test_folder/{chromosome}.contig'
+            if not os.path.isfile(contig_file):
+                print(f'Downloading {chromosome}')
+                p = subprocess.Popen([f'svn cat -r {revision} svn+ssh://manu@curation.pombase.org/var/svn-repos/pombe-embl/trunk/{chromosome}.contig > {contig_file}'], shell=True)
+                p.wait()
+                p.terminate()
+            this_chromosome = SeqIO.read(contig_file,'embl')
             for feature in this_chromosome.features:
                 # Only main features (mRNA seems to have been used only very few times)
                 if feature.type not in ["5'UTR","3'UTR",'intron','promoter','LTR', 'misc_feature', 'mRNA','CDS_before','CDS_BEFORE','gene']:
