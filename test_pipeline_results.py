@@ -22,7 +22,7 @@ class PipelineTest(unittest.TestCase):
                         all_systematic_ids.update(feature.qualifiers['systematic_id'])
 
         # load summary data
-        data = pandas.read_csv('genome_changes_summary.tsv', sep='\t', na_filter=False)
+        data = pandas.read_csv('results/genome_changes_summary.tsv', sep='\t', na_filter=False)
         # Exclude the multi-CDS case
         data = data.loc[data.category != 'multi_CDS', :]
         # The ones with these categories should be present in the chromosome file
