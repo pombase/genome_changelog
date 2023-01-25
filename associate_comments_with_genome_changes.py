@@ -17,7 +17,6 @@ changelog_pombase = changelog_pombase[~((changelog_pombase['systematic_id'] == '
 # Remove changes that have not been included in the genome (Chr_I:682993!TC->T)
 changelog_pombase = changelog_pombase[~((changelog_pombase['systematic_id'] == 'SPAC22F3.11c') & (changelog_pombase['date'] == '2017-04-04'))]
 
-
 # Fill in empty dates with the closest
 changelog_pombase['date'][changelog_pombase['date'] == ''] = pandas.NaT
 changelog_pombase['date'] = changelog_pombase['date'].fillna(method='bfill')
@@ -52,40 +51,21 @@ changelog_pombase = changelog_pombase.sort_values(['date'],ascending=[True])
 # A note on this: merge_asof(left, right) finds for every row in left the nearest row in right, so to have a single match between
 # comments in changelog_pombase to output_data rows, we have to do it like this
 temp_data = pandas.merge_asof(changelog_pombase[['systematic_id','reference','comments', 'date']],output_data, by=['systematic_id'], on=['date'], direction='nearest')
-
-# We know some comments cannot be matched, but we check if any is left out unintendedly
-orphan_lines = temp_data[temp_data['revision'].isna()].copy()
-known_orphan_ids = set(pandas.read_csv('gene_changes_comments_and_pmids/known_orphan_comments_gene_changes.tsv', sep='\t')['systematic_id'])
-orphan_lines = orphan_lines[~orphan_lines['systematic_id'].isin(known_orphan_ids)].copy()
-
-if not orphan_lines.empty:
-    orphan_file = 'gene_changes_comments_and_pmids/orphan_comments.tsv'
-    msg =f'\033[1;33mSome of the comments in gene-coordinate-change-data.tsv don\'t match any row in only_modified_coordinates.tsv. They have been printed to the file {orphan_file}\033[0m'
-    warnings.warn(msg,RuntimeWarning)
-    orphan_lines.to_csv(orphan_file,sep='\t', index=False)
-    temp_data = temp_data[~temp_data['revision'].isna()].copy()
-
-# Remove the orphan lines
+#Remove the orphan lines 
 temp_data = temp_data[~temp_data['revision'].isna()]
-
 output_data = pandas.merge(output_data,temp_data[['original_index', 'reference','comments']], on='original_index',how='outer')
-
 output_data['date'] = output_data['date'].dt.date
-
-output_data = output_data.sort_values(['date','revision','systematic_id', 'added_or_removed'],ascending=[False, False, True, True])
-
 output_data.rename(columns={'reference': 'pombase_reference'}, inplace=True)
 output_data.rename(columns={'comments': 'pombase_comments'}, inplace=True)
-
 output_data = output_data.drop_duplicates()
 output_data.sort_values(['original_index'], inplace=True)
 output_data.drop(columns=['original_index']).to_csv('results/only_modified_coordinates_with_comments.tsv',sep='\t', index=False)
 
-## 2. GENE REMOVAL / ADDITION ############################################
+## 2. GENE REMOVAL / ADDITION on genome_changes_summary ############################################
 
 # Associate with comments from pombase for removal / addition
 
-data = pandas.read_csv('results/genome_changes_summary.tsv', sep='\t', na_filter=False)
+genome_changes_summary = pandas.read_csv('results/genome_changes_summary.tsv', sep='\t', na_filter=False)
 
 comments_new_genes = pandas.read_csv(
     'gene_changes_comments_and_pmids/new-gene-data.tsv', sep='\t', na_filter=False
@@ -104,9 +84,9 @@ comments_new_genes = comments_new_genes[~comments_new_genes['systematic_id'].isi
 comments_removed_genes = comments_removed_genes[~comments_removed_genes['systematic_id'].isin(known_orphans['systematic_id'])].copy()
 
 
-data = data.merge(comments_new_genes, on='systematic_id', how='outer')
-data = data.merge(comments_removed_genes, on='systematic_id', how='outer')
+genome_changes_summary = genome_changes_summary.merge(comments_new_genes, on='systematic_id', how='outer')
+genome_changes_summary = genome_changes_summary.merge(comments_removed_genes, on='systematic_id', how='outer')
 
-data.fillna('', inplace=True)
+genome_changes_summary.fillna('', inplace=True)
 
-data.to_csv('results/genome_changes_summary_with_comments.tsv', sep='\t', index=False)
+genome_changes_summary.to_csv('results/genome_changes_summary_with_comments.tsv', sep='\t', index=False)
