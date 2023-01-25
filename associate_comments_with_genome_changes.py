@@ -1,5 +1,4 @@
 import pandas
-import warnings
 
 
 ## 1. GENE STRUCTURE CHANGES ############################################
@@ -40,26 +39,29 @@ db_xref_script.rename(columns={'value': 'db_xref'}, inplace=True)
 unique_identifier_cols = ['systematic_id', 'revision', 'feature_type','added_or_removed']
 db_xref_script = db_xref_script.groupby(unique_identifier_cols).agg({'db_xref': ','.join})
 
-output_data = changelog_script.merge(db_xref_script, on=unique_identifier_cols, how='left')
+changelog_with_comments = changelog_script.merge(db_xref_script, on=unique_identifier_cols, how='left')
 
-output_data['date'] = pandas.to_datetime(output_data['date'],utc=True)
+changelog_with_comments['date'] = pandas.to_datetime(changelog_with_comments['date'],utc=True)
 changelog_pombase['date'] = pandas.to_datetime(changelog_pombase['date'],utc=True)
 
-output_data = output_data.sort_values(['date','systematic_id', 'added_or_removed'],ascending=[True, False, True])
+changelog_with_comments = changelog_with_comments.sort_values(['date','systematic_id', 'added_or_removed'],ascending=[True, False, True])
 changelog_pombase = changelog_pombase.sort_values(['date'],ascending=[True])
 
 # A note on this: merge_asof(left, right) finds for every row in left the nearest row in right, so to have a single match between
 # comments in changelog_pombase to output_data rows, we have to do it like this
-temp_data = pandas.merge_asof(changelog_pombase[['systematic_id','reference','comments', 'date']],output_data, by=['systematic_id'], on=['date'], direction='nearest')
+temp_data = pandas.merge_asof(changelog_pombase[['systematic_id','reference','comments', 'date']],changelog_with_comments, by=['systematic_id'], on=['date'], direction='nearest')
 #Remove the orphan lines 
 temp_data = temp_data[~temp_data['revision'].isna()]
-output_data = pandas.merge(output_data,temp_data[['original_index', 'reference','comments']], on='original_index',how='outer')
-output_data['date'] = output_data['date'].dt.date
-output_data.rename(columns={'reference': 'pombase_reference'}, inplace=True)
-output_data.rename(columns={'comments': 'pombase_comments'}, inplace=True)
-output_data = output_data.drop_duplicates()
-output_data.sort_values(['original_index'], inplace=True)
-output_data.drop(columns=['original_index']).to_csv('results/only_modified_coordinates_with_comments.tsv',sep='\t', index=False)
+changelog_with_comments = pandas.merge(changelog_with_comments,temp_data[['original_index', 'reference','comments']], on='original_index',how='outer')
+changelog_with_comments['date'] = changelog_with_comments['date'].dt.date
+changelog_with_comments.rename(columns={'reference': 'pombase_reference'}, inplace=True)
+changelog_with_comments.rename(columns={'comments': 'pombase_comments'}, inplace=True)
+changelog_with_comments = changelog_with_comments.drop_duplicates()
+changelog_with_comments.sort_values(['original_index'], inplace=True)
+changelog_with_comments.drop(columns=['original_index'], inplace=True)
+changelog_with_comments.to_csv('results/only_modified_coordinates_comments.tsv',sep='\t', index=False)
+
+
 
 ## 2. GENE REMOVAL / ADDITION on genome_changes_summary ############################################
 
@@ -89,4 +91,17 @@ genome_changes_summary = genome_changes_summary.merge(comments_removed_genes, on
 
 genome_changes_summary.fillna('', inplace=True)
 
-genome_changes_summary.to_csv('results/genome_changes_summary_with_comments.tsv', sep='\t', index=False)
+genome_changes_summary.to_csv('results/genome_changes_summary_comments.tsv', sep='\t', index=False)
+
+## 3. Comments on coordinate changes ############################################
+
+for input_file in ['results/all_coordinate_changes_file.tsv', 'results/pre_svn_coordinate_changes_file.tsv']:
+    output_file_name = input_file.split('.')[0] + '_comments.tsv'
+    all_coordinate_changes = pandas.read_csv(input_file,sep='\t',na_filter=False)
+    all_coordinate_changes['revision'] = all_coordinate_changes['revision'].astype(str)
+    unique_identifier_cols = ['systematic_id', 'revision', 'feature_type','added_or_removed']
+    all_coordinate_changes_with_comments = all_coordinate_changes.merge(db_xref_script, on=unique_identifier_cols, how='left')
+
+    # We include "value" not to duplicate rows in the rare cases where a repeated feature was added or removed
+    all_coordinate_changes_with_comments = all_coordinate_changes_with_comments.merge(changelog_with_comments[unique_identifier_cols + ['value', 'pombase_reference', 'pombase_comments']], on=unique_identifier_cols + ['value'], how='left')
+    all_coordinate_changes_with_comments.to_csv(output_file_name, sep='\t', index=False)

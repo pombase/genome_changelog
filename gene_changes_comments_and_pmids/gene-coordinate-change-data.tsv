@@ -304,8 +304,7 @@ SPBP22H7.09c	mis15			updated sequence coordinates	PMID:15369671	2007-01-05
 SPCC1223.10c	eaf1			Added exons	PMID:17150956	2006-12-14
 SPAPB17E12.08		join(9968..9990, 10070..10442)	join(9609..9623, 9699..9761, 9937..9986, 10070..10442)	Improved homology	pers. comm. Val Wood	2006-12-12
 SPBC30B4.08	eri1			gene structure updated	PMID:16797182	2006-09-22
-SPAC12D12.09	rev7			truncated penultimate exon to remove GIN	pers. comm. Nicole Kosarek	2006-08-01
-SPAC12D12.09	rev7			added new exon to insert KCIDIFGEF	pers. comm. Nicole Kosarek	2006-08-01
+SPAC12D12.09	rev7			truncated penultimate exon to remove GIN and added new exon to insert KCIDIFGEF	pers. comm. Nicole Kosarek	2006-08-01
 SPCC4B3.05c	hem12	join(28064..28097, 28155..28189, 28238..28816, 28866..29330)	join(28064..28097, 28155..28189, 28236..28260, 28308..28816, 28866..29330)	Improves Homology	pers. comm. Val Wood	2006-06-12
 SPCPJ732.03	meu15			new coordinates as per publication	PMID:11376151	2006-06-12
 SPAC21E11.05c	cyp8			Single base insertion allowed first 2 exons to be merged and extended (GAGT[G]GCA)	pers. comm. Trevor Pemberton (via Ivo Pedruzzi, UniProt)	2006-05-22

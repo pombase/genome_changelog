@@ -4,9 +4,9 @@ Create new coordinate changes files where changes to type of RNA are ignored
 import pandas
 
 
-input_files = ['results/all_coordinate_changes_file.tsv',
-                'results/pre_svn_coordinate_changes_file.tsv',
-                'results/only_modified_coordinates_with_comments.tsv',
+input_files = ['results/all_coordinate_changes_file_comments.tsv',
+                'results/pre_svn_coordinate_changes_file_comments.tsv',
+                'results/only_modified_coordinates_comments.tsv',
 ]
 
 chromosome_dictionary = {
@@ -22,7 +22,7 @@ genome_changes['chromosome'] = genome_changes['chromosome'].apply(lambda x : chr
 genome_changes['combined_column'] = genome_changes.apply(lambda r: [r['new_revision'], r['chromosome']], axis=1)
 
 for input_file in input_files:
-    output_file = input_file.split('.')[0] + '_without_rna_type_change.tsv'
+    output_file = input_file.split('.')[0] + '_no_type_change.tsv'
     data = pandas.read_csv(input_file,sep='\t',na_filter=False)
     data['original_index'] = data.index
     rna_data = data[data['feature_type'].str.contains(r'(?i)RNA')].copy()

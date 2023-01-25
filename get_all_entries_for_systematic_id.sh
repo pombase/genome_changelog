@@ -14,6 +14,6 @@ echo ''
 
 echo ''
 echo 'Gene modifications (perhaps linked to db_xref or pombase comments):'
-head -n 1 results/only_modified_coordinates_with_comments.tsv
-grep "	$1	" results/only_modified_coordinates_with_comments.tsv
+head -n 1 results/only_modified_coordinates_comments.tsv
+grep "	$1	" results/only_modified_coordinates_comments.tsv
 echo ''
