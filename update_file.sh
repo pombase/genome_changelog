@@ -1,11 +1,8 @@
 set -e
 
-# Download synonyms from PomBase (into folder valid_ids_data)
-bash get_valid_ids.sh
-
-# Download data to link comments / changes in db_xref qualifiers with coordinate changes (into folder gene_changes_comments_and_pmids)
-# It also downloads the qualifier changelog for the pre-svn data into the same folder (this is used by get_info_from_changes.py)
-bash get_data_gene_changes_comments_and_pmids.sh
+# Download synonyms from PomBase (into folder valid_ids_data) and 
+# the qualifier changelog from the pre-svn data into the same folder (this is used by get_info_from_changes.py)
+bash get_data.sh
 
 # Remove possible old data
 rm -rf data/*/change_log/*/*.tsv

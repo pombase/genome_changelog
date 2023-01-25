@@ -78,9 +78,9 @@ The same unique identifier can refer to multiple features sometimes, such as int
 
 > **WARNING:** Downloading all revisions and generating the full diffs will require ~100GB of space.
 
-No matter what you do, you need to download the synonyms list:
+Necessary no matter what you do:
 ```
-bash get_valid_ids.sh
+bash get_data.sh
 ```
 
 ### Access to the svn repository
@@ -259,12 +259,6 @@ python create_single_qualifier_changes_file.py --output_file the_file.tsv
 
 ### Listing changes on main features
 
-> **NOTE** You need to run this first:
-> ```
-> bash get_data_gene_changes_comments_and_pmids.sh
-> ```
->
-
 `get_info_from_changes.py` generates [only_modified_coordinates.tsv](only_modified_coordinates.tsv), a table listing only the changes in gene locations (addition and removal in the same revision) for the main types of features (`CDS`,`ncRNA`,`snRNA`,`repeat_region`,`rRNA`,`tRNA`,`snoRNA`,`misc_RNA`). It combines the data from the svn server and the pre-svn data.
 The script takes several inputs that should be there if you are using `update_file.sh`, but some might be missing.
 
@@ -279,9 +273,6 @@ Pombase-specific. Links changes in genome coordinates in the file `only_modified
 
 To run this:
 ```bash
-# Download qualifier changes from latest release
-bash get_data_gene_changes_comments_and_pmids.sh
-
 # Make the associations
 python associate_comments_with_genome_changes.py
 ```
