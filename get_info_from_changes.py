@@ -60,7 +60,11 @@ data_subset.loc[data_subset['added_or_removed'] == 'added','net_change'] = 1
 data_subset.loc[data_subset['added_or_removed'] == 'removed','net_change'] = -1
 data_subset['earliest_modification'] = data_subset['net_change'].copy()
 
-data_subset2 = data_subset.groupby('systematic_id', as_index=False).agg({'net_change': sum, 'nb_changes': sum, 'earliest_modification': lambda x: list(x)[-1], 'chromosome': lambda x: list(x)[0], 'primary_name': lambda x: list(x)[0], 'date': lambda x: list(x)[0]})
+# Columns containing latest and earliest change
+data_subset['latest_change'] = data_subset['date'].copy()
+data_subset['earliest_change'] = data_subset['date'].copy()
+
+data_subset2 = data_subset.groupby('systematic_id', as_index=False).agg({'net_change': sum, 'nb_changes': sum, 'earliest_modification': lambda x: list(x)[-1], 'chromosome': lambda x: list(x)[0], 'primary_name': lambda x: list(x)[0], 'latest_change': lambda x: list(x)[0], 'earliest_change': lambda x: list(x)[-1]})
 data_subset2['category'] = ''
 
 data_subset2.loc[(data_subset2['net_change'] == 1) & (data_subset2['nb_changes'] == 1), 'category'] = 'added'
@@ -101,6 +105,5 @@ if 'svn_2' in main_features_data['revision'].values:
 # Add extra column indicating what types of feature the systematic_id has ever contained
 extra_column_dataset = main_features_data[['systematic_id', 'feature_type']].groupby('systematic_id', as_index=False).agg({'feature_type': lambda x: ','.join(sorted(list(set(x))))})
 data_subset2 = data_subset2.merge(extra_column_dataset, on='systematic_id')
-data_subset2.rename(columns={'date': 'latest_change'}, inplace=True)
-data_subset2 = data_subset2[['systematic_id','chromosome','primary_name','feature_type','category','merged_into', 'latest_change']]
+data_subset2 = data_subset2[['systematic_id','chromosome','primary_name','feature_type','category','merged_into', 'earliest_change', 'latest_change']]
 data_subset2.to_csv(args.output_summary, sep='\t', index=False)
