@@ -47,12 +47,19 @@ changelog_pombase['date'] = pandas.to_datetime(changelog_pombase['date'],utc=Tru
 changelog_with_comments = changelog_with_comments.sort_values(['date','systematic_id', 'added_or_removed'],ascending=[True, False, True])
 changelog_pombase = changelog_pombase.sort_values(['date'],ascending=[True])
 
+# We associate the comments and references of pombase with both addition and removal
+changelog_pombase['added_or_removed'] = 'added,removed'
+changelog_pombase['added_or_removed'] = changelog_pombase['added_or_removed'].apply(str.split, args=[','])
+changelog_pombase = changelog_pombase.explode('added_or_removed')
+
 # A note on this: merge_asof(left, right) finds for every row in left the nearest row in right, so to have a single match between
 # comments in changelog_pombase to output_data rows, we have to do it like this
-temp_data = pandas.merge_asof(changelog_pombase[['systematic_id','reference','comments', 'date']],changelog_with_comments, by=['systematic_id'], on=['date'], direction='nearest')
-#Remove the orphan lines 
+temp_data = pandas.merge_asof(changelog_pombase[['systematic_id','reference','comments', 'date', 'added_or_removed']],changelog_with_comments, by=['systematic_id', 'added_or_removed'], on=['date'], direction='nearest')
+# Remove the orphan lines
 temp_data = temp_data[~temp_data['revision'].isna()]
+# Merge back
 changelog_with_comments = pandas.merge(changelog_with_comments,temp_data[['original_index', 'reference','comments']], on='original_index',how='outer')
+
 changelog_with_comments['date'] = changelog_with_comments['date'].dt.date
 changelog_with_comments.rename(columns={'reference': 'pombase_reference'}, inplace=True)
 changelog_with_comments.rename(columns={'comments': 'pombase_comments'}, inplace=True)
