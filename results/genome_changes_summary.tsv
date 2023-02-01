@@ -3865,7 +3865,7 @@ SPNCRNA.3796	I		lncRNA,ncRNA	added_and_changed		2022-01-12	2023-01-16
 SPNCRNA.3797	I		lncRNA,ncRNA	added_and_changed		2022-01-12	2023-01-16
 SPNCRNA.3798	I		lncRNA,ncRNA	added_and_changed		2022-01-12	2023-01-16
 SPNCRNA.3799	I		lncRNA,ncRNA	added_and_changed		2022-01-12	2023-01-16
-SPNCRNA.38	II	prl38	lncRNA,misc_RNA,ncRNA	added_and_changed		2004-09-15	2023-01-16
+SPNCRNA.38	II	prl38	lncRNA,misc_RNA,ncRNA	added_changed_and_merged	SPNCRNA.1493	2004-09-15	2023-01-23
 SPNCRNA.380	II		lncRNA,misc_RNA,ncRNA	added_and_changed		2008-05-12	2023-01-16
 SPNCRNA.3800	I		lncRNA,ncRNA	added_and_changed		2022-01-12	2023-01-16
 SPNCRNA.3801	I		lncRNA,ncRNA	added_and_changed		2022-01-12	2023-01-16

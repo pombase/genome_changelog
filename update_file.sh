@@ -37,8 +37,8 @@ python associate_comments_with_genome_changes.py
 
 # List if the genome sequence has changed
 python get_revisions_where_genome_sequence_changes.py --data data/* --output_file temp.tsv
-tail -n+2 genome_sequence_changes.tsv >>temp.tsv
-mv temp.tsv genome_sequence_changes.tsv
+tail -n+2 results/genome_sequence_changes.tsv >>temp.tsv
+mv temp.tsv results/genome_sequence_changes.tsv
 
 # Create extra files where the changes in type of RNA are not listed
 python remove_rna_type_change.py
