@@ -1,4 +1,6 @@
 revision	user	date	chromosome	systematic_id	primary_name	feature_type	added_or_removed	value	db_xref	pombase_reference	pombase_comments
+8691	manu	2023-02-01	II	SPBC8E4.01c		5'UTR	added	4444101..4444251			
+8691	manu	2023-02-01	II	SPBP4G3.02		5'UTR	added	4447506..4447556			
 8671	vw253	2023-01-23	II	SPNCRNA.38	prl38	lncRNA	removed	complement(2186474..2186908)			
 8660	vw253	2023-01-16	II	SPBC1198.04c		3'UTR	removed	complement(177469..177555)			
 8660	vw253	2023-01-16	II	SPBC1198.04c.1		3'UTR	added	complement(177469..177555)			
