@@ -42,3 +42,6 @@ mv temp.tsv genome_sequence_changes.tsv
 
 # Create extra files where the changes in type of RNA are not listed
 python remove_rna_type_change.py
+
+# Create extra files for website display
+python make_all_previous_coords_file.py
