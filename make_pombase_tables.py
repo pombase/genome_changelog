@@ -65,9 +65,13 @@ data.rename(columns={
     'location': 'Coordinates',
     'systematic_id': 'Systematic ID',
     'primary_name' : 'Primary name',
-    'added_or_removed': 'Added / Removed',
+    'added_or_removed': 'Before / After change',
     'pombase_comments': 'Comment',
     'date': 'Date'
 }, inplace=True)
 
-data[['Systematic ID', 'Primary name', 'Added / Removed', 'Coordinates', 'Comment', 'Reference', 'Date']].to_csv('results/pombase_tables/gene-coordinate-change-data.tsv', sep='\t', index=False)
+removed = data['Before / After change'] == 'removed'
+data.loc[removed, 'Before / After change'] = 'before'
+data.loc[~removed, 'Before / After change'] = 'after'
+
+data[['Date', 'Systematic ID', 'Primary name', 'Before / After change', 'Coordinates', 'Comment', 'Reference']].to_csv('results/pombase_tables/gene-coordinate-change-data.tsv', sep='\t', index=False)
