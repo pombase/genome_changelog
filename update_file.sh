@@ -45,3 +45,6 @@ python remove_rna_type_change.py
 
 # Create extra files for website display
 python make_all_previous_coords_file.py
+
+# Create files for pombase pages
+python make_pombase_tables.py
