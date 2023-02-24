@@ -62,7 +62,7 @@ data['reference'] = data.apply(formatting_function,axis=1)
 data['location'] = data.apply(lambda r: r['chromosome'] + ':' + r['value'],axis=1)
 data.rename(columns={
     'reference': 'Reference',
-    'location': 'Location',
+    'location': 'Coordinates',
     'systematic_id': 'Systematic ID',
     'primary_name' : 'Primary name',
     'added_or_removed': 'Added / Removed',
@@ -70,4 +70,4 @@ data.rename(columns={
     'date': 'Date'
 }, inplace=True)
 
-data[['Date', 'Systematic ID', 'Primary name', 'Added / Removed', 'Location', 'Reference', 'Comment']].to_csv('results/pombase_tables/gene-coordinate-change-data.tsv', sep='\t', index=False)
+data[['Systematic ID', 'Primary name', 'Added / Removed', 'Coordinates', 'Comment', 'Reference', 'Date']].to_csv('results/pombase_tables/gene-coordinate-change-data.tsv', sep='\t', index=False)
