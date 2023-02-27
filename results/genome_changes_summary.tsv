@@ -1878,6 +1878,7 @@ SPNCRNA.171	I		lncRNA,misc_RNA,ncRNA	added_and_changed		2008-05-12	2023-01-16
 SPNCRNA.1710	III		lncRNA,ncRNA	added_and_changed		2017-08-23	2023-01-16
 SPNCRNA.1711	III	adh1-antisense-2	ncRNA	added_and_merged	SPNCRNA.1710	2017-08-23	2022-09-27
 SPNCRNA.1712	II	nc-pho1	lncRNA,ncRNA	added_and_changed		2017-11-02	2023-01-16
+SPNCRNA.1714	I		lncRNA	added		2023-02-13	2023-02-13
 SPNCRNA.173	I		lncRNA,misc_RNA,ncRNA	added_and_changed		2008-05-12	2023-01-16
 SPNCRNA.174	I		lncRNA,misc_RNA,ncRNA	added_and_changed		2008-05-12	2023-01-16
 SPNCRNA.175	I		lncRNA,misc_RNA,ncRNA	added_and_changed		2008-05-12	2023-01-16
@@ -2589,7 +2590,7 @@ SPNCRNA.2626	I		lncRNA,ncRNA	added_and_changed		2022-01-12	2023-01-16
 SPNCRNA.2627	I		lncRNA,ncRNA	added_and_changed		2022-01-12	2023-01-16
 SPNCRNA.2628	I		lncRNA,ncRNA	added_and_changed		2022-01-12	2023-01-16
 SPNCRNA.2629	I		lncRNA,ncRNA	added_and_changed		2022-01-12	2023-01-16
-SPNCRNA.263	I		lncRNA,misc_RNA,ncRNA	added_and_changed		2008-05-12	2023-01-16
+SPNCRNA.263	I		lncRNA,misc_RNA,ncRNA	added_changed_and_removed		2008-05-12	2023-02-13
 SPNCRNA.2630	I		lncRNA,ncRNA	added_and_changed		2022-01-12	2023-01-16
 SPNCRNA.2631	I		lncRNA,ncRNA	added_and_changed		2022-01-12	2023-01-16
 SPNCRNA.2632	I		lncRNA,ncRNA	added_and_changed		2022-01-12	2023-01-16
