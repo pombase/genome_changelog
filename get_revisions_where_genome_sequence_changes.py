@@ -49,4 +49,8 @@ for folder in args.data_folders:
 output = pandas.DataFrame(all_changes, columns=['previous_revision', 'new_revision', 'date', 'chromosome'])
 output.sort_values(['date','new_revision', 'chromosome'], ascending=[False, False, True],inplace=True)
 
+def formatting_function(r):
+    return f'https://curation.pombase.org/pombe-embl-repo/trunk/{r["chromosome"]}.contig?p={r["previous_revision"]}'
+output['link'] = output.apply(formatting_function, axis=1)
+
 output.to_csv(args.output_file, sep='\t', index=False)

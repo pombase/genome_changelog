@@ -258,10 +258,12 @@ def genome_sequences_are_different(file1, file2):
         for line in ins1:
             if line.startswith('SQ'):
                 sq_line1 = line
+                break
         with open(file2, errors='replace') as ins2:
             for line in ins2:
                 if line.startswith('SQ'):
                     sq_line2 = line
+                    break
             if sq_line1 != sq_line2:
                 return f'{sq_line1.strip()} <---> {sq_line2.strip()}'
             for line1,line2 in zip(ins1,ins2):
