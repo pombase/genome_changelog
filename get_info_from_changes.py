@@ -45,7 +45,7 @@ modification_data.to_csv(args.output_modified_coordinates, sep='\t', index=False
 # later, so we cannot rely only on those which are added and removed in the same revision.
 # Also, some are added and then edited, some are edited and then deleted.
 
-data_subset = main_features_data[['systematic_id','chromosome', 'primary_name', 'added_or_removed', 'date']].copy()
+data_subset = main_features_data[['systematic_id','chromosome', 'primary_name', 'added_or_removed', 'date', 'value']].copy()
 
 # We remove known errors
 error_data = pandas.read_csv(args.genes_in_wrong_chromosomes, delimiter='\t', na_filter=False, dtype=str)
@@ -62,9 +62,10 @@ data_subset['earliest_modification'] = data_subset['net_change'].copy()
 
 # Columns containing latest and earliest change
 data_subset['latest_change'] = data_subset['date'].copy()
+data_subset['latest_coords'] = data_subset['value'].copy()
 data_subset['earliest_change'] = data_subset['date'].copy()
 
-data_subset2 = data_subset.groupby('systematic_id', as_index=False).agg({'net_change': sum, 'nb_changes': sum, 'earliest_modification': lambda x: list(x)[-1], 'chromosome': lambda x: list(x)[0], 'primary_name': lambda x: list(x)[0], 'latest_change': lambda x: list(x)[0], 'earliest_change': lambda x: list(x)[-1]})
+data_subset2 = data_subset.groupby('systematic_id', as_index=False).agg({'net_change': sum, 'nb_changes': sum, 'earliest_modification': lambda x: list(x)[-1], 'chromosome': lambda x: list(x)[0], 'primary_name': lambda x: list(x)[0], 'latest_change': lambda x: list(x)[0], 'earliest_change': lambda x: list(x)[-1], 'latest_coords': lambda x: list(x)[0]})
 data_subset2['category'] = ''
 
 data_subset2.loc[(data_subset2['net_change'] == 1) & (data_subset2['nb_changes'] == 1), 'category'] = 'added'
@@ -105,5 +106,5 @@ if 'svn_2' in main_features_data['revision'].values:
 # Add extra column indicating what types of feature the systematic_id has ever contained
 extra_column_dataset = main_features_data[['systematic_id', 'feature_type']].groupby('systematic_id', as_index=False).agg({'feature_type': lambda x: ','.join(sorted(list(set(x))))})
 data_subset2 = data_subset2.merge(extra_column_dataset, on='systematic_id')
-data_subset2 = data_subset2[['systematic_id','chromosome','primary_name','feature_type','category','merged_into', 'earliest_change', 'latest_change']]
+data_subset2 = data_subset2[['systematic_id','chromosome','primary_name','feature_type','category','merged_into', 'earliest_change', 'latest_change', 'latest_coords']]
 data_subset2.to_csv(args.output_summary, sep='\t', index=False)

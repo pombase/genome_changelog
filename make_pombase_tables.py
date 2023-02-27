@@ -23,7 +23,7 @@ added_genes.rename(inplace=True,columns={
 
 added_genes.to_csv('results/pombase_tables/new-gene-data.tsv', sep='\t', index=False)
 
-removed_genes = data.loc[data.category.str.contains('merged')|data.category.str.contains('removed'), ['systematic_id', 'primary_name', 'latest_change', 'comment_removal', 'reference_removal', 'merged_into']]
+removed_genes = data.loc[data.category.str.contains('merged')|data.category.str.contains('removed'), ['systematic_id', 'primary_name', 'latest_change', 'latest_coords', 'comment_removal', 'reference_removal', 'merged_into']]
 merged_genes = removed_genes['merged_into'] != ''
 
 def formatting_function(r):
@@ -39,7 +39,8 @@ removed_genes.drop(columns='merged_into', inplace=True)
 removed_genes.rename(inplace=True,columns={
     'systematic_id': 'Systematic ID',
     'primary_name': 'Primary name',
-    'earliest_change': 'Date added',
+    'latest_change': 'Date removed',
+    'latest_coords': 'Coordinates when removed',
     'comment_removal': 'Comment',
     'reference_removal': 'Reference',
     }
