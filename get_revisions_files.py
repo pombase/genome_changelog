@@ -20,7 +20,7 @@ def download(arg_tuple):
     if os.path.isfile(outfile):
         return
     print(f'downloading {revision} at {output_dir}')
-    proc = subprocess.Popen([f'svn cat -r {revision} svn+ssh://manu@curation.pombase.org/var/svn-repos/pombe-embl/trunk/{contig}.contig > {outfile}'], shell=True)
+    proc = subprocess.Popen([f'svn export --force -r {revision} https://curation.pombase.org/pombe-embl-repo/trunk/{contig}.contig {outfile}'], shell=True)
     proc.wait()
     proc.terminate()
 

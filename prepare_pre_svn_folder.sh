@@ -10,5 +10,5 @@ do
     mkdir -p "pre_svn_data/${contig}/change_log/qualifiers"
 
     # Download files from first revision of svn
-    svn cat -r 2 svn+ssh://manu@curation.pombase.org/var/svn-repos/pombe-embl/trunk/${contig}.contig > "pre_svn_data/${contig}/svn_2.contig"
+    svn cat -r 2 https://curation.pombase.org/pombe-embl-repo/trunk/${contig}.contig > "pre_svn_data/${contig}/svn_2.contig"
 done

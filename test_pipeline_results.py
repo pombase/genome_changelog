@@ -27,7 +27,7 @@ class PipelineTest(unittest.TestCase):
             contig_file = f'test_folder/{chromosome}.contig'
             if not os.path.isfile(contig_file):
                 print(f'Downloading {chromosome}')
-                p = subprocess.Popen([f'svn cat -r {revision} svn+ssh://manu@curation.pombase.org/var/svn-repos/pombe-embl/trunk/{chromosome}.contig > {contig_file}'], shell=True)
+                p = subprocess.Popen([f'svn export --force -r {revision} https://curation.pombase.org/pombe-embl-repo/trunk/{chromosome}.contig {contig_file}'], shell=True)
                 p.wait()
                 p.terminate()
             this_chromosome = SeqIO.read(contig_file,'embl')

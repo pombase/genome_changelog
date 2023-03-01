@@ -20,5 +20,5 @@ for f in revision_files:
             # if os.path.isfile(outfile):
             #     continue
             print(f'downloading diff {new_revision}_{old_revision} at {output_dir}')
-            os.system(f'svn diff -r {new_revision}:{old_revision} svn+ssh://manu@curation.pombase.org/var/svn-repos/pombe-embl/trunk/{contig}.contig > {outfile}')
+            os.system(f'svn diff -r {new_revision}:{old_revision} https://curation.pombase.org/pombe-embl-repo/trunk/{contig}.contig > {outfile}')
 
