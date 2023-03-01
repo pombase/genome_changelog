@@ -1088,7 +1088,7 @@ SPMITTRNAARG.01	mitochondrial		tRNA	changed		2020-04-30	2020-04-30	9819..9890
 SPMITTRNAGLU.01	mitochondrial		tRNA	changed		2020-04-30	2020-04-30	18406..18478				
 SPMTR.03	mating_type_region	mat3-Mi	CDS	removed		2019-05-21	2019-05-21	complement(15593..15721)				
 SPMTR.04	mating_type_region	mat3-Mc	CDS	removed		2019-05-21	2019-05-21	15856..16401				
-SPNCRNA.01	I	prl1	misc_RNA,ncRNA	added_changed_and_removed		2003-08-14	2022-08-25	3003816..3004916				
+SPNCRNA.01	I	prl1	misc_RNA,ncRNA	added_changed_and_removed		2003-08-14	2022-08-25	3003816..3004916			SPNCRNA.01/prl101 part of the UTR of eta2	
 SPNCRNA.02	III	prl2	lncRNA,misc_RNA,ncRNA	added_and_changed		2003-08-14	2023-01-16	394354..394798				
 SPNCRNA.03	I	prl3	lncRNA,misc_RNA,ncRNA	added_and_changed		2003-08-14	2023-01-16	complement(237074..237848)				
 SPNCRNA.04	II	prl4	lncRNA,misc_RNA,ncRNA	added_and_changed		2003-08-14	2023-01-16	complement(3295176..3295428)				
@@ -8345,7 +8345,7 @@ SPNCRNA.866	I		lncRNA,misc_RNA,ncRNA	added_and_changed		2011-03-24	2023-01-16	co
 SPNCRNA.867	I		lncRNA,misc_RNA,ncRNA	added_and_changed		2011-03-24	2023-01-16	2973017..2976287				
 SPNCRNA.868	I		lncRNA,misc_RNA,ncRNA	added_and_changed		2011-03-24	2023-01-16	complement(2977510..2979357)				
 SPNCRNA.869	I		lncRNA,misc_RNA,ncRNA	added_and_changed		2011-03-24	2023-01-16	complement(2979599..2980606)				
-SPNCRNA.87	I		misc_RNA,ncRNA	added_changed_and_removed		2004-09-15	2022-12-19	complement(3177948..3178309)				
+SPNCRNA.87	I		lncRNA,misc_RNA,ncRNA	added_and_changed		2004-09-15	2023-03-01	3177931..3178309				
 SPNCRNA.870	I		lncRNA,misc_RNA,ncRNA	added_and_changed		2011-03-24	2023-01-16	complement(2992359..2994428)				
 SPNCRNA.871	I		lncRNA,misc_RNA,ncRNA	added_and_changed		2011-03-24	2023-01-16	complement(2996868..2998123)				
 SPNCRNA.872	I		lncRNA,misc_RNA,ncRNA	added_and_changed		2011-03-24	2023-01-16	complement(3001750..3004335)				
@@ -8371,7 +8371,7 @@ SPNCRNA.89	II		misc_RNA,ncRNA	added_changed_and_removed		2004-09-15	2022-12-08	3
 SPNCRNA.890	I		lncRNA,misc_RNA,ncRNA	added_and_changed		2011-03-24	2023-01-16	complement(3141075..3143182)				
 SPNCRNA.891	I		lncRNA,misc_RNA,ncRNA	added_and_changed		2011-03-24	2023-01-16	complement(3144729..3145622)				
 SPNCRNA.892	I		lncRNA,misc_RNA,ncRNA	added_and_changed		2011-03-24	2023-01-16	complement(3166349..3166977)				
-SPNCRNA.893	I		lncRNA,misc_RNA,ncRNA	added_and_changed		2011-03-24	2023-01-16	3177931..3178309				
+SPNCRNA.893	I		lncRNA,misc_RNA,ncRNA	added_changed_and_removed		2011-03-24	2023-03-01	3177931..3178309				
 SPNCRNA.894	I		lncRNA,misc_RNA,ncRNA	added_and_changed		2011-03-24	2023-01-16	complement(3202438..3203222)				
 SPNCRNA.895	I		lncRNA,misc_RNA,ncRNA	added_and_changed		2011-03-24	2023-01-16	complement(3207422..3207941)				
 SPNCRNA.896	I		lncRNA,misc_RNA,ncRNA	added_and_changed		2011-03-24	2023-01-16	complement(3226537..3228414)				

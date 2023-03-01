@@ -1,4 +1,6 @@
 revision	user	date	chromosome	systematic_id	primary_name	feature_type	added_or_removed	value
+8764	vw253	2023-03-01	I	SPNCRNA.87		lncRNA	added	3177931..3178309
+8764	vw253	2023-03-01	I	SPNCRNA.893		lncRNA	removed	3177931..3178309
 8723	vw253	2023-02-13	I	SPNCRNA.1714		lncRNA	added	complement(5317424..5317575)
 8723	vw253	2023-02-13	I	SPNCRNA.263		lncRNA	removed	5317424..5317575
 8691	manu	2023-02-01	II	SPBC8E4.01c		5'UTR	added	4444101..4444251
