@@ -13,9 +13,13 @@ def agg_function (x):
     """Used to aggregate rows as comma-separatated values"""
     return ','.join([ele for ele in x if ele != ''])
 
+with open('results/pre_svn_folder_list.tsv') as ins:
+    pre_svn_folder_list = list(map(str.strip, ins.readlines()))
 
 # Sometimes PMID:xxxxxxxx has been used, we remove those values
 data.db_xref.loc[data.db_xref.str.contains('PMID:xx')] = data.db_xref.loc[data.db_xref.str.contains('PMID:xx')].apply(lambda x: ','.join( ele for ele in x.split(',') if not ele.startswith('PMID:x')))
+# Remove special error
+data = data.loc[data['systematic_id'] != 'Juan ', :].copy()
 
 # We also want to keep the db_xref value of added changes, we keep a separate dataset to merge
 added_rows = data.loc[data.added_or_removed == 'added', ['systematic_id', 'value', 'db_xref', 'pombase_reference', 'pombase_comments']].copy()
@@ -24,6 +28,22 @@ added_rows = added_rows.groupby(['systematic_id', 'value'], as_index=False).agg(
 
 # We keep only the removed rows (should contain all non-current values)
 data = data[data.added_or_removed == 'removed'].copy()
+
+# We create a link to the genome prior to the change (previous revision)
+def formatting_function(r):
+    revision = r['revision']
+    if revision == 'svn_2':
+        revision = '1'
+    if r['date'] <= '2011-04-18':
+        index_revision = pre_svn_folder_list.index(revision)
+        previous_revision = pre_svn_folder_list[index_revision-1]
+        return f'https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/{previous_revision}/'
+    else:
+        previous_revision = int(revision)-1
+        return f'https://curation.pombase.org/pombe-embl-repo/trunk?p={previous_revision}'
+
+data['genome_snapshot']= data.apply(formatting_function, axis=1)
+
 data.drop(columns=['added_or_removed', 'revision', 'user'], inplace=True)
 
 # Aggregate db_xref and comments, and keep only latest date
@@ -38,5 +58,5 @@ added_rows.rename(columns={'db_xref': 'db_xref_added', 'pombase_reference': 'pom
 data = data.merge(added_rows, on=['systematic_id', 'value'], how='left')
 
 # Re-sort columns and save
-data = data[['chromosome','systematic_id','primary_name','feature_type','value','date','db_xref_removed','db_xref_added','pombase_reference_removed','pombase_reference_added','pombase_comments_removed','pombase_comments_added']]
+data = data[['chromosome','systematic_id','primary_name','feature_type','value','date','db_xref_removed','db_xref_added','pombase_reference_removed','pombase_reference_added','pombase_comments_removed','pombase_comments_added', 'genome_snapshot']]
 data.to_csv('results/all_previous_coords.tsv', sep='\t', index=False)
