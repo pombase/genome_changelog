@@ -6,6 +6,7 @@ from genome_functions import genome_dict_diff, build_seqfeature_dict,read_pombe_
 from formatting_functions import write_diff_to_files
 import glob
 import argparse
+from custom_biopython import SeqIO
 class Formatter(argparse.ArgumentDefaultsHelpFormatter, argparse.RawDescriptionHelpFormatter):
     pass
 
@@ -22,6 +23,14 @@ with open('valid_ids_data/revisions2skip.tsv') as ins:
         skip_files[ls[0]] = ls[1].split(',')
 
 synonym_dict = make_synonym_dict('valid_ids_data/gene_IDs_names.tsv', 'valid_ids_data/obsoleted_ids.tsv', 'valid_ids_data/missing_synonyms.tsv')
+
+def parse_genome(genome_file, date):
+    # Special reader for old genomes handles several edge-cases
+    if date < '2023-03-01':
+        return read_pombe_genome(genome_file, 'embl', synonym_dict, 'valid_ids_data/all_systematic_ids_ever.txt','valid_ids_data/known_exceptions.tsv')
+    else:
+        with open(genome_file, errors='replace') as ins:
+            return SeqIO.read(ins,'embl')
 
 for folder in args.data_folders:
     folder = os.path.normpath(folder)
@@ -68,9 +77,9 @@ for folder in args.data_folders:
         if (old_genome_dict is not None) and (sequences_different_this_iteration == sequences_different_prev_iteration):
             new_genome_dict = old_genome_dict
         else:
-            new_genome_dict = build_seqfeature_dict(read_pombe_genome(new_genome_file, 'embl', synonym_dict, 'valid_ids_data/all_systematic_ids_ever.txt','valid_ids_data/known_exceptions.tsv'), sequences_different_this_iteration)
+            new_genome_dict = build_seqfeature_dict(parse_genome(new_genome_file, new_revision_list[2]), sequences_different_this_iteration)
 
-        old_genome_dict = build_seqfeature_dict(read_pombe_genome(old_genome_file, 'embl', synonym_dict, 'valid_ids_data/all_systematic_ids_ever.txt','valid_ids_data/known_exceptions.tsv'), sequences_different_this_iteration)
+        old_genome_dict = build_seqfeature_dict(parse_genome(old_genome_file, old_revision_list[2]), sequences_different_this_iteration)
 
         # Get diffs
         locations_added, locations_removed, qualifiers_added, qualifiers_removed = genome_dict_diff(new_genome_dict, old_genome_dict,sequences_different_this_iteration)
