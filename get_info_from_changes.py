@@ -99,9 +99,10 @@ data_subset2.loc[merged_logi,'merged_into'] = data_subset2.loc[merged_logi,'syst
 
 # Some systematic ids have been associated with two CDSs in the past, and this messes up the count. This is only relevant if data from the pre-svn folder is used.
 if 'svn_2' in main_features_data['revision'].values:
-    with open(args.systematic_ids_with_two_CDS) as f:
-        multi_cds_ids = [line.rstrip('\n') for line in f]
-    data_subset2.loc[data_subset2.systematic_id.isin(multi_cds_ids),'category'] = 'multi_CDS'
+    multi_cds_data = pandas.read_csv(args.systematic_ids_with_two_CDS, sep='\t', na_filter=False)
+    multi_cds_data.set_index('systematic_id', inplace=True)
+    data_subset2.set_index('systematic_id', inplace=True)
+    data_subset2.update(multi_cds_data)
 
 # Add extra column indicating what types of feature the systematic_id has ever contained
 extra_column_dataset = main_features_data[['systematic_id', 'feature_type']].groupby('systematic_id', as_index=False).agg({'feature_type': lambda x: ','.join(sorted(list(set(x))))})
