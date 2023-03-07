@@ -1390,250 +1390,250 @@ Date	Systematic ID	Primary name	Before / After change	Coordinates	Comment	Refere
 2008-05-12	SPAC31G5.12c	maf1	before	I:complement(join(3008184..3008795,3008893..3008928))		
 2008-04-18	SPBC16C6.02c	vps1302	after	II:complement(join(4322829..4331555,4331641..4331793,4331856..4331968,4332007..4332028))	also adds new gene SPBC16C6.14, complement(4322221..4322622)	PMID:18367542
 2008-04-18	SPBC16C6.02c	vps1302	before	II:complement(join(4322221..4322742,4322970..4331555,4331641..4331793,4331856..4331968,4332007..4332028))	also adds new gene SPBC16C6.14, complement(4322221..4322622)	PMID:18367542
-2008-02-22	SPBC19G7.06	mbx1	after	II:join(2359429..2359479,2359547..2359693,2359845..2359928,2360001..2361092)	Solexa intron data; altered 3rd intron branch acceptor to agree with published	
-2008-02-22	SPBC19G7.06	mbx1	before	II:join(2359429..2359479,2359547..2359693,2359845..2359928,2360064..2361092)	Solexa intron data; altered 3rd intron branch acceptor to agree with published	
+2008-02-22	SPBC19G7.06	mbx1	after	II:join(2359429..2359479,2359547..2359693,2359845..2359928,2360001..2361092)	Solexa intron data; altered 3rd intron branch acceptor to agree with published	PMID:18488015
+2008-02-22	SPBC19G7.06	mbx1	before	II:join(2359429..2359479,2359547..2359693,2359845..2359928,2360064..2361092)	Solexa intron data; altered 3rd intron branch acceptor to agree with published	PMID:18488015
 2008-02-22	SPBC21C3.07c		before	II:complement(join(3807827..3807891,3807946..3808607,3808665..3808795))		
-2008-02-22	SPBC21C3.07c		before	II:complement(join(3807920..3808607,3808665..3808795))	Solexa transread data; added two 3’ exons	
+2008-02-22	SPBC21C3.07c		before	II:complement(join(3807920..3808607,3808665..3808795))	Solexa transread data; added two 3’ exons	PMID:18488015
 2008-02-22	SPBC428.20c	alp6	after	II:complement(join(481076..481552,481639..483437,483478..483539,483579..483691))		
 2008-02-22	SPBC428.20c	alp6	before	II:complement(join(481076..481552,481639..483437,483478..483539,483579..483706))		
 2008-02-22	SPCC338.08	ctp1	after	III:complement(join(1358891..1359082,1359121..1359819))		
 2008-02-22	SPCC338.08	ctp1	before	III:complement(join(1358885..1359082,1359121..1359819))		
-2008-01-23	SPAC1093.03		after	I:join(4613627..4613686,4613723..4614081,4614164..4614378,4614438..4614954,4614996..4616331)	Solexa intron data; improved distance between branch and acceptor, intron 2	
-2008-01-23	SPAC1093.03		before	I:join(4613627..4613686,4613723..4614081,4614152..4614378,4614438..4614954,4614996..4616331)	Solexa intron data; improved distance between branch and acceptor, intron 2	
-2008-01-23	SPAC1142.01		after	I:3625574..3627544	Solexa intron data; removed 5’ exon and trimmed to new Met, improved homology	
-2008-01-23	SPAC1142.01		before	I:join(3625447..3625460,3625555..3627544)	Solexa intron data; removed 5’ exon and trimmed to new Met, improved homology	
-2008-01-23	SPAC11D3.07c		after	I:complement(118195..120108)	Solexa intron data; removed in-frame splice, not required or supported	
-2008-01-23	SPAC11D3.07c		before	I:complement(join(118195..119827,119930..120108))	Solexa intron data; removed in-frame splice, not required or supported	
-2008-01-23	SPAC13G6.04	tim8	after	I:join(180423..180528,180586..180721,180890..180911)	Solexa transread data	
-2008-01-23	SPAC13G6.04	tim8	before	I:join(180423..180528,180586..180776)	Solexa transread data	
-2008-01-23	SPAC144.17c		after	I:complement(join(4687388..4687477,4687522..4688462,4688513..4688831))	Solexa transread data; added 3’ intron and exon, improved homology	
-2008-01-23	SPAC144.17c		before	I:complement(join(4687483..4688462,4688513..4688831))	Solexa transread data; added 3’ intron and exon, improved homology	
-2008-01-23	SPAC1556.01c	rad50	after	I:complement(join(3791831..3791851,3791891..3792229,3792267..3795557,3795601..3795684,3795734..3795856))	Solexa transread data; added small 3’ intron and exon	
-2008-01-23	SPAC1556.01c	rad50	before	I:complement(join(3791855..3792229,3792267..3795557,3795601..3795684,3795734..3795856))	Solexa transread data; added small 3’ intron and exon	
-2008-01-23	SPAC1556.03	azr1	after	I:join(3799244..3799680,3799731..3800135,3800184..3800241)	Solexa transread data; added new 5’ intron and exon/improved homology	
-2008-01-23	SPAC1556.03	azr1	before	I:join(3799244..3799680,3799731..3800160)	Solexa transread data; added new 5’ intron and exon/improved homology	
-2008-01-23	SPAC15A10.10	mde6	after	I:join(3697508..3697752,3697795..3698368,3698421..3698527,3698570..3699310,3699359..3699538,3699582..3699837)	Solexa transread data; added in-frame intron	
-2008-01-23	SPAC15A10.10	mde6	before	I:join(3697508..3697752,3697795..3698368,3698421..3698527,3698570..3699538,3699582..3699837)	Solexa transread data; added in-frame intron	
-2008-01-23	SPAC15A10.12c		after	I:complement(join(3709206..3709346,3709499..3709804))	Solexa transread data	
-2008-01-23	SPAC15A10.12c		before	I:complement(3709451..3709804)	Solexa transread data	
-2008-01-23	SPAC1639.01c		after	I:complement(join(251726..251745,251863..252337,252392..252752,253590..253630))	Solexa transread data; added new 3’ intron/exon	
-2008-01-23	SPAC1639.01c		before	I:complement(join(251726..252337,252392..252752,253590..253630))	Solexa transread data; added new 3’ intron/exon	
-2008-01-23	SPAC16E8.12c		after	I:complement(join(3523136..3523644,3523925..3523996,3524044..3524098))	Solexa transread data; added 2 5’ exons	
-2008-01-23	SPAC16E8.12c		before	I:complement(join(3523136..3523644,3524027..3524030))	Solexa transread data; added 2 5’ exons	
-2008-01-23	SPAC1751.02c	rsm19	after	I:complement(join(385755..385887,385938..386043,386107..386149))	Solexa intron data; remove 5’ exon, trimmed to new Met, improved homology	
-2008-01-23	SPAC1751.02c	rsm19	before	I:complement(join(385755..385887,385938..386043,386107..386179,386296..386310))	Solexa intron data; remove 5’ exon, trimmed to new Met, improved homology	
-2008-01-23	SPAC17A5.02c	dbr1	after	I:complement(join(1754033..1754145,1754186..1754310,1754350..1755118,1755164..1755285,1755331..1755638))	Solexa transread data	
-2008-01-23	SPAC17A5.02c	dbr1	before	I:complement(join(1754109..1754310,1754350..1755118,1755164..1755285,1755331..1755638))	Solexa transread data	
-2008-01-23	SPAC1A6.03c		after	I:complement(join(1070061..1070138,1070205..1072013))	Solexa transread data; new 3’ intron/exon, improved homology	
-2008-01-23	SPAC1A6.03c		before	I:complement(1070139..1072013)	Solexa transread data; new 3’ intron/exon, improved homology	
-2008-01-23	SPAC1B3.10c		after	I:complement(4946090..4948084)	Solexa intron data; removed 3’ exon, unsupported	
-2008-01-23	SPAC1B3.10c		before	I:complement(join(4945933..4945984,4946094..4948084))	Solexa intron data; removed 3’ exon, unsupported	
-2008-01-23	SPAC1F12.08		after	I:join(3817464..3817803,3817851..3817991,3818035..3818130,3818170..3818543)	Solexa transread data; added new intron, in-frame splice in final exon, improved homology	
-2008-01-23	SPAC1F12.08		before	I:join(3817464..3817803,3817851..3817991,3818035..3818543)	Solexa transread data; added new intron, in-frame splice in final exon, improved homology	
-2008-01-23	SPAC22E12.10c	etp1	after	I:complement(join(5037208..5037446,5037492..5039103))	Solexa transread data; added in-frame splice	
-2008-01-23	SPAC22E12.10c	etp1	before	I:complement(5037208..5039103)	Solexa transread data; added in-frame splice	
-2008-01-23	SPAC23C4.04c		after	I:join(1036033..1036343,1036397..1036508)	Solexa transread data; added intron	
-2008-01-23	SPAC23C4.04c		before	I:1036033..1036347	Solexa transread data; added intron	
-2008-01-23	SPAC23H3.04		after	I:join(2499035..2499164,2499160..2499353,2499443..2499824,2499875..2500236)	Solexa intron data; changed 5’ 1st and 2nd exon, improved homology	
-2008-01-23	SPAC23H3.04		before	I:join(2499035..2499164,2499325..2499353,2499443..2499824,2499875..2500236)	Solexa intron data; changed 5’ 1st and 2nd exon, improved homology	
-2008-01-23	SPAC24H6.01c		after	I:join(490016..490262,490338..490771,490812..490931,490979..491149,491186..491858,491905..492011)	Solexa transread data; added new 3’ intron/exon, improved homology	
-2008-01-23	SPAC24H6.01c		before	I:join(490016..490262,490338..490771,490812..490931,490979..491149,491186..491980)	Solexa transread data; added new 3’ intron/exon, improved homology	
-2008-01-23	SPAC26H5.04		after	I:4122149..4124518	Solexa intron data	
-2008-01-23	SPAC26H5.04		before	I:join(4122149..4123354,4123535..4124518)	Solexa intron data	
-2008-01-23	SPAC2C4.06c		after	I:complement(join(4269367..4270554,4270631..4270674,4270736..4270871))	Solexa intron data; replaced 2 internal exons with a different single exon	
-2008-01-23	SPAC2C4.06c		before	I:complement(join(4269367..4270554,4270587..4270593,4270638..4270674,4270736..4270871))	Solexa intron data; replaced 2 internal exons with a different single exon	
-2008-01-23	SPAC2C4.11c	rbp28	after	I:complement(join(4278729..4279405,4279457..4279505))	Solexa transread data; added small N term in-frame intron	
-2008-01-23	SPAC2C4.11c	rbp28	before	I:complement(4278729..4279505)	Solexa transread data; added small N term in-frame intron	
-2008-01-23	SPAC2F3.18c		after	I:complement(join(3942299..3942364,3942506..3942730))	Solexa transread data; added small N term in-frame intron	
-2008-01-23	SPAC2F3.18c		before	I:complement(3942398..3942730)	Solexa transread data; added small N term in-frame intron	
-2008-01-23	SPAC30.03c	tsn1	after	I:complement(join(4394707..4394741,4394799..4394967,4395010..4395092,4395131..4395367,4395416..4395491,4395530..4395592))	Solexa transread data; added in-frame intron to (previous) 2nd exon, improved homology	
-2008-01-23	SPAC30.03c	tsn1	before	I:complement(join(4394707..4394741,4394799..4394967,4395010..4395092,4395131..4395491,4395530..4395592))	Solexa transread data; added in-frame intron to (previous) 2nd exon, improved homology	
-2008-01-23	SPAC30C2.05	erv14	after	I:join(4639884..4639924,4639969..4640020,4640076..4640365,4640447..4640477)	Solexa transread data; added new 5’ intron/exon, improved homology	
-2008-01-23	SPAC30C2.05	erv14	before	I:join(4639916..4640020,4640076..4640365,4640447..4640477)	Solexa transread data; added new 5’ intron/exon, improved homology	
-2008-01-23	SPAC328.05		after	I:join(3484695..3484698,3484752..3485065,3485241..3485342,3485382..3485528,3485582..3485974,3486056..3486502)	Solexa intron data; removed in-frame splice (exon 5), unsupported	
-2008-01-23	SPAC328.05		before	I:join(3484695..3484698,3484752..3485065,3485241..3485342,3485382..3485528,3485582..3485807,3485910..3485974,3486056..3486502)	Solexa intron data; removed in-frame splice (exon 5), unsupported	
-2008-01-23	SPAC3A12.05c	taf2	after	I:complement(join(1426213..1427148,1427189..1429617,1429709..1429830,1429882..1429913))	Solexa intron data; improved distance between branch and acceptor	
-2008-01-23	SPAC3A12.05c	taf2	before	I:complement(join(1426213..1427148,1427189..1429617,1429709..1429836,1429882..1429913))	Solexa intron data; improved distance between branch and acceptor	
-2008-01-23	SPAC4F10.08	mug126	after	I:join(4844855..4845824,4845863..4846063,4846104..4846129)	Solexa transread data; added new 3’ intron/exon	
-2008-01-23	SPAC4F10.08	mug126	before	I:join(4844855..4845824,4845863..4846203)	Solexa transread data; added new 3’ intron/exon	
-2008-01-23	SPAC56F8.04c	coq2	after	I:complement(join(1133226..1134283,1134332..1134356))	Solexa transread data; added 5’ intron/exon	
-2008-01-23	SPAC56F8.04c	coq2	before	I:complement(1133226..1134302)	Solexa transread data; added 5’ intron/exon	
-2008-01-23	SPAC589.02c	med13	after	I:complement(join(3095075..3098590,3098626..3098781,3098878..3098883))	Solexa intron data; improved branch/acceptor for 1st intron	
-2008-01-23	SPAC589.02c	med13	before	I:complement(join(3095075..3098590,3098626..3098775,3098878..3098883))	Solexa intron data; improved branch/acceptor for 1st intron	
-2008-01-23	SPAC630.11	vps55	after	I:join(366801..366817,366873..366891,366968..367040,367105..367189,367293..367348,367395..367531)	Solexa transread data; changed internal intron acceptor, improved homology	
-2008-01-23	SPAC630.11	vps55	before	I:join(366801..366817,366873..366891,366968..367040,367123..367189,367293..367348,367395..367531)	Solexa transread data; changed internal intron acceptor, improved homology	
-2008-01-23	SPAC6F12.08c		after	I:complement(join(1322439..1323955,1323999..1324140,1324195..1324252,1324299..1324336))	Solexa intron data; improved branch acceptor for intron 1	
-2008-01-23	SPAC6F12.08c		before	I:complement(join(1322439..1323955,1323999..1324140,1324195..1324234,1324299..1324336))	Solexa intron data; improved branch acceptor for intron 1	
-2008-01-23	SPAC823.04		after	I:join(2587729..2587897,2588106..2588620)	Solexa transread data	
-2008-01-23	SPAC823.04		before	I:join(2587729..2587897,2588085..2588620)	Solexa transread data	
-2008-01-23	SPAC823.09c		after	I:complement(join(2594777..2594913,2594966..2595693,2595734..2595819))	Solexa transread data; added new 3’ intron/exon	
-2008-01-23	SPAC823.09c		before	I:complement(join(2594922..2595693,2595734..2595819))	Solexa transread data; added new 3’ intron/exon	
-2008-01-23	SPAC890.07c	rmt1	after	I:complement(join(5016020..5016026,5016076..5016215,5016262..5016596,5016649..5016943,5016994..5017059,5017138..5017252,5017421..5017433,5017700..5017703,5017782..5017829))	Solexa transread data; added small N terminal exon, which added a single conserved cysteine	
-2008-01-23	SPAC890.07c	rmt1	before	I:complement(join(5016072..5016215,5016262..5016596,5016649..5016943,5016994..5017059,5017138..5017252,5017421..5017433,5017700..5017703,5017782..5017829))	Solexa transread data; added small N terminal exon, which added a single conserved cysteine	
-2008-01-23	SPAC8C9.19		after	I:join(3660430..3660438,3660491..3660556,3660607..3660717)	Solexa intron data; deleted final exon, unsupported, improved length and alignment to orthologs	
-2008-01-23	SPAC8C9.19		before	I:join(3660430..3660438,3660491..3660556,3660607..3660713,3660784..3660886)	Solexa intron data; deleted final exon, unsupported, improved length and alignment to orthologs	
-2008-01-23	SPAC9.06c		after	I:complement(join(1473692..1473885,1473939..1474105,1474153..1474212,1474264..1474341,1474381..1474404,1474460..1474539))	Solexa transread data	
-2008-01-23	SPAC9.06c		before	I:complement(join(1473692..1473885,1473939..1474105,1474153..1474212,1474264..1474341,1474460..1474539))	Solexa transread data	
-2008-01-23	SPAC9G1.13c		after	I:complement(join(1995208..1996148,1996191..1996268,1996325..1996413,1996478..1996683))	Solexa intron data; added a new 3rd exon, improved homology	
-2008-01-23	SPAC9G1.13c		before	I:complement(join(1995208..1996148,1996325..1996413,1996478..1996683))	Solexa intron data; added a new 3rd exon, improved homology	
-2008-01-23	SPAPB17E12.03		after	I:join(1271889..1271972,1272015..1272962)	Solexa intron data; removed in-frame splice, unsupported, improved homology	
-2008-01-23	SPAPB17E12.03		before	I:join(1271889..1271972,1272015..1272386,1272483..1272962)	Solexa intron data; removed in-frame splice, unsupported, improved homology	
-2008-01-23	SPAPB17E12.08		after	I:join(1279573..1279779,1279820..1279869,1279953..1280325)	Solexa transread data; changed first donor to make n-terminal exon longer, improved homology	
-2008-01-23	SPAPB17E12.08		before	I:join(1279573..1279644,1279820..1279869,1279953..1280325)	Solexa transread data; changed first donor to make n-terminal exon longer, improved homology	
-2008-01-23	SPAPB18E9.01	trm5	after	I:join(3974310..3974485,3974541..3974629,3974674..3974775,3974879..3975132,3975193..3975429,3975485..3975832,3975882..3975962,3976014..3976079)	Solexa transread data; added small 3’ exon, improved homology	
-2008-01-23	SPAPB18E9.01	trm5	before	I:join(3974310..3974485,3974541..3974629,3974674..3974775,3974879..3975132,3975193..3975429,3975485..3975832,3975882..3975983)	Solexa transread data; added small 3’ exon, improved homology	
-2008-01-23	SPAPB1A10.16		after	I:join(1863972..1864360,1864415..1864457)	Solexa transread data	
-2008-01-23	SPAPB1A10.16		before	I:1863972..1864388	Solexa transread data	
-2008-01-23	SPAPB2B4.06		after	I:join(2722735..2723210,2723273..2723300,2723349..2723559,2723608..2723660)	Solexa transread data; added new 3’ intron/exon, improved homology	
-2008-01-23	SPAPB2B4.06		before	I:join(2722735..2723210,2723273..2723300,2723349..2723582)	Solexa transread data; added new 3’ intron/exon, improved homology	
-2008-01-23	SPBC106.05c	tim11	after	II:complement(join(383527..383612,383703..383874,383940..383960))	Solexa transread data; changed 5’ exon	
-2008-01-23	SPBC106.05c	tim11	before	II:complement(join(383527..383612,383703..383874,383980..384012))	Solexa transread data; changed 5’ exon	
-2008-01-23	SPBC13G1.04c		after	II:complement(join(3732806..3732930,3732994..3733762))	Solexa transread data; added new 3’ intron and exon, improved homology	
-2008-01-23	SPBC13G1.04c		before	II:complement(3732941..3733762)	Solexa transread data; added new 3’ intron and exon, improved homology	
-2008-01-23	SPBC15D4.13c		after	II:complement(join(3032492..3032710,3032761..3032822,3032889..3033222))	Solexa intron data; better donor for first intron	
-2008-01-23	SPBC15D4.13c		before	II:complement(join(3032492..3032710,3032761..3032822,3032865..3033222))	Solexa intron data; better donor for first intron	
-2008-01-23	SPBC16C6.03c		after	II:complement(4332698..4333123)	Solexa intron data; final exon, unsupported removed	
-2008-01-23	SPBC16C6.03c		before	II:complement(join(4332356..4332454,4332746..4333123))	Solexa intron data; final exon, unsupported removed	
-2008-01-23	SPBC16D10.02	trm11	after	II:join(3588806..3589595,3589639..3589803,3589845..3590123,3590163..3590278,3590327..3590386)	Solexa transread data; added new 3’ intron/exon	
-2008-01-23	SPBC16D10.02	trm11	before	II:join(3588806..3589595,3589639..3589803,3589845..3590123,3590163..3590287)	Solexa transread data; added new 3’ intron/exon	
-2008-01-23	SPBC16D10.10		after	II:join(3618117..3618179,3618228..3618617,3618658..3618702,3618747..3618918,3618956..3619071,3619113..3619321,3619366..3619540)	Solexa transread data; changed 2 introns (existing 4 and 5) to create a new exon 5, improved homology	
-2008-01-23	SPBC16D10.10		before	II:join(3618117..3618179,3618228..3618617,3618658..3618702,3618747..3618971,3619077..3619321,3619366..3619540)	Solexa transread data; changed 2 introns (existing 4 and 5) to create a new exon 5, improved homology	
+2008-01-23	SPAC1093.03		after	I:join(4613627..4613686,4613723..4614081,4614164..4614378,4614438..4614954,4614996..4616331)	Solexa intron data; improved distance between branch and acceptor, intron 2	PMID:18488015
+2008-01-23	SPAC1093.03		before	I:join(4613627..4613686,4613723..4614081,4614152..4614378,4614438..4614954,4614996..4616331)	Solexa intron data; improved distance between branch and acceptor, intron 2	PMID:18488015
+2008-01-23	SPAC1142.01		after	I:3625574..3627544	Solexa intron data; removed 5’ exon and trimmed to new Met, improved homology	PMID:18488015
+2008-01-23	SPAC1142.01		before	I:join(3625447..3625460,3625555..3627544)	Solexa intron data; removed 5’ exon and trimmed to new Met, improved homology	PMID:18488015
+2008-01-23	SPAC11D3.07c		after	I:complement(118195..120108)	Solexa intron data; removed in-frame splice, not required or supported	PMID:18488015
+2008-01-23	SPAC11D3.07c		before	I:complement(join(118195..119827,119930..120108))	Solexa intron data; removed in-frame splice, not required or supported	PMID:18488015
+2008-01-23	SPAC13G6.04	tim8	after	I:join(180423..180528,180586..180721,180890..180911)	Solexa transread data	PMID:18488015
+2008-01-23	SPAC13G6.04	tim8	before	I:join(180423..180528,180586..180776)	Solexa transread data	PMID:18488015
+2008-01-23	SPAC144.17c		after	I:complement(join(4687388..4687477,4687522..4688462,4688513..4688831))	Solexa transread data; added 3’ intron and exon, improved homology	PMID:18488015
+2008-01-23	SPAC144.17c		before	I:complement(join(4687483..4688462,4688513..4688831))	Solexa transread data; added 3’ intron and exon, improved homology	PMID:18488015
+2008-01-23	SPAC1556.01c	rad50	after	I:complement(join(3791831..3791851,3791891..3792229,3792267..3795557,3795601..3795684,3795734..3795856))	Solexa transread data; added small 3’ intron and exon	PMID:18488015
+2008-01-23	SPAC1556.01c	rad50	before	I:complement(join(3791855..3792229,3792267..3795557,3795601..3795684,3795734..3795856))	Solexa transread data; added small 3’ intron and exon	PMID:18488015
+2008-01-23	SPAC1556.03	azr1	after	I:join(3799244..3799680,3799731..3800135,3800184..3800241)	Solexa transread data; added new 5’ intron and exon/improved homology	PMID:18488015
+2008-01-23	SPAC1556.03	azr1	before	I:join(3799244..3799680,3799731..3800160)	Solexa transread data; added new 5’ intron and exon/improved homology	PMID:18488015
+2008-01-23	SPAC15A10.10	mde6	after	I:join(3697508..3697752,3697795..3698368,3698421..3698527,3698570..3699310,3699359..3699538,3699582..3699837)	Solexa transread data; added in-frame intron	PMID:18488015
+2008-01-23	SPAC15A10.10	mde6	before	I:join(3697508..3697752,3697795..3698368,3698421..3698527,3698570..3699538,3699582..3699837)	Solexa transread data; added in-frame intron	PMID:18488015
+2008-01-23	SPAC15A10.12c		after	I:complement(join(3709206..3709346,3709499..3709804))	Solexa transread data	PMID:18488015
+2008-01-23	SPAC15A10.12c		before	I:complement(3709451..3709804)	Solexa transread data	PMID:18488015
+2008-01-23	SPAC1639.01c		after	I:complement(join(251726..251745,251863..252337,252392..252752,253590..253630))	Solexa transread data; added new 3’ intron/exon	PMID:18488015
+2008-01-23	SPAC1639.01c		before	I:complement(join(251726..252337,252392..252752,253590..253630))	Solexa transread data; added new 3’ intron/exon	PMID:18488015
+2008-01-23	SPAC16E8.12c		after	I:complement(join(3523136..3523644,3523925..3523996,3524044..3524098))	Solexa transread data; added 2 5’ exons	PMID:18488015
+2008-01-23	SPAC16E8.12c		before	I:complement(join(3523136..3523644,3524027..3524030))	Solexa transread data; added 2 5’ exons	PMID:18488015
+2008-01-23	SPAC1751.02c	rsm19	after	I:complement(join(385755..385887,385938..386043,386107..386149))	Solexa intron data; remove 5’ exon, trimmed to new Met, improved homology	PMID:18488015
+2008-01-23	SPAC1751.02c	rsm19	before	I:complement(join(385755..385887,385938..386043,386107..386179,386296..386310))	Solexa intron data; remove 5’ exon, trimmed to new Met, improved homology	PMID:18488015
+2008-01-23	SPAC17A5.02c	dbr1	after	I:complement(join(1754033..1754145,1754186..1754310,1754350..1755118,1755164..1755285,1755331..1755638))	Solexa transread data	PMID:18488015
+2008-01-23	SPAC17A5.02c	dbr1	before	I:complement(join(1754109..1754310,1754350..1755118,1755164..1755285,1755331..1755638))	Solexa transread data	PMID:18488015
+2008-01-23	SPAC1A6.03c		after	I:complement(join(1070061..1070138,1070205..1072013))	Solexa transread data; new 3’ intron/exon, improved homology	PMID:18488015
+2008-01-23	SPAC1A6.03c		before	I:complement(1070139..1072013)	Solexa transread data; new 3’ intron/exon, improved homology	PMID:18488015
+2008-01-23	SPAC1B3.10c		after	I:complement(4946090..4948084)	Solexa intron data; removed 3’ exon, unsupported	PMID:18488015
+2008-01-23	SPAC1B3.10c		before	I:complement(join(4945933..4945984,4946094..4948084))	Solexa intron data; removed 3’ exon, unsupported	PMID:18488015
+2008-01-23	SPAC1F12.08		after	I:join(3817464..3817803,3817851..3817991,3818035..3818130,3818170..3818543)	Solexa transread data; added new intron, in-frame splice in final exon, improved homology	PMID:18488015
+2008-01-23	SPAC1F12.08		before	I:join(3817464..3817803,3817851..3817991,3818035..3818543)	Solexa transread data; added new intron, in-frame splice in final exon, improved homology	PMID:18488015
+2008-01-23	SPAC22E12.10c	etp1	after	I:complement(join(5037208..5037446,5037492..5039103))	Solexa transread data; added in-frame splice	PMID:18488015
+2008-01-23	SPAC22E12.10c	etp1	before	I:complement(5037208..5039103)	Solexa transread data; added in-frame splice	PMID:18488015
+2008-01-23	SPAC23C4.04c		after	I:join(1036033..1036343,1036397..1036508)	Solexa transread data; added intron	PMID:18488015
+2008-01-23	SPAC23C4.04c		before	I:1036033..1036347	Solexa transread data; added intron	PMID:18488015
+2008-01-23	SPAC23H3.04		after	I:join(2499035..2499164,2499160..2499353,2499443..2499824,2499875..2500236)	Solexa intron data; changed 5’ 1st and 2nd exon, improved homology	PMID:18488015
+2008-01-23	SPAC23H3.04		before	I:join(2499035..2499164,2499325..2499353,2499443..2499824,2499875..2500236)	Solexa intron data; changed 5’ 1st and 2nd exon, improved homology	PMID:18488015
+2008-01-23	SPAC24H6.01c		after	I:join(490016..490262,490338..490771,490812..490931,490979..491149,491186..491858,491905..492011)	Solexa transread data; added new 3’ intron/exon, improved homology	PMID:18488015
+2008-01-23	SPAC24H6.01c		before	I:join(490016..490262,490338..490771,490812..490931,490979..491149,491186..491980)	Solexa transread data; added new 3’ intron/exon, improved homology	PMID:18488015
+2008-01-23	SPAC26H5.04		after	I:4122149..4124518	Solexa intron data	PMID:18488015
+2008-01-23	SPAC26H5.04		before	I:join(4122149..4123354,4123535..4124518)	Solexa intron data	PMID:18488015
+2008-01-23	SPAC2C4.06c		after	I:complement(join(4269367..4270554,4270631..4270674,4270736..4270871))	Solexa intron data; replaced 2 internal exons with a different single exon	PMID:18488015
+2008-01-23	SPAC2C4.06c		before	I:complement(join(4269367..4270554,4270587..4270593,4270638..4270674,4270736..4270871))	Solexa intron data; replaced 2 internal exons with a different single exon	PMID:18488015
+2008-01-23	SPAC2C4.11c	rbp28	after	I:complement(join(4278729..4279405,4279457..4279505))	Solexa transread data; added small N term in-frame intron	PMID:18488015
+2008-01-23	SPAC2C4.11c	rbp28	before	I:complement(4278729..4279505)	Solexa transread data; added small N term in-frame intron	PMID:18488015
+2008-01-23	SPAC2F3.18c		after	I:complement(join(3942299..3942364,3942506..3942730))	Solexa transread data; added small N term in-frame intron	PMID:18488015
+2008-01-23	SPAC2F3.18c		before	I:complement(3942398..3942730)	Solexa transread data; added small N term in-frame intron	PMID:18488015
+2008-01-23	SPAC30.03c	tsn1	after	I:complement(join(4394707..4394741,4394799..4394967,4395010..4395092,4395131..4395367,4395416..4395491,4395530..4395592))	Solexa transread data; added in-frame intron to (previous) 2nd exon, improved homology	PMID:18488015
+2008-01-23	SPAC30.03c	tsn1	before	I:complement(join(4394707..4394741,4394799..4394967,4395010..4395092,4395131..4395491,4395530..4395592))	Solexa transread data; added in-frame intron to (previous) 2nd exon, improved homology	PMID:18488015
+2008-01-23	SPAC30C2.05	erv14	after	I:join(4639884..4639924,4639969..4640020,4640076..4640365,4640447..4640477)	Solexa transread data; added new 5’ intron/exon, improved homology	PMID:18488015
+2008-01-23	SPAC30C2.05	erv14	before	I:join(4639916..4640020,4640076..4640365,4640447..4640477)	Solexa transread data; added new 5’ intron/exon, improved homology	PMID:18488015
+2008-01-23	SPAC328.05		after	I:join(3484695..3484698,3484752..3485065,3485241..3485342,3485382..3485528,3485582..3485974,3486056..3486502)	Solexa intron data; removed in-frame splice (exon 5), unsupported	PMID:18488015
+2008-01-23	SPAC328.05		before	I:join(3484695..3484698,3484752..3485065,3485241..3485342,3485382..3485528,3485582..3485807,3485910..3485974,3486056..3486502)	Solexa intron data; removed in-frame splice (exon 5), unsupported	PMID:18488015
+2008-01-23	SPAC3A12.05c	taf2	after	I:complement(join(1426213..1427148,1427189..1429617,1429709..1429830,1429882..1429913))	Solexa intron data; improved distance between branch and acceptor	PMID:18488015
+2008-01-23	SPAC3A12.05c	taf2	before	I:complement(join(1426213..1427148,1427189..1429617,1429709..1429836,1429882..1429913))	Solexa intron data; improved distance between branch and acceptor	PMID:18488015
+2008-01-23	SPAC4F10.08	mug126	after	I:join(4844855..4845824,4845863..4846063,4846104..4846129)	Solexa transread data; added new 3’ intron/exon	PMID:18488015
+2008-01-23	SPAC4F10.08	mug126	before	I:join(4844855..4845824,4845863..4846203)	Solexa transread data; added new 3’ intron/exon	PMID:18488015
+2008-01-23	SPAC56F8.04c	coq2	after	I:complement(join(1133226..1134283,1134332..1134356))	Solexa transread data; added 5’ intron/exon	PMID:18488015
+2008-01-23	SPAC56F8.04c	coq2	before	I:complement(1133226..1134302)	Solexa transread data; added 5’ intron/exon	PMID:18488015
+2008-01-23	SPAC589.02c	med13	after	I:complement(join(3095075..3098590,3098626..3098781,3098878..3098883))	Solexa intron data; improved branch/acceptor for 1st intron	PMID:18488015
+2008-01-23	SPAC589.02c	med13	before	I:complement(join(3095075..3098590,3098626..3098775,3098878..3098883))	Solexa intron data; improved branch/acceptor for 1st intron	PMID:18488015
+2008-01-23	SPAC630.11	vps55	after	I:join(366801..366817,366873..366891,366968..367040,367105..367189,367293..367348,367395..367531)	Solexa transread data; changed internal intron acceptor, improved homology	PMID:18488015
+2008-01-23	SPAC630.11	vps55	before	I:join(366801..366817,366873..366891,366968..367040,367123..367189,367293..367348,367395..367531)	Solexa transread data; changed internal intron acceptor, improved homology	PMID:18488015
+2008-01-23	SPAC6F12.08c		after	I:complement(join(1322439..1323955,1323999..1324140,1324195..1324252,1324299..1324336))	Solexa intron data; improved branch acceptor for intron 1	PMID:18488015
+2008-01-23	SPAC6F12.08c		before	I:complement(join(1322439..1323955,1323999..1324140,1324195..1324234,1324299..1324336))	Solexa intron data; improved branch acceptor for intron 1	PMID:18488015
+2008-01-23	SPAC823.04		after	I:join(2587729..2587897,2588106..2588620)	Solexa transread data	PMID:18488015
+2008-01-23	SPAC823.04		before	I:join(2587729..2587897,2588085..2588620)	Solexa transread data	PMID:18488015
+2008-01-23	SPAC823.09c		after	I:complement(join(2594777..2594913,2594966..2595693,2595734..2595819))	Solexa transread data; added new 3’ intron/exon	PMID:18488015
+2008-01-23	SPAC823.09c		before	I:complement(join(2594922..2595693,2595734..2595819))	Solexa transread data; added new 3’ intron/exon	PMID:18488015
+2008-01-23	SPAC890.07c	rmt1	after	I:complement(join(5016020..5016026,5016076..5016215,5016262..5016596,5016649..5016943,5016994..5017059,5017138..5017252,5017421..5017433,5017700..5017703,5017782..5017829))	Solexa transread data; added small N terminal exon, which added a single conserved cysteine	PMID:18488015
+2008-01-23	SPAC890.07c	rmt1	before	I:complement(join(5016072..5016215,5016262..5016596,5016649..5016943,5016994..5017059,5017138..5017252,5017421..5017433,5017700..5017703,5017782..5017829))	Solexa transread data; added small N terminal exon, which added a single conserved cysteine	PMID:18488015
+2008-01-23	SPAC8C9.19		after	I:join(3660430..3660438,3660491..3660556,3660607..3660717)	Solexa intron data; deleted final exon, unsupported, improved length and alignment to orthologs	PMID:18488015
+2008-01-23	SPAC8C9.19		before	I:join(3660430..3660438,3660491..3660556,3660607..3660713,3660784..3660886)	Solexa intron data; deleted final exon, unsupported, improved length and alignment to orthologs	PMID:18488015
+2008-01-23	SPAC9.06c		after	I:complement(join(1473692..1473885,1473939..1474105,1474153..1474212,1474264..1474341,1474381..1474404,1474460..1474539))	Solexa transread data	PMID:18488015
+2008-01-23	SPAC9.06c		before	I:complement(join(1473692..1473885,1473939..1474105,1474153..1474212,1474264..1474341,1474460..1474539))	Solexa transread data	PMID:18488015
+2008-01-23	SPAC9G1.13c		after	I:complement(join(1995208..1996148,1996191..1996268,1996325..1996413,1996478..1996683))	Solexa intron data; added a new 3rd exon, improved homology	PMID:18488015
+2008-01-23	SPAC9G1.13c		before	I:complement(join(1995208..1996148,1996325..1996413,1996478..1996683))	Solexa intron data; added a new 3rd exon, improved homology	PMID:18488015
+2008-01-23	SPAPB17E12.03		after	I:join(1271889..1271972,1272015..1272962)	Solexa intron data; removed in-frame splice, unsupported, improved homology	PMID:18488015
+2008-01-23	SPAPB17E12.03		before	I:join(1271889..1271972,1272015..1272386,1272483..1272962)	Solexa intron data; removed in-frame splice, unsupported, improved homology	PMID:18488015
+2008-01-23	SPAPB17E12.08		after	I:join(1279573..1279779,1279820..1279869,1279953..1280325)	Solexa transread data; changed first donor to make n-terminal exon longer, improved homology	PMID:18488015
+2008-01-23	SPAPB17E12.08		before	I:join(1279573..1279644,1279820..1279869,1279953..1280325)	Solexa transread data; changed first donor to make n-terminal exon longer, improved homology	PMID:18488015
+2008-01-23	SPAPB18E9.01	trm5	after	I:join(3974310..3974485,3974541..3974629,3974674..3974775,3974879..3975132,3975193..3975429,3975485..3975832,3975882..3975962,3976014..3976079)	Solexa transread data; added small 3’ exon, improved homology	PMID:18488015
+2008-01-23	SPAPB18E9.01	trm5	before	I:join(3974310..3974485,3974541..3974629,3974674..3974775,3974879..3975132,3975193..3975429,3975485..3975832,3975882..3975983)	Solexa transread data; added small 3’ exon, improved homology	PMID:18488015
+2008-01-23	SPAPB1A10.16		after	I:join(1863972..1864360,1864415..1864457)	Solexa transread data	PMID:18488015
+2008-01-23	SPAPB1A10.16		before	I:1863972..1864388	Solexa transread data	PMID:18488015
+2008-01-23	SPAPB2B4.06		after	I:join(2722735..2723210,2723273..2723300,2723349..2723559,2723608..2723660)	Solexa transread data; added new 3’ intron/exon, improved homology	PMID:18488015
+2008-01-23	SPAPB2B4.06		before	I:join(2722735..2723210,2723273..2723300,2723349..2723582)	Solexa transread data; added new 3’ intron/exon, improved homology	PMID:18488015
+2008-01-23	SPBC106.05c	tim11	after	II:complement(join(383527..383612,383703..383874,383940..383960))	Solexa transread data; changed 5’ exon	PMID:18488015
+2008-01-23	SPBC106.05c	tim11	before	II:complement(join(383527..383612,383703..383874,383980..384012))	Solexa transread data; changed 5’ exon	PMID:18488015
+2008-01-23	SPBC13G1.04c		after	II:complement(join(3732806..3732930,3732994..3733762))	Solexa transread data; added new 3’ intron and exon, improved homology	PMID:18488015
+2008-01-23	SPBC13G1.04c		before	II:complement(3732941..3733762)	Solexa transread data; added new 3’ intron and exon, improved homology	PMID:18488015
+2008-01-23	SPBC15D4.13c		after	II:complement(join(3032492..3032710,3032761..3032822,3032889..3033222))	Solexa intron data; better donor for first intron	PMID:18488015
+2008-01-23	SPBC15D4.13c		before	II:complement(join(3032492..3032710,3032761..3032822,3032865..3033222))	Solexa intron data; better donor for first intron	PMID:18488015
+2008-01-23	SPBC16C6.03c		after	II:complement(4332698..4333123)	Solexa intron data; final exon, unsupported removed	PMID:18488015
+2008-01-23	SPBC16C6.03c		before	II:complement(join(4332356..4332454,4332746..4333123))	Solexa intron data; final exon, unsupported removed	PMID:18488015
+2008-01-23	SPBC16D10.02	trm11	after	II:join(3588806..3589595,3589639..3589803,3589845..3590123,3590163..3590278,3590327..3590386)	Solexa transread data; added new 3’ intron/exon	PMID:18488015
+2008-01-23	SPBC16D10.02	trm11	before	II:join(3588806..3589595,3589639..3589803,3589845..3590123,3590163..3590287)	Solexa transread data; added new 3’ intron/exon	PMID:18488015
+2008-01-23	SPBC16D10.10		after	II:join(3618117..3618179,3618228..3618617,3618658..3618702,3618747..3618918,3618956..3619071,3619113..3619321,3619366..3619540)	Solexa transread data; changed 2 introns (existing 4 and 5) to create a new exon 5, improved homology	PMID:18488015
+2008-01-23	SPBC16D10.10		before	II:join(3618117..3618179,3618228..3618617,3618658..3618702,3618747..3618971,3619077..3619321,3619366..3619540)	Solexa transread data; changed 2 introns (existing 4 and 5) to create a new exon 5, improved homology	PMID:18488015
 2008-01-23	SPBC16E9.16c	lsd90	after	II:complement(join(1947985..1948953,1948955..1950050,1950053..1950255))	gene structure revised to remove introns, genome sequence contains 2 frameshifts	PMID:18079165
 2008-01-23	SPBC16E9.16c		before	II:complement(join(1947985..1949069,1949218..1950058,1950253..1950255))	gene structure revised to remove introns, genome sequence contains 2 frameshifts	PMID:18079165
 2008-01-23	SPBC19G7.06	mbx1	after	II:join(2359429..2359479,2359547..2359693,2359845..2359928,2360064..2361092)		
 2008-01-23	SPBC19G7.06	mbx1	before	II:join(2359429..2359479,2359547..2359693,2359845..2359928,2360001..2361092)		
 2008-01-23	SPBC19G7.10c		after	II:complement(join(2369064..2369190,2369246..2369416,2369455..2371243,2371351..2371451,2371507..2371583))		
 2008-01-23	SPBC19G7.10c		before	II:complement(join(2369064..2369160,2369246..2369416,2369455..2371243,2371351..2371451,2371507..2371583))		
-2008-01-23	SPBC21.03c		after	II:complement(join(3217985..3218424,3218462..3218491,3218580..3218651,3218704..3218947))	Solexa intron data; changed 2 internal introns, now agrees with transread data, but still potential to be incorrect	
-2008-01-23	SPBC21.03c		before	II:complement(join(3217985..3218424,3218467..3218491,3218693..3218947))	Solexa intron data; changed 2 internal introns, now agrees with transread data, but still potential to be incorrect	
+2008-01-23	SPBC21.03c		after	II:complement(join(3217985..3218424,3218462..3218491,3218580..3218651,3218704..3218947))	Solexa intron data; changed 2 internal introns, now agrees with transread data, but still potential to be incorrect	PMID:18488015
+2008-01-23	SPBC21.03c		before	II:complement(join(3217985..3218424,3218467..3218491,3218693..3218947))	Solexa intron data; changed 2 internal introns, now agrees with transread data, but still potential to be incorrect	PMID:18488015
 2008-01-23	SPBC21C3.07c		after	II:complement(join(3807714..3807783,3807831..3807891,3807946..3808607,3808665..3808795))		
-2008-01-23	SPBC21C3.07c		after	II:complement(join(3807827..3807891,3807946..3808607,3808665..3808795))	Solexa transread data; added two 3’ exons	
-2008-01-23	SPBC2A9.07c		after	II:complement(join(2959078..2959129,2959172..2959902))	Solexa transread data; added in-frame intron, improved homology	
-2008-01-23	SPBC2A9.07c		before	II:complement(2959078..2959902)	Solexa transread data; added in-frame intron, improved homology	
-2008-01-23	SPBC2D10.15c		after	II:complement(join(2995324..2995497,2995534..2995579,2995619..2995923,2995971..2996066))	Solexa transread data	
-2008-01-23	SPBC2D10.15c		before	II:complement(join(2995324..2995579,2995619..2995923,2995971..2996066))	Solexa transread data	
-2008-01-23	SPBC2D10.16		after	II:join(2996452..2996463,2996509..2996687,2996738..2996879)	Solexa transread data; added new intron in second exon, which created a new 3rd exon, and identified homology with Cenp-S (was previously sequence orphan)	
-2008-01-23	SPBC2D10.16		before	II:join(2996452..2996463,2996509..2996904)	Solexa transread data; added new intron in second exon, which created a new 3rd exon, and identified homology with Cenp-S (was previously sequence orphan)	
-2008-01-23	SPBC31F10.12		after	II:join(3773308..3773318,3773373..3773525,3773581..3773678,3773795..3773999,3774059..3774116,3774192..3774212)	Solexa transread data; added new 5’ intron and exon	
-2008-01-23	SPBC31F10.12		before	II:join(3773353..3773525,3773581..3773678,3773795..3773999,3774059..3774116,3774192..3774212)	Solexa transread data; added new 5’ intron and exon	
-2008-01-23	SPBC32H8.08c		after	II:complement(join(1465811..1466035,1466138..1467057,1467311..1467431))	Solexa intron data; removed 5’ intron/exon (unsupported) and trimmed to next met	
-2008-01-23	SPBC32H8.08c		before	II:complement(join(1465811..1466035,1466138..1467057,1467311..1467456,1467514..1467539))	Solexa intron data; removed 5’ intron/exon (unsupported) and trimmed to next met	
+2008-01-23	SPBC21C3.07c		after	II:complement(join(3807827..3807891,3807946..3808607,3808665..3808795))	Solexa transread data; added two 3’ exons	PMID:18488015
+2008-01-23	SPBC2A9.07c		after	II:complement(join(2959078..2959129,2959172..2959902))	Solexa transread data; added in-frame intron, improved homology	PMID:18488015
+2008-01-23	SPBC2A9.07c		before	II:complement(2959078..2959902)	Solexa transread data; added in-frame intron, improved homology	PMID:18488015
+2008-01-23	SPBC2D10.15c		after	II:complement(join(2995324..2995497,2995534..2995579,2995619..2995923,2995971..2996066))	Solexa transread data	PMID:18488015
+2008-01-23	SPBC2D10.15c		before	II:complement(join(2995324..2995579,2995619..2995923,2995971..2996066))	Solexa transread data	PMID:18488015
+2008-01-23	SPBC2D10.16		after	II:join(2996452..2996463,2996509..2996687,2996738..2996879)	Solexa transread data; added new intron in second exon, which created a new 3rd exon, and identified homology with Cenp-S (was previously sequence orphan)	PMID:18488015
+2008-01-23	SPBC2D10.16		before	II:join(2996452..2996463,2996509..2996904)	Solexa transread data; added new intron in second exon, which created a new 3rd exon, and identified homology with Cenp-S (was previously sequence orphan)	PMID:18488015
+2008-01-23	SPBC31F10.12		after	II:join(3773308..3773318,3773373..3773525,3773581..3773678,3773795..3773999,3774059..3774116,3774192..3774212)	Solexa transread data; added new 5’ intron and exon	PMID:18488015
+2008-01-23	SPBC31F10.12		before	II:join(3773353..3773525,3773581..3773678,3773795..3773999,3774059..3774116,3774192..3774212)	Solexa transread data; added new 5’ intron and exon	PMID:18488015
+2008-01-23	SPBC32H8.08c		after	II:complement(join(1465811..1466035,1466138..1467057,1467311..1467431))	Solexa intron data; removed 5’ intron/exon (unsupported) and trimmed to next met	PMID:18488015
+2008-01-23	SPBC32H8.08c		before	II:complement(join(1465811..1466035,1466138..1467057,1467311..1467456,1467514..1467539))	Solexa intron data; removed 5’ intron/exon (unsupported) and trimmed to next met	PMID:18488015
 2008-01-23	SPBC4.02c		after	II:complement(join(1185617..1186640,1186738..1186846,1187087..1187162,1187220..1187324))		
 2008-01-23	SPBC4.02c		before	II:complement(join(1185617..1186640,1186738..1186846,1187087..1187324))		
-2008-01-23	SPBC582.04c		after	II:complement(join(423269..423598,423669..423738,423782..423871,423912..424373,424424..424692,424747..424872,424921..425160,425223..425350,425410..425446))	Solexa transread data; added in-frame intron to (existing) exon 3	
-2008-01-23	SPBC582.04c		before	II:complement(join(423269..423598,423669..423738,423782..423871,423912..424373,424424..424872,424921..425160,425223..425350,425410..425446))	Solexa transread data; added in-frame intron to (existing) exon 3	
+2008-01-23	SPBC582.04c		after	II:complement(join(423269..423598,423669..423738,423782..423871,423912..424373,424424..424692,424747..424872,424921..425160,425223..425350,425410..425446))	Solexa transread data; added in-frame intron to (existing) exon 3	PMID:18488015
+2008-01-23	SPBC582.04c		before	II:complement(join(423269..423598,423669..423738,423782..423871,423912..424373,424424..424872,424921..425160,425223..425350,425410..425446))	Solexa transread data; added in-frame intron to (existing) exon 3	PMID:18488015
 2008-01-23	SPBC725.04		after	II:join(1208965..1210626,1210678..1210722)		
 2008-01-23	SPBC725.04		before	II:join(1208965..1210626,1210660..1210722)		
-2008-01-23	SPBC8D2.17		after	II:join(1390183..1391093,1391147..1391222)	Solexa transread data; added new 3’ intron/exon	
-2008-01-23	SPBC8D2.17		before	II:1390183..1391238	Solexa transread data; added new 3’ intron/exon	
-2008-01-23	SPBC947.03c		after	II:join(676629..676908,677057..677127)	Solexa transread data; added 5’ inton/exon, improved homology	
-2008-01-23	SPBC947.03c		before	II:676629..676931	Solexa transread data; added 5’ inton/exon, improved homology	
-2008-01-23	SPBP35G2.06c	nup131	after	II:complement(join(973049..974181,974223..974577,974647..975002,975044..975137,975172..976632))	Solexa intron data; changed donor for intron 3	
-2008-01-23	SPBP35G2.06c	nup131	before	II:complement(join(973049..974181,974223..974577,974617..975002,975044..975137,975172..976632))	Solexa intron data; changed donor for intron 3	
-2008-01-23	SPBP4H10.12		after	II:join(2895855..2895863,2896001..2896459,2896516..2896587)	Solexa transread data; added new 3’ intron/exon, improved homology	
-2008-01-23	SPBP4H10.12		before	II:join(2895855..2895863,2896001..2896507)	Solexa transread data; added new 3’ intron/exon, improved homology	
+2008-01-23	SPBC8D2.17		after	II:join(1390183..1391093,1391147..1391222)	Solexa transread data; added new 3’ intron/exon	PMID:18488015
+2008-01-23	SPBC8D2.17		before	II:1390183..1391238	Solexa transread data; added new 3’ intron/exon	PMID:18488015
+2008-01-23	SPBC947.03c		after	II:join(676629..676908,677057..677127)	Solexa transread data; added 5’ inton/exon, improved homology	PMID:18488015
+2008-01-23	SPBC947.03c		before	II:676629..676931	Solexa transread data; added 5’ inton/exon, improved homology	PMID:18488015
+2008-01-23	SPBP35G2.06c	nup131	after	II:complement(join(973049..974181,974223..974577,974647..975002,975044..975137,975172..976632))	Solexa intron data; changed donor for intron 3	PMID:18488015
+2008-01-23	SPBP35G2.06c	nup131	before	II:complement(join(973049..974181,974223..974577,974617..975002,975044..975137,975172..976632))	Solexa intron data; changed donor for intron 3	PMID:18488015
+2008-01-23	SPBP4H10.12		after	II:join(2895855..2895863,2896001..2896459,2896516..2896587)	Solexa transread data; added new 3’ intron/exon, improved homology	PMID:18488015
+2008-01-23	SPBP4H10.12		before	II:join(2895855..2895863,2896001..2896507)	Solexa transread data; added new 3’ intron/exon, improved homology	PMID:18488015
 2008-01-23	SPBP4H10.15		after	II:join(2903103..2905816,2905857..2905881)		
 2008-01-23	SPBP4H10.15		before	II:2903103..2905820		
-2008-01-23	SPBPB2B2.18		after	II:join(4502692..4502725,4502787..4502857,4503068..4503286,4503527..4503664)	Solexa transread data; changed 5’ intron/exon	
-2008-01-23	SPBPB2B2.18		before	II:join(4502439..4502463,4502712..4502857,4503068..4503286,4503527..4503664)	Solexa transread data; changed 5’ intron/exon	
-2008-01-23	SPBPJ4664.05		after	II:join(705932..706077,706141..706666)	Solexa transread data; added new 5’ intron and exon, improved homology	
-2008-01-23	SPBPJ4664.05		before	II:706175..706666	Solexa transread data; added new 5’ intron and exon, improved homology	
-2008-01-23	SPCC1020.11c		after	III:join(757365..757424,757506..757761,757851..757861)	Solexa transread data; added 3’intron/exon	
-2008-01-23	SPCC1020.11c		before	III:join(757365..757424,757506..757802)	Solexa transread data; added 3’intron/exon	
-2008-01-23	SPCC1393.06c		after	III:complement(join(804627..805627,805678..805800,805849..805921,805965..806009))	Solexa intron data; changed first intron and added a new 2nd exon, improved homology, also confirmed by transread data	
-2008-01-23	SPCC1393.06c		before	III:complement(join(804627..805627,805678..805800,805907..806009))	Solexa intron data; changed first intron and added a new 2nd exon, improved homology, also confirmed by transread data	
-2008-01-23	SPCC1442.08c	cox12	after	III:complement(join(1781505..1781563,1781637..1781744,1781830..1781855,1781920..1781935,1781981..1782032))	Solexa transread data; added 2 small 5’ exons, improved homology	
-2008-01-23	SPCC1442.08c	cox12	before	III:complement(join(1781505..1781563,1781637..1781744,1781830..1781914))	Solexa transread data; added 2 small 5’ exons, improved homology	
-2008-01-23	SPCC1450.14c	ero12	after	III:complement(1759295..1760998)	Solexa intron data; deleted first exon, unsupported	
-2008-01-23	SPCC1450.14c	ero12	before	III:complement(join(1759295..1760998,1761117..1761128))	Solexa intron data; deleted first exon, unsupported	
-2008-01-23	SPCC1620.09c	tfg1	after	III:complement(join(2161331..2161515,2161565..2162363,2162405..2162500,2162584..2163123))	Solexa transread data; added 5’ exon, improved homology	
-2008-01-23	SPCC1620.09c	tfg1	before	III:complement(join(2161527..2162363,2162405..2162500,2162584..2163123))	Solexa transread data; added 5’ exon, improved homology	
-2008-01-23	SPCC1620.10	cwf26	after	III:join(2163205..2164118,2164159..2164165)	Solexa transread data; added 3’ exon encoding single methionine	
-2008-01-23	SPCC1620.10	cwf26	before	III:2163205..2164122	Solexa transread data; added 3’ exon encoding single methionine	
-2008-01-23	SPCC16C4.01	sif2	after	III:join(658832..659139,659223..659488,659567..659628,659709..660197,660298..660322)	Solexa transread data; added 3’ intron which changed frame of final exon, shorter product, improved homology	
-2008-01-23	SPCC16C4.01	sif2	before	III:join(658832..659139,659223..659488,659567..659628,659709..660413)	Solexa transread data; added 3’ intron which changed frame of final exon, shorter product, improved homology	
-2008-01-23	SPCC16C4.16c		after	III:complement(join(697605..697752,697875..698127,698180..698399))	Solexa transread data; added 3’ intron/exon, improved homology	
-2008-01-23	SPCC16C4.16c		before	III:complement(join(697862..698127,698180..698399))	Solexa transread data; added 3’ intron/exon, improved homology	
-2008-01-23	SPCC1827.02c		after	III:complement(2377039..2378127)	Solexa intron data; deleted first exon, unsupported	
-2008-01-23	SPCC1827.02c		before	III:complement(join(2377039..2378078,2378197..2378221))	Solexa intron data; deleted first exon, unsupported	
+2008-01-23	SPBPB2B2.18		after	II:join(4502692..4502725,4502787..4502857,4503068..4503286,4503527..4503664)	Solexa transread data; changed 5’ intron/exon	PMID:18488015
+2008-01-23	SPBPB2B2.18		before	II:join(4502439..4502463,4502712..4502857,4503068..4503286,4503527..4503664)	Solexa transread data; changed 5’ intron/exon	PMID:18488015
+2008-01-23	SPBPJ4664.05		after	II:join(705932..706077,706141..706666)	Solexa transread data; added new 5’ intron and exon, improved homology	PMID:18488015
+2008-01-23	SPBPJ4664.05		before	II:706175..706666	Solexa transread data; added new 5’ intron and exon, improved homology	PMID:18488015
+2008-01-23	SPCC1020.11c		after	III:join(757365..757424,757506..757761,757851..757861)	Solexa transread data; added 3’intron/exon	PMID:18488015
+2008-01-23	SPCC1020.11c		before	III:join(757365..757424,757506..757802)	Solexa transread data; added 3’intron/exon	PMID:18488015
+2008-01-23	SPCC1393.06c		after	III:complement(join(804627..805627,805678..805800,805849..805921,805965..806009))	Solexa intron data; changed first intron and added a new 2nd exon, improved homology, also confirmed by transread data	PMID:18488015
+2008-01-23	SPCC1393.06c		before	III:complement(join(804627..805627,805678..805800,805907..806009))	Solexa intron data; changed first intron and added a new 2nd exon, improved homology, also confirmed by transread data	PMID:18488015
+2008-01-23	SPCC1442.08c	cox12	after	III:complement(join(1781505..1781563,1781637..1781744,1781830..1781855,1781920..1781935,1781981..1782032))	Solexa transread data; added 2 small 5’ exons, improved homology	PMID:18488015
+2008-01-23	SPCC1442.08c	cox12	before	III:complement(join(1781505..1781563,1781637..1781744,1781830..1781914))	Solexa transread data; added 2 small 5’ exons, improved homology	PMID:18488015
+2008-01-23	SPCC1450.14c	ero12	after	III:complement(1759295..1760998)	Solexa intron data; deleted first exon, unsupported	PMID:18488015
+2008-01-23	SPCC1450.14c	ero12	before	III:complement(join(1759295..1760998,1761117..1761128))	Solexa intron data; deleted first exon, unsupported	PMID:18488015
+2008-01-23	SPCC1620.09c	tfg1	after	III:complement(join(2161331..2161515,2161565..2162363,2162405..2162500,2162584..2163123))	Solexa transread data; added 5’ exon, improved homology	PMID:18488015
+2008-01-23	SPCC1620.09c	tfg1	before	III:complement(join(2161527..2162363,2162405..2162500,2162584..2163123))	Solexa transread data; added 5’ exon, improved homology	PMID:18488015
+2008-01-23	SPCC1620.10	cwf26	after	III:join(2163205..2164118,2164159..2164165)	Solexa transread data; added 3’ exon encoding single methionine	PMID:18488015
+2008-01-23	SPCC1620.10	cwf26	before	III:2163205..2164122	Solexa transread data; added 3’ exon encoding single methionine	PMID:18488015
+2008-01-23	SPCC16C4.01	sif2	after	III:join(658832..659139,659223..659488,659567..659628,659709..660197,660298..660322)	Solexa transread data; added 3’ intron which changed frame of final exon, shorter product, improved homology	PMID:18488015
+2008-01-23	SPCC16C4.01	sif2	before	III:join(658832..659139,659223..659488,659567..659628,659709..660413)	Solexa transread data; added 3’ intron which changed frame of final exon, shorter product, improved homology	PMID:18488015
+2008-01-23	SPCC16C4.16c		after	III:complement(join(697605..697752,697875..698127,698180..698399))	Solexa transread data; added 3’ intron/exon, improved homology	PMID:18488015
+2008-01-23	SPCC16C4.16c		before	III:complement(join(697862..698127,698180..698399))	Solexa transread data; added 3’ intron/exon, improved homology	PMID:18488015
+2008-01-23	SPCC1827.02c		after	III:complement(2377039..2378127)	Solexa intron data; deleted first exon, unsupported	PMID:18488015
+2008-01-23	SPCC1827.02c		before	III:complement(join(2377039..2378078,2378197..2378221))	Solexa intron data; deleted first exon, unsupported	PMID:18488015
 2008-01-23	SPCC338.08	ctp1	after	III:complement(join(1358885..1359082,1359121..1359819))	in accordance with paper	pers. comm. Paul Russell; PMID:18378696
 2008-01-23	SPCC338.08	ctp1	before	III:complement(1358962..1359819)	in accordance with paper	pers. comm. Paul Russell; PMID:18378696
-2008-01-23	SPCC63.10c		after	III:complement(join(854651..855926,855984..856213))	Solexa intron data; deleted 2nd and 3rd introns, were not required or supported	
-2008-01-23	SPCC63.10c		before	III:complement(join(854651..855695,855766..855800,855839..855926,855984..856213))	Solexa intron data; deleted 2nd and 3rd introns, were not required or supported	
-2008-01-23	SPCC736.12c	mmi1	after	III:complement(join(337829..337985,338030..338178,338232..338347,338395..339354,339483..339567))	Solexa transread data; added 3’ exon, improved homology	
-2008-01-23	SPCC736.12c	mmi1	before	III:complement(join(338026..338178,338232..338347,338395..339354,339483..339567))	Solexa transread data; added 3’ exon, improved homology	
+2008-01-23	SPCC63.10c		after	III:complement(join(854651..855926,855984..856213))	Solexa intron data; deleted 2nd and 3rd introns, were not required or supported	PMID:18488015
+2008-01-23	SPCC63.10c		before	III:complement(join(854651..855695,855766..855800,855839..855926,855984..856213))	Solexa intron data; deleted 2nd and 3rd introns, were not required or supported	PMID:18488015
+2008-01-23	SPCC736.12c	mmi1	after	III:complement(join(337829..337985,338030..338178,338232..338347,338395..339354,339483..339567))	Solexa transread data; added 3’ exon, improved homology	PMID:18488015
+2008-01-23	SPCC736.12c	mmi1	before	III:complement(join(338026..338178,338232..338347,338395..339354,339483..339567))	Solexa transread data; added 3’ exon, improved homology	PMID:18488015
 2008-01-23	SPCC830.02	wtf24	after	III:join(2181204..2181342,2181510..2181758,2181808..2182031,2182077..2182371,2182422..2182504)		
 2008-01-23	SPCC830.02	wtf24	before	III:join(2181204..2181342,2181510..2181758,2181808..2182031,2182077..2182504)		
 2007-12-19	SPAC1639.01c		after	I:complement(join(251726..252337,252392..252752,253590..253630))		
 2007-12-19	SPAC1639.01c		before	I:complement(join(251726..252337,252392..252752,252945..252958))		
-2007-12-19	SPAC16A10.06c	nse2	after	I:complement(join(3089583..3090047,3090112..3090285,3090533..3090697))	Solexa intron data; revised intron structure/original intron absent from Solexa data	
-2007-12-19	SPAC16A10.06c	nse2	before	I:complement(join(3089583..3089996,3090112..3090285,3090533..3090697))	Solexa intron data; revised intron structure/original intron absent from Solexa data	
-2007-12-19	SPAC17C9.08	pnu1	after	I:complement(join(4484835..4485274,4485350..4485596,4485713..4485994))	Solexa intron data; revised intron structure/original intron absent from Solexa data and unsupported from mRNA data so final exon deleted	
-2007-12-19	SPAC17C9.08	pnu1	before	I:complement(join(4484758..4484804,4484843..4485274,4485350..4485596,4485713..4485994))	Solexa intron data; revised intron structure/original intron absent from Solexa data and unsupported from mRNA data so final exon deleted	
-2007-12-19	SPAC227.11c		after	I:complement(join(514552..515082,515222..515482,515534..515659))	Solexa intron data; removed final exon,  not supported by data	
-2007-12-19	SPAC227.11c		before	I:complement(join(514434..514489,514557..515082,515222..515482,515534..515659))	Solexa intron data; removed final exon,  not supported by data	
-2007-12-19	SPAC23D3.08	usp108	after	I:join(4352514..4353359,4353410..4353577)	Solexa intron data; removed final exon, not supported by data	
-2007-12-19	SPAC23D3.08	usp108	before	I:join(4352514..4353359,4353410..4353573,4353623..4353761)	Solexa intron data; removed final exon, not supported by data	
-2007-12-19	SPAC29E6.03c	uso1	after	I:complement(join(4405990..4407375,4407447..4409096,4409171..4409338))	Solexa intron data; changed internal splice site, better intron, slightly improved homology; deleted final small exon, unsupported	
-2007-12-19	SPAC29E6.03c	uso1	before	I:complement(join(4405871..4405889,4405994..4407291,4407447..4409096,4409171..4409338))	Solexa intron data; changed internal splice site, better intron, slightly improved homology; deleted final small exon, unsupported	
-2007-12-19	SPAC4C5.01		after	I:join(1192545..1192592,1192662..1192704,1192779..1192841,1192916..1193010,1193062..1193145,1193197..1193613)	Solexa intron data` altered intron 5 to improve donor and acceptor, improved homology	
-2007-12-19	SPAC4C5.01		before	I:join(1192545..1192592,1192662..1192704,1192779..1192841,1192916..1193010,1193062..1193175,1193236..1193613)	Solexa intron data` altered intron 5 to improve donor and acceptor, improved homology	
-2007-12-19	SPAC56F8.05c	mug64	after	I:complement(join(1134697..1135061,1135195..1135402,1135517..1135684,1135729..1135776,1135932..1136003))	Solexa intron data; revised intron structure/original intron absent from Solexa data. N terminal exon unsupported and had no branch site so exon deleted	
-2007-12-19	SPAC56F8.05c	mug64	before	I:complement(join(1134697..1135061,1135195..1135402,1135517..1135684,1135729..1135776,1135932..1135970,1136111..1136170))	Solexa intron data; revised intron structure/original intron absent from Solexa data. N terminal exon unsupported and had no branch site so exon deleted	
-2007-12-19	SPAC631.02		after	I:join(2107470..2107515,2107860..2110123)	Solexa transcript data	
-2007-12-19	SPAC631.02		before	I:2107940..2110123	Solexa transcript data	
-2007-12-19	SPAC688.08	srb8	after	I:join(3123163..3125057,3125099..3126310,3126356..3126653)	Solexa intron data; removed final exon, not supported by data	
-2007-12-19	SPAC688.08	srb8	before	I:join(3123163..3125057,3125099..3126310,3126356..3126631,3126671..3126989)	Solexa intron data; removed final exon, not supported by data	
-2007-12-19	SPAC6G9.16c		after	I:complement(join(3278951..3279367,3279420..3279539,3279683..3279819,3279865..3279985))	Solexa transcript data	
-2007-12-19	SPAC6G9.16c		before	I:complement(3278951..3279349)	Solexa transcript data	
-2007-12-19	SPAC823.04		after	I:join(2587729..2587897,2588085..2588620)	Solexa intron data; changed first intron acceptor, which gave a different N-term exon and improved homology	
-2007-12-19	SPAC823.04		before	I:join(2587859..2587897,2588090..2588620)	Solexa intron data; changed first intron acceptor, which gave a different N-term exon and improved homology	
-2007-12-19	SPAPB17E12.08		after	I:join(1279573..1279644,1279820..1279869,1279953..1280325)	Solexa intron data; revised intron structure/original intron absent from Solexa data so small N-term exon deleted	
-2007-12-19	SPAPB17E12.08		before	I:join(1279492..1279506,1279582..1279644,1279820..1279869,1279953..1280325)	Solexa intron data; revised intron structure/original intron absent from Solexa data so small N-term exon deleted	
-2007-12-19	SPAPB1A10.03	nxt1	after	I:join(1863363..1863381,1863434..1863762)	Solexa intron data; SPAPB1A10.03 split to create SPAPB1A10.03 and SPAPB1A10.16; new coordinates 1863363..1863381, 1863434..1863762 and 1863972..1864388	
-2007-12-19	SPAPB1A10.03	nxt1	before	I:join(1863363..1863381,1863434..1863705,1864077..1864388)	Solexa intron data; SPAPB1A10.03 split to create SPAPB1A10.03 and SPAPB1A10.16; new coordinates 1863363..1863381, 1863434..1863762 and 1863972..1864388	
-2007-12-19	SPAPB1A10.15		after	I:join(1892554..1892640,1892926..1893060,1893098..1893694)	Solexa intron data; revised intron structure/original intron absent from Solexa data so small C-term exon deleted	
-2007-12-19	SPAPB1A10.15		before	I:join(1892554..1892640,1892926..1893060,1893098..1893504,1893585..1893618)	Solexa intron data; revised intron structure/original intron absent from Solexa data so small C-term exon deleted	
-2007-12-19	SPBC11B10.03	cog8	after	II:1490611..1491747	Solexa intron data; removed N-teminal exon, poor donor, did not improve homology	
-2007-12-19	SPBC11B10.03	cog8	before	II:join(1490376..1490423,1490593..1491747)	Solexa intron data; removed N-teminal exon, poor donor, did not improve homology	
-2007-12-19	SPBC1604.17c		after	II:join(3900047..3900121,3900166..3901170,3901219..3901542)	Solexa intron data; updated, better donor (GTAATA instead of GTTAGT); original intron prediction not supported by Solexa data	
-2007-12-19	SPBC1604.17c		before	II:join(3900047..3900121,3900166..3901146,3901219..3901542)	Solexa intron data; updated, better donor (GTAATA instead of GTTAGT); original intron prediction not supported by Solexa data	
-2007-12-19	SPBC16A3.14		after	II:complement(4271131..4271937)	Solexa intron data; removed final exon, unsupported by data	
-2007-12-19	SPBC16A3.14		before	II:complement(join(4270907..4270939,4271137..4271937))	Solexa intron data; removed final exon, unsupported by data	
-2007-12-19	SPBC16D10.10		after	II:join(3618117..3618179,3618228..3618617,3618658..3618702,3618747..3618971,3619077..3619321,3619366..3619540)	Solexa intron data; exon 4 splice altered	
-2007-12-19	SPBC16D10.10		before	II:join(3618117..3618179,3618228..3618617,3618658..3618702,3618747..3618920,3619065..3619321,3619366..3619540)	Solexa intron data; exon 4 splice altered	
-2007-12-19	SPBC16H5.04		after	II:complement(join(2293393..2293775,2293877..2294039,2294087..2294125))	Solexa intron data; altered intron 2 donor and acceptor, improved homology	
-2007-12-19	SPBC16H5.04		before	II:complement(join(2293393..2293824,2293938..2294039,2294087..2294125))	Solexa intron data; altered intron 2 donor and acceptor, improved homology	
+2007-12-19	SPAC16A10.06c	nse2	after	I:complement(join(3089583..3090047,3090112..3090285,3090533..3090697))	Solexa intron data; revised intron structure/original intron absent from Solexa data	PMID:18488015
+2007-12-19	SPAC16A10.06c	nse2	before	I:complement(join(3089583..3089996,3090112..3090285,3090533..3090697))	Solexa intron data; revised intron structure/original intron absent from Solexa data	PMID:18488015
+2007-12-19	SPAC17C9.08	pnu1	after	I:complement(join(4484835..4485274,4485350..4485596,4485713..4485994))	Solexa intron data; revised intron structure/original intron absent from Solexa data and unsupported from mRNA data so final exon deleted	PMID:18488015
+2007-12-19	SPAC17C9.08	pnu1	before	I:complement(join(4484758..4484804,4484843..4485274,4485350..4485596,4485713..4485994))	Solexa intron data; revised intron structure/original intron absent from Solexa data and unsupported from mRNA data so final exon deleted	PMID:18488015
+2007-12-19	SPAC227.11c		after	I:complement(join(514552..515082,515222..515482,515534..515659))	Solexa intron data; removed final exon,  not supported by data	PMID:18488015
+2007-12-19	SPAC227.11c		before	I:complement(join(514434..514489,514557..515082,515222..515482,515534..515659))	Solexa intron data; removed final exon,  not supported by data	PMID:18488015
+2007-12-19	SPAC23D3.08	usp108	after	I:join(4352514..4353359,4353410..4353577)	Solexa intron data; removed final exon, not supported by data	PMID:18488015
+2007-12-19	SPAC23D3.08	usp108	before	I:join(4352514..4353359,4353410..4353573,4353623..4353761)	Solexa intron data; removed final exon, not supported by data	PMID:18488015
+2007-12-19	SPAC29E6.03c	uso1	after	I:complement(join(4405990..4407375,4407447..4409096,4409171..4409338))	Solexa intron data; changed internal splice site, better intron, slightly improved homology; deleted final small exon, unsupported	PMID:18488015
+2007-12-19	SPAC29E6.03c	uso1	before	I:complement(join(4405871..4405889,4405994..4407291,4407447..4409096,4409171..4409338))	Solexa intron data; changed internal splice site, better intron, slightly improved homology; deleted final small exon, unsupported	PMID:18488015
+2007-12-19	SPAC4C5.01		after	I:join(1192545..1192592,1192662..1192704,1192779..1192841,1192916..1193010,1193062..1193145,1193197..1193613)	Solexa intron data` altered intron 5 to improve donor and acceptor, improved homology	PMID:18488015
+2007-12-19	SPAC4C5.01		before	I:join(1192545..1192592,1192662..1192704,1192779..1192841,1192916..1193010,1193062..1193175,1193236..1193613)	Solexa intron data` altered intron 5 to improve donor and acceptor, improved homology	PMID:18488015
+2007-12-19	SPAC56F8.05c	mug64	after	I:complement(join(1134697..1135061,1135195..1135402,1135517..1135684,1135729..1135776,1135932..1136003))	Solexa intron data; revised intron structure/original intron absent from Solexa data. N terminal exon unsupported and had no branch site so exon deleted	PMID:18488015
+2007-12-19	SPAC56F8.05c	mug64	before	I:complement(join(1134697..1135061,1135195..1135402,1135517..1135684,1135729..1135776,1135932..1135970,1136111..1136170))	Solexa intron data; revised intron structure/original intron absent from Solexa data. N terminal exon unsupported and had no branch site so exon deleted	PMID:18488015
+2007-12-19	SPAC631.02		after	I:join(2107470..2107515,2107860..2110123)	Solexa transcript data	PMID:18488015
+2007-12-19	SPAC631.02		before	I:2107940..2110123	Solexa transcript data	PMID:18488015
+2007-12-19	SPAC688.08	srb8	after	I:join(3123163..3125057,3125099..3126310,3126356..3126653)	Solexa intron data; removed final exon, not supported by data	PMID:18488015
+2007-12-19	SPAC688.08	srb8	before	I:join(3123163..3125057,3125099..3126310,3126356..3126631,3126671..3126989)	Solexa intron data; removed final exon, not supported by data	PMID:18488015
+2007-12-19	SPAC6G9.16c		after	I:complement(join(3278951..3279367,3279420..3279539,3279683..3279819,3279865..3279985))	Solexa transcript data	PMID:18488015
+2007-12-19	SPAC6G9.16c		before	I:complement(3278951..3279349)	Solexa transcript data	PMID:18488015
+2007-12-19	SPAC823.04		after	I:join(2587729..2587897,2588085..2588620)	Solexa intron data; changed first intron acceptor, which gave a different N-term exon and improved homology	PMID:18488015
+2007-12-19	SPAC823.04		before	I:join(2587859..2587897,2588090..2588620)	Solexa intron data; changed first intron acceptor, which gave a different N-term exon and improved homology	PMID:18488015
+2007-12-19	SPAPB17E12.08		after	I:join(1279573..1279644,1279820..1279869,1279953..1280325)	Solexa intron data; revised intron structure/original intron absent from Solexa data so small N-term exon deleted	PMID:18488015
+2007-12-19	SPAPB17E12.08		before	I:join(1279492..1279506,1279582..1279644,1279820..1279869,1279953..1280325)	Solexa intron data; revised intron structure/original intron absent from Solexa data so small N-term exon deleted	PMID:18488015
+2007-12-19	SPAPB1A10.03	nxt1	after	I:join(1863363..1863381,1863434..1863762)	Solexa intron data; SPAPB1A10.03 split to create SPAPB1A10.03 and SPAPB1A10.16; new coordinates 1863363..1863381, 1863434..1863762 and 1863972..1864388	PMID:18488015
+2007-12-19	SPAPB1A10.03	nxt1	before	I:join(1863363..1863381,1863434..1863705,1864077..1864388)	Solexa intron data; SPAPB1A10.03 split to create SPAPB1A10.03 and SPAPB1A10.16; new coordinates 1863363..1863381, 1863434..1863762 and 1863972..1864388	PMID:18488015
+2007-12-19	SPAPB1A10.15		after	I:join(1892554..1892640,1892926..1893060,1893098..1893694)	Solexa intron data; revised intron structure/original intron absent from Solexa data so small C-term exon deleted	PMID:18488015
+2007-12-19	SPAPB1A10.15		before	I:join(1892554..1892640,1892926..1893060,1893098..1893504,1893585..1893618)	Solexa intron data; revised intron structure/original intron absent from Solexa data so small C-term exon deleted	PMID:18488015
+2007-12-19	SPBC11B10.03	cog8	after	II:1490611..1491747	Solexa intron data; removed N-teminal exon, poor donor, did not improve homology	PMID:18488015
+2007-12-19	SPBC11B10.03	cog8	before	II:join(1490376..1490423,1490593..1491747)	Solexa intron data; removed N-teminal exon, poor donor, did not improve homology	PMID:18488015
+2007-12-19	SPBC1604.17c		after	II:join(3900047..3900121,3900166..3901170,3901219..3901542)	Solexa intron data; updated, better donor (GTAATA instead of GTTAGT); original intron prediction not supported by Solexa data	PMID:18488015
+2007-12-19	SPBC1604.17c		before	II:join(3900047..3900121,3900166..3901146,3901219..3901542)	Solexa intron data; updated, better donor (GTAATA instead of GTTAGT); original intron prediction not supported by Solexa data	PMID:18488015
+2007-12-19	SPBC16A3.14		after	II:complement(4271131..4271937)	Solexa intron data; removed final exon, unsupported by data	PMID:18488015
+2007-12-19	SPBC16A3.14		before	II:complement(join(4270907..4270939,4271137..4271937))	Solexa intron data; removed final exon, unsupported by data	PMID:18488015
+2007-12-19	SPBC16D10.10		after	II:join(3618117..3618179,3618228..3618617,3618658..3618702,3618747..3618971,3619077..3619321,3619366..3619540)	Solexa intron data; exon 4 splice altered	PMID:18488015
+2007-12-19	SPBC16D10.10		before	II:join(3618117..3618179,3618228..3618617,3618658..3618702,3618747..3618920,3619065..3619321,3619366..3619540)	Solexa intron data; exon 4 splice altered	PMID:18488015
+2007-12-19	SPBC16H5.04		after	II:complement(join(2293393..2293775,2293877..2294039,2294087..2294125))	Solexa intron data; altered intron 2 donor and acceptor, improved homology	PMID:18488015
+2007-12-19	SPBC16H5.04		before	II:complement(join(2293393..2293824,2293938..2294039,2294087..2294125))	Solexa intron data; altered intron 2 donor and acceptor, improved homology	PMID:18488015
 2007-12-19	SPBC19G7.06	mbx1	after	II:join(2359429..2359479,2359547..2359693,2359845..2359928,2360001..2361092)	Christopher J. McInerny	
 2007-12-19	SPBC19G7.06	mbx1	before	II:join(2359429..2359479,2359547..2359693,2359845..2359928,2360064..2361092)	Christopher J. McInerny	
-2007-12-19	SPBC21B10.02		after	II:complement(1669719..1670144)	Solexa intron data; intron unsupported by Solexa transcript data, removed final exon	
-2007-12-19	SPBC21B10.02		before	II:complement(join(1669624..1669695,1669737..1670144))	Solexa intron data; intron unsupported by Solexa transcript data, removed final exon	
-2007-12-19	SPBC21C3.07c		after	II:complement(join(3807920..3808607,3808665..3808795))	Solexa intron data; removed final exon, not supported by data	
-2007-12-19	SPBC21C3.07c		before	II:complement(join(3807714..3807783,3807963..3808607,3808665..3808795))	Solexa intron data; removed final exon, not supported by data	
-2007-12-19	SPBC29A3.07c		after	II:complement(join(2050258..2050358,2050452..2050695))	Solexa intron data; final exon deleted, not supported by Solexa intron data; homology improved	
-2007-12-19	SPBC29A3.07c		before	II:complement(join(2050069..2050183,2050304..2050358,2050452..2050695))	Solexa intron data; final exon deleted, not supported by Solexa intron data; homology improved	
-2007-12-19	SPBC354.07c		after	II:complement(join(558335..559225,559273..559474,559942..560028,560151..560163,560231..560246))	Solexa transcript data; additional exon added	
-2007-12-19	SPBC354.07c		before	II:complement(join(558335..559225,559273..559474,559942..560028,560151..560170))	Solexa transcript data; additional exon added	
-2007-12-19	SPBPB2B2.07c		after	II:complement(join(4474145..4474403,4474438..4474931))	Solexa transcript data	
-2007-12-19	SPBPB2B2.07c		before	II:complement(4474434..4474931)	Solexa transcript data	
+2007-12-19	SPBC21B10.02		after	II:complement(1669719..1670144)	Solexa intron data; intron unsupported by Solexa transcript data, removed final exon	PMID:18488015
+2007-12-19	SPBC21B10.02		before	II:complement(join(1669624..1669695,1669737..1670144))	Solexa intron data; intron unsupported by Solexa transcript data, removed final exon	PMID:18488015
+2007-12-19	SPBC21C3.07c		after	II:complement(join(3807920..3808607,3808665..3808795))	Solexa intron data; removed final exon, not supported by data	PMID:18488015
+2007-12-19	SPBC21C3.07c		before	II:complement(join(3807714..3807783,3807963..3808607,3808665..3808795))	Solexa intron data; removed final exon, not supported by data	PMID:18488015
+2007-12-19	SPBC29A3.07c		after	II:complement(join(2050258..2050358,2050452..2050695))	Solexa intron data; final exon deleted, not supported by Solexa intron data; homology improved	PMID:18488015
+2007-12-19	SPBC29A3.07c		before	II:complement(join(2050069..2050183,2050304..2050358,2050452..2050695))	Solexa intron data; final exon deleted, not supported by Solexa intron data; homology improved	PMID:18488015
+2007-12-19	SPBC354.07c		after	II:complement(join(558335..559225,559273..559474,559942..560028,560151..560163,560231..560246))	Solexa transcript data; additional exon added	PMID:18488015
+2007-12-19	SPBC354.07c		before	II:complement(join(558335..559225,559273..559474,559942..560028,560151..560170))	Solexa transcript data; additional exon added	PMID:18488015
+2007-12-19	SPBPB2B2.07c		after	II:complement(join(4474145..4474403,4474438..4474931))	Solexa transcript data	PMID:18488015
+2007-12-19	SPBPB2B2.07c		before	II:complement(4474434..4474931)	Solexa transcript data	PMID:18488015
 2007-12-19	SPNCRNA.25	prl25	after	II:complement(2567830..2568256)		
 2007-12-19	SPNCRNA.25	prl25	before	II:2567830..2568256		
-2007-12-19	SPCC1442.13c		after	III:complement(1791346..1791909)	Solexa intron data; deleted final exon, improved homology	
-2007-12-19	SPCC1442.13c		before	III:complement(join(1791196..1791285,1791376..1791909))	Solexa intron data; deleted final exon, improved homology	
-2007-12-19	SPCC1450.09c		after	III:complement(1741588..1743459)	Solexa intron data; original intron absent from Solexa data; C terminal exon unsupported so exon deleted	
-2007-12-19	SPCC1450.09c		before	III:complement(join(1741451..1741481,1741589..1743459))	Solexa intron data; original intron absent from Solexa data; C terminal exon unsupported so exon deleted	
-2007-12-19	SPCC1494.02c	taf13	after	III:complement(join(2318335..2318508,2318579..2318676,2318903..2318966))	Solexa intron data; 2 C-terminal exons removed, not supported by homology	
-2007-12-19	SPCC1494.02c	taf13	before	III:complement(join(2317988..2318068,2318200..2318244,2318398..2318508,2318579..2318676,2318903..2318966))	Solexa intron data; 2 C-terminal exons removed, not supported by homology	
-2007-12-19	SPCC18.18c	fum1	after	III:complement(join(1988631..1990100,1990630..1990722))	Solexa transcript data	
-2007-12-19	SPCC18.18c	fum1	before	III:complement(1988631..1990079)	Solexa transcript data	
-2007-12-19	SPCC622.14		after	III:join(1427098..1427310,1427632..1427709,1427788..1428216,1428277..1428522)	Solexa intron data; altered donor for intron 3, improved donor consensus	
-2007-12-19	SPCC622.14		before	III:join(1427098..1427310,1427632..1427709,1427788..1428180,1428277..1428522)	Solexa intron data; altered donor for intron 3, improved donor consensus	
-2007-12-19	SPCC736.05	wtf7	after	III:join(320617..320755,320964..321335,321387..321523)	Solexa intron data; removed final exon,  not supported by data	
-2007-12-19	SPCC736.05	wtf7	before	III:join(320617..320755,320964..321335,321387..321509,321554..321582)	Solexa intron data; removed final exon,  not supported by data	
-2007-11-09	SPCC1020.11c		after	III:join(757365..757424,757506..757802)	Solexa transcript data	
-2007-11-09	SPCC1020.11c		before	III:757494..757802	Solexa transcript data	
-2007-11-09	SPCC1529.01		after	III:join(237554..237923,237975..238080,238139..238533,238588..239092,239151..239250)	Solexa transcript data; new exon added	
-2007-11-09	SPCC1529.01		before	III:join(237554..237923,237975..238080,238139..238533,238588..239105)	Solexa transcript data; new exon added	
+2007-12-19	SPCC1442.13c		after	III:complement(1791346..1791909)	Solexa intron data; deleted final exon, improved homology	PMID:18488015
+2007-12-19	SPCC1442.13c		before	III:complement(join(1791196..1791285,1791376..1791909))	Solexa intron data; deleted final exon, improved homology	PMID:18488015
+2007-12-19	SPCC1450.09c		after	III:complement(1741588..1743459)	Solexa intron data; original intron absent from Solexa data; C terminal exon unsupported so exon deleted	PMID:18488015
+2007-12-19	SPCC1450.09c		before	III:complement(join(1741451..1741481,1741589..1743459))	Solexa intron data; original intron absent from Solexa data; C terminal exon unsupported so exon deleted	PMID:18488015
+2007-12-19	SPCC1494.02c	taf13	after	III:complement(join(2318335..2318508,2318579..2318676,2318903..2318966))	Solexa intron data; 2 C-terminal exons removed, not supported by homology	PMID:18488015
+2007-12-19	SPCC1494.02c	taf13	before	III:complement(join(2317988..2318068,2318200..2318244,2318398..2318508,2318579..2318676,2318903..2318966))	Solexa intron data; 2 C-terminal exons removed, not supported by homology	PMID:18488015
+2007-12-19	SPCC18.18c	fum1	after	III:complement(join(1988631..1990100,1990630..1990722))	Solexa transcript data	PMID:18488015
+2007-12-19	SPCC18.18c	fum1	before	III:complement(1988631..1990079)	Solexa transcript data	PMID:18488015
+2007-12-19	SPCC622.14		after	III:join(1427098..1427310,1427632..1427709,1427788..1428216,1428277..1428522)	Solexa intron data; altered donor for intron 3, improved donor consensus	PMID:18488015
+2007-12-19	SPCC622.14		before	III:join(1427098..1427310,1427632..1427709,1427788..1428180,1428277..1428522)	Solexa intron data; altered donor for intron 3, improved donor consensus	PMID:18488015
+2007-12-19	SPCC736.05	wtf7	after	III:join(320617..320755,320964..321335,321387..321523)	Solexa intron data; removed final exon,  not supported by data	PMID:18488015
+2007-12-19	SPCC736.05	wtf7	before	III:join(320617..320755,320964..321335,321387..321509,321554..321582)	Solexa intron data; removed final exon,  not supported by data	PMID:18488015
+2007-11-09	SPCC1020.11c		after	III:join(757365..757424,757506..757802)	Solexa transcript data	PMID:18488015
+2007-11-09	SPCC1020.11c		before	III:757494..757802	Solexa transcript data	PMID:18488015
+2007-11-09	SPCC1529.01		after	III:join(237554..237923,237975..238080,238139..238533,238588..239092,239151..239250)	Solexa transcript data; new exon added	PMID:18488015
+2007-11-09	SPCC1529.01		before	III:join(237554..237923,237975..238080,238139..238533,238588..239105)	Solexa transcript data; new exon added	PMID:18488015
 2007-09-19	SPBC725.04		after	II:join(1208965..1210626,1210660..1210722)		
 2007-09-19	SPBC725.04		before	II:join(1208965..1210626,1210678..1210722)		
 2007-09-04	SPAC22F8.07c	rtf1	after	I:complement(join(4797267..4797376,4797424..4797575,4797621..4797953,4797992..4798103,4798143..4798230,4798276..4798442,4798490..4798928))	Two in-frame splices added	EMBL:AJ627891

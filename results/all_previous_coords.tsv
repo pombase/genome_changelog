@@ -145,8 +145,8 @@ I	SPAC1093.02		5'UTR	4612099..4612130	2023-01-12	PMID:21511999						https://cura
 I	SPAC1093.03		3'UTR	4616332..4617099	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 I	SPAC1093.03		5'UTR	4613443..4613626	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 I	SPAC1093.03		CDS	4659816..4662520	2003-08-14							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20020905/
-I	SPAC1093.03		CDS	join(4613627..4613686,4613723..4614081,4614152..4614378,4614438..4614954,4614996..4616331)	2008-01-23					Solexa intron data; improved distance between branch and acceptor, intron 2		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
-I	SPAC1093.03		CDS	join(4613627..4613686,4613723..4614081,4614164..4614378,4614438..4614954,4614996..4616331)	2011-03-24						Solexa intron data; improved distance between branch and acceptor, intron 2	https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
+I	SPAC1093.03		CDS	join(4613627..4613686,4613723..4614081,4614152..4614378,4614438..4614954,4614996..4616331)	2008-01-23			PMID:18488015		Solexa intron data; improved distance between branch and acceptor, intron 2		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
+I	SPAC1093.03		CDS	join(4613627..4613686,4613723..4614081,4614164..4614378,4614438..4614954,4614996..4616331)	2011-03-24				PMID:18488015		Solexa intron data; improved distance between branch and acceptor, intron 2	https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 I	SPAC1093.04c		5'UTR	complement(4618139..4618421)	2011-03-04							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110204/
 I	SPAC1093.04c		5'UTR	complement(4618141..4618421)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 I	SPAC1093.04c		5'UTR	complement(join(4618141..4618297,4618360..4618620))	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
@@ -221,7 +221,7 @@ I	SPAC110.06		5'UTR	complement(1905821..1906153)	2014-08-27							https://curati
 I	SPAC110.06		5'UTR	complement(1905821..1906153)	2023-01-12							https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 I	SPAC110.06		CDS	complement(1905728..1905820)	2014-07-08							https://curation.pombase.org/pombe-embl-repo/trunk?p=1908
 I	SPAC1142.01		5'UTR	join(3625312..3625507,3625555..3625573)	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
-I	SPAC1142.01		CDS	join(3625447..3625460,3625555..3627544)	2008-01-23					Solexa intron data; removed 5’ exon and trimmed to new Met, improved homology		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
+I	SPAC1142.01		CDS	join(3625447..3625460,3625555..3627544)	2008-01-23			PMID:18488015		Solexa intron data; removed 5’ exon and trimmed to new Met, improved homology		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
 I	SPAC1142.02c		3'UTR	complement(3627703..3627844)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 I	SPAC1142.02c		5'UTR	complement(3628885..3628913)	2011-03-04							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110204/
 I	SPAC1142.02c		5'UTR	complement(3628887..3628913)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
@@ -255,7 +255,7 @@ I	SPAC11D3.06		3'UTR	118061..118152	2011-03-24	PMID:18641648,PMID:20118936						
 I	SPAC11D3.06		5'UTR	116331..116692	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 I	SPAC11D3.06		5'UTR	116392..116692	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 I	SPAC11D3.07c		5'UTR	complement(120109..120309)	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
-I	SPAC11D3.07c		CDS	complement(join(118195..119827,119930..120108))	2008-01-23					Solexa intron data; removed in-frame splice, not required or supported		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
+I	SPAC11D3.07c		CDS	complement(join(118195..119827,119930..120108))	2008-01-23			PMID:18488015		Solexa intron data; removed in-frame splice, not required or supported		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
 I	SPAC11D3.08c		5'UTR	complement(122207..123705)	2011-03-04							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110204/
 I	SPAC11D3.08c		5'UTR	complement(122209..123705)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 I	SPAC11D3.08c		5'UTR	complement(122209..123785)	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
@@ -571,7 +571,7 @@ I	SPAC13G6.02c		5'UTR	complement(175772..176655)	2023-01-12	PMID:21511999						h
 I	SPAC13G6.03		5'UTR	175890..177291	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 I	SPAC13G6.03		5'UTR	177001..177291	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 I	SPAC13G6.04		5'UTR	180272..180422	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
-I	SPAC13G6.04	tim8	CDS	join(180423..180528,180586..180776)	2008-01-23					Solexa transread data		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
+I	SPAC13G6.04	tim8	CDS	join(180423..180528,180586..180776)	2008-01-23			PMID:18488015		Solexa transread data		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
 I	SPAC13G6.05c		5'UTR	complement(182169..182226)	2011-03-04							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110204/
 I	SPAC13G6.05c		5'UTR	complement(182171..182226)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 I	SPAC13G6.05c		5'UTR	complement(182195..182254)	2023-01-10							https://curation.pombase.org/pombe-embl-repo/trunk?p=8635
@@ -701,7 +701,7 @@ I	SPAC144.16		3'UTR	4687102..4687277	2011-03-24	PMID:18641648,PMID:20118936					
 I	SPAC144.16		5'UTR	4686462..4686561	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 I	SPAC144.16		5'UTR	4686513..4686561	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 I	SPAC144.17c		5'UTR	complement(4688832..4689196)	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
-I	SPAC144.17c		CDS	complement(join(4687483..4688462,4688513..4688831))	2008-01-23					Solexa transread data; added 3’ intron and exon, improved homology		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
+I	SPAC144.17c		CDS	complement(join(4687483..4688462,4688513..4688831))	2008-01-23			PMID:18488015		Solexa transread data; added 3’ intron and exon, improved homology		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
 I	SPAC144.18		3'UTR	4691208..4691628	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 I	SPAC144.18		5'UTR	4689241..4690169	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 I	SPAC144.18		5'UTR	4690144..4690169	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
@@ -779,13 +779,13 @@ I	SPAC1527.02		5'UTR	4383186..4383202	2011-03-24	PMID:18641648,PMID:20118936				
 I	SPAC1527.03		3'UTR	4386087..4386371	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 I	SPAC1527.03		5'UTR	4384450..4384658	2023-01-12	EMBL:AU009887						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 I	SPAC1556.01c		5'UTR	complement(3795857..3796023)	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
-I	SPAC1556.01c	rad50	CDS	complement(join(3791855..3792229,3792267..3795557,3795601..3795684,3795734..3795856))	2008-01-23					Solexa transread data; added small 3’ intron and exon		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
+I	SPAC1556.01c	rad50	CDS	complement(join(3791855..3792229,3792267..3795557,3795601..3795684,3795734..3795856))	2008-01-23			PMID:18488015		Solexa transread data; added small 3’ intron and exon		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
 I	SPAC1556.02c		5'UTR	complement(3798445..3798478)	2011-03-04							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110204/
 I	SPAC1556.02c		5'UTR	complement(3798447..3798478)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 I	SPAC1556.02c		5'UTR	complement(3798447..3798526)	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 I	SPAC1556.03		5'UTR	3799025..3799243	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 I	SPAC1556.03		5'UTR	3799045..3799243	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
-I	SPAC1556.03	azr1	CDS	join(3799244..3799680,3799731..3800160)	2008-01-23					Solexa transread data; added new 5’ intron and exon/improved homology		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
+I	SPAC1556.03	azr1	CDS	join(3799244..3799680,3799731..3800160)	2008-01-23			PMID:18488015		Solexa transread data; added new 5’ intron and exon/improved homology		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
 I	SPAC1556.04c		3'UTR	complement(3800292..3800312)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 I	SPAC1556.04c		5'UTR	complement(3800937..3801068)	2011-03-04							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110204/
 I	SPAC1556.04c		5'UTR	complement(3800939..3801068)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
@@ -869,12 +869,12 @@ I	SPAC15A10.09c		5'UTR	complement(3696027..3696399)	2011-03-04							https://www
 I	SPAC15A10.09c		5'UTR	complement(3696029..3696399)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 I	SPAC15A10.09c		5'UTR	complement(3696029..3696517)	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 I	SPAC15A10.10		5'UTR	3696549..3697507	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
-I	SPAC15A10.10	mde6	CDS	join(3697508..3697752,3697795..3698368,3698421..3698527,3698570..3699538,3699582..3699837)	2008-01-23					Solexa transread data; added in-frame intron		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
+I	SPAC15A10.10	mde6	CDS	join(3697508..3697752,3697795..3698368,3698421..3698527,3698570..3699538,3699582..3699837)	2008-01-23			PMID:18488015		Solexa transread data; added in-frame intron		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
 I	SPAC15A10.11		3'UTR	3708954..3708996	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 I	SPAC15A10.11		5'UTR	3702494..3702794	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 I	SPAC15A10.11		5'UTR	3702508..3702794	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 I	SPAC15A10.12c		5'UTR	complement(3709805..3710234)	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
-I	SPAC15A10.12c		CDS	complement(3709451..3709804)	2008-01-23					Solexa transread data		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
+I	SPAC15A10.12c		CDS	complement(3709451..3709804)	2008-01-23			PMID:18488015		Solexa transread data		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
 I	SPAC15A10.13		3'UTR	3713761..3713830	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 I	SPAC15A10.13		5'UTR	3710527..3711545	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 I	SPAC15A10.13		5'UTR	3711522..3711545	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
@@ -936,9 +936,9 @@ I	SPAC1635.01		5'UTR	4649109..4649257	2011-03-24	PMID:18641648,PMID:20118936				
 I	SPAC1635.01		5'UTR	join(4648900..4649003,4649080..4649257)	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 I	SPAC1639.01c		5'UTR	complement(253631..254934)	2011-03-24	PMID:18488015						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 I	SPAC1639.01c		5'UTR	complement(253715..254600)	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
-I	SPAC1639.01c		CDS	complement(join(251726..251745,251863..252337,252392..252752,253590..253630))	2011-03-24						Solexa transread data; added new 3’ intron/exon	https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
+I	SPAC1639.01c		CDS	complement(join(251726..251745,251863..252337,252392..252752,253590..253630))	2011-03-24				PMID:18488015		Solexa transread data; added new 3’ intron/exon	https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 I	SPAC1639.01c		CDS	complement(join(251726..252337,252392..252752,252945..252958))	2007-12-19							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071109/
-I	SPAC1639.01c		CDS	complement(join(251726..252337,252392..252752,253590..253630))	2008-01-23					Solexa transread data; added new 3’ intron/exon		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
+I	SPAC1639.01c		CDS	complement(join(251726..252337,252392..252752,253590..253630))	2008-01-23			PMID:18488015		Solexa transread data; added new 3’ intron/exon		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
 I	SPAC1639.02c		5'UTR	complement(259405..259448)	2011-03-04							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110204/
 I	SPAC1639.02c		5'UTR	complement(259407..259448)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 I	SPAC1639.02c		5'UTR	complement(259462..259505)	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
@@ -1045,8 +1045,8 @@ I	SPAC16A10.06c		5'UTR	complement(3090696..3090735)	2011-03-04							https://www
 I	SPAC16A10.06c		5'UTR	complement(3090698..3090735)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 I	SPAC16A10.06c		5'UTR	complement(3090698..3090898)	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 I	SPAC16A10.06c		CDS	complement(join(3090483..3090947,3091012..3091185,3091433..3091597))	2005-07-05							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20040915/
-I	SPAC16A10.06c	nse2	CDS	complement(join(3089583..3089996,3090112..3090285,3090533..3090697))	2007-12-19					Solexa intron data; revised intron structure/original intron absent from Solexa data		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071109/
-I	SPAC16A10.06c	nse2	CDS	complement(join(3089583..3090047,3090112..3090285,3090533..3090697))	2011-03-24						Solexa intron data; revised intron structure/original intron absent from Solexa data	https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
+I	SPAC16A10.06c	nse2	CDS	complement(join(3089583..3089996,3090112..3090285,3090533..3090697))	2007-12-19			PMID:18488015		Solexa intron data; revised intron structure/original intron absent from Solexa data		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071109/
+I	SPAC16A10.06c	nse2	CDS	complement(join(3089583..3090047,3090112..3090285,3090533..3090697))	2011-03-24				PMID:18488015		Solexa intron data; revised intron structure/original intron absent from Solexa data	https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 I	SPAC16A10.07c		5'UTR	complement(3093229..3093570)	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 I	SPAC16C9.01c		5'UTR	complement(792167..792233)	2011-03-04							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110204/
 I	SPAC16C9.01c		5'UTR	complement(792169..792233)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
@@ -1105,7 +1105,7 @@ I	SPAC16E8.11c		5'UTR	complement(3522121..3522375)	2011-03-24	PMID:18641648,PMID
 I	SPAC16E8.11c		5'UTR	complement(3522371..3522395)	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 I	SPAC16E8.11c	tfb1	CDS	complement(join(3520542..3520619,3520663..3521206,3521264..3521447,3521493..3522120))	2011-03-24							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 I	SPAC16E8.12c		5'UTR	complement(join(3524099..3524162,3524205..3524339))	2023-01-12							https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
-I	SPAC16E8.12c		CDS	complement(join(3523136..3523644,3524027..3524030))	2008-01-23					Solexa transread data; added 2 5’ exons		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
+I	SPAC16E8.12c		CDS	complement(join(3523136..3523644,3524027..3524030))	2008-01-23			PMID:18488015		Solexa transread data; added 2 5’ exons		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
 I	SPAC16E8.12c		misc_feature	complement(join(3523136..3523644,3523711..3523782,3523925..3523996,3524163..3524204,3524340..3524370))	2008-01-23							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
 I	SPAC16E8.13		5'UTR	3525227..3525303	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 I	SPAC16E8.13		5'UTR	3525291..3525303	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
@@ -1129,7 +1129,7 @@ I	SPAC1751.01c		5'UTR	complement(380353..381382)	2011-03-04							https://www.po
 I	SPAC1751.01c		5'UTR	complement(380355..381382)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 I	SPAC1751.01c		5'UTR	complement(380355..384751)	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 I	SPAC1751.02c		5'UTR	complement(386150..386195)	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
-I	SPAC1751.02c	rsm19	CDS	complement(join(385755..385887,385938..386043,386107..386179,386296..386310))	2008-01-23					Solexa intron data; remove 5’ exon, trimmed to new Met, improved homology		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
+I	SPAC1751.02c	rsm19	CDS	complement(join(385755..385887,385938..386043,386107..386179,386296..386310))	2008-01-23			PMID:18488015		Solexa intron data; remove 5’ exon, trimmed to new Met, improved homology		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
 I	SPAC1751.03		3'UTR	387787..387816	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 I	SPAC1751.03		5'UTR	386266..386343	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 I	SPAC1751.03		5'UTR	386307..386343	2011-03-24	EMBL:AB016218						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
@@ -1239,8 +1239,8 @@ I	SPAC17A5.01		3'UTR	1752994..1753080	2011-03-24	PMID:18641648,PMID:20118936				
 I	SPAC17A5.01		5'UTR	1749862..1750092	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 I	SPAC17A5.01		5'UTR	1749891..1750092	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 I	SPAC17A5.02c		5'UTR	complement(1755639..1755715)	2022-04-03							https://curation.pombase.org/pombe-embl-repo/trunk?p=8147
-I	SPAC17A5.02c	dbr1	CDS	complement(join(1754033..1754145,1754186..1754310,1754350..1755118,1755164..1755285,1755331..1755638))	2022-04-03					trim to MRVGVQGC	Solexa transread data	https://curation.pombase.org/pombe-embl-repo/trunk?p=8147
-I	SPAC17A5.02c	dbr1	CDS	complement(join(1754109..1754310,1754350..1755118,1755164..1755285,1755331..1755638))	2008-01-23					Solexa transread data		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
+I	SPAC17A5.02c	dbr1	CDS	complement(join(1754033..1754145,1754186..1754310,1754350..1755118,1755164..1755285,1755331..1755638))	2022-04-03				PMID:18488015	trim to MRVGVQGC	Solexa transread data	https://curation.pombase.org/pombe-embl-repo/trunk?p=8147
+I	SPAC17A5.02c	dbr1	CDS	complement(join(1754109..1754310,1754350..1755118,1755164..1755285,1755331..1755638))	2008-01-23			PMID:18488015		Solexa transread data		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
 I	SPAC17A5.03		3'UTR	1757276..1757315	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 I	SPAC17A5.03		5'UTR	1756016..1756108	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 I	SPAC17A5.03		promoter	1756018..1756027	2022-12-14							https://curation.pombase.org/pombe-embl-repo/trunk?p=8595
@@ -1285,7 +1285,7 @@ I	SPAC17C9.07		5'UTR	complement(4488066..4488122)	2011-03-04							https://www.p
 I	SPAC17C9.07		5'UTR	complement(4488068..4488122)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 I	SPAC17C9.07		5'UTR	complement(4488068..4488205)	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 I	SPAC17C9.08		5'UTR	complement(4485995..4486171)	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
-I	SPAC17C9.08	pnu1	CDS	complement(join(4484758..4484804,4484843..4485274,4485350..4485596,4485713..4485994))	2007-12-19					Solexa intron data; revised intron structure/original intron absent from Solexa data and unsupported from mRNA data so final exon deleted		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071109/
+I	SPAC17C9.08	pnu1	CDS	complement(join(4484758..4484804,4484843..4485274,4485350..4485596,4485713..4485994))	2007-12-19			PMID:18488015		Solexa intron data; revised intron structure/original intron absent from Solexa data and unsupported from mRNA data so final exon deleted		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071109/
 I	SPAC17C9.09c		3'UTR	4484467..4484603	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 I	SPAC17C9.09c		5'UTR	4483738..4484077	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 I	SPAC17C9.09c		5'UTR	4483996..4484077	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
@@ -1843,8 +1843,8 @@ I	SPAC1A6.03c		3'UTR	complement(1069923..1070060)	2014-07-09							https://curat
 I	SPAC1A6.03c		3'UTR	complement(1069923..1070138)	2011-08-22							https://curation.pombase.org/pombe-embl-repo/trunk?p=0
 I	SPAC1A6.03c		5'UTR	complement(1072014..1072343)	2011-03-24							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 I	SPAC1A6.03c		5'UTR	complement(1072128..1072343)	2023-01-12							https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
-I	SPAC1A6.03c		CDS	complement(1070139..1072013)	2008-01-23					Solexa transread data; new 3’ intron/exon, improved homology		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
-I	SPAC1A6.03c		CDS	complement(join(1070061..1070138,1070205..1072013))	2011-03-24						Solexa transread data; new 3’ intron/exon, improved homology	https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
+I	SPAC1A6.03c		CDS	complement(1070139..1072013)	2008-01-23			PMID:18488015		Solexa transread data; new 3’ intron/exon, improved homology		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
+I	SPAC1A6.03c		CDS	complement(join(1070061..1070138,1070205..1072013))	2011-03-24				PMID:18488015		Solexa transread data; new 3’ intron/exon, improved homology	https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 I	SPAC1A6.03c		CDS	complement(join(1070061..1070138,1070205..1072127))	2014-07-09							https://curation.pombase.org/pombe-embl-repo/trunk?p=1913
 I	SPAC1A6.03c		misc_feature	complement(1070139..1072127)	2014-07-11							https://curation.pombase.org/pombe-embl-repo/trunk?p=1923
 I	SPAC1A6.04c		5'UTR	complement(1076617..1077518)	2011-03-04							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110204/
@@ -1924,7 +1924,7 @@ I	SPAC1B3.07c		5'UTR	complement(4941437..4941623)	2023-01-12	PMID:21511999						
 I	SPAC1B3.08		3'UTR	4943948..4944022	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 I	SPAC1B3.08		5'UTR	4942200..4942666	2011-12-14							https://curation.pombase.org/pombe-embl-repo/trunk?p=184
 I	SPAC1B3.08		5'UTR	4942200..4942675	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
-I	SPAC1B3.10c		CDS	complement(join(4945933..4945984,4946094..4948084))	2008-01-23					Solexa intron data; removed 3’ exon, unsupported		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
+I	SPAC1B3.10c		CDS	complement(join(4945933..4945984,4946094..4948084))	2008-01-23			PMID:18488015		Solexa intron data; removed 3’ exon, unsupported		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
 I	SPAC1B3.11c		3'UTR	complement(4949138..4949269)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 I	SPAC1B3.11c		5'UTR	complement(4950021..4950071)	2011-03-04							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110204/
 I	SPAC1B3.11c		5'UTR	complement(4950023..4950071)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
@@ -2011,7 +2011,7 @@ I	SPAC1F12.07		3'UTR	3817023..3817069	2011-03-24	PMID:18641648,PMID:20118936				
 I	SPAC1F12.07		5'UTR	3815681..3815852	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 I	SPAC1F12.07		5'UTR	3815698..3815852	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 I	SPAC1F12.08		5'UTR	join(3817099..3817148,3817194..3817463)	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
-I	SPAC1F12.08		CDS	join(3817464..3817803,3817851..3817991,3818035..3818543)	2008-01-23					Solexa transread data; added new intron, in-frame splice in final exon, improved homology		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
+I	SPAC1F12.08		CDS	join(3817464..3817803,3817851..3817991,3818035..3818543)	2008-01-23			PMID:18488015		Solexa transread data; added new intron, in-frame splice in final exon, improved homology		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
 I	SPAC1F12.09	gpi17	CDS	join(3818668..3818907,3818954..3819677,3819720..3820420)	2022-08-25							https://curation.pombase.org/pombe-embl-repo/trunk?p=8402
 I	SPAC1F12.10c		3'UTR	complement(3820643..3820726)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 I	SPAC1F12.10c		5'UTR	complement(3821384..3821466)	2011-03-04							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110204/
@@ -2306,8 +2306,8 @@ I	SPAC227.09		5'UTR	511678..511806	2011-03-24	PMID:18641648,PMID:20118936						h
 I	SPAC227.09		5'UTR	join(511350..511508,511662..511806)	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 I	SPAC227.10		5'UTR	513820..513830	2023-01-12	PMID:18641648,PMID:20118936						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 I	SPAC227.11c		5'UTR	complement(515675..517252)	2023-01-12							https://curation.pombase.org/pombe-embl-repo/trunk?p=8642
-I	SPAC227.11c		CDS	complement(join(514434..514489,514557..515082,515222..515482,515534..515659))	2007-12-19					Solexa intron data; removed final exon,  not supported by data		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071109/
-I	SPAC227.11c		CDS	complement(join(514552..515082,515222..515482,515534..515659))	2011-03-24						Solexa intron data; removed final exon,  not supported by data	https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
+I	SPAC227.11c		CDS	complement(join(514434..514489,514557..515082,515222..515482,515534..515659))	2007-12-19			PMID:18488015		Solexa intron data; removed final exon,  not supported by data		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071109/
+I	SPAC227.11c		CDS	complement(join(514552..515082,515222..515482,515534..515659))	2011-03-24				PMID:18488015		Solexa intron data; removed final exon,  not supported by data	https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 I	SPAC227.11c	yos9	CDS	complement(join(514552..515082,515222..515482))	2023-01-10							https://curation.pombase.org/pombe-embl-repo/trunk?p=8635
 I	SPAC227.11c	yos9	CDS	complement(join(514552..515082,515222..515482,515534..515674))	2022-04-03							https://curation.pombase.org/pombe-embl-repo/trunk?p=8147
 I	SPAC227.12		3'UTR	517248..517397	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
@@ -2412,7 +2412,7 @@ I	SPAC22E12.09c		5'UTR	complement(5036570..5036621)	2023-01-12	PMID:21511999				
 I	SPAC22E12.09c		5'UTR	complement(join(5036570..5036590,5036664..5036918))	2011-03-24	PMID:18488015						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 I	SPAC22E12.10c		5'UTR	complement(5039102..5039150)	2011-03-04							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110204/
 I	SPAC22E12.10c		5'UTR	complement(5039104..5039150)	2023-01-12	PMID:18641648,PMID:20118936						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
-I	SPAC22E12.10c	etp1	CDS	complement(5037208..5039103)	2008-01-23					Solexa transread data; added in-frame splice		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
+I	SPAC22E12.10c	etp1	CDS	complement(5037208..5039103)	2008-01-23			PMID:18488015		Solexa transread data; added in-frame splice		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
 I	SPAC22E12.11c		3'UTR	complement(5039661..5039901)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 I	SPAC22E12.11c		5'UTR	complement(5042480..5042748)	2011-03-04							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110204/
 I	SPAC22E12.11c		5'UTR	complement(5042482..5042748)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
@@ -2660,7 +2660,7 @@ I	SPAC23C11.17	mdm28	CDS	join(2167170..2167245,2167302..2168683)	2022-08-25					
 I	SPAC23C4.02		5'UTR	1032085..1032181	2023-01-12							https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 I	SPAC23C4.04c		CDS	1036027..1036344	2006-05-17							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20060219/
 I	SPAC23C4.04c		CDS	1036027..1036344	2007-07-05			pers. comm. Val Wood		altered to include stop codon and trimmed to methionine		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20070620/
-I	SPAC23C4.04c		CDS	1036033..1036347	2008-01-23				pers. comm. Val Wood	Solexa transread data; added intron	altered to include stop codon and trimmed to methionine	https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
+I	SPAC23C4.04c		CDS	1036033..1036347	2008-01-23			PMID:18488015	pers. comm. Val Wood	Solexa transread data; added intron	altered to include stop codon and trimmed to methionine	https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
 I	SPAC23C4.04c		CDS	1036927..1037244	2006-07-01							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20060626/
 I	SPAC23C4.05c		5'UTR	complement(1038181..1038192)	2011-03-04							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110204/
 I	SPAC23C4.05c		5'UTR	complement(1038183..1038192)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
@@ -2725,7 +2725,7 @@ I	SPAC23D3.06c		5'UTR	complement(4350621..4350846)	2023-01-12	PMID:21511999					
 I	SPAC23D3.07		5'UTR	4350803..4351017	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 I	SPAC23D3.07		5'UTR	4351008..4351017	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 I	SPAC23D3.08		5'UTR	4352440..4352513	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
-I	SPAC23D3.08	usp108	CDS	join(4352514..4353359,4353410..4353573,4353623..4353761)	2007-12-19					Solexa intron data; removed final exon, not supported by data		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071109/
+I	SPAC23D3.08	usp108	CDS	join(4352514..4353359,4353410..4353573,4353623..4353761)	2007-12-19			PMID:18488015		Solexa intron data; removed final exon, not supported by data		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071109/
 I	SPAC23D3.09		3'UTR	complement(4353704..4353825)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 I	SPAC23D3.09		5'UTR	complement(4355117..4355246)	2011-03-04							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110204/
 I	SPAC23D3.09		5'UTR	complement(4355119..4355246)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
@@ -2795,9 +2795,9 @@ I	SPAC23H3.03c		3'UTR	complement(2496019..2496112)	2011-03-24	PMID:18641648,PMID
 I	SPAC23H3.03c		5'UTR	complement(2497425..2497672)	2011-03-04							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110204/
 I	SPAC23H3.03c		5'UTR	complement(2497427..2497672)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 I	SPAC23H3.03c		5'UTR	complement(2497427..2497780)	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
-I	SPAC23H3.04		CDS	join(2499035..2499164,2499160..2499353,2499443..2499824,2499875..2500236)	2008-12-10						Solexa intron data; changed 5’ 1st and 2nd exon, improved homology	https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20081008/
+I	SPAC23H3.04		CDS	join(2499035..2499164,2499160..2499353,2499443..2499824,2499875..2500236)	2008-12-10				PMID:18488015		Solexa intron data; changed 5’ 1st and 2nd exon, improved homology	https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20081008/
 I	SPAC23H3.04		CDS	join(2499035..2499164,2499166..2499353,2499443..2499824,2499875..2500236)	2009-02-19							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20090114/
-I	SPAC23H3.04		CDS	join(2499035..2499164,2499325..2499353,2499443..2499824,2499875..2500236)	2008-01-23					Solexa intron data; changed 5’ 1st and 2nd exon, improved homology		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
+I	SPAC23H3.04		CDS	join(2499035..2499164,2499325..2499353,2499443..2499824,2499875..2500236)	2008-01-23			PMID:18488015		Solexa intron data; changed 5’ 1st and 2nd exon, improved homology		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
 I	SPAC23H3.05c		3'UTR	complement(2500585..2500612)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 I	SPAC23H3.05c		5'UTR	complement(2501808..2502072)	2011-03-04							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110204/
 I	SPAC23H3.05c		5'UTR	complement(2501810..2502066)	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
@@ -2940,7 +2940,7 @@ I	SPAC24C9.16c		5'UTR	complement(3043308..3043325)	2011-03-24	PMID:18641648,PMID
 I	SPAC24C9.16c		5'UTR	complement(3043308..3043380)	2023-01-12							https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 I	SPAC24C9.16c		5'UTR	complement(3043368..3043380)	2011-12-14							https://curation.pombase.org/pombe-embl-repo/trunk?p=184
 I	SPAC24H6.01c		5'UTR	489871..490015	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
-I	SPAC24H6.01c		CDS	join(490016..490262,490338..490771,490812..490931,490979..491149,491186..491980)	2008-01-23					Solexa transread data; added new 3’ intron/exon, improved homology		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
+I	SPAC24H6.01c		CDS	join(490016..490262,490338..490771,490812..490931,490979..491149,491186..491980)	2008-01-23			PMID:18488015		Solexa transread data; added new 3’ intron/exon, improved homology		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
 I	SPAC24H6.02c		3'UTR	489351..489402	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 I	SPAC24H6.02c		5'UTR	488339..488778	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 I	SPAC24H6.02c		5'UTR	488742..488778	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
@@ -3170,7 +3170,7 @@ I	SPAC26H5.03		5'UTR	4119733..4119898	2011-03-24	PMID:18641648,PMID:20118936				
 I	SPAC26H5.04		3'UTR	4124519..4124710	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 I	SPAC26H5.04		5'UTR	4121876..4122148	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 I	SPAC26H5.04		5'UTR	4121964..4122148	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
-I	SPAC26H5.04		CDS	join(4122149..4123354,4123535..4124518)	2008-01-23					Solexa intron data		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
+I	SPAC26H5.04		CDS	join(4122149..4123354,4123535..4124518)	2008-01-23			PMID:18488015		Solexa intron data		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
 I	SPAC26H5.05		3'UTR	4128668..4128756	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 I	SPAC26H5.05		5'UTR	4125000..4125211	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 I	SPAC26H5.05		5'UTR	4125124..4125211	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
@@ -3400,8 +3400,8 @@ I	SPAC29E6.01		5'UTR	4401733..4402016	2023-01-12	PMID:21511999						https://cura
 I	SPAC29E6.01		5'UTR	4401827..4402016	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 I	SPAC29E6.02		5'UTR	4403839..4404086	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 I	SPAC29E6.02		5'UTR	4403918..4404086	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
-I	SPAC29E6.03c	uso1	CDS	complement(join(4405871..4405889,4405994..4407291,4407447..4409096,4409171..4409338))	2007-12-19					Solexa intron data; changed internal splice site, better intron, slightly improved homology; deleted final small exon, unsupported		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071109/
-I	SPAC29E6.03c	uso1	CDS	complement(join(4405990..4407375,4407447..4409096,4409171..4409338))	2017-04-12			PMID:26615217; pers. comm. Li-Lin Du		Frameshifted by Chr_I:4407494!T→TG	Solexa intron data; changed internal splice site, better intron, slightly improved homology; deleted final small exon, unsupported	https://curation.pombase.org/pombe-embl-repo/trunk?p=3984
+I	SPAC29E6.03c	uso1	CDS	complement(join(4405871..4405889,4405994..4407291,4407447..4409096,4409171..4409338))	2007-12-19			PMID:18488015		Solexa intron data; changed internal splice site, better intron, slightly improved homology; deleted final small exon, unsupported		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071109/
+I	SPAC29E6.03c	uso1	CDS	complement(join(4405990..4407375,4407447..4409096,4409171..4409338))	2017-04-12			PMID:26615217; pers. comm. Li-Lin Du	PMID:18488015	Frameshifted by Chr_I:4407494!T→TG	Solexa intron data; changed internal splice site, better intron, slightly improved homology; deleted final small exon, unsupported	https://curation.pombase.org/pombe-embl-repo/trunk?p=3984
 I	SPAC29E6.04		CDS	4409773..4410210	2007-05-31			PMID:17035632		Sequence frameshifted at 4410192, new coordinates give an N terminal extension from 4410194..4410391 (NOTE: Still needs resequencing and underlying sequence changing)		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20070503/
 I	SPAC29E6.04	nnf1	CDS	join(4409773..4410192,4410194..4410391)	2017-04-12			PMID:26615217; pers. comm. Li-Lin Du	PMID:17035632	Frameshifted by Chr_I:4410191!CG→C	Sequence frameshifted at 4410192, new coordinates give an N terminal extension from 4410194..4410391 (NOTE: Still needs resequencing and underlying sequence changing)	https://curation.pombase.org/pombe-embl-repo/trunk?p=3984
 I	SPAC29E6.05c		3'UTR	complement(4410354..4410604)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
@@ -3430,8 +3430,8 @@ I	SPAC2C4.06c		3'UTR	complement(4268924..4269366)	2011-03-24	PMID:18641648,PMID:
 I	SPAC2C4.06c		5'UTR	complement(4270870..4270903)	2011-03-04							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110204/
 I	SPAC2C4.06c		5'UTR	complement(4270872..4270903)	2011-03-24	PMID:18641648,PMID:20118936	PMID:30566651					https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 I	SPAC2C4.06c		5'UTR	complement(4270872..4270937)	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
-I	SPAC2C4.06c		CDS	complement(join(4269367..4270554,4270587..4270593,4270638..4270674,4270736..4270871))	2008-01-23					Solexa intron data; replaced 2 internal exons with a different single exon		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
-I	SPAC2C4.06c		CDS	complement(join(4269367..4270554,4270631..4270674,4270736..4270871))	2011-03-24						Solexa intron data; replaced 2 internal exons with a different single exon	https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
+I	SPAC2C4.06c		CDS	complement(join(4269367..4270554,4270587..4270593,4270638..4270674,4270736..4270871))	2008-01-23			PMID:18488015		Solexa intron data; replaced 2 internal exons with a different single exon		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
+I	SPAC2C4.06c		CDS	complement(join(4269367..4270554,4270631..4270674,4270736..4270871))	2011-03-24				PMID:18488015		Solexa intron data; replaced 2 internal exons with a different single exon	https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 I	SPAC2C4.07c		3'UTR	complement(4271099..4271296)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 I	SPAC2C4.07c		5'UTR	complement(4274079..4274116)	2011-03-04							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110204/
 I	SPAC2C4.07c		5'UTR	complement(4274081..4274116)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
@@ -3447,7 +3447,7 @@ I	SPAC2C4.11c		3'UTR	complement(4278494..4278728)	2011-03-24	PMID:18641648,PMID:
 I	SPAC2C4.11c		5'UTR	complement(4279504..4279538)	2011-03-04							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110204/
 I	SPAC2C4.11c		5'UTR	complement(4279506..4279538)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 I	SPAC2C4.11c		5'UTR	complement(4279506..4279620)	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
-I	SPAC2C4.11c	rbp28	CDS	complement(4278729..4279505)	2008-01-23					Solexa transread data; added small N term in-frame intron		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
+I	SPAC2C4.11c	rbp28	CDS	complement(4278729..4279505)	2008-01-23			PMID:18488015		Solexa transread data; added small N term in-frame intron		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
 I	SPAC2C4.12c		5'UTR	complement(4280957..4281433)	2011-03-04							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110204/
 I	SPAC2C4.12c		5'UTR	complement(4280959..4281433)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 I	SPAC2C4.12c		5'UTR	complement(4280971..4281428)	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
@@ -3545,8 +3545,8 @@ I	SPAC2F3.17c		CDS	complement(3966826..3967158)	2002-09-05							https://www.pom
 I	SPAC2F3.17c		CDS	complement(join(3994120..3994431,3994473..3994548,3994597..3994683,3994728..3994880,3994925..3995136))	2003-08-14							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20020905/
 I	SPAC2F3.18c		3'UTR	complement(3942128..3942298)	2011-03-24	EMBL:AB084860,SPD:51/51G08						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 I	SPAC2F3.18c		5'UTR	complement(3942803..3942965)	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
-I	SPAC2F3.18c		CDS	complement(3942398..3942730)	2008-01-23					Solexa transread data; added small N term in-frame intron		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
-I	SPAC2F3.18c		CDS	complement(join(3942299..3942364,3942506..3942730))	2011-03-24						Solexa transread data; added small N term in-frame intron	https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
+I	SPAC2F3.18c		CDS	complement(3942398..3942730)	2008-01-23			PMID:18488015		Solexa transread data; added small N term in-frame intron		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
+I	SPAC2F3.18c		CDS	complement(join(3942299..3942364,3942506..3942730))	2011-03-24				PMID:18488015		Solexa transread data; added small N term in-frame intron	https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 I	SPAC2F7.02c		3'UTR	complement(531752..532431)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 I	SPAC2F7.02c		5'UTR	complement(533408..533677)	2011-03-04							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110204/
 I	SPAC2F7.02c		5'UTR	complement(533410..533677)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
@@ -3641,7 +3641,7 @@ I	SPAC30.02c		5'UTR	complement(4393888..4393963)	2011-03-04							https://www.po
 I	SPAC30.02c		5'UTR	complement(4393890..4393963)	2023-01-12	PMID:18641648,PMID:20118936						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 I	SPAC30.03c		5'UTR	complement(4395591..4395639)	2011-03-04							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110204/
 I	SPAC30.03c		5'UTR	complement(4395593..4395639)	2023-01-12	PMID:18641648,PMID:20118936						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
-I	SPAC30.03c	tsn1	CDS	complement(join(4394707..4394741,4394799..4394967,4395010..4395092,4395131..4395491,4395530..4395592))	2008-01-23					Solexa transread data; added in-frame intron to (previous) 2nd exon, improved homology		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
+I	SPAC30.03c	tsn1	CDS	complement(join(4394707..4394741,4394799..4394967,4395010..4395092,4395131..4395491,4395530..4395592))	2008-01-23			PMID:18488015		Solexa transread data; added in-frame intron to (previous) 2nd exon, improved homology		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
 I	SPAC30.04c		3'UTR	complement(4395836..4395931)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 I	SPAC30.04c		5'UTR	complement(4400340..4400452)	2011-03-04							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110204/
 I	SPAC30.04c		5'UTR	complement(4400342..4400452)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
@@ -3652,7 +3652,7 @@ I	SPAC30C2.02		5'UTR	4635526..4635746	2011-03-24	PMID:18641648,PMID:20118936				
 I	SPAC30C2.03		5'UTR	4637119..4637269	2023-01-12							https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 I	SPAC30C2.04		3'UTR	4639470..4639541	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 I	SPAC30C2.05		5'UTR	4639678..4639883	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
-I	SPAC30C2.05	erv14	CDS	join(4639916..4640020,4640076..4640365,4640447..4640477)	2008-01-23					Solexa transread data; added new 5’ intron/exon, improved homology		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
+I	SPAC30C2.05	erv14	CDS	join(4639916..4640020,4640076..4640365,4640447..4640477)	2008-01-23			PMID:18488015		Solexa transread data; added new 5’ intron/exon, improved homology		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
 I	SPAC30C2.06c		3'UTR	complement(4640583..4640741)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 I	SPAC30C2.06c		5'UTR	complement(4642138..4642286)	2011-03-04							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110204/
 I	SPAC30C2.06c		5'UTR	complement(4642140..4642286)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
@@ -3845,8 +3845,8 @@ I	SPAC328.04		3'UTR	3484135..3484481	2011-03-24	PMID:18641648,PMID:20118936					
 I	SPAC328.04		5'UTR	3481505..3481908	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 I	SPAC328.04		5'UTR	3481738..3481908	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 I	SPAC328.05		5'UTR	3484543..3484677	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
-I	SPAC328.05		CDS	join(3484695..3484698,3484752..3485065,3485241..3485342,3485382..3485528,3485582..3485807,3485910..3485974,3486056..3486502)	2008-01-23					Solexa intron data; removed in-frame splice (exon 5), unsupported		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
-I	SPAC328.05		CDS	join(3484695..3484698,3484752..3485065,3485241..3485342,3485382..3485528,3485582..3485974,3486056..3486502)	2011-03-24						Solexa intron data; removed in-frame splice (exon 5), unsupported	https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
+I	SPAC328.05		CDS	join(3484695..3484698,3484752..3485065,3485241..3485342,3485382..3485528,3485582..3485807,3485910..3485974,3486056..3486502)	2008-01-23			PMID:18488015		Solexa intron data; removed in-frame splice (exon 5), unsupported		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
+I	SPAC328.05		CDS	join(3484695..3484698,3484752..3485065,3485241..3485342,3485382..3485528,3485582..3485974,3486056..3486502)	2011-03-24				PMID:18488015		Solexa intron data; removed in-frame splice (exon 5), unsupported	https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 I	SPAC328.06		3'UTR	3490835..3490977	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 I	SPAC328.06		5'UTR	3487193..3487324	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 I	SPAC328.06		5'UTR	3487232..3487324	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
@@ -3975,7 +3975,7 @@ I	SPAC3A12.02		5'UTR	1421817..1421915	2023-01-12							https://curation.pombase.
 I	SPAC3A12.04c	rpp1	CDS	complement(join(1424697..1425161,1425231..1425329,1425372..1425430,1425478..1425562))	2017-04-04			PMID:26615217, pers. comm. Li-Lin Du		Frameshifted by Chr_I:1424708!CA→C		https://curation.pombase.org/pombe-embl-repo/trunk?p=3968
 I	SPAC3A12.05c		5'UTR	complement(1429912..1429956)	2011-03-04							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110204/
 I	SPAC3A12.05c		5'UTR	complement(1429914..1429956)	2023-01-12	PMID:18641648,PMID:20118936						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
-I	SPAC3A12.05c	taf2	CDS	complement(join(1426213..1427148,1427189..1429617,1429709..1429836,1429882..1429913))	2008-01-23					Solexa intron data; improved distance between branch and acceptor		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
+I	SPAC3A12.05c	taf2	CDS	complement(join(1426213..1427148,1427189..1429617,1429709..1429836,1429882..1429913))	2008-01-23			PMID:18488015		Solexa intron data; improved distance between branch and acceptor		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
 I	SPAC3A12.06c		3'UTR	complement(1430231..1430423)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 I	SPAC3A12.06c		5'UTR	complement(1432656..1432875)	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 I	SPAC3A12.06c		5'UTR	complement(1432704..1432875)	2011-12-14							https://curation.pombase.org/pombe-embl-repo/trunk?p=184
@@ -4299,7 +4299,7 @@ I	SPAC4A8.14		5'UTR	2576377..2576500	2011-03-24	PMID:18641648,PMID:20118936					
 I	SPAC4A8.15c		5'UTR	complement(2579479..2579514)	2023-01-12	EMBL:AU008462						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 I	SPAC4A8.16c		5'UTR	complement(2582977..2583046)	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 I	SPAC4C5.01		5'UTR	1192210..1192544	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
-I	SPAC4C5.01		CDS	join(1192545..1192592,1192662..1192704,1192779..1192841,1192916..1193010,1193062..1193175,1193236..1193613)	2007-12-19					Solexa intron data` altered intron 5 to improve donor and acceptor, improved homology		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071109/
+I	SPAC4C5.01		CDS	join(1192545..1192592,1192662..1192704,1192779..1192841,1192916..1193010,1193062..1193175,1193236..1193613)	2007-12-19			PMID:18488015		Solexa intron data` altered intron 5 to improve donor and acceptor, improved homology		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071109/
 I	SPAC4C5.02c		5'UTR	complement(1195035..1195161)	2011-03-04							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110204/
 I	SPAC4C5.02c		5'UTR	complement(1195037..1195161)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 I	SPAC4C5.02c		5'UTR	complement(1195037..1195167)	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
@@ -4363,7 +4363,7 @@ I	SPAC4F10.07c		5'UTR	complement(4843443..4843586)	2011-03-04							https://www.
 I	SPAC4F10.07c		5'UTR	complement(4843445..4843586)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 I	SPAC4F10.07c		5'UTR	complement(4843445..4843723)	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 I	SPAC4F10.08		5'UTR	join(4843779..4844140,4844197..4844280,4844333..4844854)	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
-I	SPAC4F10.08	mug126	CDS	join(4844855..4845824,4845863..4846203)	2008-01-23					Solexa transread data; added new 3’ intron/exon		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
+I	SPAC4F10.08	mug126	CDS	join(4844855..4845824,4845863..4846203)	2008-01-23			PMID:18488015		Solexa transread data; added new 3’ intron/exon		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
 I	SPAC4F10.09c		3'UTR	complement(4846672..4846796)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 I	SPAC4F10.09c		5'UTR	complement(4849378..4849530)	2011-03-04							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110204/
 I	SPAC4F10.09c		5'UTR	complement(4849380..4849530)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
@@ -4619,10 +4619,10 @@ I	SPAC56F8.02		5'UTR	1124058..1124166	2023-01-12	PMID:21511999						https://cura
 I	SPAC56F8.02		5'UTR	1124101..1124166	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 I	SPAC56F8.03		3'UTR	1132788..1132845	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 I	SPAC56F8.03		5'UTR	1129519..1129547	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
-I	SPAC56F8.04c	coq2	CDS	complement(1133226..1134302)	2008-01-23					Solexa transread data; added 5’ intron/exon		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
-I	SPAC56F8.04c	ppt1	CDS	complement(join(1133226..1134283,1134332..1134356))	2022-04-03						Solexa transread data; added 5’ intron/exon	https://curation.pombase.org/pombe-embl-repo/trunk?p=8147
+I	SPAC56F8.04c	coq2	CDS	complement(1133226..1134302)	2008-01-23			PMID:18488015		Solexa transread data; added 5’ intron/exon		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
+I	SPAC56F8.04c	ppt1	CDS	complement(join(1133226..1134283,1134332..1134356))	2022-04-03				PMID:18488015		Solexa transread data; added 5’ intron/exon	https://curation.pombase.org/pombe-embl-repo/trunk?p=8147
 I	SPAC56F8.05c		5'UTR	complement(1136004..1136038)	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
-I	SPAC56F8.05c	mug64	CDS	complement(join(1134697..1135061,1135195..1135402,1135517..1135684,1135729..1135776,1135932..1135970,1136111..1136170))	2007-12-19					Solexa intron data; revised intron structure/original intron absent from Solexa data. N terminal exon unsupported and had no branch site so exon deleted		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071109/
+I	SPAC56F8.05c	mug64	CDS	complement(join(1134697..1135061,1135195..1135402,1135517..1135684,1135729..1135776,1135932..1135970,1136111..1136170))	2007-12-19			PMID:18488015		Solexa intron data; revised intron structure/original intron absent from Solexa data. N terminal exon unsupported and had no branch site so exon deleted		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071109/
 I	SPAC56F8.06c		3'UTR	complement(1136313..1136351)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 I	SPAC56F8.06c		5'UTR	complement(1137730..1137906)	2011-03-04							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110204/
 I	SPAC56F8.06c		5'UTR	complement(1137732..1137906)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
@@ -4703,8 +4703,8 @@ I	SPAC57A7.13		5'UTR	complement(1514627..1514711)	2011-03-04							https://www.p
 I	SPAC57A7.13		5'UTR	complement(1514629..1514711)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 I	SPAC57A7.13		5'UTR	complement(1514629..1514838)	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 I	SPAC57A7.15c		5'UTR	complement(1545814..1546250)	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
-I	SPAC589.02c	med13	CDS	complement(join(3095075..3098590,3098626..3098775,3098878..3098883))	2008-01-23					Solexa intron data; improved branch/acceptor for 1st intron		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
-I	SPAC589.02c	med13	CDS	complement(join(3095075..3098590,3098626..3098781,3098878..3098883))	2022-08-25					truncated 40 AA	Solexa intron data; improved branch/acceptor for 1st intron	https://curation.pombase.org/pombe-embl-repo/trunk?p=8402
+I	SPAC589.02c	med13	CDS	complement(join(3095075..3098590,3098626..3098775,3098878..3098883))	2008-01-23			PMID:18488015		Solexa intron data; improved branch/acceptor for 1st intron		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
+I	SPAC589.02c	med13	CDS	complement(join(3095075..3098590,3098626..3098781,3098878..3098883))	2022-08-25				PMID:18488015	truncated 40 AA	Solexa intron data; improved branch/acceptor for 1st intron	https://curation.pombase.org/pombe-embl-repo/trunk?p=8402
 I	SPAC589.03c		5'UTR	complement(3099829..3100030)	2011-03-04							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110204/
 I	SPAC589.03c		5'UTR	complement(3099831..3100030)	2023-01-12	PMID:18641648,PMID:20118936						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 I	SPAC589.04		3'UTR	3101002..3101241	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
@@ -4814,7 +4814,7 @@ I	SPAC630.09c		5'UTR	complement(363603..363714)	2023-01-12	EMBL:SPD234						http
 I	SPAC630.10		5'UTR	365204..365549	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 I	SPAC630.10		5'UTR	365485..365549	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 I	SPAC630.11		5'UTR	366634..366800	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
-I	SPAC630.11	vps55	CDS	join(366801..366817,366873..366891,366968..367040,367123..367189,367293..367348,367395..367531)	2008-01-23					Solexa transread data; changed internal intron acceptor, improved homology		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
+I	SPAC630.11	vps55	CDS	join(366801..366817,366873..366891,366968..367040,367123..367189,367293..367348,367395..367531)	2008-01-23			PMID:18488015		Solexa transread data; changed internal intron acceptor, improved homology		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
 I	SPAC630.12		5'UTR	368040..368571	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 I	SPAC630.12		5'UTR	368291..368571	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 I	SPAC630.13c		3'UTR	complement(369831..369944)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
@@ -4829,8 +4829,8 @@ I	SPAC631.01c		5'UTR	complement(2105250..2105410)	2011-03-24	PMID:18641648,PMID:
 I	SPAC631.01c		5'UTR	complement(2105250..2105484)	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 I	SPAC631.02		5'UTR	2105516..2107469	2011-03-24	PMID:18488015						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 I	SPAC631.02		5'UTR	join(2105472..2107367,2107882..2107939)	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
-I	SPAC631.02		CDS	2107940..2110123	2007-12-19					Solexa transcript data		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071109/
-I	SPAC631.02		CDS	join(2107470..2107515,2107860..2110123)	2011-03-24						Solexa transcript data	https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
+I	SPAC631.02		CDS	2107940..2110123	2007-12-19			PMID:18488015		Solexa transcript data		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071109/
+I	SPAC631.02		CDS	join(2107470..2107515,2107860..2110123)	2011-03-24				PMID:18488015		Solexa transcript data	https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 I	SPAC637.03		3'UTR	4543364..4543396	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 I	SPAC637.03		5'UTR	4542091..4542553	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 I	SPAC637.03		5'UTR	4542132..4542553	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
@@ -4959,8 +4959,8 @@ I	SPAC688.06c		5'UTR	complement(3119001..3119170)	2011-03-24	PMID:18641648,PMID:
 I	SPAC688.07c		5'UTR	complement(3122494..3122584)	2011-03-04							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110204/
 I	SPAC688.07c		5'UTR	complement(3122496..3122584)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 I	SPAC688.07c		5'UTR	complement(3122496..3122605)	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
-I	SPAC688.08	srb8	CDS	join(3123163..3125057,3125099..3126310,3126356..3126631,3126671..3126989)	2007-12-19					Solexa intron data; removed final exon, not supported by data		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071109/
-I	SPAC688.08	srb8	CDS	join(3123163..3125057,3125099..3126310,3126356..3126653)	2017-04-12			PMID:26615217; pers. comm. Li-Lin Du		Frameshifted by Chr_I:3125118!A→AT	Solexa intron data; removed final exon, not supported by data	https://curation.pombase.org/pombe-embl-repo/trunk?p=3984
+I	SPAC688.08	srb8	CDS	join(3123163..3125057,3125099..3126310,3126356..3126631,3126671..3126989)	2007-12-19			PMID:18488015		Solexa intron data; removed final exon, not supported by data		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071109/
+I	SPAC688.08	srb8	CDS	join(3123163..3125057,3125099..3126310,3126356..3126653)	2017-04-12			PMID:26615217; pers. comm. Li-Lin Du	PMID:18488015	Frameshifted by Chr_I:3125118!A→AT	Solexa intron data; removed final exon, not supported by data	https://curation.pombase.org/pombe-embl-repo/trunk?p=3984
 I	SPAC688.09		3'UTR	3128781..3129351	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 I	SPAC688.09		5'UTR	3127538..3127646	2022-08-25							https://curation.pombase.org/pombe-embl-repo/trunk?p=8402
 I	SPAC688.09	rim2	CDS	join(3127647..3127813,3127862..3128780)	2022-08-25							https://curation.pombase.org/pombe-embl-repo/trunk?p=8402
@@ -5076,7 +5076,7 @@ I	SPAC6F12.08c		3'UTR	complement(1322266..1322438)	2011-03-24	PMID:18641648,PMID
 I	SPAC6F12.08c		5'UTR	complement(1324335..1324520)	2011-03-04							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110204/
 I	SPAC6F12.08c		5'UTR	complement(1324337..1324520)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 I	SPAC6F12.08c		5'UTR	complement(join(1324337..1324377,1324431..1324634))	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
-I	SPAC6F12.08c		CDS	complement(join(1322439..1323955,1323999..1324140,1324195..1324234,1324299..1324336))	2008-01-23					Solexa intron data; improved branch acceptor for intron 1		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
+I	SPAC6F12.08c		CDS	complement(join(1322439..1323955,1323999..1324140,1324195..1324234,1324299..1324336))	2008-01-23			PMID:18488015		Solexa intron data; improved branch acceptor for intron 1		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
 I	SPAC6F12.09		5'UTR	1324631..1325252	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 I	SPAC6F12.09		5'UTR	join(1324591..1325005,1325086..1325252)	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 I	SPAC6F12.10c		5'UTR	complement(1333232..1333323)	2011-03-04							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110204/
@@ -5227,7 +5227,7 @@ I	SPAC6G9.15c		5'UTR	complement(3278146..3278510)	2011-03-04							https://www.p
 I	SPAC6G9.15c		5'UTR	complement(3278148..3278510)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 I	SPAC6G9.15c		5'UTR	complement(3278148..3278586)	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 I	SPAC6G9.16c		5'UTR	complement(3279986..3280232)	2023-01-12	PMID:18488015						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
-I	SPAC6G9.16c		CDS	complement(3278951..3279349)	2007-12-19					Solexa transcript data		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071109/
+I	SPAC6G9.16c		CDS	complement(3278951..3279349)	2007-12-19			PMID:18488015		Solexa transcript data		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071109/
 I	SPAC732.01		5'UTR	2057515..2057607	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 I	SPAC732.01		5'UTR	2057561..2057607	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 I	SPAC732.02c		3'UTR	complement(2059209..2059250)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
@@ -5346,9 +5346,9 @@ I	SPAC823.03		3'UTR	2587407..2587430	2011-03-24	PMID:18641648,PMID:20118936					
 I	SPAC823.03		5'UTR	2585172..2585754	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 I	SPAC823.03		5'UTR	2585176..2585754	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 I	SPAC823.04		5'UTR	2587696..2587728	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
-I	SPAC823.04		CDS	join(2587729..2587897,2588085..2588620)	2008-01-23					Solexa transread data	Solexa intron data; changed first intron acceptor, which gave a different N-term exon and improved homology	https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
-I	SPAC823.04		CDS	join(2587729..2587897,2588106..2588620)	2011-02-04			PMID:21270388			Solexa transread data	https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20101209/
-I	SPAC823.04		CDS	join(2587859..2587897,2588090..2588620)	2007-12-19					Solexa intron data; changed first intron acceptor, which gave a different N-term exon and improved homology		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071109/
+I	SPAC823.04		CDS	join(2587729..2587897,2588085..2588620)	2008-01-23			PMID:18488015	PMID:18488015	Solexa transread data	Solexa intron data; changed first intron acceptor, which gave a different N-term exon and improved homology	https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
+I	SPAC823.04		CDS	join(2587729..2587897,2588106..2588620)	2011-02-04			PMID:21270388	PMID:18488015		Solexa transread data	https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20101209/
+I	SPAC823.04		CDS	join(2587859..2587897,2588090..2588620)	2007-12-19			PMID:18488015		Solexa intron data; changed first intron acceptor, which gave a different N-term exon and improved homology		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071109/
 I	SPAC823.04	rrp36	CDS	join(2587729..2587897,2587952..2588028,2588031..2588143,2588182..2588620)	2017-04-04			PMID:26615217; pers. comm. Li-Lin Du	PMID:21270388	Frameshifted by Chr_I:2588066!C→CA and Chr_I:2588021!C→CA		https://curation.pombase.org/pombe-embl-repo/trunk?p=3968
 I	SPAC823.05c		3'UTR	complement(2588696..2588862)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 I	SPAC823.05c		5'UTR	complement(2589819..2590072)	2011-03-04							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110204/
@@ -5361,8 +5361,8 @@ I	SPAC823.08c		5'UTR	complement(2594045..2594197)	2011-03-24	PMID:18641648,PMID:
 I	SPAC823.08c		5'UTR	complement(2594045..2594218)	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 I	SPAC823.09c		3'UTR	complement(join(2594545..2594734,2594879..2594921))	2011-03-04							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110204/
 I	SPAC823.09c		5'UTR	complement(2595820..2595978)	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
-I	SPAC823.09c		CDS	complement(join(2594777..2594913,2594966..2595693,2595734..2595819))	2011-03-24						Solexa transread data; added new 3’ intron/exon	https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
-I	SPAC823.09c		CDS	complement(join(2594922..2595693,2595734..2595819))	2008-01-23					Solexa transread data; added new 3’ intron/exon		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
+I	SPAC823.09c		CDS	complement(join(2594777..2594913,2594966..2595693,2595734..2595819))	2011-03-24				PMID:18488015		Solexa transread data; added new 3’ intron/exon	https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
+I	SPAC823.09c		CDS	complement(join(2594922..2595693,2595734..2595819))	2008-01-23			PMID:18488015		Solexa transread data; added new 3’ intron/exon		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
 I	SPAC823.09c		misc_feature	complement(join(2594545..2594734,2594879..2594921))	2011-03-24							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 I	SPAC823.10c		3'UTR	complement(2596175..2596250)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 I	SPAC823.10c		5'UTR	complement(2597208..2597386)	2011-03-04							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110204/
@@ -5442,7 +5442,7 @@ I	SPAC890.05		5'UTR	5009365..5009806	2023-01-12	EMBL:AU010861						https://curat
 I	SPAC890.06		3'UTR	5015787..5015960	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 I	SPAC890.06		5'UTR	5011683..5011731	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 I	SPAC890.07c		5'UTR	complement(5017830..5018021)	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
-I	SPAC890.07c	rmt1	CDS	complement(join(5016072..5016215,5016262..5016596,5016649..5016943,5016994..5017059,5017138..5017252,5017421..5017433,5017700..5017703,5017782..5017829))	2008-01-23					Solexa transread data; added small N terminal exon, which added a single conserved cysteine		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
+I	SPAC890.07c	rmt1	CDS	complement(join(5016072..5016215,5016262..5016596,5016649..5016943,5016994..5017059,5017138..5017252,5017421..5017433,5017700..5017703,5017782..5017829))	2008-01-23			PMID:18488015		Solexa transread data; added small N terminal exon, which added a single conserved cysteine		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
 I	SPAC890.08		3'UTR	5018588..5018655	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 I	SPAC890.08		5'UTR	5018030..5018125	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 I	SPAC890.08		5'UTR	5018104..5018125	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
@@ -5486,7 +5486,7 @@ I	SPAC8C9.17c		3'UTR	complement(3673737..3674299)	2011-03-24	PMID:18641648,PMID:
 I	SPAC8C9.17c		5'UTR	complement(3674793..3674835)	2011-03-04							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110204/
 I	SPAC8C9.17c		5'UTR	complement(3674795..3674835)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 I	SPAC8C9.17c		5'UTR	complement(3674795..3675221)	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
-I	SPAC8C9.19		CDS	join(3660430..3660438,3660491..3660556,3660607..3660713,3660784..3660886)	2008-01-23					Solexa intron data; deleted final exon, unsupported, improved length and alignment to orthologs		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
+I	SPAC8C9.19		CDS	join(3660430..3660438,3660491..3660556,3660607..3660713,3660784..3660886)	2008-01-23			PMID:18488015		Solexa intron data; deleted final exon, unsupported, improved length and alignment to orthologs		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
 I	SPAC8C9.20		CDS	join(3663780..3663800,3663885..3663951,3663983..3664076,3664130..3664217)	2008-01-23							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
 I	SPAC8E11.01c		3'UTR	3387574..3388070	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 I	SPAC8E11.01c		5'UTR	3385899..3386046	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
@@ -5555,7 +5555,7 @@ I	SPAC9.05		5'UTR	1470851..1471059	2023-01-12	PMID:21511999						https://curatio
 I	SPAC9.05		5'UTR	1470879..1471059	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 I	SPAC9.05		CDS	join(1471960..1473408,1473454..1474283,1474325..1474565)	2006-02-19			pers. comm. Anke Schürer		second intron acceptor extended by 15 bp		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20060103/
 I	SPAC9.06c		5'UTR	complement(1474540..1474671)	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
-I	SPAC9.06c		CDS	complement(join(1473692..1473885,1473939..1474105,1474153..1474212,1474264..1474341,1474460..1474539))	2008-01-23					Solexa transread data		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
+I	SPAC9.06c		CDS	complement(join(1473692..1473885,1473939..1474105,1474153..1474212,1474264..1474341,1474460..1474539))	2008-01-23			PMID:18488015		Solexa transread data		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
 I	SPAC9.08c		3'UTR	complement(1476928..1477213)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 I	SPAC9.08c		5'UTR	complement(1478061..1478358)	2011-03-04							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110204/
 I	SPAC9.08c		5'UTR	complement(1478063..1478358)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
@@ -5723,7 +5723,7 @@ I	SPAC9G1.12		3'UTR	1995025..1995083	2011-03-24	PMID:18641648,PMID:20118936					
 I	SPAC9G1.12		5'UTR	1993568..1993929	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 I	SPAC9G1.12		5'UTR	1993707..1993929	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 I	SPAC9G1.13c		5'UTR	complement(1996684..1996858)	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
-I	SPAC9G1.13c		CDS	complement(join(1995208..1996148,1996325..1996413,1996478..1996683))	2008-01-23					Solexa intron data; added a new 3rd exon, improved homology		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
+I	SPAC9G1.13c		CDS	complement(join(1995208..1996148,1996325..1996413,1996478..1996683))	2008-01-23			PMID:18488015		Solexa intron data; added a new 3rd exon, improved homology		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
 I	SPAC9G1.14		5'UTR	complement(1969047..1969093)	2023-01-12							https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 I	SPAC9G1.15c		3'UTR	complement(1984873..1985349)	2011-03-24							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 I	SPAC9G1.15c	mzt1	CDS	complement(1985350..1985545)	2017-05-02				PMID:23885124, PMID:24006493		N-terminal shortened to use downstream methionine	https://curation.pombase.org/pombe-embl-repo/trunk?p=4019
@@ -5871,7 +5871,7 @@ I	SPAPB15E9.06		5'UTR	3993495..3994001	2023-01-12							https://curation.pombase
 I	SPAPB17E12.02		3'UTR	1271637..1271720	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 I	SPAPB17E12.02		5'UTR	1269930..1270749	2023-01-12							https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 I	SPAPB17E12.03		5'UTR	join(1271681..1271801,1271839..1271888)	2023-01-10							https://curation.pombase.org/pombe-embl-repo/trunk?p=8635
-I	SPAPB17E12.03		CDS	join(1271889..1271972,1272015..1272386,1272483..1272962)	2008-01-23					Solexa intron data; removed in-frame splice, unsupported, improved homology		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
+I	SPAPB17E12.03		CDS	join(1271889..1271972,1272015..1272386,1272483..1272962)	2008-01-23			PMID:18488015		Solexa intron data; removed in-frame splice, unsupported, improved homology		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
 I	SPAPB17E12.04c		3'UTR	complement(1272711..1273024)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 I	SPAPB17E12.04c		5'UTR	complement(1274511..1274527)	2011-03-04							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110204/
 I	SPAPB17E12.04c		5'UTR	complement(1274513..1274527)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
@@ -5888,8 +5888,8 @@ I	SPAPB17E12.07c		5'UTR	complement(1278973..1279092)	2011-03-04							https://ww
 I	SPAPB17E12.07c		5'UTR	complement(1278975..1279092)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 I	SPAPB17E12.07c		5'UTR	complement(1278975..1279149)	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 I	SPAPB17E12.08		CDS	join(1279492..1279506,1279582..1279644,1279820..1279869,1279953..1280325)	2006-05-17							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20060219/
-I	SPAPB17E12.08		CDS	join(1279492..1279506,1279582..1279644,1279820..1279869,1279953..1280325)	2007-12-19					Solexa intron data; revised intron structure/original intron absent from Solexa data so small N-term exon deleted		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071109/
-I	SPAPB17E12.08		CDS	join(1279573..1279644,1279820..1279869,1279953..1280325)	2008-01-23					Solexa transread data; changed first donor to make n-terminal exon longer, improved homology	Solexa intron data; revised intron structure/original intron absent from Solexa data so small N-term exon deleted	https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
+I	SPAPB17E12.08		CDS	join(1279492..1279506,1279582..1279644,1279820..1279869,1279953..1280325)	2007-12-19			PMID:18488015		Solexa intron data; revised intron structure/original intron absent from Solexa data so small N-term exon deleted		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071109/
+I	SPAPB17E12.08		CDS	join(1279573..1279644,1279820..1279869,1279953..1280325)	2008-01-23			PMID:18488015	PMID:18488015	Solexa transread data; changed first donor to make n-terminal exon longer, improved homology	Solexa intron data; revised intron structure/original intron absent from Solexa data so small N-term exon deleted	https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
 I	SPAPB17E12.08		CDS	join(1280751..1280773,1280853..1281225)	2006-02-19							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20060103/
 I	SPAPB17E12.08		CDS	join(1280751..1280773,1280853..1281225)	2006-12-18			pers. comm. Val Wood		Improved homology		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20061130/
 I	SPAPB17E12.09		5'UTR	1280537..1280700	2023-01-12							https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
@@ -5906,8 +5906,8 @@ I	SPAPB17E12.14c		5'UTR	complement(1288923..1289315)	2023-01-12	PMID:21511999			
 I	SPAPB17E12.14c		5'UTR	complement(1288925..1289210)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 I	SPAPB17E12.14c		CDS	complement(1286916..1288340)	2011-02-04			PMID:21270388				https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20101209/
 I	SPAPB17E12.14c		CDS	complement(1297340..1298953)	2002-03-22							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20011004/
-I	SPAPB18E9.01	trm5	CDS	join(3974310..3974485,3974541..3974629,3974674..3974775,3974879..3975132,3975193..3975429,3975485..3975832,3975882..3975962,3976014..3976079)	2022-08-25						Solexa transread data; added small 3’ exon, improved homology	https://curation.pombase.org/pombe-embl-repo/trunk?p=8402
-I	SPAPB18E9.01	trm5	CDS	join(3974310..3974485,3974541..3974629,3974674..3974775,3974879..3975132,3975193..3975429,3975485..3975832,3975882..3975983)	2008-01-23					Solexa transread data; added small 3’ exon, improved homology		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
+I	SPAPB18E9.01	trm5	CDS	join(3974310..3974485,3974541..3974629,3974674..3974775,3974879..3975132,3975193..3975429,3975485..3975832,3975882..3975962,3976014..3976079)	2022-08-25				PMID:18488015		Solexa transread data; added small 3’ exon, improved homology	https://curation.pombase.org/pombe-embl-repo/trunk?p=8402
+I	SPAPB18E9.01	trm5	CDS	join(3974310..3974485,3974541..3974629,3974674..3974775,3974879..3975132,3975193..3975429,3975485..3975832,3975882..3975983)	2008-01-23			PMID:18488015		Solexa transread data; added small 3’ exon, improved homology		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
 I	SPAPB18E9.02c		3'UTR	complement(3976352..3976369)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 I	SPAPB18E9.02c		5'UTR	complement(3980688..3980855)	2011-03-04							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110204/
 I	SPAPB18E9.02c		5'UTR	complement(3980690..3980855)	2011-03-24	PMID:18641648,PMID:20118936	PMID:30566651					https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
@@ -5916,7 +5916,7 @@ I	SPAPB18E9.02c	ppk18	CDS	complement(join(3976370..3980189,3980559..3980689))	20
 I	SPAPB18E9.03c		CDS	complement(join(3981978..3982082,3982179..3982198,3982306..3982315))	2007-12-19							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071109/
 I	SPAPB18E9.03c		misc_feature	complement(join(3981978..3982082,3982179..3982198,3982306..3982315))	2011-03-04							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110204/
 I	SPAPB1A10.02		5'UTR	1860725..1861933	2023-01-10							https://curation.pombase.org/pombe-embl-repo/trunk?p=8635
-I	SPAPB1A10.03	nxt1	CDS	join(1863363..1863381,1863434..1863705,1864077..1864388)	2007-12-19					Solexa intron data; SPAPB1A10.03 split to create SPAPB1A10.03 and SPAPB1A10.16; new coordinates 1863363..1863381, 1863434..1863762 and 1863972..1864388		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071109/
+I	SPAPB1A10.03	nxt1	CDS	join(1863363..1863381,1863434..1863705,1864077..1864388)	2007-12-19			PMID:18488015		Solexa intron data; SPAPB1A10.03 split to create SPAPB1A10.03 and SPAPB1A10.16; new coordinates 1863363..1863381, 1863434..1863762 and 1863972..1864388		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071109/
 I	SPAPB1A10.04c		3'UTR	complement(1864565..1864672)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 I	SPAPB1A10.04c		5'UTR	complement(1865607..1865777)	2011-03-04							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110204/
 I	SPAPB1A10.04c		5'UTR	complement(1865609..1865777)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
@@ -5956,9 +5956,9 @@ I	SPAPB1A10.14		3'UTR	1891652..1892012	2011-03-24	PMID:18641648,PMID:20118936			
 I	SPAPB1A10.14		5'UTR	1890528..1890919	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 I	SPAPB1A10.14		5'UTR	1890529..1890919	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 I	SPAPB1A10.15		5'UTR	1892505..1892553	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
-I	SPAPB1A10.15		CDS	join(1892554..1892640,1892926..1893060,1893098..1893504,1893585..1893618)	2007-12-19					Solexa intron data; revised intron structure/original intron absent from Solexa data so small C-term exon deleted		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071109/
-I	SPAPB1A10.15	arv1	CDS	join(1892554..1892640,1892926..1893060,1893098..1893694)	2011-03-24						Solexa intron data; revised intron structure/original intron absent from Solexa data so small C-term exon deleted	https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
-I	SPAPB1A10.16		CDS	1863972..1864388	2008-01-23					Solexa transread data		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
+I	SPAPB1A10.15		CDS	join(1892554..1892640,1892926..1893060,1893098..1893504,1893585..1893618)	2007-12-19			PMID:18488015		Solexa intron data; revised intron structure/original intron absent from Solexa data so small C-term exon deleted		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071109/
+I	SPAPB1A10.15	arv1	CDS	join(1892554..1892640,1892926..1893060,1893098..1893694)	2011-03-24				PMID:18488015		Solexa intron data; revised intron structure/original intron absent from Solexa data so small C-term exon deleted	https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
+I	SPAPB1A10.16		CDS	1863972..1864388	2008-01-23			PMID:18488015		Solexa transread data		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
 I	SPAPB1A11.01		5'UTR	2976370..2977810	2015-11-28							https://curation.pombase.org/pombe-embl-repo/trunk?p=3137
 I	SPAPB1A11.02		5'UTR	2980428..2980472	2023-01-12							https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 I	SPAPB1A11.03		5'UTR	2984439..2984785	2023-01-12							https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
@@ -6056,7 +6056,7 @@ I	SPAPB2B4.04c		5'UTR	complement(2716932..2718444)	2023-01-12	PMID:21511999					
 I	SPAPB2B4.05		5'UTR	2720607..2720953	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 I	SPAPB2B4.05		5'UTR	2720805..2720953	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 I	SPAPB2B4.06		5'UTR	2722668..2722734	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
-I	SPAPB2B4.06		CDS	join(2722735..2723210,2723273..2723300,2723349..2723582)	2008-01-23					Solexa transread data; added new 3’ intron/exon, improved homology		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
+I	SPAPB2B4.06		CDS	join(2722735..2723210,2723273..2723300,2723349..2723582)	2008-01-23			PMID:18488015		Solexa transread data; added new 3’ intron/exon, improved homology		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
 I	SPAPB2B4.07		3'UTR	2725096..2725867	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 I	SPAPB2B4.07		5'UTR	2724338..2724375	2023-01-12							https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 I	SPAPB2C8.01		3'UTR	2946052..2946085	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
@@ -6395,7 +6395,7 @@ II	SPBC106.04		5'UTR	380287..380389	2023-01-12	PMID:21511999						https://curati
 II	SPBC106.04	ada1	CDS	join(380228..380265,380383..380560,380624..382948)	2011-03-24							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 II	SPBC106.05c		5'UTR	complement(383961..384085)	2023-01-12							https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 II	SPBC106.05c		CDS	complement(join(384427..384512,384603..384732))	2004-09-15							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20030814/
-II	SPBC106.05c	tim11	CDS	complement(join(383527..383612,383703..383874,383980..384012))	2008-01-23					Solexa transread data; changed 5’ exon		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
+II	SPBC106.05c	tim11	CDS	complement(join(383527..383612,383703..383874,383980..384012))	2008-01-23			PMID:18488015		Solexa transread data; changed 5’ exon		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
 II	SPBC106.06		3'UTR	385905..386001	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 II	SPBC106.06		5'UTR	384208..384320	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 II	SPBC106.07c		5'UTR	complement(387008..387100)	2011-03-04							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110204/
@@ -6596,7 +6596,7 @@ II	SPBC11B10.02c		5'UTR	complement(1489663..1489693)	2011-03-04							https://ww
 II	SPBC11B10.02c		5'UTR	complement(1489665..1489693)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 II	SPBC11B10.02c		5'UTR	complement(1489665..1489773)	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 II	SPBC11B10.03		5'UTR	1490470..1490610	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
-II	SPBC11B10.03	cog8	CDS	join(1490376..1490423,1490593..1491747)	2007-12-19					Solexa intron data; removed N-teminal exon, poor donor, did not improve homology		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071109/
+II	SPBC11B10.03	cog8	CDS	join(1490376..1490423,1490593..1491747)	2007-12-19			PMID:18488015		Solexa intron data; removed N-teminal exon, poor donor, did not improve homology		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071109/
 II	SPBC11B10.04c		3'UTR	complement(1491831..1491954)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 II	SPBC11B10.04c		5'UTR	complement(1492820..1492937)	2011-03-04							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110204/
 II	SPBC11B10.04c		5'UTR	complement(1492822..1492937)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
@@ -6928,8 +6928,8 @@ II	SPBC13G1.03c		5'UTR	complement(3732353..3732403)	2011-03-24	PMID:18641648,PMI
 II	SPBC13G1.03c		5'UTR	complement(3732353..3732631)	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 II	SPBC13G1.04c		5'UTR	complement(3733763..3734079)	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 II	SPBC13G1.04c		5'UTR	complement(3733778..3734079)	2015-10-14							https://curation.pombase.org/pombe-embl-repo/trunk?p=2994
-II	SPBC13G1.04c		CDS	complement(3732941..3733762)	2008-01-23					Solexa transread data; added new 3’ intron and exon, improved homology		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
-II	SPBC13G1.04c		CDS	complement(join(3732806..3732930,3732994..3733762))	2011-03-24				PMID:22365419		N-terminal shortened to use downstream methionine,Solexa transread data; added new 3’ intron and exon, improved homology	https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
+II	SPBC13G1.04c		CDS	complement(3732941..3733762)	2008-01-23			PMID:18488015		Solexa transread data; added new 3’ intron and exon, improved homology		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
+II	SPBC13G1.04c		CDS	complement(join(3732806..3732930,3732994..3733762))	2011-03-24				PMID:22365419,PMID:18488015		N-terminal shortened to use downstream methionine,Solexa transread data; added new 3’ intron and exon, improved homology	https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 II	SPBC13G1.04c	abh1	CDS	complement(join(3732806..3732930,3732994..3733777))	2015-10-14			PMID:22365419		N-terminal shortened to use downstream methionine		https://curation.pombase.org/pombe-embl-repo/trunk?p=2994
 II	SPBC13G1.05		5'UTR	3734388..3734791	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 II	SPBC13G1.05		5'UTR	3734492..3734791	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
@@ -7152,7 +7152,7 @@ II	SPBC15D4.10c		5'UTR	complement(3030193..3030224)	2023-01-12	EMBL:AU013326				
 II	SPBC15D4.11c		5'UTR	complement(3031340..3031431)	2011-03-04							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110204/
 II	SPBC15D4.11c		5'UTR	complement(3031342..3031431)	2023-01-12	PMID:18641648,PMID:20118936						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 II	SPBC15D4.12c		misc_feature	complement(join(2950970..2951320,2951359..2951512,2951654..2951940,2952352..2952656,2952695..2952760,2952802..2952853,2953094..2953309,2953360..2953421,2953464..2953821))	2003-08-14							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20020905/
-II	SPBC15D4.13c		CDS	complement(join(3032492..3032710,3032761..3032822,3032865..3033222))	2008-01-23					Solexa intron data; better donor for first intron		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
+II	SPBC15D4.13c		CDS	complement(join(3032492..3032710,3032761..3032822,3032865..3033222))	2008-01-23			PMID:18488015		Solexa intron data; better donor for first intron		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
 II	SPBC15D4.13c		misc_feature	complement(join(3032171..3032521,3032560..3032713,3032855..3033141,3033562..3033857,3033896..3033961,3034003..3034054,3034304..3034510,3034561..3034622,3034665..3035022))	2006-02-19							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20060103/
 II	SPBC15D4.13c		misc_feature	complement(join(3032171..3032521,3032560..3032713,3032855..3033141,3033562..3033857,3033896..3033961,3034003..3034054,3034304..3034510,3034561..3034622,3034665..3035022))	2006-06-26							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20060517/
 II	SPBC15D4.13c		misc_feature	complement(join(3032171..3032521,3032560..3032713,3032855..3033141,3033562..3033857,3033896..3033961,3034003..3034054,3034304..3034510,3034561..3034622,3034665..3035022))	2006-09-05							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20060701/
@@ -7206,7 +7206,7 @@ II	SPBC1604.15		5'UTR	complement(3904058..3904553)	2011-03-24	PMID:18641648,PMID
 II	SPBC1604.15		5'UTR	complement(3904058..3904592)	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 II	SPBC1604.17c		5'UTR	3899988..3900046	2023-01-12	PMID:18641648,PMID:20118936						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 II	SPBC1604.17c		CDS	join(3820235..3820261,3820765..3821745,3821818..3822141)	2002-09-05			pers. comm. Val Wood				https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20020322/
-II	SPBC1604.17c		CDS	join(3900047..3900121,3900166..3901146,3901219..3901542)	2007-12-19					Solexa intron data; updated, better donor (GTAATA instead of GTTAGT); original intron prediction not supported by Solexa data		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071109/
+II	SPBC1604.17c		CDS	join(3900047..3900121,3900166..3901146,3901219..3901542)	2007-12-19			PMID:18488015		Solexa intron data; updated, better donor (GTAATA instead of GTTAGT); original intron prediction not supported by Solexa data		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071109/
 II	SPBC1604.18c		3'UTR	3899550..3899603	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 II	SPBC1604.18c		5'UTR	3898015..3898095	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 II	SPBC1604.18c		5'UTR	3898065..3898095	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
@@ -7333,7 +7333,7 @@ II	SPBC16A3.12c		5'UTR	4275226..4275256	2023-01-12	EMBL:SPD249						https://cura
 II	SPBC16A3.14		5'UTR	complement(4271936..4272005)	2011-03-04							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110204/
 II	SPBC16A3.14		5'UTR	complement(4271938..4272005)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 II	SPBC16A3.14		5'UTR	complement(4271938..4272152)	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
-II	SPBC16A3.14		CDS	complement(join(4270907..4270939,4271137..4271937))	2007-12-19					Solexa intron data; removed final exon, unsupported by data		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071109/
+II	SPBC16A3.14		CDS	complement(join(4270907..4270939,4271137..4271937))	2007-12-19			PMID:18488015		Solexa intron data; removed final exon, unsupported by data		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071109/
 II	SPBC16A3.15c		3'UTR	4270449..4270685	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 II	SPBC16A3.15c		5'UTR	4268920..4268990	2023-01-12	EMBL:AU009648						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 II	SPBC16A3.16		3'UTR	complement(4267441..4267783)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
@@ -7355,8 +7355,8 @@ II	SPBC16C6.01c		5'UTR	complement(4321542..4321619)	2011-03-24	PMID:18641648,PMI
 II	SPBC16C6.01c		5'UTR	complement(4321542..4321858)	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 II	SPBC16C6.02c	vps1302	CDS	complement(join(4322221..4322742,4322970..4331555,4331641..4331793,4331856..4331968,4332007..4332028))	2008-04-18			PMID:18367542		also adds new gene SPBC16C6.14, complement(4322221..4322622)		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20080222/
 II	SPBC16C6.03c		5'UTR	complement(4333124..4333581)	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
-II	SPBC16C6.03c		CDS	complement(4332698..4333123)	2011-03-24						Solexa intron data; final exon, unsupported removed	https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
-II	SPBC16C6.03c		CDS	complement(join(4332356..4332454,4332746..4333123))	2008-01-23					Solexa intron data; final exon, unsupported removed		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
+II	SPBC16C6.03c		CDS	complement(4332698..4333123)	2011-03-24				PMID:18488015		Solexa intron data; final exon, unsupported removed	https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
+II	SPBC16C6.03c		CDS	complement(join(4332356..4332454,4332746..4333123))	2008-01-23			PMID:18488015		Solexa intron data; final exon, unsupported removed		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
 II	SPBC16C6.04		3'UTR	4335203..4335205	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 II	SPBC16C6.04		5'UTR	4334043..4334149	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 II	SPBC16C6.04		5'UTR	4334049..4334149	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
@@ -7389,7 +7389,7 @@ II	SPBC16D10.01c		3'UTR	complement(3587313..3587477)	2011-03-24	PMID:18641648,PM
 II	SPBC16D10.01c		5'UTR	complement(3588487..3588633)	2011-03-04							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110204/
 II	SPBC16D10.01c		5'UTR	complement(3588489..3588633)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 II	SPBC16D10.01c		5'UTR	complement(3588489..3588651)	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
-II	SPBC16D10.02	trm11	CDS	join(3588806..3589595,3589639..3589803,3589845..3590123,3590163..3590287)	2008-01-23					Solexa transread data; added new 3’ intron/exon		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
+II	SPBC16D10.02	trm11	CDS	join(3588806..3589595,3589639..3589803,3589845..3590123,3590163..3590287)	2008-01-23			PMID:18488015		Solexa transread data; added new 3’ intron/exon		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
 II	SPBC16D10.03		3'UTR	3592247..3592318	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 II	SPBC16D10.03		5'UTR	3590920..3591165	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 II	SPBC16D10.03		5'UTR	3590998..3591165	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
@@ -7412,9 +7412,9 @@ II	SPBC16D10.08c		5'UTR	complement(3615077..3615320)	2023-01-12	PMID:21511999			
 II	SPBC16D10.09		3'UTR	3617579..3617730	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 II	SPBC16D10.09		5'UTR	3616412..3616684	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 II	SPBC16D10.09		5'UTR	3616628..3616684	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
-II	SPBC16D10.10		CDS	join(3618117..3618179,3618228..3618617,3618658..3618702,3618747..3618920,3619065..3619321,3619366..3619540)	2007-12-19					Solexa intron data; exon 4 splice altered		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071109/
-II	SPBC16D10.10		CDS	join(3618117..3618179,3618228..3618617,3618658..3618702,3618747..3618971,3619077..3619321,3619366..3619540)	2008-01-23					Solexa transread data; changed 2 introns (existing 4 and 5) to create a new exon 5, improved homology	Solexa intron data; exon 4 splice altered	https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
-II	SPBC16D10.10	tad2	CDS	join(3618117..3618179,3618228..3618617,3618658..3618702,3618747..3618918,3618956..3619071,3619113..3619321,3619366..3619540)	2017-04-12			PMID:26615217; pers. comm. Li-Lin Du		Frameshifted by Chr_II:3619003!A→AG	Solexa transread data; changed 2 introns (existing 4 and 5) to create a new exon 5, improved homology	https://curation.pombase.org/pombe-embl-repo/trunk?p=3984
+II	SPBC16D10.10		CDS	join(3618117..3618179,3618228..3618617,3618658..3618702,3618747..3618920,3619065..3619321,3619366..3619540)	2007-12-19			PMID:18488015		Solexa intron data; exon 4 splice altered		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071109/
+II	SPBC16D10.10		CDS	join(3618117..3618179,3618228..3618617,3618658..3618702,3618747..3618971,3619077..3619321,3619366..3619540)	2008-01-23			PMID:18488015	PMID:18488015	Solexa transread data; changed 2 introns (existing 4 and 5) to create a new exon 5, improved homology	Solexa intron data; exon 4 splice altered	https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
+II	SPBC16D10.10	tad2	CDS	join(3618117..3618179,3618228..3618617,3618658..3618702,3618747..3618918,3618956..3619071,3619113..3619321,3619366..3619540)	2017-04-12			PMID:26615217; pers. comm. Li-Lin Du	PMID:18488015	Frameshifted by Chr_II:3619003!A→AG	Solexa transread data; changed 2 introns (existing 4 and 5) to create a new exon 5, improved homology	https://curation.pombase.org/pombe-embl-repo/trunk?p=3984
 II	SPBC16D10.11c		3'UTR	complement(3619817..3619837)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 II	SPBC16D10.11c		5'UTR	complement(3620447..3620477)	2011-03-04							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110204/
 II	SPBC16D10.11c		5'UTR	complement(3620449..3620469)	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
@@ -7528,7 +7528,7 @@ II	SPBC16H5.02		5'UTR	complement(2300295..2300422)	2011-03-24	PMID:18641648,PMID
 II	SPBC16H5.02		5'UTR	complement(2300295..2300512)	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 II	SPBC16H5.03c		5'UTR	2294913..2295030	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 II	SPBC16H5.04		5'UTR	complement(2294126..2294154)	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
-II	SPBC16H5.04		CDS	complement(join(2293393..2293824,2293938..2294039,2294087..2294125))	2007-12-19					Solexa intron data; altered intron 2 donor and acceptor, improved homology		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071109/
+II	SPBC16H5.04		CDS	complement(join(2293393..2293824,2293938..2294039,2294087..2294125))	2007-12-19			PMID:18488015		Solexa intron data; altered intron 2 donor and acceptor, improved homology		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071109/
 II	SPBC16H5.05c		3'UTR	2293142..2293162	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 II	SPBC16H5.05c		5'UTR	2291571..2291577	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 II	SPBC16H5.05c		5'UTR	join(2290639..2291482,2291531..2291577)	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
@@ -8257,9 +8257,9 @@ II	SPBC19G7.05c		5'UTR	complement(2356242..2357349)	2011-03-04							https://www
 II	SPBC19G7.05c		5'UTR	complement(2356244..2357349)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 II	SPBC19G7.05c		5'UTR	complement(2356244..2357405)	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 II	SPBC19G7.06		5'UTR	join(2357533..2357861,2358013..2359428)	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
-II	SPBC19G7.06	mbx1	CDS	join(2359429..2359479,2359547..2359693,2359845..2359928,2360001..2361092)	2008-01-23						Solexa intron data; altered 3rd intron branch acceptor to agree with published,Christopher J. McInerny	https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
+II	SPBC19G7.06	mbx1	CDS	join(2359429..2359479,2359547..2359693,2359845..2359928,2360001..2361092)	2008-01-23				PMID:18488015		Solexa intron data; altered 3rd intron branch acceptor to agree with published,Christopher J. McInerny	https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
 II	SPBC19G7.06	mbx1	CDS	join(2359429..2359479,2359547..2359693,2359845..2359928,2360064..2361092)	2007-12-19					Christopher J. McInerny		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071109/
-II	SPBC19G7.06	mbx1	CDS	join(2359429..2359479,2359547..2359693,2359845..2359928,2360064..2361092)	2008-02-22					Solexa intron data; altered 3rd intron branch acceptor to agree with published		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20080123/
+II	SPBC19G7.06	mbx1	CDS	join(2359429..2359479,2359547..2359693,2359845..2359928,2360064..2361092)	2008-02-22			PMID:18488015		Solexa intron data; altered 3rd intron branch acceptor to agree with published		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20080123/
 II	SPBC19G7.07c		5'UTR	complement(2363339..2363566)	2011-03-04							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110204/
 II	SPBC19G7.07c		5'UTR	complement(2363341..2363566)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 II	SPBC19G7.07c		5'UTR	complement(2363341..2363595)	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
@@ -8390,8 +8390,8 @@ II	SPBC21.01		5'UTR	3214247..3214270	2011-03-24	PMID:18641648,PMID:20118936					
 II	SPBC21.02		3'UTR	3217914..3218764	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 II	SPBC21.02		5'UTR	3216184..3216268	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 II	SPBC21.03c		5'UTR	complement(join(3218948..3218952,3219008..3219169,3219218..3219354))	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
-II	SPBC21.03c		CDS	complement(join(3217985..3218424,3218462..3218491,3218580..3218651,3218704..3218947))	2011-03-24						Solexa intron data; changed 2 internal introns, now agrees with transread data, but still potential to be incorrect	https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
-II	SPBC21.03c		CDS	complement(join(3217985..3218424,3218467..3218491,3218693..3218947))	2008-01-23					Solexa intron data; changed 2 internal introns, now agrees with transread data, but still potential to be incorrect		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
+II	SPBC21.03c		CDS	complement(join(3217985..3218424,3218462..3218491,3218580..3218651,3218704..3218947))	2011-03-24				PMID:18488015		Solexa intron data; changed 2 internal introns, now agrees with transread data, but still potential to be incorrect	https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
+II	SPBC21.03c		CDS	complement(join(3217985..3218424,3218467..3218491,3218693..3218947))	2008-01-23			PMID:18488015		Solexa intron data; changed 2 internal introns, now agrees with transread data, but still potential to be incorrect		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
 II	SPBC21.04		3'UTR	3220344..3220571	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 II	SPBC21.04		5'UTR	3219316..3219603	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 II	SPBC21.04		5'UTR	3219420..3219603	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
@@ -8498,7 +8498,7 @@ II	SPBC216.07c		5'UTR	complement(922283..922309)	2011-03-04							https://www.po
 II	SPBC216.07c		5'UTR	complement(922285..922309)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 II	SPBC216.07c		5'UTR	complement(922285..922447)	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 II	SPBC21B10.02		5'UTR	complement(1670145..1670399)	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
-II	SPBC21B10.02		CDS	complement(join(1669624..1669695,1669737..1670144))	2007-12-19					Solexa intron data; intron unsupported by Solexa transcript data, removed final exon		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071109/
+II	SPBC21B10.02		CDS	complement(join(1669624..1669695,1669737..1670144))	2007-12-19			PMID:18488015		Solexa intron data; intron unsupported by Solexa transcript data, removed final exon		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071109/
 II	SPBC21B10.03c		3'UTR	1669435..1669628	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 II	SPBC21B10.03c		5'UTR	1666721..1667058	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 II	SPBC21B10.03c		5'UTR	1666988..1667058	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
@@ -8547,9 +8547,9 @@ II	SPBC21C3.04c		5'UTR	complement(3804902..3805005)	2011-03-24	PMID:18641648,PMI
 II	SPBC21C3.04c		5'UTR	complement(3804902..3805100)	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 II	SPBC21C3.05		5'UTR	3805775..3805801	2023-01-12	PMID:18641648,PMID:20118936						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 II	SPBC21C3.07c		5'UTR	complement(3808796..3808991)	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
-II	SPBC21C3.07c		CDS	complement(join(3807714..3807783,3807963..3808607,3808665..3808795))	2007-12-19					Solexa intron data; removed final exon, not supported by data		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071109/
-II	SPBC21C3.07c		CDS	complement(join(3807827..3807891,3807946..3808607,3808665..3808795))	2008-02-22						Solexa transread data; added two 3’ exons	https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20080123/
-II	SPBC21C3.07c		CDS	complement(join(3807920..3808607,3808665..3808795))	2008-02-22					Solexa transread data; added two 3’ exons	Solexa intron data; removed final exon, not supported by data	https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20080123/
+II	SPBC21C3.07c		CDS	complement(join(3807714..3807783,3807963..3808607,3808665..3808795))	2007-12-19			PMID:18488015		Solexa intron data; removed final exon, not supported by data		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071109/
+II	SPBC21C3.07c		CDS	complement(join(3807827..3807891,3807946..3808607,3808665..3808795))	2008-02-22				PMID:18488015		Solexa transread data; added two 3’ exons	https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20080123/
+II	SPBC21C3.07c		CDS	complement(join(3807920..3808607,3808665..3808795))	2008-02-22			PMID:18488015	PMID:18488015	Solexa transread data; added two 3’ exons	Solexa intron data; removed final exon, not supported by data	https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20080123/
 II	SPBC21C3.08c		5'UTR	complement(3810728..3810816)	2023-01-12	EMBL:AU012405						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 II	SPBC21C3.09c		5'UTR	complement(3812187..3812373)	2011-03-04							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110204/
 II	SPBC21C3.09c		5'UTR	complement(3812189..3812373)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
@@ -8983,7 +8983,7 @@ II	SPBC29A3.06		5'UTR	2048191..2048335	2011-03-24	PMID:18641648,PMID:20118936			
 II	SPBC29A3.06		CDS	2048336..2050006	2009-02-19							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20090114/
 II	SPBC29A3.06		CDS	join(2048336..2049892,2049894..2049896)	2011-12-14		SPD:35/35A03			N terminal extended		https://curation.pombase.org/pombe-embl-repo/trunk?p=184
 II	SPBC29A3.07c		5'UTR	complement(2050696..2050956)	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
-II	SPBC29A3.07c		CDS	complement(join(2050069..2050183,2050304..2050358,2050452..2050695))	2007-12-19					Solexa intron data; final exon deleted, not supported by Solexa intron data; homology improved		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071109/
+II	SPBC29A3.07c		CDS	complement(join(2050069..2050183,2050304..2050358,2050452..2050695))	2007-12-19			PMID:18488015		Solexa intron data; final exon deleted, not supported by Solexa intron data; homology improved		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071109/
 II	SPBC29A3.08		3'UTR	2053633..2054028	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 II	SPBC29A3.08		3'UTR	2053633..2054098	2017-04-12							https://curation.pombase.org/pombe-embl-repo/trunk?p=3984
 II	SPBC29A3.08		5'UTR	2052484..2053032	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
@@ -9033,9 +9033,9 @@ II	SPBC2A9.05c	tvp23	CDS	complement(join(2956469..2956904,2956966..2957189))	202
 II	SPBC2A9.06c		5'UTR	complement(2958429..2958552)	2011-03-04							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110204/
 II	SPBC2A9.06c		5'UTR	complement(2958431..2958552)	2023-01-12	PMID:18641648,PMID:20118936						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 II	SPBC2A9.07c		5'UTR	complement(2960050..2960389)	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
-II	SPBC2A9.07c		CDS	complement(2959078..2959902)	2008-01-23				pers. comm. Cathrine Arnason Boe	Solexa transread data; added in-frame intron, improved homology	removed intron	https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
+II	SPBC2A9.07c		CDS	complement(2959078..2959902)	2008-01-23			PMID:18488015	pers. comm. Cathrine Arnason Boe	Solexa transread data; added in-frame intron, improved homology	removed intron	https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
 II	SPBC2A9.07c		CDS	complement(2959078..2959902)	2011-03-24				pers. comm. Cathrine Arnason Boe		removed intron	https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
-II	SPBC2A9.07c		CDS	complement(join(2959078..2959129,2959172..2959902))	2009-10-23			pers. comm. Cathrine Arnason Boe		removed intron	Solexa transread data; added in-frame intron, improved homology	https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20090904/
+II	SPBC2A9.07c		CDS	complement(join(2959078..2959129,2959172..2959902))	2009-10-23			pers. comm. Cathrine Arnason Boe	PMID:18488015	removed intron	Solexa transread data; added in-frame intron, improved homology	https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20090904/
 II	SPBC2A9.07c		intron	complement(2959025..2959171)	2009-10-23							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20090904/
 II	SPBC2A9.08c		3'UTR	complement(2961579..2961667)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 II	SPBC2A9.08c		5'UTR	complement(2962531..2962677)	2011-03-04							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110204/
@@ -9096,9 +9096,9 @@ II	SPBC2D10.14c		5'UTR	complement(2994813..2994912)	2011-03-04							https://www
 II	SPBC2D10.14c		5'UTR	complement(2994815..2994912)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 II	SPBC2D10.14c		5'UTR	complement(2994815..2994929)	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 II	SPBC2D10.15c		5'UTR	complement(2996067..2996353)	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
-II	SPBC2D10.15c		CDS	complement(join(2995324..2995579,2995619..2995923,2995971..2996066))	2008-01-23					Solexa transread data		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
+II	SPBC2D10.15c		CDS	complement(join(2995324..2995579,2995619..2995923,2995971..2996066))	2008-01-23			PMID:18488015		Solexa transread data		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
 II	SPBC2D10.16		5'UTR	2996302..2996451	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
-II	SPBC2D10.16		CDS	join(2996452..2996463,2996509..2996904)	2008-01-23					Solexa transread data; added new intron in second exon, which created a new 3rd exon, and identified homology with Cenp-S (was previously sequence orphan)		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
+II	SPBC2D10.16		CDS	join(2996452..2996463,2996509..2996904)	2008-01-23			PMID:18488015		Solexa transread data; added new intron in second exon, which created a new 3rd exon, and identified homology with Cenp-S (was previously sequence orphan)		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
 II	SPBC2D10.17		3'UTR	3000955..3001014	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 II	SPBC2D10.17		5'UTR	2997081..2997237	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 II	SPBC2D10.17		5'UTR	2997113..2997237	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
@@ -9338,7 +9338,7 @@ II	SPBC31F10.11c		5'UTR	complement(3773056..3773160)	2011-03-04							https://ww
 II	SPBC31F10.11c		5'UTR	complement(3773058..3773160)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 II	SPBC31F10.11c		5'UTR	complement(3773058..3773191)	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 II	SPBC31F10.12		5'UTR	3773299..3773307	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
-II	SPBC31F10.12		CDS	join(3773353..3773525,3773581..3773678,3773795..3773999,3774059..3774116,3774192..3774212)	2008-01-23					Solexa transread data; added new 5’ intron and exon		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
+II	SPBC31F10.12		CDS	join(3773353..3773525,3773581..3773678,3773795..3773999,3774059..3774116,3774192..3774212)	2008-01-23			PMID:18488015		Solexa transread data; added new 5’ intron and exon		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
 II	SPBC31F10.13c		3'UTR	complement(3774312..3774356)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 II	SPBC31F10.13c		5'UTR	complement(3777349..3777393)	2011-03-04							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110204/
 II	SPBC31F10.13c		5'UTR	complement(3777351..3777393)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
@@ -9426,8 +9426,8 @@ II	SPBC32H8.05		5'UTR	1460533..1460574	2023-01-12	PMID:21511999						https://cur
 II	SPBC32H8.07		3'UTR	1465244..1465599	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 II	SPBC32H8.07		5'UTR	1463829..1464325	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 II	SPBC32H8.07		5'UTR	1463896..1464325	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
-II	SPBC32H8.08c		CDS	complement(join(1465811..1466035,1466138..1467057,1467311..1467456,1467514..1467539))	2008-01-23					Solexa intron data; removed 5’ intron/exon (unsupported) and trimmed to next met		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
-II	SPBC32H8.08c	omh5	CDS	complement(join(1465811..1466035,1466138..1467057,1467311..1467431))	2022-09-16						Solexa intron data; removed 5’ intron/exon (unsupported) and trimmed to next met	https://curation.pombase.org/pombe-embl-repo/trunk?p=8445
+II	SPBC32H8.08c		CDS	complement(join(1465811..1466035,1466138..1467057,1467311..1467456,1467514..1467539))	2008-01-23			PMID:18488015		Solexa intron data; removed 5’ intron/exon (unsupported) and trimmed to next met		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
+II	SPBC32H8.08c	omh5	CDS	complement(join(1465811..1466035,1466138..1467057,1467311..1467431))	2022-09-16				PMID:18488015		Solexa intron data; removed 5’ intron/exon (unsupported) and trimmed to next met	https://curation.pombase.org/pombe-embl-repo/trunk?p=8445
 II	SPBC32H8.09		3'UTR	1470088..1470332	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 II	SPBC32H8.09		5'UTR	1468486..1468524	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 II	SPBC32H8.09		5'UTR	1468511..1468524	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
@@ -9551,8 +9551,8 @@ II	SPBC354.06		5'UTR	555841..555892	2011-03-24	PMID:18641648,PMID:20118936						
 II	SPBC354.06	mrps16	CDS	join(555893..555969,556399..556612)	2011-03-24							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 II	SPBC354.07c		5'UTR	complement(560247..560368)	2011-03-24	PMID:18488015						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 II	SPBC354.07c		5'UTR	complement(560293..560416)	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
-II	SPBC354.07c		CDS	complement(join(558335..559225,559273..559474,559942..560028,560151..560163,560231..560246))	2011-03-24						Solexa transcript data; additional exon added	https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
-II	SPBC354.07c		CDS	complement(join(558335..559225,559273..559474,559942..560028,560151..560170))	2007-12-19					Solexa transcript data; additional exon added		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071109/
+II	SPBC354.07c		CDS	complement(join(558335..559225,559273..559474,559942..560028,560151..560163,560231..560246))	2011-03-24				PMID:18488015		Solexa transcript data; additional exon added	https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
+II	SPBC354.07c		CDS	complement(join(558335..559225,559273..559474,559942..560028,560151..560170))	2007-12-19			PMID:18488015		Solexa transcript data; additional exon added		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071109/
 II	SPBC354.08c		5'UTR	complement(564136..564808)	2011-03-04							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110204/
 II	SPBC354.08c		5'UTR	complement(564138..564808)	2023-01-12	PMID:18641648,PMID:20118936						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 II	SPBC354.09c		3'UTR	complement(565193..565309)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
@@ -10339,7 +10339,7 @@ II	SPBC577.15c		5'UTR	complement(782263..782498)	2011-03-24	PMID:18641648,PMID:2
 II	SPBC577.15c		5'UTR	complement(782263..782579)	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 II	SPBC582.03		3'UTR	422572..423181	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 II	SPBC582.03		5'UTR	join(420076..420308,420662..421122)	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
-II	SPBC582.04c		CDS	complement(join(423269..423598,423669..423738,423782..423871,423912..424373,424424..424872,424921..425160,425223..425350,425410..425446))	2008-01-23					Solexa transread data; added in-frame intron to (existing) exon 3		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
+II	SPBC582.04c		CDS	complement(join(423269..423598,423669..423738,423782..423871,423912..424373,424424..424872,424921..425160,425223..425350,425410..425446))	2008-01-23			PMID:18488015		Solexa transread data; added in-frame intron to (existing) exon 3		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
 II	SPBC582.05c	brc1	CDS	complement(join(426160..428547,428634..428771,428903..429013))	2022-08-25							https://curation.pombase.org/pombe-embl-repo/trunk?p=8403
 II	SPBC582.07c		5'UTR	complement(431781..431802)	2022-08-25							https://curation.pombase.org/pombe-embl-repo/trunk?p=8403
 II	SPBC582.07c	rpn7	CDS	complement(430551..431780)	2022-08-25							https://curation.pombase.org/pombe-embl-repo/trunk?p=8403
@@ -10918,7 +10918,7 @@ II	SPBC8D2.16c		5'UTR	complement(1388736..1389152)	2011-03-04							https://www.
 II	SPBC8D2.16c		5'UTR	complement(1388738..1389152)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 II	SPBC8D2.16c		5'UTR	complement(1388738..1389186)	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 II	SPBC8D2.17		5'UTR	1389535..1390182	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
-II	SPBC8D2.17		CDS	1390183..1391238	2008-01-23					Solexa transread data; added new 3’ intron/exon		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
+II	SPBC8D2.17		CDS	1390183..1391238	2008-01-23			PMID:18488015		Solexa transread data; added new 3’ intron/exon		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
 II	SPBC8D2.18c		3'UTR	complement(1391456..1391666)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 II	SPBC8D2.18c		5'UTR	complement(1392969..1393012)	2023-01-12	EMBL:AU007839						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 II	SPBC8D2.20c		3'UTR	complement(1393547..1395833)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
@@ -10971,8 +10971,8 @@ II	SPBC947.01		5'UTR	complement(682627..682675)	2023-01-12	PMID:21511999						ht
 II	SPBC947.02		5'UTR	complement(679633..679701)	2011-03-04							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110204/
 II	SPBC947.02		5'UTR	complement(679635..679701)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 II	SPBC947.02		5'UTR	complement(679635..679966)	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
-II	SPBC947.03c		CDS	676629..676931	2008-01-23					Solexa transread data; added 5’ inton/exon, improved homology		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
-II	SPBC947.03c	naa38	CDS	join(676629..676908,677057..677127)	2022-08-25						Solexa transread data; added 5’ inton/exon, improved homology	https://curation.pombase.org/pombe-embl-repo/trunk?p=8403
+II	SPBC947.03c		CDS	676629..676931	2008-01-23			PMID:18488015		Solexa transread data; added 5’ inton/exon, improved homology		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
+II	SPBC947.03c	naa38	CDS	join(676629..676908,677057..677127)	2022-08-25				PMID:18488015		Solexa transread data; added 5’ inton/exon, improved homology	https://curation.pombase.org/pombe-embl-repo/trunk?p=8403
 II	SPBC947.04		3'UTR	complement(669691..669739)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 II	SPBC947.04		5'UTR	complement(672660..673762)	2011-03-04							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110204/
 II	SPBC947.04		5'UTR	complement(672662..673762)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
@@ -11185,8 +11185,8 @@ II	SPBP35G2.05c		5'UTR	complement(972447..972742)	2011-03-04							https://www.p
 II	SPBP35G2.05c		5'UTR	complement(972449..972742)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 II	SPBP35G2.05c		5'UTR	complement(972449..972785)	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 II	SPBP35G2.06c		5'UTR	complement(976633..976901)	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
-II	SPBP35G2.06c	nup131	CDS	complement(join(973049..974181,974223..974577,974617..975002,975044..975137,975172..976632))	2008-01-23					Solexa intron data; changed donor for intron 3		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
-II	SPBP35G2.06c	nup131	CDS	complement(join(973049..974181,974223..974577,974647..975002,975044..975137,975172..976632))	2011-03-24						Solexa intron data; changed donor for intron 3	https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
+II	SPBP35G2.06c	nup131	CDS	complement(join(973049..974181,974223..974577,974617..975002,975044..975137,975172..976632))	2008-01-23			PMID:18488015		Solexa intron data; changed donor for intron 3		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
+II	SPBP35G2.06c	nup131	CDS	complement(join(973049..974181,974223..974577,974647..975002,975044..975137,975172..976632))	2011-03-24				PMID:18488015		Solexa intron data; changed donor for intron 3	https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 II	SPBP35G2.07		5'UTR	976926..977108	2023-01-12							https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 II	SPBP35G2.07		5'UTR	977031..977108	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 II	SPBP35G2.08c		3'UTR	complement(979453..979528)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
@@ -11246,8 +11246,8 @@ II	SPBP4H10.11c		5'UTR	complement(2894407..2894815)	2011-03-04							https://www
 II	SPBP4H10.11c		5'UTR	complement(2894409..2894815)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 II	SPBP4H10.11c		5'UTR	complement(2894409..2894902)	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 II	SPBP4H10.12		5'UTR	2895717..2895854	2023-01-14							https://curation.pombase.org/pombe-embl-repo/trunk?p=8653
-II	SPBP4H10.12		CDS	join(2895855..2895863,2896001..2896459,2896516..2896587)	2022-12-12						Solexa transread data; added new 3’ intron/exon, improved homology	https://curation.pombase.org/pombe-embl-repo/trunk?p=8587
-II	SPBP4H10.12		CDS	join(2895855..2895863,2896001..2896507)	2008-01-23					Solexa transread data; added new 3’ intron/exon, improved homology		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
+II	SPBP4H10.12		CDS	join(2895855..2895863,2896001..2896459,2896516..2896587)	2022-12-12				PMID:18488015		Solexa transread data; added new 3’ intron/exon, improved homology	https://curation.pombase.org/pombe-embl-repo/trunk?p=8587
+II	SPBP4H10.12		CDS	join(2895855..2895863,2896001..2896507)	2008-01-23			PMID:18488015		Solexa transread data; added new 3’ intron/exon, improved homology		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
 II	SPBP4H10.13		3'UTR	2897532..2897557	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 II	SPBP4H10.13		5'UTR	2897046..2897099	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 II	SPBP4H10.14c		3'UTR	complement(2897837..2898279)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
@@ -11389,7 +11389,7 @@ II	SPBPB2B2.05		5'UTR	4466517..4466753	2023-01-12	PMID:21511999						https://cur
 II	SPBPB2B2.05		5'UTR	4466651..4466722	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 II	SPBPB2B2.05		CDS	join(4466723..4466725,4466805..4467515)	2011-03-24							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 II	SPBPB2B2.06c		5'UTR	complement(4471006..4471207)	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
-II	SPBPB2B2.07c		CDS	complement(4474434..4474931)	2007-12-19					Solexa transcript data		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071109/
+II	SPBPB2B2.07c		CDS	complement(4474434..4474931)	2007-12-19			PMID:18488015		Solexa transcript data		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071109/
 II	SPBPB2B2.08		5'UTR	4475953..4476011	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 II	SPBPB2B2.09c		3'UTR	complement(4478919..4479109)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 II	SPBPB2B2.09c		5'UTR	complement(4480163..4480222)	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
@@ -11405,7 +11405,7 @@ II	SPBPB2B2.13		3'UTR	4490051..4490085	2011-03-24	PMID:18641648,PMID:20118936			
 II	SPBPB2B2.13		5'UTR	4488322..4488490	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 II	SPBPB2B2.13		5'UTR	4488324..4488490	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 II	SPBPB2B2.14c		5'UTR	complement(4493323..4493364)	2023-01-12							https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
-II	SPBPB2B2.18		CDS	join(4502439..4502463,4502712..4502857,4503068..4503286,4503527..4503664)	2008-01-23					Solexa transread data; changed 5’ intron/exon		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
+II	SPBPB2B2.18		CDS	join(4502439..4502463,4502712..4502857,4503068..4503286,4503527..4503664)	2008-01-23			PMID:18488015		Solexa transread data; changed 5’ intron/exon		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
 II	SPBPB2B2.19c		5'UTR	complement(4504943..4505257)	2011-03-04							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110204/
 II	SPBPB2B2.19c		5'UTR	complement(4504945..4505257)	2023-01-12							https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 II	SPBPB7E8.01		5'UTR	3491819..3494516	2023-01-12	PMID:18488015						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
@@ -11428,7 +11428,7 @@ II	SPBPJ4664.04		3'UTR	705514..705661	2011-03-24	PMID:18641648,PMID:20118936				
 II	SPBPJ4664.04		5'UTR	701799..701889	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 II	SPBPJ4664.04		5'UTR	701866..701889	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 II	SPBPJ4664.05		5'UTR	705788..705931	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
-II	SPBPJ4664.05		CDS	706175..706666	2008-01-23					Solexa transread data; added new 5’ intron and exon, improved homology		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
+II	SPBPJ4664.05		CDS	706175..706666	2008-01-23			PMID:18488015		Solexa transread data; added new 5’ intron and exon, improved homology		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
 II	SPBPJ4664.06		3'UTR	711935..712372	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 II	SPBPJ4664.06		5'UTR	707511..707587	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 II	SPBPJ4664.06		5'UTR	707531..707587	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
@@ -11666,8 +11666,8 @@ III	SPCC1020.10		5'UTR	complement(760854..762656)	2023-01-12	PMID:21511999						
 III	SPCC1020.10		5'UTR	complement(760872..762656)	2011-12-14							https://curation.pombase.org/pombe-embl-repo/trunk?p=184
 III	SPCC1020.11c		5'UTR	757330..757364	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 III	SPCC1020.11c		5'UTR	757344..757364	2011-03-24	PMID:18488015						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
-III	SPCC1020.11c		CDS	757494..757802	2007-11-09					Solexa transcript data		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071011/
-III	SPCC1020.11c		CDS	join(757365..757424,757506..757802)	2008-01-23					Solexa transread data; added 3’intron/exon	Solexa transcript data	https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
+III	SPCC1020.11c		CDS	757494..757802	2007-11-09			PMID:18488015		Solexa transcript data		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071011/
+III	SPCC1020.11c		CDS	join(757365..757424,757506..757802)	2008-01-23			PMID:18488015	PMID:18488015	Solexa transread data; added 3’intron/exon	Solexa transcript data	https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
 III	SPCC1020.12c		3'UTR	756187..756225	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 III	SPCC1020.12c		5'UTR	755228..755256	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 III	SPCC1020.13c		3'UTR	754632..754798	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
@@ -11988,7 +11988,7 @@ III	SPCC1393.06c		3'UTR	complement(804518..804626)	2011-03-24	PMID:18641648,PMID
 III	SPCC1393.06c		5'UTR	complement(806008..806059)	2011-03-04							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110204/
 III	SPCC1393.06c		5'UTR	complement(806010..806059)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 III	SPCC1393.06c		5'UTR	complement(806010..806120)	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
-III	SPCC1393.06c		CDS	complement(join(804627..805627,805678..805800,805907..806009))	2008-01-23					Solexa intron data; changed first intron and added a new 2nd exon, improved homology, also confirmed by transread data		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
+III	SPCC1393.06c		CDS	complement(join(804627..805627,805678..805800,805907..806009))	2008-01-23			PMID:18488015		Solexa intron data; changed first intron and added a new 2nd exon, improved homology, also confirmed by transread data		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
 III	SPCC1393.07c		5'UTR	complement(808856..809247)	2023-01-12							https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 III	SPCC1393.08		3'UTR	814329..814526	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 III	SPCC1393.08		5'UTR	811668..812654	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
@@ -12031,7 +12031,7 @@ III	SPCC1442.07c		5'UTR	complement(1780459..1780693)	2011-03-04							https://ww
 III	SPCC1442.07c		5'UTR	complement(1780461..1780693)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 III	SPCC1442.07c		5'UTR	complement(1780461..1780705)	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 III	SPCC1442.08c		5'UTR	complement(1782033..1782128)	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
-III	SPCC1442.08c	cox12	CDS	complement(join(1781505..1781563,1781637..1781744,1781830..1781914))	2008-01-23					Solexa transread data; added 2 small 5’ exons, improved homology		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
+III	SPCC1442.08c	cox12	CDS	complement(join(1781505..1781563,1781637..1781744,1781830..1781914))	2008-01-23			PMID:18488015		Solexa transread data; added 2 small 5’ exons, improved homology		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
 III	SPCC1442.09		5'UTR	1783641..1783785	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 III	SPCC1442.09		5'UTR	1783662..1783785	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 III	SPCC1442.10c		5'UTR	complement(1786980..1787006)	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
@@ -12044,7 +12044,7 @@ III	SPCC1442.12		5'UTR	1789586..1789595	2011-03-24	PMID:18641648,PMID:20118936		
 III	SPCC1442.12	pps1	CDS	join(1789596..1789717,1789805..1790036,1790320..1790718)	2011-03-24							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 III	SPCC1442.13c		5'UTR	complement(1791910..1792123)	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 III	SPCC1442.13c		CDS	complement(1792246..1792809)	2002-09-05			pers. comm. Val Wood		C terminal exon added; new exon extends G-patch domain		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20020322/
-III	SPCC1442.13c		CDS	complement(join(1791196..1791285,1791376..1791909))	2007-12-19					Solexa intron data; deleted final exon, improved homology		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071109/
+III	SPCC1442.13c		CDS	complement(join(1791196..1791285,1791376..1791909))	2007-12-19			PMID:18488015		Solexa intron data; deleted final exon, improved homology		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071109/
 III	SPCC1442.14c		5'UTR	complement(1793237..1793286)	2011-03-04							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110204/
 III	SPCC1442.14c		5'UTR	complement(1793239..1793286)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 III	SPCC1442.14c		5'UTR	complement(1793239..1793343)	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
@@ -12076,7 +12076,7 @@ III	SPCC1450.07c		5'UTR	complement(join(1737653..1737778,1738213..1738318))	2023
 III	SPCC1450.08c		5'UTR	complement(1740649..1740925)	2023-01-12							https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 III	SPCC1450.08c	wtf16	CDS	complement(join(1739338..1739789,1739835..1740047,1740097..1740342,1740510..1740648))	2011-03-24							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 III	SPCC1450.09c		5'UTR	complement(join(1743460..1743762,1744097..1745250))	2023-01-12							https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
-III	SPCC1450.09c		CDS	complement(join(1741451..1741481,1741589..1743459))	2007-12-19					Solexa intron data; original intron absent from Solexa data; C terminal exon unsupported so exon deleted		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071109/
+III	SPCC1450.09c		CDS	complement(join(1741451..1741481,1741589..1743459))	2007-12-19			PMID:18488015		Solexa intron data; original intron absent from Solexa data; C terminal exon unsupported so exon deleted		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071109/
 III	SPCC1450.10c		3'UTR	complement(1746153..1746293)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 III	SPCC1450.10c		5'UTR	complement(1747987..1748022)	2011-03-04							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110204/
 III	SPCC1450.10c		5'UTR	complement(1747989..1748022)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
@@ -12094,7 +12094,7 @@ III	SPCC1450.13c		5'UTR	complement(1758112..1758361)	2011-03-04							https://ww
 III	SPCC1450.13c		5'UTR	complement(1758114..1758361)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 III	SPCC1450.13c		5'UTR	complement(1758114..1758409)	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 III	SPCC1450.14c		5'UTR	complement(1760999..1763118)	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
-III	SPCC1450.14c	ero12	CDS	complement(join(1759295..1760998,1761117..1761128))	2008-01-23					Solexa intron data; deleted first exon, unsupported		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
+III	SPCC1450.14c	ero12	CDS	complement(join(1759295..1760998,1761117..1761128))	2008-01-23			PMID:18488015		Solexa intron data; deleted first exon, unsupported		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
 III	SPCC1450.15		3'UTR	1763078..1763148	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 III	SPCC1450.15		5'UTR	1761158..1761206	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 III	SPCC1450.15		5'UTR	1761221..1761515	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
@@ -12108,7 +12108,7 @@ III	SPCC1494.01		3'UTR	2317449..2317765	2011-03-24	PMID:18641648,PMID:20118936		
 III	SPCC1494.01		5'UTR	2315606..2316441	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 III	SPCC1494.01		5'UTR	2316172..2316441	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 III	SPCC1494.02c		5'UTR	complement(2318967..2319119)	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
-III	SPCC1494.02c	taf13	CDS	complement(join(2317988..2318068,2318200..2318244,2318398..2318508,2318579..2318676,2318903..2318966))	2007-12-19					Solexa intron data; 2 C-terminal exons removed, not supported by homology		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071109/
+III	SPCC1494.02c	taf13	CDS	complement(join(2317988..2318068,2318200..2318244,2318398..2318508,2318579..2318676,2318903..2318966))	2007-12-19			PMID:18488015		Solexa intron data; 2 C-terminal exons removed, not supported by homology		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071109/
 III	SPCC1494.03		3'UTR	2326651..2327006	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 III	SPCC1494.03		5'UTR	2324957..2325171	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 III	SPCC1494.03		5'UTR	2325028..2325171	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
@@ -12150,7 +12150,7 @@ III	SPCC14G10.04		3'UTR	750765..751551	2011-03-24	PMID:18641648,PMID:20118936			
 III	SPCC14G10.04		5'UTR	748677..748811	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 III	SPCC14G10.04		5'UTR	748747..748811	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 III	SPCC1529.01		5'UTR	236660..237553	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
-III	SPCC1529.01		CDS	join(237554..237923,237975..238080,238139..238533,238588..239105)	2007-11-09					Solexa transcript data; new exon added		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071011/
+III	SPCC1529.01		CDS	join(237554..237923,237975..238080,238139..238533,238588..239105)	2007-11-09			PMID:18488015		Solexa transcript data; new exon added		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071011/
 III	SPCC162.01c		5'UTR	1587682..1587868	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 III	SPCC162.01c		5'UTR	1587696..1587868	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 III	SPCC162.02c		5'UTR	1584118..1584479	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
@@ -12210,10 +12210,10 @@ III	SPCC1620.08		3'UTR	2160901..2161236	2011-03-24	PMID:18641648,PMID:20118936		
 III	SPCC1620.08		5'UTR	2159159..2159598	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 III	SPCC1620.08		5'UTR	2159421..2159598	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 III	SPCC1620.09c		5'UTR	complement(2163124..2163190)	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
-III	SPCC1620.09c	tfg1	CDS	complement(join(2161527..2162363,2162405..2162500,2162584..2163123))	2008-01-23					Solexa transread data; added 5’ exon, improved homology		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
+III	SPCC1620.09c	tfg1	CDS	complement(join(2161527..2162363,2162405..2162500,2162584..2163123))	2008-01-23			PMID:18488015		Solexa transread data; added 5’ exon, improved homology		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
 III	SPCC1620.10		5'UTR	2163164..2163204	2022-08-25							https://curation.pombase.org/pombe-embl-repo/trunk?p=8404
-III	SPCC1620.10	cwf26	CDS	2163205..2164122	2008-01-23					Solexa transread data; added 3’ exon encoding single methionine		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
-III	SPCC1620.10	cwf26	CDS	join(2163205..2164118,2164159..2164165)	2022-08-25						Solexa transread data; added 3’ exon encoding single methionine	https://curation.pombase.org/pombe-embl-repo/trunk?p=8404
+III	SPCC1620.10	cwf26	CDS	2163205..2164122	2008-01-23			PMID:18488015		Solexa transread data; added 3’ exon encoding single methionine		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
+III	SPCC1620.10	cwf26	CDS	join(2163205..2164118,2164159..2164165)	2022-08-25				PMID:18488015		Solexa transread data; added 3’ exon encoding single methionine	https://curation.pombase.org/pombe-embl-repo/trunk?p=8404
 III	SPCC1620.11		3'UTR	2167637..2168772	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 III	SPCC1620.11		5'UTR	2165020..2165031	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 III	SPCC1620.12c		3'UTR	complement(2167673..2167798)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
@@ -12351,8 +12351,8 @@ III	SPCC16A11.17		3'UTR	903138..903350	2011-03-24	PMID:18641648,PMID:20118936			
 III	SPCC16A11.17		5'UTR	900327..900401	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 III	SPCC16A11.17		5'UTR	900382..900401	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 III	SPCC16C4.01		5'UTR	658752..658831	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
-III	SPCC16C4.01	sif2	CDS	join(658832..659139,659223..659488,659567..659628,659709..660197,660298..660322)	2009-07-06						Solexa transread data; added 3’ intron which changed frame of final exon, shorter product, improved homology	https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20090501/
-III	SPCC16C4.01	sif2	CDS	join(658832..659139,659223..659488,659567..659628,659709..660413)	2008-01-23					Solexa transread data; added 3’ intron which changed frame of final exon, shorter product, improved homology		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
+III	SPCC16C4.01	sif2	CDS	join(658832..659139,659223..659488,659567..659628,659709..660197,660298..660322)	2009-07-06				PMID:18488015		Solexa transread data; added 3’ intron which changed frame of final exon, shorter product, improved homology	https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20090501/
+III	SPCC16C4.01	sif2	CDS	join(658832..659139,659223..659488,659567..659628,659709..660413)	2008-01-23			PMID:18488015		Solexa transread data; added 3’ intron which changed frame of final exon, shorter product, improved homology		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
 III	SPCC16C4.02c		3'UTR	complement(662010..662341)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 III	SPCC16C4.02c		5'UTR	complement(663987..664321)	2011-03-04							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110204/
 III	SPCC16C4.02c		5'UTR	complement(663989..664321)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
@@ -12383,7 +12383,7 @@ III	SPCC16C4.15		5'UTR	695886..695921	2023-01-12	PMID:21511999						https://cura
 III	SPCC16C4.15		5'UTR	695960..696053	2011-03-24							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 III	SPCC16C4.15	rml2	CDS	join(696054..696083,696157..697083)	2011-03-24							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 III	SPCC16C4.16c		5'UTR	complement(698400..698599)	2023-01-12	EMBL:SPC06556						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
-III	SPCC16C4.16c		CDS	complement(join(697862..698127,698180..698399))	2008-01-23					Solexa transread data; added 3’ intron/exon, improved homology		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
+III	SPCC16C4.16c		CDS	complement(join(697862..698127,698180..698399))	2008-01-23			PMID:18488015		Solexa transread data; added 3’ intron/exon, improved homology		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
 III	SPCC16C4.17		3'UTR	699746..699908	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 III	SPCC16C4.17		5'UTR	698807..699037	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 III	SPCC16C4.17		5'UTR	698826..699037	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
@@ -12563,7 +12563,7 @@ III	SPCC18.17c		5'UTR	complement(1988138..1988150)	2011-03-04							https://www.
 III	SPCC18.17c		5'UTR	complement(1988140..1988150)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 III	SPCC18.17c		5'UTR	complement(1988140..1988310)	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 III	SPCC18.18c		5'UTR	complement(1990723..1991055)	2023-01-12	PMID:18488015						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
-III	SPCC18.18c	fum1	CDS	complement(1988631..1990079)	2007-12-19					Solexa transcript data		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071109/
+III	SPCC18.18c	fum1	CDS	complement(1988631..1990079)	2007-12-19			PMID:18488015		Solexa transcript data		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071109/
 III	SPCC18.19		3'UTR	1982720..1983444	2011-05-09							https://curation.pombase.org/pombe-embl-repo/trunk?p=20110508
 III	SPCC18.19		5'UTR	1982194..1982500	2011-05-09							https://curation.pombase.org/pombe-embl-repo/trunk?p=20110508
 III	SPCC18.19		CDS	1982501..1982719	2011-05-09							https://curation.pombase.org/pombe-embl-repo/trunk?p=20110508
@@ -12574,7 +12574,7 @@ III	SPCC1827.01c		5'UTR	complement(2376079..2376176)	2011-03-24	PMID:18641648,PM
 III	SPCC1827.01c		5'UTR	complement(2376079..2376316)	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 III	SPCC1827.02c		3'UTR	complement(2376397..2377038)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 III	SPCC1827.02c		5'UTR	complement(2378128..2378199)	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
-III	SPCC1827.02c		CDS	complement(join(2377039..2378078,2378197..2378221))	2008-01-23					Solexa intron data; deleted first exon, unsupported		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
+III	SPCC1827.02c		CDS	complement(join(2377039..2378078,2378197..2378221))	2008-01-23			PMID:18488015		Solexa intron data; deleted first exon, unsupported		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
 III	SPCC1827.03c		3'UTR	complement(2378376..2378484)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 III	SPCC1827.03c		5'UTR	complement(2380022..2380411)	2011-03-04							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110204/
 III	SPCC1827.03c		5'UTR	complement(2380024..2380411)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
@@ -13445,7 +13445,7 @@ III	SPCC622.13c		5'UTR	complement(1425847..1425868)	2023-01-12	PMID:21511999				
 III	SPCC622.14		3'UTR	1428523..1429021	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 III	SPCC622.14		5'UTR	1426997..1427097	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 III	SPCC622.14		5'UTR	1427096..1427097	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
-III	SPCC622.14		CDS	join(1427098..1427310,1427632..1427709,1427788..1428180,1428277..1428522)	2007-12-19					Solexa intron data; altered donor for intron 3, improved donor consensus		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071109/
+III	SPCC622.14		CDS	join(1427098..1427310,1427632..1427709,1427788..1428180,1428277..1428522)	2007-12-19			PMID:18488015		Solexa intron data; altered donor for intron 3, improved donor consensus		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071109/
 III	SPCC622.15c		3'UTR	complement(1428855..1429105)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 III	SPCC622.15c		5'UTR	complement(1430778..1430837)	2011-03-04							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110204/
 III	SPCC622.15c		5'UTR	complement(1430780..1430837)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
@@ -13486,8 +13486,8 @@ III	SPCC63.10c		3'UTR	complement(854510..854650)	2011-03-24	PMID:18641648,PMID:2
 III	SPCC63.10c		5'UTR	complement(856212..856439)	2011-03-04							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110204/
 III	SPCC63.10c		5'UTR	complement(856214..856439)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 III	SPCC63.10c		5'UTR	complement(856223..856452)	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
-III	SPCC63.10c		CDS	complement(join(854651..855695,855766..855800,855839..855926,855984..856213))	2008-01-23					Solexa intron data; deleted 2nd and 3rd introns, were not required or supported		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
-III	SPCC63.10c	sec59	CDS	complement(join(854651..855926,855984..856213))	2011-03-24						Solexa intron data; deleted 2nd and 3rd introns, were not required or supported	https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
+III	SPCC63.10c		CDS	complement(join(854651..855695,855766..855800,855839..855926,855984..856213))	2008-01-23			PMID:18488015		Solexa intron data; deleted 2nd and 3rd introns, were not required or supported		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
+III	SPCC63.10c	sec59	CDS	complement(join(854651..855926,855984..856213))	2011-03-24				PMID:18488015		Solexa intron data; deleted 2nd and 3rd introns, were not required or supported	https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 III	SPCC63.11		3'UTR	859142..859190	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 III	SPCC63.11		5'UTR	856979..857152	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 III	SPCC63.11		5'UTR	857041..857152	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
@@ -13603,8 +13603,8 @@ III	SPCC736.05		5'UTR	320343..320607	2023-01-14		PMID:30566651					https://curat
 III	SPCC736.05		5'UTR	320394..320607	2023-01-12							https://curation.pombase.org/pombe-embl-repo/trunk?p=8642
 III	SPCC736.05		5'UTR	320394..320616	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 III	SPCC736.05	wtf7	CDS	join(320608..320755,320964..321335,321387..321523)	2020-05-01			PMID:28631610, PMID:30991417				https://curation.pombase.org/pombe-embl-repo/trunk?p=6245
-III	SPCC736.05	wtf7	CDS	join(320617..320755,320964..321335,321387..321509,321554..321582)	2007-12-19					Solexa intron data; removed final exon,  not supported by data		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071109/
-III	SPCC736.05	wtf7	CDS	join(320617..320755,320964..321335,321387..321523)	2011-03-24		PMID:28631610		PMID:28631610, PMID:30991417		Solexa intron data; removed final exon,  not supported by data	https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
+III	SPCC736.05	wtf7	CDS	join(320617..320755,320964..321335,321387..321509,321554..321582)	2007-12-19			PMID:18488015		Solexa intron data; removed final exon,  not supported by data		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071109/
+III	SPCC736.05	wtf7	CDS	join(320617..320755,320964..321335,321387..321523)	2011-03-24		PMID:28631610		PMID:28631610, PMID:30991417,PMID:18488015		Solexa intron data; removed final exon,  not supported by data	https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 III	SPCC736.06		3'UTR	324868..325081	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 III	SPCC736.06		5'UTR	322506..323031	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 III	SPCC736.06		5'UTR	322550..323031	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
@@ -13624,7 +13624,7 @@ III	SPCC736.10c		5'UTR	complement(332484..332618)	2011-03-24	PMID:18641648,PMID:
 III	SPCC736.10c		5'UTR	complement(332484..332651)	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 III	SPCC736.11		5'UTR	334103..334136	2023-01-12	PMID:18641648,PMID:20118936						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
 III	SPCC736.12c		5'UTR	complement(339568..340150)	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk?p=8649
-III	SPCC736.12c	mmi1	CDS	complement(join(338026..338178,338232..338347,338395..339354,339483..339567))	2008-01-23					Solexa transread data; added 3’ exon, improved homology		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
+III	SPCC736.12c	mmi1	CDS	complement(join(338026..338178,338232..338347,338395..339354,339483..339567))	2008-01-23			PMID:18488015		Solexa transread data; added 3’ exon, improved homology		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071219/
 III	SPCC736.13		3'UTR	complement(340645..340768)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 III	SPCC736.13		5'UTR	complement(341787..342076)	2011-03-04							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110204/
 III	SPCC736.13		5'UTR	complement(341789..342076)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
