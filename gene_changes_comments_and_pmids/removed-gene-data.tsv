@@ -6,20 +6,20 @@ SPBC428.09c	presumed non-coding as no methionine or consensus splice sites
 SPAC222.17c	presumed non-coding; was a very small ORF in ncRNA prl50		
 SPNCRNA.135	Initially annotated as a non-coding RNA but subsequently determined to be the 5' UTR of SPBC16D10.06	pers. comm S. Whitehall	
 SPBPB21E7.10	partial ORF of 35 aa, no reason to believe this is coding		
-SPAC4G8.15c	dubious; unsupported by Solexa transcript data		
-SPAPB18E9.03c	dubious; unsupported by Solexa transcript data		
-SPBC18H10.21c	alias SPBC9B6.01c; dubious; unsupported by Solexa transcript data		
-SPBC9B6.01c	alias of SPBC18H10.21c; dubious; unsupported by Solexa transcript data		
-SPCC2H8.03	dubious; unsupported by Solexa transcript data		
-SPAC22E12.12	dubious; unsupported by Solexa transcript data		
+SPAC4G8.15c	dubious; unsupported by Solexa transcript data	PMID:18488015	
+SPAPB18E9.03c	dubious; unsupported by Solexa transcript data	PMID:18488015	
+SPBC18H10.21c	alias SPBC9B6.01c; dubious; unsupported by Solexa transcript data	PMID:18488015	
+SPBC9B6.01c	alias of SPBC18H10.21c; dubious; unsupported by Solexa transcript data	PMID:18488015	
+SPCC2H8.03	dubious; unsupported by Solexa transcript data	PMID:18488015	
+SPAC22E12.12	dubious; unsupported by Solexa transcript data	PMID:18488015	
 SPNCRNA.85	replaced by protein coding gene SPAC227.19c		
 SPNCRNA.48	replaced by protein coding gene SPAC2F3.18		
 SPNCRNA.97	replaced by short protein coding gene SPAC27E2.14		
-SPAC8E11.09c	previously annotated as dubious but no evidence for splicing, and non-canonical splice sites; unsupported by Solexa transcript data		
-SPAC22E12.15	previously annotated as dubious but dubious splice prediction; unsupported by Solexa transcript data		
+SPAC8E11.09c	previously annotated as dubious but no evidence for splicing, and non-canonical splice sites; unsupported by Solexa transcript data	PMID:18488015	
+SPAC22E12.15	previously annotated as dubious but dubious splice prediction; unsupported by Solexa transcript data	PMID:18488015	
 SPAC1002.21	was annotated as dubious but based on position in uracil regulatable operon, as this CDS does not appear to be transcribed. t is possible that the localization data is an artifact of the combination of overexpression and hydrophobicity. The protein sequence is also a strange composition, and there is no ortholog in octosporus or japonicus genomes. On balance, taking into account all of the available features and contextual information, it is unlikely that this feature codes for a bona fide protein.		
 SPAC8C9.20	non consensus branch sites, and no coverage with transcriptome data		
-SPAC22E12.12	unsupported by Solexa transcript data and largely overlapping with 3' UTR of rpl24-3		
+SPAC22E12.12	unsupported by Solexa transcript data and largely overlapping with 3' UTR of rpl24-3	PMID:18488015	
 SPAC6F6.18c	merged with SPAC6F6.16c	PMID:18535244	
 SPBC651.07	merged with SPBC651.06	pers. comm. Charly Chahwan	
 SPNCRNA.109	part of protein coding gene merge		
