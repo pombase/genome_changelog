@@ -11478,8 +11478,8 @@ II	SPNCRNA.106		ncRNA	2704773..2704920	2022-12-21							https://curation.pombase
 II	SPNCRNA.108		ncRNA	1680947..1681089	2022-12-08							https://curation.pombase.org/pombe-embl-repo/trunk?p=8581
 II	SPNCRNA.109		misc_RNA	2090329..2090574	2008-08-27							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20080716/
 II	SPNCRNA.111		misc_RNA	3980489..3980719	2007-12-19							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20071109/
-II	SPNCRNA.111		misc_RNA	complement(3978616..3980728)	2011-08-22		PMID:29914874,PMID:29914874					https://curation.pombase.org/pombe-embl-repo/trunk?p=0
-II	SPNCRNA.111		ncRNA	complement(3978616..3980728)	2022-08-26	PMID:29914874	PMID:29914874,PMID:29914874					https://curation.pombase.org/pombe-embl-repo/trunk?p=8409
+II	SPNCRNA.111		misc_RNA	complement(3978616..3980728)	2011-08-22		PMID:29914874					https://curation.pombase.org/pombe-embl-repo/trunk?p=0
+II	SPNCRNA.111		ncRNA	complement(3978616..3980728)	2022-08-26	PMID:29914874	PMID:29914874					https://curation.pombase.org/pombe-embl-repo/trunk?p=8409
 II	SPNCRNA.113		ncRNA	4129796..4130288	2022-12-20							https://curation.pombase.org/pombe-embl-repo/trunk?p=8607
 II	SPNCRNA.114		ncRNA	4262098..4262173	2022-12-08							https://curation.pombase.org/pombe-embl-repo/trunk?p=8581
 II	SPNCRNA.1300		ncRNA	complement(21060..21754)	2014-11-06							https://curation.pombase.org/pombe-embl-repo/trunk?p=2325
@@ -14105,8 +14105,8 @@ III	SPNCRNA.582		ncRNA	complement(1587755..1588838)	2022-12-20							https://cur
 III	SPNCRNA.585		misc_RNA	complement(2010261..2010574)	2010-01-29							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20091023/
 III	SPNCRNA.64		ncRNA	827254..827546	2022-12-20							https://curation.pombase.org/pombe-embl-repo/trunk?p=8609
 III	SPNCRNA.64	prl64	misc_RNA	827254..827546	2011-08-29							https://curation.pombase.org/pombe-embl-repo/trunk?p=33
-III	SPNCRNA.67		ncRNA	1432003..1432625	2022-08-26	PMID:29914874	PMID:29914874,PMID:29914874					https://curation.pombase.org/pombe-embl-repo/trunk?p=8409
-III	SPNCRNA.67	prl67	misc_RNA	1432003..1432625	2011-08-29		PMID:29914874,PMID:29914874					https://curation.pombase.org/pombe-embl-repo/trunk?p=33
+III	SPNCRNA.67		ncRNA	1432003..1432625	2022-08-26	PMID:29914874	PMID:29914874					https://curation.pombase.org/pombe-embl-repo/trunk?p=8409
+III	SPNCRNA.67	prl67	misc_RNA	1432003..1432625	2011-08-29		PMID:29914874					https://curation.pombase.org/pombe-embl-repo/trunk?p=33
 III	SPNCRNA.69	tos1	misc_RNA	1546984..1548593	2006-01-03							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20050705/
 III	SPNCRNA.7117		ncRNA	complement(935976..936618)	2022-12-20							https://curation.pombase.org/pombe-embl-repo/trunk?p=8607
 III	SPRPTC.2		repeat_region	615327..616830	2020-05-01							https://curation.pombase.org/pombe-embl-repo/trunk?p=6245

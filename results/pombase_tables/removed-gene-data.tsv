@@ -15,7 +15,7 @@ SPAC1F7.05.1	cdc22	2023-01-11	join(4226982..4227000,4227317..4229733)
 SPAC1F7.05.2	cdc22	2022-09-01	join(4226982..4227000,4227317..4229733)		
 SPAC1F8.09c		2012-09-13	complement(96091..96345)	annotated in error	
 SPAC22A12.08c	crd1	2021-04-23	complement(join(1170196..1170461,1170504..1171270,1171362..1171856,1171900..1171956,1171999..1172126))		
-SPAC22E12.12		2007-12-19	join(5043251..5043480,5043529..5043589)	dubious; unsupported by Solexa transcript data. unsupported by Solexa transcript data and largely overlapping with 3' UTR of rpl24-3	PMID:18488015,PMID:18488015
+SPAC22E12.12		2007-12-19	join(5043251..5043480,5043529..5043589)	dubious; unsupported by Solexa transcript data. unsupported by Solexa transcript data and largely overlapping with 3' UTR of rpl24-3	PMID:18488015
 SPAC22E12.15		2008-01-23	join(5049001..5049055,5049138..5049149,5049253..5049365)	previously annotated as dubious but dubious splice prediction; unsupported by Solexa transcript data	PMID:18488015
 SPAC27D7.10c		2008-09-22	complement(4526425..4527576)	Merged into SPAC27D7.09c	
 SPAC27E2.13		2015-12-11	4008511..4008693	not protein-coding	PMID:24929437, PMID:26615217
