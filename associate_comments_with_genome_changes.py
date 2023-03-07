@@ -35,9 +35,14 @@ db_xref_script = db_xref_script[['systematic_id', 'revision', 'feature_type', 'v
 # Rename value column to db_xref, that will be the final column in the output file
 db_xref_script.rename(columns={'value': 'db_xref'}, inplace=True)
 
+def formatting_references(x):
+    sorted_list = sorted(list(set([i for i in x if i != ''])))
+    return ','.join(sorted_list)
+
+
 # Combine multiple db_xref changes in one line (comma separated)
 unique_identifier_cols = ['systematic_id', 'revision', 'feature_type','added_or_removed']
-db_xref_script = db_xref_script.groupby(unique_identifier_cols).agg({'db_xref': ','.join})
+db_xref_script = db_xref_script.groupby(unique_identifier_cols).agg({'db_xref': formatting_references})
 
 changelog_with_comments = changelog_script.merge(db_xref_script, on=unique_identifier_cols, how='left')
 
@@ -79,11 +84,11 @@ genome_changes_summary = pandas.read_csv('results/genome_changes_summary.tsv', s
 comments_new_genes = pandas.read_csv(
     'gene_changes_comments_and_pmids/new-gene-data.tsv', sep='\t', na_filter=False
     ).drop(columns=['date']
-    ).groupby(['systematic_id'], as_index=False).agg({'comment_addition': '|'.join, 'reference_addition': '|'.join})
+    ).groupby(['systematic_id'], as_index=False).agg({'comment_addition': lambda x: '|'.join(i for i in x if i != ''), 'reference_addition': formatting_references})
 comments_removed_genes = pandas.read_csv(
     'gene_changes_comments_and_pmids/removed-gene-data.tsv', sep='\t', na_filter=False
     ).drop(columns=['date']
-    ).groupby(['systematic_id'], as_index=False).agg({'comment_removal': '|'.join, 'reference_removal': '|'.join})
+    ).groupby(['systematic_id'], as_index=False).agg({'comment_removal': lambda x: '|'.join(i for i in x if i != ''), 'reference_removal': formatting_references})
 
 # Remove known orphan comments
 known_orphans = pandas.read_csv('gene_changes_comments_and_pmids/known_orphan_comments_gene_add_remove.tsv', sep='\t')
