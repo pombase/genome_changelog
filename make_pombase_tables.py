@@ -12,7 +12,7 @@ data['reference_removal'] = data.reference_removal.apply(lambda x: ','.join([i f
 
 
 
-added_genes = data.loc[data.category.isin(['added', 'added_and_changed']), ['systematic_id', 'primary_name', 'earliest_change', 'comment_addition', 'reference_addition']]
+added_genes = data.loc[data.category.isin(['added', 'added_and_changed']), ['systematic_id', 'primary_name', 'earliest_change', 'comment_addition', 'reference_addition', 'feature_type']]
 added_genes.rename(inplace=True,columns={
     'systematic_id': 'Systematic ID',
     'primary_name': 'Primary name',
@@ -21,9 +21,10 @@ added_genes.rename(inplace=True,columns={
     'reference_addition': 'Reference',
     })
 
-added_genes.to_csv('results/pombase_tables/new-gene-data.tsv', sep='\t', index=False)
+added_genes.loc[added_genes.feature_type == 'CDS', :].drop(columns='feature_type').to_csv('results/pombase_tables/new-gene-data-protein-coding.tsv', sep='\t', index=False)
+added_genes.loc[added_genes.feature_type != 'CDS', :].drop(columns='feature_type').to_csv('results/pombase_tables/new-gene-data-RNA.tsv', sep='\t', index=False)
 
-removed_genes = data.loc[data.category.str.contains('merged')|data.category.str.contains('removed'), ['systematic_id', 'primary_name', 'latest_change', 'latest_coords', 'comment_removal', 'reference_removal', 'merged_into']]
+removed_genes = data.loc[data.category.str.contains('merged')|data.category.str.contains('removed'), ['systematic_id', 'primary_name', 'latest_change', 'latest_coords', 'comment_removal', 'reference_removal', 'merged_into', 'feature_type']]
 merged_genes = removed_genes['merged_into'] != ''
 
 def formatting_function(r):
@@ -46,7 +47,8 @@ removed_genes.rename(inplace=True,columns={
     }
 )
 
-removed_genes.to_csv('results/pombase_tables/removed-gene-data.tsv', sep='\t', index=False)
+removed_genes.loc[removed_genes.feature_type == 'CDS', :].drop(columns='feature_type').to_csv('results/pombase_tables/removed-gene-data-protein-coding.tsv', sep='\t', index=False)
+removed_genes.loc[removed_genes.feature_type != 'CDS', :].drop(columns='feature_type').to_csv('results/pombase_tables/removed-gene-data-RNA.tsv', sep='\t', index=False)
 
 
 # Changes table
