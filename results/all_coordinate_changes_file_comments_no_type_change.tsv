@@ -1,4 +1,6 @@
 revision	user	date	chromosome	systematic_id	primary_name	feature_type	added_or_removed	value	db_xref	pombase_reference	pombase_comments
+8812	vw253	2023-03-17	II	SPNCRNA.1715.1	mamRNA	lncRNA	added	1307681..1308359			
+8812	vw253	2023-03-17	II	SPNCRNA.1715.2	mamRNA	lncRNA	added	1307681..1308192			
 8789	vw253	2023-03-10	I	SPAC144.19	SPAC144.19	3'UTR	added	complement(4651351..4651623)			
 8789	vw253	2023-03-10	I	SPAC31G5.10		3'UTR	added	3003767..3004916			
 8764	vw253	2023-03-01	I	SPNCRNA.87		lncRNA	added	3177931..3178309			
