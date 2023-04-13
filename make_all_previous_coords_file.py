@@ -40,7 +40,10 @@ def formatting_function(r):
         return f'https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/{previous_revision}/'
     else:
         previous_revision = int(revision)-1
-        return f'https://curation.pombase.org/pombe-embl-repo/trunk?p={previous_revision}'
+        if previous_revision < 374:
+            return f'https://curation.pombase.org/pombe-embl-repo/?p={previous_revision}'
+        else:
+            return f'https://curation.pombase.org/pombe-embl-repo/trunk/?p={previous_revision}'
 
 data['genome_snapshot']= data.apply(formatting_function, axis=1)
 
