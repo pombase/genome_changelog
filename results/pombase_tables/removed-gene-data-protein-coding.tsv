@@ -1,64 +1,64 @@
 Systematic ID	Primary name	Date removed	Coordinates when removed	Comment	Reference
-SPAC1002.21		2008-01-23	complement(1834875..1835321)	was annotated as dubious but based on position in uracil regulatable operon, as this CDS does not appear to be transcribed. t is possible that the localization data is an artifact of the combination of overexpression and hydrophobicity. The protein sequence is also a strange composition, and there is no ortholog in octosporus or japonicus genomes. On balance, taking into account all of the available features and contextual information, it is unlikely that this feature codes for a bona fide protein.	
-SPAC110.05		2016-07-14	complement(1905728..1905820)	Merged into SPAC110.06	
-SPAC1250.04	atl1	2006-11-20	5098013..5098339		
-SPAC12D12.09	rev7	2008-01-23	join(2313544..2313574,2313624..2313650,2313694..2313744,2313785..2313897,2313940..2314055,2314104..2314207,2314277..2314476)	Merged into SPBC12D12.09	
-SPAC13F5.08	vts1	2011-03-24	complement(join(2178651..2178887,2179020..2179117,2179380..2179482))	Merged into SPAC13F5.04c	
-SPAC1556.06.1	meu1	2019-09-26	join(3802551..3804587,3804661..3804954)	Merged into SPAC1556.06	
-SPAC1556.06.2	meu1-2	2016-12-01	join(3804582..3804587,3804661..3804954)		
-SPAC17A2.15		2011-03-24	join(3569155..3569235,3569383..3569511)	was on the reverse strand of the N-terminal extension of SPAC17A2.08	
-SPAC17G6.02c.1	tco1	2022-12-20	complement(3588975..3589949)		
-SPAC17G6.02c.2	tco1	2022-12-20	complement(3588975..3589949)		
-SPAC1D4.07c		2015-12-11	complement(649449..649889)	not protein-coding	PMID:24929437, PMID:26615217
-SPAC1F12.03c		2012-07-16	complement(join(3810367..3810458,3810639..3810660))	removed; replaced by a nuclear mitochondrial pseudogene (NUMT) feature	
 SPAC1F7.05.1	cdc22	2023-01-11	join(4226982..4227000,4227317..4229733)		
+SPAC17G6.02c.2	tco1	2022-12-20	complement(3588975..3589949)		
+SPAC17G6.02c.1	tco1	2022-12-20	complement(3588975..3589949)		
 SPAC1F7.05.2	cdc22	2022-09-01	join(4226982..4227000,4227317..4229733)		
-SPAC1F8.09c		2012-09-13	complement(96091..96345)	annotated in error	
-SPAC22A12.08c	crd1	2021-04-23	complement(join(1170196..1170461,1170504..1171270,1171362..1171856,1171900..1171956,1171999..1172126))		
-SPAC22E12.12		2007-12-19	join(5043251..5043480,5043529..5043589)	dubious; unsupported by Solexa transcript data. unsupported by Solexa transcript data and largely overlapping with 3' UTR of rpl24-3	PMID:18488015
-SPAC22E12.15		2008-01-23	join(5049001..5049055,5049138..5049149,5049253..5049365)	previously annotated as dubious but dubious splice prediction; unsupported by Solexa transcript data	PMID:18488015
-SPAC27D7.10c		2008-09-22	complement(4526425..4527576)	Merged into SPAC27D7.09c	
-SPAC27E2.13		2015-12-11	4008511..4008693	not protein-coding	PMID:24929437, PMID:26615217
-SPAC27F1.09c.1	prp10	2021-11-27	complement(4333170..4336787)		
-SPAC27F1.09c.2	prp10	2021-11-27	complement(join(4333170..4336726,4336778..4336787))		
+SPBC1198.04c	zas1	2022-08-05	complement(join(177556..177608,177656..178291,178344..178651,178690..178811,178857..178988,179032..179283,179322..179387,179440..180416,180461..180608))		
 SPAC27F1.09c.3	prp10	2021-12-18	complement(join(4333170..4336555,4336622..4336726,4336778..4336787))		
-SPAC4G8.15c		2007-12-19	complement(join(766607..766720,766810..766836))	dubious; unsupported by Solexa transcript data	PMID:18488015
-SPAC4H3.12c		2015-12-11	complement(3851914..3852219)	not protein-coding	PMID:24929437, PMID:26615217
-SPAC6F6.18c	mug169	2008-07-16	complement(2764798..2765163)	merged with SPAC6F6.16c	PMID:18535244
+SPBC2D10.10c.3	fib1	2021-12-08	complement(2982764..2983681)		
+SPBC2D10.10c.2	fib1	2021-12-08	complement(2982764..2983681)		
+SPAC27F1.09c.2	prp10	2021-11-27	complement(join(4333170..4336726,4336778..4336787))		
+SPAC27F1.09c.1	prp10	2021-11-27	complement(4333170..4336787)		
+SPBC776.02c.2	dis2	2021-10-28	complement(join(3173719..3174650,3175047..3175098))		
+SPBC776.02c.1	dis2	2021-10-28	complement(join(3173719..3174650,3175047..3175098))		
+SPAC22A12.08c	crd1	2021-04-23	complement(join(1170196..1170461,1170504..1171270,1171362..1171856,1171900..1171956,1171999..1172126))		
+SPBC17A3.07	pgr1	2021-04-20	join(1414496..1414547,1414603..1415945)		
+SPBC119.04	mei3	2021-04-20	719806..720252		
+SPCC1620.02	wtf23	2020-09-14	join(2145761..2145896,2146113..2146442,2146492..2146770,2146807..2146998,2147039..2147101,2147152..2147258)		
+SPCC548.03c	wtf4	2020-09-14	complement(join(221199..221344,221395..221457,221498..221689,221726..222016,222065..222337,222566..222701))		
+SPCC162.04c	wtf13	2020-09-14	complement(join(1580123..1580268,1580319..1580381,1580422..1580613,1580650..1581006,1581055..1581327,1581559..1581694))		
+SPCC1906.03	wtf19	2020-09-11	join(2017717..2017852,2018068..2018397,2018447..2018824,2018861..2019052,2019093..2019155,2019206..2019288)		
+SPAC1556.06.1	meu1	2019-09-26	join(3802551..3804587,3804661..3804954)	Merged into SPAC1556.06	
+SPMTR.04	mat3-Mc	2019-05-21	15856..16401		
+SPMTR.03	mat3-Mi	2019-05-21	complement(15593..15721)		
+SPAC1556.06.2	meu1-2	2016-12-01	join(3804582..3804587,3804661..3804954)		
+SPAC110.05		2016-07-14	complement(1905728..1905820)	Merged into SPAC110.06	
+SPBC713.13		2016-03-17	complement(890220..890546)	deleted; ID added as synonym to SPBC713.14c	PMID:24929437
 SPAC823.02		2016-03-17	join(2583804..2583902,2583941..2583973)	deleted; replaced by SPAC823.17 at same locus, but in different frame	PMID:24929437
+SPAPB1A11.05		2016-03-17	2975643..2975771	Merged into SPAC31G5.01,SPAPB1A11.06	
+SPBC32F12.17		2015-12-11	complement(2805085..2805417)	not protein-coding	PMID:24929437, PMID:26615217
+SPCC188.05		2015-12-11	1482007..1482273	not protein-coding	PMID:24929437, PMID:26615217
+SPAC27E2.13		2015-12-11	4008511..4008693	not protein-coding	PMID:24929437, PMID:26615217
+SPCC417.04		2015-12-11	1673314..1673856	not protein-coding	PMID:24929437, PMID:26615217
+SPBC36.13		2015-12-11	complement(845807..846079)	not protein-coding	PMID:24929437, PMID:26615217
+SPAC1D4.07c		2015-12-11	complement(649449..649889)	not protein-coding	PMID:24929437, PMID:26615217
+SPBC354.11c		2015-12-11	complement(575773..576291)	not protein-coding	PMID:24929437, PMID:26615217
+SPCC1672.14		2015-12-11	complement(563977..564444)	not protein-coding	PMID:24929437, PMID:26615217
+SPAC4H3.12c		2015-12-11	complement(3851914..3852219)	not protein-coding	PMID:24929437, PMID:26615217
+SPCC622.05		2015-12-11	1408164..1408511	not protein-coding	PMID:24929437, PMID:26615217
+SPBC1685.12c		2015-12-11	complement(523887..524240)	not protein-coding	PMID:24929437, PMID:26615217
+SPAC1F8.09c		2012-09-13	complement(96091..96345)	annotated in error	
+SPAC1F12.03c		2012-07-16	complement(join(3810367..3810458,3810639..3810660))	removed; replaced by a nuclear mitochondrial pseudogene (NUMT) feature	
+SPBC1348.13		2011-11-20	36892..37188	Coordinates updated; now annotated as nuclear mitochondrial pseudogene (SO:0001044). Merged into SPNUMT.1	
+SPCC18.19		2011-05-09	1982501..1982719	Merged into SPCC18.20	
+SPAC17A2.15		2011-03-24	join(3569155..3569235,3569383..3569511)	was on the reverse strand of the N-terminal extension of SPAC17A2.08	
+SPAC13F5.08	vts1	2011-03-24	complement(join(2178651..2178887,2179020..2179117,2179380..2179482))	Merged into SPAC13F5.04c	
+SPBCPT2R1.09c		2010-09-28	complement(4517649..4519024)	no coding region	
+SPBPB2B2.04		2010-09-28	4464941..4465474	no coding region	
+SPBPB2B2.03c		2010-09-28	complement(4462609..4464024)	no coding region	
+SPBC11C11.12		2010-05-20	3360974..3361072	cob intron fragment currently annotated as pseudogene	
+SPBC14C8.08c		2009-02-19	complement(2219430..2219978)	merged with SPBC14C8.09c; frameshifted	PMID:16823372
+SPAC27D7.10c		2008-09-22	complement(4526425..4527576)	Merged into SPAC27D7.09c	
+SPAC6F6.18c	mug169	2008-07-16	complement(2764798..2765163)	merged with SPAC6F6.16c	PMID:18535244
+SPAC12D12.09	rev7	2008-01-23	join(2313544..2313574,2313624..2313650,2313694..2313744,2313785..2313897,2313940..2314055,2314104..2314207,2314277..2314476)	Merged into SPBC12D12.09	
+SPAC1002.21		2008-01-23	complement(1834875..1835321)	was annotated as dubious but based on position in uracil regulatable operon, as this CDS does not appear to be transcribed. t is possible that the localization data is an artifact of the combination of overexpression and hydrophobicity. The protein sequence is also a strange composition, and there is no ortholog in octosporus or japonicus genomes. On balance, taking into account all of the available features and contextual information, it is unlikely that this feature codes for a bona fide protein.	
+SPAC22E12.15		2008-01-23	join(5049001..5049055,5049138..5049149,5049253..5049365)	previously annotated as dubious but dubious splice prediction; unsupported by Solexa transcript data	PMID:18488015
 SPAC8C9.20		2008-01-23	join(3663780..3663800,3663885..3663951,3663983..3664076,3664130..3664217)	non consensus branch sites, and no coverage with transcriptome data	
 SPAC8E11.09c		2008-01-23	join(3374696..3374952,3375206..3375404)	previously annotated as dubious but no evidence for splicing, and non-canonical splice sites; unsupported by Solexa transcript data	PMID:18488015
 SPAPB18E9.03c		2007-12-19	complement(join(3981978..3982082,3982179..3982198,3982306..3982315))	dubious; unsupported by Solexa transcript data	PMID:18488015
-SPAPB1A11.05		2016-03-17	2975643..2975771	Merged into SPAC31G5.01,SPAPB1A11.06	
-SPBC119.04	mei3	2021-04-20	719806..720252		
-SPBC1198.04c	zas1	2022-08-05	complement(join(177556..177608,177656..178291,178344..178651,178690..178811,178857..178988,179032..179283,179322..179387,179440..180416,180461..180608))		
-SPBC11C11.12		2010-05-20	3360974..3361072	cob intron fragment currently annotated as pseudogene	
-SPBC1348.13		2011-11-20	36892..37188	Coordinates updated; now annotated as nuclear mitochondrial pseudogene (SO:0001044). Merged into SPNUMT.1	
-SPBC14C8.08c		2009-02-19	complement(2219430..2219978)	merged with SPBC14C8.09c; frameshifted	PMID:16823372
-SPBC1685.12c		2015-12-11	complement(523887..524240)	not protein-coding	PMID:24929437, PMID:26615217
-SPBC17A3.07	pgr1	2021-04-20	join(1414496..1414547,1414603..1415945)		
-SPBC18H10.21c		2007-12-19	complement(join(1811244..1811537,1812093..1812272))	alias SPBC9B6.01c; dubious; unsupported by Solexa transcript data	PMID:18488015
-SPBC2D10.10c.2	fib1	2021-12-08	complement(2982764..2983681)		
-SPBC2D10.10c.3	fib1	2021-12-08	complement(2982764..2983681)		
-SPBC32F12.17		2015-12-11	complement(2805085..2805417)	not protein-coding	PMID:24929437, PMID:26615217
-SPBC354.11c		2015-12-11	complement(575773..576291)	not protein-coding	PMID:24929437, PMID:26615217
-SPBC36.13		2015-12-11	complement(845807..846079)	not protein-coding	PMID:24929437, PMID:26615217
-SPBC713.13		2016-03-17	complement(890220..890546)	deleted; ID added as synonym to SPBC713.14c	PMID:24929437
-SPBC776.02c.1	dis2	2021-10-28	complement(join(3173719..3174650,3175047..3175098))		
-SPBC776.02c.2	dis2	2021-10-28	complement(join(3173719..3174650,3175047..3175098))		
-SPBCPT2R1.09c		2010-09-28	complement(4517649..4519024)	no coding region	
-SPBPB2B2.03c		2010-09-28	complement(4462609..4464024)	no coding region	
-SPBPB2B2.04		2010-09-28	4464941..4465474	no coding region	
-SPCC162.04c	wtf13	2020-09-14	complement(join(1580123..1580268,1580319..1580381,1580422..1580613,1580650..1581006,1581055..1581327,1581559..1581694))		
-SPCC1620.02	wtf23	2020-09-14	join(2145761..2145896,2146113..2146442,2146492..2146770,2146807..2146998,2147039..2147101,2147152..2147258)		
-SPCC1672.14		2015-12-11	complement(563977..564444)	not protein-coding	PMID:24929437, PMID:26615217
-SPCC18.19		2011-05-09	1982501..1982719	Merged into SPCC18.20	
-SPCC188.05		2015-12-11	1482007..1482273	not protein-coding	PMID:24929437, PMID:26615217
-SPCC18B5.12		2004-09-15	join(741745..741781,741830..742503)	Merged into SPCC14G10.01	
-SPCC1906.03	wtf19	2020-09-11	join(2017717..2017852,2018068..2018397,2018447..2018824,2018861..2019052,2019093..2019155,2019206..2019288)		
 SPCC2H8.03		2007-12-19	join(830489..830498,830560..830777)	dubious; unsupported by Solexa transcript data	PMID:18488015
-SPCC417.04		2015-12-11	1673314..1673856	not protein-coding	PMID:24929437, PMID:26615217
-SPCC548.03c	wtf4	2020-09-14	complement(join(221199..221344,221395..221457,221498..221689,221726..222016,222065..222337,222566..222701))		
-SPCC622.05		2015-12-11	1408164..1408511	not protein-coding	PMID:24929437, PMID:26615217
-SPMTR.03	mat3-Mi	2019-05-21	complement(15593..15721)		
-SPMTR.04	mat3-Mc	2019-05-21	15856..16401		
+SPAC22E12.12		2007-12-19	join(5043251..5043480,5043529..5043589)	dubious; unsupported by Solexa transcript data. unsupported by Solexa transcript data and largely overlapping with 3' UTR of rpl24-3	PMID:18488015
+SPAC4G8.15c		2007-12-19	complement(join(766607..766720,766810..766836))	dubious; unsupported by Solexa transcript data	PMID:18488015
+SPBC18H10.21c		2007-12-19	complement(join(1811244..1811537,1812093..1812272))	alias SPBC9B6.01c; dubious; unsupported by Solexa transcript data	PMID:18488015
+SPAC1250.04	atl1	2006-11-20	5098013..5098339		
+SPCC18B5.12		2004-09-15	join(741745..741781,741830..742503)	Merged into SPCC14G10.01	
