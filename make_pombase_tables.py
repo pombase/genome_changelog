@@ -11,6 +11,7 @@ data['reference_addition'] = data.reference_addition.apply(lambda x: ','.join([i
 data['reference_removal'] = data.reference_removal.apply(lambda x: ','.join([i for i in x.split('|') if i !='']))
 
 
+data.sort_values(by='latest_change', ascending=False, inplace=True)
 
 added_genes = data.loc[data.category.isin(['added', 'added_and_changed']), ['systematic_id', 'primary_name', 'earliest_change', 'comment_addition', 'reference_addition', 'feature_type']]
 added_genes.rename(inplace=True,columns={
