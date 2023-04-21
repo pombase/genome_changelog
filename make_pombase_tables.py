@@ -11,8 +11,6 @@ data['reference_addition'] = data.reference_addition.apply(lambda x: ','.join([i
 data['reference_removal'] = data.reference_removal.apply(lambda x: ','.join([i for i in x.split('|') if i !='']))
 
 
-data.sort_values(by='latest_change', ascending=False, inplace=True)
-
 added_genes = data.loc[data.category.isin(['added', 'added_and_changed']), ['systematic_id', 'primary_name', 'earliest_change', 'comment_addition', 'reference_addition', 'feature_type']]
 added_genes.rename(inplace=True,columns={
     'systematic_id': 'Systematic ID',
@@ -21,6 +19,8 @@ added_genes.rename(inplace=True,columns={
     'comment_addition': 'Comment',
     'reference_addition': 'Reference',
     })
+
+added_genes.sort_values(by='Date added', ascending=False, inplace=True)
 
 added_genes.loc[added_genes.feature_type == 'CDS', :].drop(columns='feature_type').to_csv('results/pombase_tables/new-gene-data-protein-coding.tsv', sep='\t', index=False)
 added_genes.loc[added_genes.feature_type != 'CDS', :].drop(columns='feature_type').to_csv('results/pombase_tables/new-gene-data-RNA.tsv', sep='\t', index=False)
@@ -47,6 +47,8 @@ removed_genes.rename(inplace=True,columns={
     'reference_removal': 'Reference',
     }
 )
+
+removed_genes.sort_values(by='Date removed', ascending=False, inplace=True)
 
 removed_genes.loc[removed_genes.feature_type == 'CDS', :].drop(columns='feature_type').to_csv('results/pombase_tables/removed-gene-data-protein-coding.tsv', sep='\t', index=False)
 removed_genes.loc[removed_genes.feature_type != 'CDS', :].drop(columns='feature_type').to_csv('results/pombase_tables/removed-gene-data-RNA.tsv', sep='\t', index=False)
