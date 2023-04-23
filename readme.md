@@ -13,6 +13,8 @@ This repository contains scripts for:
 
 All the steps below that need to be re-ran are in [update_file.sh](update_file.sh).
 
+> NOTE: if `poetry install` gives you error `Failed to open keyring`, check #47
+
 ```bash
 # install dependencies
 poetry install
