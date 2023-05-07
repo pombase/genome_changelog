@@ -2121,6 +2121,7 @@ I	SPAC1F8.07c		3'UTR	complement(101715..101759)	2011-03-04							https://www.pom
 I	SPAC1F8.07c		5'UTR	complement(103545..103594)	2023-01-12							https://curation.pombase.org/pombe-embl-repo/trunk/?p=8649
 I	SPAC1F8.07c		CDS	complement(101760..103544)	2009-02-19			PMID:16823372		frameshifted		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20090114/
 I	SPAC1F8.07c		CDS	complement(join(101836..101872,101872..103544))	2009-09-04		SPD:45/45G12		PMID:16823372		frameshifted	https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20090819/
+I	SPAC1F8.07c	pdc101	CDS	complement(join(101836..101869,101872..103544))	2023-05-03							https://curation.pombase.org/pombe-embl-repo/trunk/?p=8919
 I	SPAC1F8.09c		CDS	complement(96091..96345)	2012-09-13							https://curation.pombase.org/pombe-embl-repo/trunk/?p=627
 I	SPAC20G4.01		3'UTR	4813066..4813117	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 I	SPAC20G4.01		5'UTR	4811964..4812098	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/

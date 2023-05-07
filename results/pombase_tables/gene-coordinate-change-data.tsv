@@ -1,4 +1,6 @@
 Date	Systematic ID	Primary name	Before / After change	Coordinates	Comment	Reference
+2023-05-03	SPAC1F8.07c	pdc101	after	I:complement(join(101836..101872,101872..103544))		
+2023-05-03	SPAC1F8.07c	pdc101	before	I:complement(join(101836..101869,101872..103544))		
 2023-01-13	SPBC17D1.06	dbp3	after	II:3338751..3340340		
 2023-01-13	SPBC17D1.06	dbp3	before	II:3338604..3340340		
 2023-01-10	SPAC227.11c	yos9	after	I:complement(join(514552..515082,515222..515482,515534..515608))		
@@ -1382,8 +1384,8 @@ Date	Systematic ID	Primary name	Before / After change	Coordinates	Comment	Refere
 2008-07-16	SPBC2G2.09c	crs1	before	II:complement(join(3452584..3452769,3452822..3452877,3452918..3453077,3453119..3453406))	added new C-terminal exon, deleted exon 3452822..3452877, extended intron 2 by 4 nucleotides	pers. comm. Charley Chahwan
 2008-07-16	SPCC338.08	ctp1	after	III:complement(join(1358891..1359082,1359127..1359819))		
 2008-07-16	SPCC338.08	ctp1	before	III:complement(join(1358891..1359082,1359121..1359819))		
-2008-07-16	SPCC962.05	ast1	after	III:join(554521..554744,554865..556200)	intron position moved	pers comm. M. O’Connell
 2008-07-16	SPCC962.05	ast1	after	III:join(554521..554744,554865..556200)		pers. comm. Matthew O’Connell
+2008-07-16	SPCC962.05	ast1	after	III:join(554521..554744,554865..556200)	intron position moved	pers comm. M. O’Connell
 2008-07-16	SPCC962.05		before	III:join(554521..554722,554792..556200)		pers. comm. Matthew O’Connell
 2008-07-16	SPCC962.05		before	III:join(554521..554722,554792..556200)	intron position moved	pers comm. M. O’Connell
 2008-05-12	SPAC31G5.12c	maf1	after	I:complement(join(3008184..3008795,3008914..3008957,3009044..3009089))		
