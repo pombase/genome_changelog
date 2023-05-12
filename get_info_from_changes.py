@@ -1,6 +1,7 @@
 import pandas
 import argparse
 from genome_functions import make_synonym_dict
+import re
 
 class Formatter(argparse.ArgumentDefaultsHelpFormatter, argparse.RawDescriptionHelpFormatter):
     pass
@@ -108,4 +109,54 @@ if 'svn_2' in main_features_data['revision'].values:
 extra_column_dataset = main_features_data[['systematic_id', 'feature_type']].groupby('systematic_id', as_index=False).agg({'feature_type': lambda x: ','.join(sorted(list(set(x))))})
 data_subset2 = data_subset2.merge(extra_column_dataset, on='systematic_id')
 data_subset2 = data_subset2[['systematic_id','chromosome','primary_name','feature_type','category','merged_into', 'earliest_change', 'latest_change', 'latest_coords']]
+
+# Handle multi-transcript genes
+gene_ids = set(pandas.read_csv('valid_ids_data/gene_IDs_names.tsv', delimiter='\t', na_filter=False, dtype=str)['systematic_id'])
+multi_transcript_logi = ~data_subset2['systematic_id'].isin(gene_ids) & data_subset2['systematic_id'].apply(lambda x: re.sub(r'\.\d$', '', x) in gene_ids)
+data_subset2.loc[multi_transcript_logi, 'systematic_id'] = data_subset2.loc[multi_transcript_logi, 'systematic_id'].apply(lambda x: re.sub(r'\.\d$', '', x))
+
+# multi_transcript_logi only contains the ones ending in .1, .2, etc. we want all rows, even those which have the locus id
+multi_transcript_locus_ids = set(data_subset2.loc[multi_transcript_logi,'systematic_id'])
+multi_transcript_logi = data_subset2['systematic_id'].isin(multi_transcript_locus_ids)
+
+# We do not handle merges here, but I suppose the case will not arise
+data_subset2.loc[multi_transcript_logi, 'merged_into'] = ''
+
+# Does not make sense to show a single feature
+data_subset2.loc[multi_transcript_logi, 'latest_coords'] = 'multi-transcript'
+
+# Print the lines where systematic_id is repeated
+# Aggregate on systematic_id
+def agg_function(x):
+    category_list = list(x)
+    if len(category_list) == 1:
+        return category_list[0]
+
+    all_added = all('added' in category for category in category_list)
+    all_removed = all('removed' in category for category in category_list)
+    any_changed = any('changed' in category for category in category_list)
+    any_removed = any('removed' in category for category in category_list)
+
+    if all_removed:
+        if all_added:
+            return 'added_changed_and_removed' if (any_changed or any_removed) else 'added_and_removed'
+        else:
+            return 'changed_and_removed' if (any_changed or any_removed) else 'removed'
+    else:
+        if all_added:
+            return 'added_and_changed' if (any_changed or any_removed) else 'added'
+        else:
+            if (any_changed or any_removed):
+                return 'changed'
+
+    raise ValueError('This should not happen')
+
+
+
+grouping_cols = data_subset2.columns.tolist()
+[grouping_cols.remove(x) for x in ['category', 'earliest_change', 'latest_change', 'primary_name', 'feature_type']]
+# For primary name, we want to keep the shortest one
+data_subset2 = data_subset2.groupby(grouping_cols, as_index=False).agg({'category': agg_function, 'earliest_change': min, 'latest_change': max, 'primary_name': lambda x: min(x, key=len), 'feature_type': lambda x: ",".join(sorted(list(set(x))))})
+data_subset2 = data_subset2[['systematic_id', 'chromosome', 'primary_name','feature_type','category','merged_into', 'earliest_change', 'latest_change', 'latest_coords']]
 data_subset2.to_csv(args.output_summary, sep='\t', index=False)
+print(data_subset2[data_subset2.systematic_id.duplicated()])
