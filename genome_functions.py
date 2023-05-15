@@ -2,6 +2,7 @@ from custom_biopython import SeqRecord, SeqFeature, SeqIO, CustomSeqFeature
 import pandas
 from copy import deepcopy
 import warnings
+import re
 
 def build_seqfeature_dict(genome: SeqRecord, use_custom_feature):
     """
@@ -271,3 +272,35 @@ def genome_sequences_are_different(file1, file2):
                     return f'{line1.strip()} <---> {line2.strip()}'
 
     return ''
+
+def get_locus_main_feature(locus_dict):
+    """
+    Returns the main feature from a genome_dict entry (CDS if exists, otherwise the RNA)
+    """
+    if 'CDS' in locus_dict:
+        main_feature_list = locus_dict['CDS']
+    else:
+        filtered_keys = [x for x in locus_dict.keys() if 'RNA' in x]
+        if len(filtered_keys) != 1:
+            raise ValueError('Cannot find main feature for', locus_dict)
+
+        main_feature_list = locus_dict[filtered_keys[0]]
+
+    if len(main_feature_list) != 1:
+        raise ValueError('Cannot find main feature for', locus_dict)
+
+    return main_feature_list[0]
+
+def get_locus_reference(main_feature: SeqRecord):
+    """
+    Returns the reference of the main feature of a locus
+    """
+    pubmed_ids = list()
+    if 'controlled_curation' in main_feature.qualifiers:
+        for qualifier in main_feature.qualifiers['controlled_curation']:
+            if qualifier.startswith('term=warning') and 'PMID' in qualifier:
+                pubmed_ids += re.findall('PMID:\d+', qualifier)
+    elif 'db_xref' in main_feature.qualifiers:
+        for qualifier in main_feature.qualifiers['db_xref']:
+            pubmed_ids += re.findall('PMID:\d+', qualifier)
+    return pubmed_ids

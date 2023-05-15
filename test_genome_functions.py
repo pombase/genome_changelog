@@ -3,7 +3,7 @@ from Bio import SeqIO
 import os
 import requests
 
-from genome_functions import read_pombe_genome, make_synonym_dict
+from genome_functions import read_pombe_genome, make_synonym_dict, get_locus_main_feature, get_locus_reference, build_seqfeature_dict
 
 class GenomeFunctionTest(unittest.TestCase):
 
@@ -98,7 +98,40 @@ class GenomeFunctionTest(unittest.TestCase):
         self.assertEqual(len(features_id_before),1)
         self.assertEqual(len(features_id_after),0)
 
+    def test_get_main_feature(self):
+        test_file1 = 'test_folder/chromosome2_svn8941.contig'
+        if not os.path.exists(test_file1):
+            print('Downloading test file...')
+            resp = requests.get('https://curation.pombase.org/pombe-embl-repo/trunk/chromosome2.contig?p=8941')
+            with open(test_file1, 'wb') as out:
+                out.write(resp.content)
+            print('Test file downloaded')
 
+        with open(test_file1, errors='replace') as ins:
+            contig_dict = build_seqfeature_dict(SeqIO.read(ins,'embl'), False)
 
+        # An RNA with introns
+        self.assertEqual(get_locus_main_feature(contig_dict['SPBTRNALEU.06']).type, 'tRNA')
+
+        # A CDS
+        self.assertEqual(get_locus_main_feature(contig_dict['SPBC1685.17']).type, 'CDS')
+
+    def test_get_locus_reference(self):
+        test_file1 = 'test_folder/chromosome2_svn8941.contig'
+        if not os.path.exists(test_file1):
+            print('Downloading test file...')
+            resp = requests.get('https://curation.pombase.org/pombe-embl-repo/trunk/chromosome2.contig?p=8941')
+            with open(test_file1, 'wb') as out:
+                out.write(resp.content)
+            print('Test file downloaded')
+
+        with open(test_file1, errors='replace') as ins:
+            contig_dict = build_seqfeature_dict(SeqIO.read(ins,'embl'), False)
+
+        # From the db_xref
+        self.assertEqual(get_locus_reference(get_locus_main_feature(contig_dict['SPNCRNA.4512']))[0], 'PMID:29914874')
+
+        # From the warning
+        self.assertEqual(get_locus_reference(get_locus_main_feature(contig_dict['SPBC1685.17']))[0], 'PMID:24929437')
 
 
