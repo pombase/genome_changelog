@@ -45,6 +45,8 @@ class PipelineTest(unittest.TestCase):
         changed_or_added = data.category.isin(['changed', 'added', 'added_and_changed'])
         # The ones that are present in the chromosome file
         present_in_contig = data.systematic_id.isin(all_systematic_ids)
+        # Support for multi-transcript cases
+        present_in_contig = present_in_contig | data.systematic_id.apply(lambda x: f'{x}.1' in all_systematic_ids)
 
         if any(changed_or_added != present_in_contig):
             msg = '\nids listed as added or changed that are not present in the contig:\n'
