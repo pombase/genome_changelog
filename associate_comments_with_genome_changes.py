@@ -1,5 +1,7 @@
 import pandas
-
+from custom_biopython import SeqIO
+from genome_functions import build_seqfeature_dict, get_locus_main_feature, get_locus_reference
+import glob
 
 ## 1. GENE STRUCTURE CHANGES ############################################
 
@@ -103,7 +105,19 @@ genome_changes_summary = genome_changes_summary.merge(comments_removed_genes, on
 
 genome_changes_summary.fillna('', inplace=True)
 
+added_without_reference = genome_changes_summary['reference_addition']==''
+
+# Use comments from warnings
+genome_dict = dict()
+for contig in glob.glob('latest_genome/*.contig'):
+    with open(contig, errors='replace') as ins:
+        genome_dict |= build_seqfeature_dict(SeqIO.read(ins,'embl'), False)
+
+print(genome_dict.keys())
+
+genome_changes_summary.loc[added_without_reference, 'reference_addition'] = genome_changes_summary.loc[added_without_reference, 'systematic_id'].apply(lambda x: ','.join(get_locus_reference(get_locus_main_feature(genome_dict[str(x)]))))
 genome_changes_summary.to_csv('results/genome_changes_summary_comments.tsv', sep='\t', index=False)
+
 
 ## 3. Comments on coordinate changes ############################################
 
