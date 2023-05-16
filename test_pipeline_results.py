@@ -24,12 +24,7 @@ class PipelineTest(unittest.TestCase):
         all_systematic_ids = set()
 
         for chromosome in chromosomes:
-            contig_file = f'test_folder/{chromosome}.contig'
-            if not os.path.isfile(contig_file):
-                print(f'Downloading {chromosome}')
-                p = subprocess.Popen([f'svn export --force -r {revision} https://curation.pombase.org/pombe-embl-repo/trunk/{chromosome}.contig {contig_file}'], shell=True)
-                p.wait()
-                p.terminate()
+            contig_file = f'latest_genome/{chromosome}.contig'
             this_chromosome = SeqIO.read(contig_file,'embl')
             for feature in this_chromosome.features:
                 # Only main features (mRNA seems to have been used only very few times)
