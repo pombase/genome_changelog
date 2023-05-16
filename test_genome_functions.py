@@ -2,8 +2,8 @@ import unittest
 from Bio import SeqIO
 import os
 import requests
-
-from genome_functions import read_pombe_genome, make_synonym_dict
+import pandas
+from genome_functions import read_pombe_genome, make_synonym_dict, get_locus_main_feature, get_feature_references, build_seqfeature_dict, get_locus_references, merge_multi_transcript_in_genome_dict
 
 class GenomeFunctionTest(unittest.TestCase):
 
@@ -98,7 +98,64 @@ class GenomeFunctionTest(unittest.TestCase):
         self.assertEqual(len(features_id_before),1)
         self.assertEqual(len(features_id_after),0)
 
+    def test_get_main_feature(self):
+        test_file1 = 'test_folder/chromosome2_svn8941.contig'
+        if not os.path.exists(test_file1):
+            print('Downloading test file...')
+            resp = requests.get('https://curation.pombase.org/pombe-embl-repo/trunk/chromosome2.contig?p=8941')
+            with open(test_file1, 'wb') as out:
+                out.write(resp.content)
+            print('Test file downloaded')
+
+        with open(test_file1, errors='replace') as ins:
+            contig_dict = build_seqfeature_dict(SeqIO.read(ins,'embl'), False)
+
+        # An RNA with introns
+        self.assertEqual(get_locus_main_feature(contig_dict['SPBTRNALEU.06']).type, 'tRNA')
+
+        # A CDS
+        self.assertEqual(get_locus_main_feature(contig_dict['SPBC1685.17']).type, 'CDS')
+
+    def test_get_feature_reference(self):
+        test_file1 = 'test_folder/chromosome2_svn8941.contig'
+        if not os.path.exists(test_file1):
+            print('Downloading test file...')
+            resp = requests.get('https://curation.pombase.org/pombe-embl-repo/trunk/chromosome2.contig?p=8941')
+            with open(test_file1, 'wb') as out:
+                out.write(resp.content)
+            print('Test file downloaded')
+
+        with open(test_file1, errors='replace') as ins:
+            contig_dict = build_seqfeature_dict(SeqIO.read(ins,'embl'), False)
+
+        # From the db_xref
+        self.assertEqual(get_feature_references(get_locus_main_feature(contig_dict['SPNCRNA.4512']))[0], 'PMID:29914874')
+
+        # From the warning
+        self.assertEqual(get_feature_references(get_locus_main_feature(contig_dict['SPBC1685.17']))[0], 'PMID:24929437')
+
+        # Can work on the locus dict directly
+        self.assertEqual(get_locus_references(contig_dict['SPBC1685.17'])[0], 'PMID:24929437')
+
+        # Can use the 3' instead
+        self.assertEqual(get_locus_references(contig_dict['SPBC25H2.18'])[0], 'PMID:21511999')
 
 
+    def test_merge_multi_transcript(self):
 
+        test_file1 = 'test_folder/chromosome2_svn8941.contig'
+        if not os.path.exists(test_file1):
+            print('Downloading test file...')
+            resp = requests.get('https://curation.pombase.org/pombe-embl-repo/trunk/chromosome2.contig?p=8941')
+            with open(test_file1, 'wb') as out:
+                out.write(resp.content)
+            print('Test file downloaded')
 
+        with open(test_file1, errors='replace') as ins:
+            contig_dict = build_seqfeature_dict(SeqIO.read(ins,'embl'), False)
+
+        contig_dict = merge_multi_transcript_in_genome_dict(contig_dict, set(pandas.read_csv('valid_ids_data/gene_IDs_names.tsv', delimiter='\t', na_filter=False, dtype=str)['systematic_id']))
+
+        self.assertIn('SPBC1198.04c', contig_dict)
+        self.assertNotIn('SPBC1198.04c.1', contig_dict)
+        self.assertNotIn('SPBC1198.04c.2', contig_dict)

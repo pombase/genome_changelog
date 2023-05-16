@@ -2,6 +2,7 @@ from custom_biopython import SeqRecord, SeqFeature, SeqIO, CustomSeqFeature
 import pandas
 from copy import deepcopy
 import warnings
+import re
 
 def build_seqfeature_dict(genome: SeqRecord, use_custom_feature):
     """
@@ -271,3 +272,67 @@ def genome_sequences_are_different(file1, file2):
                     return f'{line1.strip()} <---> {line2.strip()}'
 
     return ''
+
+def get_locus_main_feature(locus_dict):
+    """
+    Returns the main feature from a genome_dict entry (CDS if exists, otherwise the RNA)
+    """
+    if 'CDS' in locus_dict:
+        main_feature_list = locus_dict['CDS']
+    else:
+        filtered_keys = [x for x in locus_dict.keys() if 'RNA' in x]
+        if len(filtered_keys) != 1:
+            raise ValueError('Cannot find main feature for', locus_dict)
+
+        main_feature_list = locus_dict[filtered_keys[0]]
+
+    if len(main_feature_list) != 1:
+        raise ValueError('Cannot find main feature for', locus_dict)
+
+    return main_feature_list[0]
+
+def get_feature_references(main_feature: SeqRecord):
+    """
+    Returns the reference of the main feature of a locus
+    """
+    pubmed_ids = list()
+    control_curation_used = False
+    if 'controlled_curation' in main_feature.qualifiers:
+        for qualifier in main_feature.qualifiers['controlled_curation']:
+            if qualifier.startswith('term=warning') or qualifier.startswith('term=name description') and 'PMID' in qualifier:
+                control_curation_used = True
+                pubmed_ids += re.findall('PMID:\d+', qualifier)
+    elif not control_curation_used and 'db_xref' in main_feature.qualifiers:
+        pubmed_ids += main_feature.qualifiers['db_xref']
+    return pubmed_ids
+
+def get_locus_references(locus_dictionary):
+    main_feature_refs = get_feature_references(get_locus_main_feature(locus_dictionary))
+    if len(main_feature_refs) > 0:
+        return main_feature_refs
+    if "3'UTR" in locus_dictionary:
+        refs = get_feature_references(locus_dictionary["3'UTR"][0])
+        if len(refs) > 0:
+            return refs
+    if "5'UTR" in locus_dictionary:
+        refs = get_feature_references(locus_dictionary["5'UTR"][0])
+        if len(refs) > 0:
+            return refs
+    return []
+
+def merge_multi_transcript_in_genome_dict(genome_dict: dict, locus_ids: set):
+    """
+    Merges all transcripts of a locus in a single entry
+    """
+    out_dict = genome_dict.copy()
+    multi_transcript_logi = [x for x in genome_dict if (x not in locus_ids and re.sub(r'\.\d$', '', x) in locus_ids)]
+    for transcript_id in multi_transcript_logi:
+        locus_id = re.sub(r'\.\d$', '', transcript_id)
+        if transcript_id.endswith('.1'):
+            if locus_id not in out_dict:
+                out_dict[locus_id] = out_dict[transcript_id]
+            else:
+                out_dict[locus_id] |= out_dict[transcript_id]
+        del out_dict[transcript_id]
+
+    return out_dict

@@ -1,5 +1,7 @@
 import pandas
-
+from custom_biopython import SeqIO
+from genome_functions import build_seqfeature_dict, get_locus_references, merge_multi_transcript_in_genome_dict
+import glob
 
 ## 1. GENE STRUCTURE CHANGES ############################################
 
@@ -103,7 +105,23 @@ genome_changes_summary = genome_changes_summary.merge(comments_removed_genes, on
 
 genome_changes_summary.fillna('', inplace=True)
 
+new_genes_without_reference = (genome_changes_summary['reference_addition'] == '') & genome_changes_summary['category'].apply(lambda x: 'added' in x and 'removed' not in x and 'merged' not in x)  & (genome_changes_summary['feature_type'] != 'repeat_region')
+
+# Use comments from warnings for when genes were added
+genome_dict = dict()
+for contig in glob.glob('latest_genome/*.contig'):
+    with open(contig, errors='replace') as ins:
+        genome_dict |= build_seqfeature_dict(SeqIO.read(ins,'embl'), False)
+
+genome_dict = merge_multi_transcript_in_genome_dict(genome_dict, set(pandas.read_csv('valid_ids_data/gene_IDs_names.tsv', delimiter='\t', na_filter=False, dtype=str)['systematic_id']))
+
+genome_changes_summary.loc[new_genes_without_reference, 'reference_addition'] = genome_changes_summary.loc[new_genes_without_reference, 'systematic_id'].apply(lambda x: ','.join(sorted(set(get_locus_references(genome_dict[x])))))
+
+# use "PomBase curators" for merges
+genome_changes_summary.loc[genome_changes_summary['category'].apply(lambda x: 'merged' in x) & (genome_changes_summary['reference_removal'] == ''), 'reference_removal'] = 'PomBase curators'
+
 genome_changes_summary.to_csv('results/genome_changes_summary_comments.tsv', sep='\t', index=False)
+
 
 ## 3. Comments on coordinate changes ############################################
 
