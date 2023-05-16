@@ -304,3 +304,20 @@ def get_locus_reference(main_feature: SeqRecord):
         for qualifier in main_feature.qualifiers['db_xref']:
             pubmed_ids += re.findall('PMID:\d+', qualifier)
     return pubmed_ids
+
+def merge_multi_transcript_in_genome_dict(genome_dict: dict, locus_ids: set):
+    """
+    Merges all transcripts of a locus in a single entry
+    """
+    out_dict = genome_dict.copy()
+    multi_transcript_logi = [x for x in genome_dict if (x not in locus_ids and re.sub(r'\.\d$', '', x) in locus_ids)]
+    for transcript_id in multi_transcript_logi:
+        locus_id = re.sub(r'\.\d$', '', transcript_id)
+        if transcript_id.endswith('.1'):
+            if locus_id not in out_dict:
+                out_dict[locus_id] = out_dict[transcript_id]
+            else:
+                out_dict[locus_id] |= out_dict[transcript_id]
+        del out_dict[transcript_id]
+
+    return out_dict
