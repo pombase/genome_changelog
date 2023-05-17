@@ -1,6 +1,6 @@
 Systematic ID	Primary name	Date removed	Coordinates when removed	Comment	Reference
-SPMTR.04	mat3-Mc	2019-05-21	15856..16401		
-SPMTR.03	mat3-Mi	2019-05-21	complement(15593..15721)		
+SPMTR.04	mat3-Mc	2019-05-21	15856..16401		PomBase curators
+SPMTR.03	mat3-Mi	2019-05-21	complement(15593..15721)		PomBase curators
 SPAC110.05		2016-07-14	complement(1905728..1905820)	Merged into SPAC110.06	PomBase curators
 SPBC713.13		2016-03-17	complement(890220..890546)	deleted; ID added as synonym to SPBC713.14c	PMID:24929437
 SPAPB1A11.05		2016-03-17	2975643..2975771	Merged into SPAC31G5.01,SPAPB1A11.06	PomBase curators
@@ -16,28 +16,28 @@ SPBC32F12.17		2015-12-11	complement(2805085..2805417)	not protein-coding	PMID:24
 SPCC417.04		2015-12-11	1673314..1673856	not protein-coding	PMID:24929437, PMID:26615217
 SPCC622.05		2015-12-11	1408164..1408511	not protein-coding	PMID:24929437, PMID:26615217
 SPBC1685.12c		2015-12-11	complement(523887..524240)	not protein-coding	PMID:24929437, PMID:26615217
-SPAC1F8.09c		2012-09-13	complement(96091..96345)	annotated in error	
-SPAC1F12.03c		2012-07-16	complement(join(3810367..3810458,3810639..3810660))	removed; replaced by a nuclear mitochondrial pseudogene (NUMT) feature	
+SPAC1F8.09c		2012-09-13	complement(96091..96345)	annotated in error	PomBase curators
+SPAC1F12.03c		2012-07-16	complement(join(3810367..3810458,3810639..3810660))	removed; replaced by a nuclear mitochondrial pseudogene (NUMT) feature	PomBase curators
 SPBC1348.13		2011-11-20	36892..37188	Coordinates updated; now annotated as nuclear mitochondrial pseudogene (SO:0001044). Merged into SPNUMT.1	PomBase curators
 SPCC18.19		2011-05-09	1982501..1982719	Merged into SPCC18.20	PomBase curators
-SPAC17A2.15		2011-03-24	join(3569155..3569235,3569383..3569511)	was on the reverse strand of the N-terminal extension of SPAC17A2.08	
+SPAC17A2.15		2011-03-24	join(3569155..3569235,3569383..3569511)	was on the reverse strand of the N-terminal extension of SPAC17A2.08	PomBase curators
 SPAC13F5.08	vts1	2011-03-24	complement(join(2178651..2178887,2179020..2179117,2179380..2179482))	Merged into SPAC13F5.04c	PomBase curators
-SPBPB2B2.04		2010-09-28	4464941..4465474	no coding region	
-SPBPB2B2.03c		2010-09-28	complement(4462609..4464024)	no coding region	
-SPBCPT2R1.09c		2010-09-28	complement(4517649..4519024)	no coding region	
-SPBC11C11.12		2010-05-20	3360974..3361072	cob intron fragment currently annotated as pseudogene	
+SPBPB2B2.04		2010-09-28	4464941..4465474	no coding region	PomBase curators
+SPBPB2B2.03c		2010-09-28	complement(4462609..4464024)	no coding region	PomBase curators
+SPBCPT2R1.09c		2010-09-28	complement(4517649..4519024)	no coding region	PomBase curators
+SPBC11C11.12		2010-05-20	3360974..3361072	cob intron fragment currently annotated as pseudogene	PomBase curators
 SPBC14C8.08c		2009-02-19	complement(2219430..2219978)	merged with SPBC14C8.09c; frameshifted	PMID:16823372
 SPAC27D7.10c		2008-09-22	complement(4526425..4527576)	Merged into SPAC27D7.09c	PomBase curators
 SPAC6F6.18c	mug169	2008-07-16	complement(2764798..2765163)	merged with SPAC6F6.16c	PMID:18535244
-SPAC1002.21		2008-01-23	complement(1834875..1835321)	was annotated as dubious but based on position in uracil regulatable operon, as this CDS does not appear to be transcribed. t is possible that the localization data is an artifact of the combination of overexpression and hydrophobicity. The protein sequence is also a strange composition, and there is no ortholog in octosporus or japonicus genomes. On balance, taking into account all of the available features and contextual information, it is unlikely that this feature codes for a bona fide protein.	
+SPAC1002.21		2008-01-23	complement(1834875..1835321)	was annotated as dubious but based on position in uracil regulatable operon, as this CDS does not appear to be transcribed. t is possible that the localization data is an artifact of the combination of overexpression and hydrophobicity. The protein sequence is also a strange composition, and there is no ortholog in octosporus or japonicus genomes. On balance, taking into account all of the available features and contextual information, it is unlikely that this feature codes for a bona fide protein.	PomBase curators
 SPAC12D12.09	rev7	2008-01-23	join(2313544..2313574,2313624..2313650,2313694..2313744,2313785..2313897,2313940..2314055,2314104..2314207,2314277..2314476)	Merged into SPBC12D12.09	PomBase curators
 SPAC22E12.15		2008-01-23	join(5049001..5049055,5049138..5049149,5049253..5049365)	previously annotated as dubious but dubious splice prediction; unsupported by Solexa transcript data	PMID:18488015
 SPAC8E11.09c		2008-01-23	join(3374696..3374952,3375206..3375404)	previously annotated as dubious but no evidence for splicing, and non-canonical splice sites; unsupported by Solexa transcript data	PMID:18488015
-SPAC8C9.20		2008-01-23	join(3663780..3663800,3663885..3663951,3663983..3664076,3664130..3664217)	non consensus branch sites, and no coverage with transcriptome data	
+SPAC8C9.20		2008-01-23	join(3663780..3663800,3663885..3663951,3663983..3664076,3664130..3664217)	non consensus branch sites, and no coverage with transcriptome data	PomBase curators
 SPBC18H10.21c		2007-12-19	complement(join(1811244..1811537,1812093..1812272))	alias SPBC9B6.01c; dubious; unsupported by Solexa transcript data	PMID:18488015
 SPAC4G8.15c		2007-12-19	complement(join(766607..766720,766810..766836))	dubious; unsupported by Solexa transcript data	PMID:18488015
 SPCC2H8.03		2007-12-19	join(830489..830498,830560..830777)	dubious; unsupported by Solexa transcript data	PMID:18488015
 SPAC22E12.12		2007-12-19	join(5043251..5043480,5043529..5043589)	dubious; unsupported by Solexa transcript data. unsupported by Solexa transcript data and largely overlapping with 3' UTR of rpl24-3	PMID:18488015
 SPAPB18E9.03c		2007-12-19	complement(join(3981978..3982082,3982179..3982198,3982306..3982315))	dubious; unsupported by Solexa transcript data	PMID:18488015
-SPAC1250.04	atl1	2006-11-20	5098013..5098339		
+SPAC1250.04	atl1	2006-11-20	5098013..5098339		PomBase curators
 SPCC18B5.12		2004-09-15	join(741745..741781,741830..742503)	Merged into SPCC14G10.01	PomBase curators

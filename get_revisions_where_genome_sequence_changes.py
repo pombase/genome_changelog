@@ -51,6 +51,7 @@ output.sort_values(['date','new_revision', 'chromosome'], ascending=[False, Fals
 
 def formatting_function(r):
     return f'https://curation.pombase.org/pombe-embl-repo/trunk/{r["chromosome"]}.contig?p={r["previous_revision"]}'
+output['reference'] = ''
 output['link'] = output.apply(formatting_function, axis=1)
 
 output.to_csv(args.output_file, sep='\t', index=False)
