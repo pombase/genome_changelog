@@ -117,8 +117,8 @@ genome_dict = merge_multi_transcript_in_genome_dict(genome_dict, set(pandas.read
 
 genome_changes_summary.loc[new_genes_without_reference, 'reference_addition'] = genome_changes_summary.loc[new_genes_without_reference, 'systematic_id'].apply(lambda x: ','.join(sorted(set(get_locus_references(genome_dict[x])))))
 
-# use "PomBase curators" for merges
-genome_changes_summary.loc[genome_changes_summary['category'].apply(lambda x: 'merged' in x) & (genome_changes_summary['reference_removal'] == ''), 'reference_removal'] = 'PomBase curators'
+# use "PomBase curators" for merges and removals
+genome_changes_summary.loc[genome_changes_summary['category'].apply(lambda x: ('merged' in x) or ('removed' in x)) & (genome_changes_summary['reference_removal'] == ''), 'reference_removal'] = 'PomBase curators'
 
 genome_changes_summary.to_csv('results/genome_changes_summary_comments.tsv', sep='\t', index=False)
 
