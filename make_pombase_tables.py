@@ -80,4 +80,8 @@ removed = data['Before / After change'] == 'removed'
 data.loc[removed, 'Before / After change'] = 'before'
 data.loc[~removed, 'Before / After change'] = 'after'
 
-data[['Date', 'Systematic ID', 'Primary name', 'Before / After change', 'Coordinates', 'Comment', 'Reference']].to_csv('results/pombase_tables/gene-coordinate-change-data.tsv', sep='\t', index=False)
+output_columns = ['Date', 'Systematic ID', 'Primary name', 'Before / After change', 'Coordinates', 'Comment', 'Reference']
+
+data.loc[data.feature_type == 'CDS', output_columns].to_csv('results/pombase_tables/gene-coordinate-change-data-protein-coding.tsv', sep='\t', index=False)
+data.loc[data.feature_type != 'CDS', output_columns].to_csv('results/pombase_tables/gene-coordinate-change-data-RNA.tsv', sep='\t', index=False)
+
