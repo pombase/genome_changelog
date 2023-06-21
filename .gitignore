@@ -12,3 +12,5 @@ pre_svn_qualifier_changes_file.tsv
 /gene_changes_comments_and_pmids/*.tsv
 /test_folder
 /latest_genome
+gene_characterisation_status/data
+gene_characterisation_status/*.tsv

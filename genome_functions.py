@@ -197,7 +197,7 @@ def read_pombe_genome(file_name, format, synonym_dictionary, all_systematic_ids_
             raise ValueError('\\gene or systematic_id qualifier contains more than one systematic_id and not included in known_exceptions', systematic_ids)
 
     for feature in contig.features:
-        if 'systematic_id' in feature.qualifiers and len(feature.qualifiers['systematic_id']) > 1:
+        if 'systematic_id' in feature.qualifiers and len(list(set(feature.qualifiers['systematic_id']))) > 1:
             new_systematic_id = resolve_multiple_indentifiers(feature.qualifiers['systematic_id'], known_exception_dict_systematic_id_qualifiers)
             if new_systematic_id:
                 feature.qualifiers['systematic_id'] = new_systematic_id
