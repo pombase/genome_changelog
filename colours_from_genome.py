@@ -4,16 +4,9 @@ import pandas
 import re
 import glob
 import os
+import sys
 
 synonym_dict = make_synonym_dict('valid_ids_data/gene_IDs_names.tsv', 'valid_ids_data/obsoleted_ids.tsv', 'valid_ids_data/missing_synonyms.tsv')
-
-def parse_genome(genome_file, date):
-    # Special reader for old genomes handles several edge-cases
-    if date < '2023-03-01':
-        return read_pombe_genome(genome_file, 'embl', synonym_dict, 'valid_ids_data/all_systematic_ids_ever.txt','valid_ids_data/known_exceptions.tsv')
-    else:
-        with open(genome_file, errors='replace') as ins:
-            return SeqIO.read(ins,'embl')
 
 def count_colours(revision_folder):
     counts_file = f'{revision_folder}/counts.txt'
@@ -22,7 +15,7 @@ def count_colours(revision_folder):
     colours = list()
     for contig_file in glob.glob(f'{revision_folder}/*.contig'):
         print(f'    {contig_file}')
-        genome = parse_genome(contig_file, row['date'])
+        genome = read_pombe_genome(contig_file, 'embl', synonym_dict, 'valid_ids_data/all_systematic_ids_ever.txt','valid_ids_data/known_exceptions.tsv')
         cds_features = [feature for feature in genome.features if feature.type == 'CDS']
 
         locus_ids = set(pandas.read_csv('valid_ids_data/gene_IDs_names.tsv', delimiter='\t', na_filter=False, dtype=str)['systematic_id'])
@@ -43,7 +36,9 @@ def count_colours(revision_folder):
             # Sometimes there are repeated colours
             colour = list(set(feature.qualifiers['colour']))
             if len(colour) != 1:
-                raise ValueError(f'two colours in {systematic_id}')
+                print(f'two colours in {systematic_id}')
+                # The minimal value is the highest level of characterisation
+                colour = [min(colour)]
             colours.append(int(colour[0]))
 
 
@@ -53,9 +48,6 @@ def count_colours(revision_folder):
 
 
 if __name__ == '__main__':
-    revision_data = pandas.read_csv('gene_characterisation_status/revisions_monthly.tsv', delimiter='\t', na_filter=False, dtype=str)
-
-    for i, row in revision_data.iterrows():
-        print(f'Counting for {row["revision"]}')
-        count_colours(f'gene_characterisation_status/data/{row["revision"]}')
-        
+    for folder in sys.argv[1:]:
+        print(f'Counting for {folder}')
+        count_colours(folder)
