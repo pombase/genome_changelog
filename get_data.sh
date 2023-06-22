@@ -8,7 +8,7 @@ curl -L https://github.com/pombase/genome_changelog/releases/latest/download/pre
 # get latest genome contig files
 mkdir -p latest_genome
 
-contigs='chromosome1 chromosome2 chromosome3 mating_type_region pMIT'
+contigs='chromosome1 chromosome2 chromosome3 mating_type_region pMIT telomeric'
 for contig in $contigs
 do
     svn export --force https://curation.pombase.org/pombe-embl-repo/trunk/${contig}.contig latest_genome/${contig}.contig

@@ -9,7 +9,7 @@ import tempfile
 
 print('obsolete_id','systematic_id',sep='\t')
 
-for contig_file in 'chromosome1 chromosome2 chromosome3 mating_type_region pMIT'.split():
+for contig_file in 'chromosome1 chromosome2 chromosome3 mating_type_region pMIT telomeric'.split():
 
     # Get all revisions downloaded and use the latest one to read the info
     downloaded_revisions = glob.glob(f'data/{contig_file}/*.contig')

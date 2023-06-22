@@ -48,7 +48,7 @@ for date, revision in zip(data['date'], data['revision']):
     if not os.path.isdir(f'data/{revision}'):
         os.mkdir(f'data/{revision}')
 
-    for contig in 'chromosome1 chromosome2 chromosome3 mating_type_region pMIT'.split(' '):
+    for contig in 'chromosome1 chromosome2 chromosome3 mating_type_region pMIT telomeric'.split(' '):
         if os.path.isfile(f'data/{revision}/{contig}.contig'):
             continue
         print(f'downloading data/{revision}/{contig}...')

@@ -4,7 +4,7 @@ import glob
 
 main_url = 'https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/'
 
-contigs = ['chromosome1','chromosome2','chromosome3','mating_type_region','pMIT']
+contigs = ['chromosome1','chromosome2','chromosome3','mating_type_region','pMIT', 'telomeric']
 
 with open('results/pre_svn_folder_list.tsv') as ins:
 
