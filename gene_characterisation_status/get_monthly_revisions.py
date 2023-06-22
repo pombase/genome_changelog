@@ -36,7 +36,11 @@ data['date'] = data['date'].dt.date
 data.to_csv('revisions_monthly.tsv', sep='\t', index=False)
 
 # Download them if they are new
-existing_dates = set(pandas.read_csv('results/formatted_counts.tsv', sep='\t')['date'])
+if os.path.isfile('results/formatted_counts.tsv'):
+    existing_dates = set(pandas.read_csv('results/formatted_counts.tsv', sep='\t')['date'])
+else:
+    # The file might be absent if running run_for_old_data.sh
+    existing_dates = set()
 
 if not os.path.isdir('data'):
     os.mkdir('data')

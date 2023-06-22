@@ -1,5 +1,7 @@
 set -e
 
+rm -f results/*.tsv
+
 svn log https://curation.pombase.org/pombe-embl-repo > svn_revisions.txt
 
 python format_revisions.py
