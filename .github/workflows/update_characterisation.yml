@@ -1,0 +1,36 @@
+name: Update characterisation
+on:
+  workflow_dispatch:
+  # Run the second day of each month
+  schedule:
+    - cron: "0 0 2 * *"
+
+jobs:
+  update-file:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          ref: master
+      - name: Install Python
+        uses: actions/setup-python@v1
+        with:
+          python-version: 3.9
+      - name: Install dependencies
+        run: |
+          sudo apt-get install subversion -y
+          python -m pip install --upgrade pip
+          pip install poetry
+          poetry config virtualenvs.create false
+          poetry install --no-dev
+      - name: Update file
+        run: |
+          cd gene_characterisation_status
+          bash update_characterisation.sh
+      - name: Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: updated to last revision
+          file_pattern: "gene_characterisation_status/results/*.tsv gene_characterisation_status/results/*.svg"

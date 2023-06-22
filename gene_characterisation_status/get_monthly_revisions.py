@@ -35,12 +35,15 @@ data['date'] = data['date'].dt.date
 
 data.to_csv('revisions_monthly.tsv', sep='\t', index=False)
 
-# Download them
+# Download them if they are new
+existing_revisions = set(pandas.read_csv('results/formatted_counts.tsv', sep='\t')['revision'])
 
 if not os.path.isdir('data'):
     os.mkdir('data')
 
 for revision in data['revision']:
+    if revision in existing_revisions:
+        continue
     if not os.path.isdir(f'data/{revision}'):
         os.mkdir(f'data/{revision}')
 

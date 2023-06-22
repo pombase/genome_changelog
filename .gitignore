@@ -15,3 +15,4 @@ pre_svn_qualifier_changes_file.tsv
 gene_characterisation_status/data
 gene_characterisation_status/pre_svn_data
 gene_characterisation_status/*.tsv
+gene_characterisation_status/*.txt

@@ -1,5 +1,4 @@
 from genome_functions import read_pombe_genome, make_synonym_dict
-from custom_biopython import SeqIO
 import pandas
 import re
 import glob
