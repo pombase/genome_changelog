@@ -33,3 +33,4 @@ done > svn_counts.tsv
 
 # Merge the counts
 python merge_counts_old.py
+python format_counts.py
