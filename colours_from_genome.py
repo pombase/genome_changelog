@@ -9,9 +9,11 @@ synonym_dict = make_synonym_dict('valid_ids_data/gene_IDs_names.tsv', 'valid_ids
 
 def count_colours(revision_folder):
     counts_file = f'{revision_folder}/counts.txt'
+    id_color_file = f'{revision_folder}/id_color.tsv'
     if os.path.isfile(counts_file):
         return
     colours = list()
+    id_color = list()
     for contig_file in glob.glob(f'{revision_folder}/*.contig'):
         print(f'    {contig_file}')
         genome = read_pombe_genome(contig_file, 'embl', synonym_dict, 'valid_ids_data/all_systematic_ids_ever.txt','valid_ids_data/known_exceptions.tsv')
@@ -39,11 +41,16 @@ def count_colours(revision_folder):
                 # The minimal value is the highest level of characterisation
                 colour = [min(colour)]
             colours.append(int(colour[0]))
+            id_color.append((systematic_id, colour[0]))
 
 
     with open(counts_file, 'w') as out:
         out.write(' '.join(str(colours.count(i)) for i in range(16)))
         out.write('\n')
+
+    data = pandas.DataFrame(id_color, columns=['systematic_id', 'colour'])
+    data.to_csv(id_color_file, sep='\t', index=False)
+
 
 
 if __name__ == '__main__':

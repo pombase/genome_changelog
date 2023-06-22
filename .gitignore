@@ -16,3 +16,4 @@ gene_characterisation_status/data
 gene_characterisation_status/pre_svn_data
 gene_characterisation_status/*.tsv
 gene_characterisation_status/*.txt
+gene_characterisation_status/latest_revision/*.contig

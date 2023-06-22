@@ -28,9 +28,10 @@ jobs:
       - name: Update file
         run: |
           cd gene_characterisation_status
+          bash get_latest_numbers.sh
           bash update_characterisation.sh
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: updated to last revision
-          file_pattern: "gene_characterisation_status/results/*.tsv gene_characterisation_status/results/*.svg"
+          file_pattern: "gene_characterisation_status/results/*.tsv gene_characterisation_status/results/*.svg gene_characterisation_status/latest_revision/*.txt gene_characterisation_status/latest_revision/*.tsv"
