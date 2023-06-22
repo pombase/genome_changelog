@@ -36,13 +36,14 @@ data['date'] = data['date'].dt.date
 data.to_csv('revisions_monthly.tsv', sep='\t', index=False)
 
 # Download them if they are new
-existing_revisions = set(pandas.read_csv('results/formatted_counts.tsv', sep='\t')['revision'])
+existing_dates = set(pandas.read_csv('results/formatted_counts.tsv', sep='\t')['date'])
 
 if not os.path.isdir('data'):
     os.mkdir('data')
 
-for revision in data['revision']:
-    if revision in existing_revisions:
+for date, revision in zip(data['date'], data['revision']):
+    # We check for the date and not the revision, because mergeasof can give different revisions for same date
+    if str(date) in existing_dates:
         continue
     if not os.path.isdir(f'data/{revision}'):
         os.mkdir(f'data/{revision}')
