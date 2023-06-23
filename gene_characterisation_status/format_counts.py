@@ -22,5 +22,7 @@ plt.stackplot(all_data['date'], all_data['published'], all_data['inferred_role']
 plt.xlim([datetime.date(2003,6,1), datetime.date.today()])
 # place the legend outside the plot
 plt.legend(loc='lower center', bbox_to_anchor=(0.5, 1), ncol=2)
+plt.xlabel('Year', fontsize=15)
+plt.ylabel('Number of genes', fontsize=15)
 plt.tight_layout()
 plt.savefig('results/figure.svg')
