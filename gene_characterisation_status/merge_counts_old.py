@@ -11,4 +11,4 @@ svn_counts = svn_counts.merge(revisions_monthly, on='revision')
 
 all_data = pandas.concat([pre_svn_counts, svn_counts]).sort_values('date')
 
-all_data.to_csv('results/formatted_counts.tsv', sep='\t', index=False)
+all_data.to_csv('results/merged_counts.tsv', sep='\t', index=False)

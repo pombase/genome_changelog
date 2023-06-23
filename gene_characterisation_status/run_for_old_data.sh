@@ -1,21 +1,21 @@
 set -e
 
-rm -f results/*.tsv
+# rm -f results/*.tsv
 
-svn log https://curation.pombase.org/pombe-embl-repo > svn_revisions.txt
+# svn log https://curation.pombase.org/pombe-embl-repo > svn_revisions.txt
 
-python format_revisions.py
-python get_monthly_revisions.py
+# python format_revisions.py
+# python get_monthly_revisions.py
 
-cd ..
-python colours_from_genome.py gene_characterisation_status/data/*
-python get_ftp_site_files.py
+# cd ..
+# python colours_from_genome.py gene_characterisation_status/data/*
+# python get_ftp_site_files.py
 
-cd gene_characterisation_status
-python format_pre_svn_data.py
+# cd gene_characterisation_status
+# python format_pre_svn_data.py
 
-cd ..
-python colours_from_genome.py gene_characterisation_status/pre_svn_data/*
+# cd ..
+# python colours_from_genome.py gene_characterisation_status/pre_svn_data/*
 
 # Gather the counts
 
