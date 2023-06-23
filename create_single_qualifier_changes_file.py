@@ -17,6 +17,7 @@ chromosome_dictionary = {
     'chromosome3': 'III',
     'mating_type_region': 'mating_type_region',
     'pMIT': 'mitochondrial',
+    'telomeric': 'telomeric',
     }
 
 all_lines = list()

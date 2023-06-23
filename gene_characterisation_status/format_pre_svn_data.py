@@ -4,7 +4,7 @@ import shutil
 
 # This script requires having run get_ftp_site_files.py first
 
-contigs = ['chromosome1','chromosome2','chromosome3','mating_type_region','pMIT']
+contigs = ['chromosome1','chromosome2','chromosome3','mating_type_region','pMIT', 'telomeric']
 
 with open('../results/pre_svn_folder_list.tsv') as ins:
     ftp_folders = [l.strip() for l in ins.readlines()]

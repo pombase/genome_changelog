@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Get the revisions where each contig was modified
-contigs='chromosome1 chromosome2 chromosome3 mating_type_region pMIT'
+contigs='chromosome1 chromosome2 chromosome3 mating_type_region pMIT telomeric'
 
 for contig in $contigs
 do

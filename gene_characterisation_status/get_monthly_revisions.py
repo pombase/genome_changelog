@@ -36,7 +36,11 @@ data['date'] = data['date'].dt.date
 data.to_csv('revisions_monthly.tsv', sep='\t', index=False)
 
 # Download them if they are new
-existing_dates = set(pandas.read_csv('results/formatted_counts.tsv', sep='\t')['date'])
+if os.path.isfile('results/formatted_counts.tsv'):
+    existing_dates = set(pandas.read_csv('results/formatted_counts.tsv', sep='\t')['date'])
+else:
+    # The file might be absent if running run_for_old_data.sh
+    existing_dates = set()
 
 if not os.path.isdir('data'):
     os.mkdir('data')
@@ -48,7 +52,7 @@ for date, revision in zip(data['date'], data['revision']):
     if not os.path.isdir(f'data/{revision}'):
         os.mkdir(f'data/{revision}')
 
-    for contig in 'chromosome1 chromosome2 chromosome3 mating_type_region pMIT'.split(' '):
+    for contig in 'chromosome1 chromosome2 chromosome3 mating_type_region pMIT telomeric'.split(' '):
         if os.path.isfile(f'data/{revision}/{contig}.contig'):
             continue
         print(f'downloading data/{revision}/{contig}...')

@@ -12,7 +12,7 @@ class PipelineTest(unittest.TestCase):
         """
         Check that the info in genome_changes_summary.tsv is correct
         """
-        chromosomes = ['chromosome1','chromosome2','chromosome3','mating_type_region','pMIT']
+        chromosomes = ['chromosome1','chromosome2','chromosome3','mating_type_region','pMIT', 'telomeric']
         if not os.path.isdir('test_folder'):
             os.mkdir('test_folder')
 

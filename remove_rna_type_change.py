@@ -15,6 +15,7 @@ chromosome_dictionary = {
     'chromosome3': 'III',
     'mating_type_region': 'mating_type_region',
     'pMIT': 'mitochondrial',
+    'telomeric': 'telomeric',
 }
 
 genome_changes = pandas.read_csv('results/genome_sequence_changes.tsv',sep='\t',na_filter=False)
