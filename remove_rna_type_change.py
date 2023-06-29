@@ -20,7 +20,7 @@ chromosome_dictionary = {
 
 genome_changes = pandas.read_csv('results/genome_sequence_changes.tsv',sep='\t',na_filter=False)
 genome_changes['chromosome'] = genome_changes['chromosome'].apply(lambda x : chromosome_dictionary[x])
-genome_changes['combined_column'] = genome_changes.apply(lambda r: [r['new_revision'], r['chromosome']], axis=1)
+genome_changes['combined_column'] = genome_changes.apply(lambda r: [r['revision'], r['chromosome']], axis=1)
 
 for input_file in input_files:
     output_file = input_file.split('.')[0] + '_no_type_change.tsv'

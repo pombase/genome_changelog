@@ -65,6 +65,7 @@ def formatting_function(r):
             return f'https://curation.pombase.org/pombe-embl-repo/{r["chromosome"]}.contig/trunk/?p={revision}'
 
 output['reference'] = ''
+output['link'] = ''
 if not output.empty:
     output['link'] = output.apply(formatting_function, axis=1)
 
