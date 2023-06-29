@@ -17,3 +17,5 @@ gene_characterisation_status/pre_svn_data
 gene_characterisation_status/*.tsv
 gene_characterisation_status/*.txt
 gene_characterisation_status/latest_revision/*.contig
+verify_accession_numbers/*.embl
+verify_accession_numbers/*.gb

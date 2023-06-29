@@ -12,14 +12,35 @@ import re
 # We override this method to allow no space between number and BP
 @staticmethod
 def permissive_seq_length_scanner(consumer, text):
-    length_parts = text.split()
-    if len(length_parts) == 1:
-        length_parts = re.match('(\d+)([^\d]+)',text).groups()
+    length_parts = re.match('(\d+)([^\d]+)',text).groups()
     assert len(length_parts) == 2, "Invalid sequence length string %r" % text
-    assert length_parts[1].upper() in ["BP", "BP.", "AA", "AA."]
+    assert length_parts[1].upper().strip() in ["BP", "BP.", "AA", "AA.", "P.", "B P."]
     consumer.size(length_parts[0])
 
+def permissive_first_line_scanner(self, consumer, line):
+    assert line[: self.HEADER_WIDTH].rstrip() == "ID"
+    if line[self.HEADER_WIDTH :].count(";") == 6:
+        # Looks like the semi colon separated style introduced in 2006
+        self._feed_first_line_new(consumer, line)
+    elif line[self.HEADER_WIDTH :].count(";") == 3:
+        if line.rstrip().endswith(" SQ"):
+            # EMBL-bank patent data
+            self._feed_first_line_patents(consumer, line)
+        else:
+            # Looks like the pre 2006 style
+            self._feed_first_line_old(consumer, line)
+    elif line[self.HEADER_WIDTH :].count(";") == 2:
+        # Looks like KIKO patent data
+        self._feed_first_line_patents_kipo(consumer, line)
+    # Special case for mating type region file
+    elif 'XaviM' in line:
+        self._feed_first_line(consumer, line + "; SV 1; linear; genomic DNA; STD; FUN; 19433 BP.")
+    else:
+        raise ValueError("Did not recognise the ID line layout:\n" + line)
+
 EmblScanner._feed_seq_length = permissive_seq_length_scanner
+EmblScanner._feed_first_line = permissive_first_line_scanner
+
 
 
 def features_are_equal(self: SeqFeature, other):

@@ -32,6 +32,10 @@ for folder in args.data_folders:
     if contig_file_name in skip_files:
         revisions = [r for r in revisions if r.split()[0] not in skip_files[contig_file_name]]
 
+    # Add first revision to the list if working with pre_svn data
+    if 'pre_svn_data' in folder:
+        first_revision_list = revisions[-1].split()
+        all_changes.append([first_revision_list[0], first_revision_list[2], contig_file_name])
 
     for new_revision,old_revision in zip(revisions[:-1],revisions[1:]):
 
@@ -44,13 +48,22 @@ for folder in args.data_folders:
 
         # Check if genome sequence has changed, in that case we use a custom SeqFeature that takes longer to load
         if genome_sequences_are_different(new_genome_file, old_genome_file):
-            all_changes.append([old_revision_list[0], new_revision_list[0], new_revision_list[2], contig_file_name])
+            all_changes.append([new_revision_list[0], new_revision_list[2], contig_file_name])
 
-output = pandas.DataFrame(all_changes, columns=['previous_revision', 'new_revision', 'date', 'chromosome'])
-output.sort_values(['date','new_revision', 'chromosome'], ascending=[False, False, True],inplace=True)
+output = pandas.DataFrame(all_changes, columns=['revision', 'date', 'chromosome'])
+output.sort_values(['date','revision', 'chromosome'], ascending=[False, False, True],inplace=True)
 
 def formatting_function(r):
-    return f'https://curation.pombase.org/pombe-embl-repo/trunk/{r["chromosome"]}.contig?p={r["previous_revision"]}'
+    revision = r['revision']
+
+    if r['date'] <= '2011-04-18':
+        return f'https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/{revision}/{r["chromosome"]}.contig'
+    else:
+        if int(revision) < 374:
+            return f'https://curation.pombase.org/pombe-embl-repo/{r["chromosome"]}.contig?p={revision}'
+        else:
+            return f'https://curation.pombase.org/pombe-embl-repo/{r["chromosome"]}.contig/trunk/?p={revision}'
+
 output['reference'] = ''
 output['link'] = output.apply(formatting_function, axis=1)
 
