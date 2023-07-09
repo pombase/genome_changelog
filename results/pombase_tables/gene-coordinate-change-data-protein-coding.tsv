@@ -1175,8 +1175,8 @@ Date	Systematic ID	Primary name	Before / After change	Coordinates	Comment	Refere
 2008-07-16	SPCC338.08	ctp1	before	III:complement(join(1358891..1359082,1359121..1359819))		
 2008-07-16	SPCC962.05	ast1	after	III:join(554521..554744,554865..556200)		pers. comm. Matthew O’Connell
 2008-07-16	SPCC962.05	ast1	after	III:join(554521..554744,554865..556200)	intron position moved	pers comm. M. O’Connell
-2008-07-16	SPCC962.05		before	III:join(554521..554722,554792..556200)		pers. comm. Matthew O’Connell
 2008-07-16	SPCC962.05		before	III:join(554521..554722,554792..556200)	intron position moved	pers comm. M. O’Connell
+2008-07-16	SPCC962.05		before	III:join(554521..554722,554792..556200)		pers. comm. Matthew O’Connell
 2008-05-12	SPAC31G5.12c	maf1	after	I:complement(join(3008184..3008795,3008914..3008957,3009044..3009089))		
 2008-05-12	SPAC31G5.12c	maf1	before	I:complement(join(3008184..3008795,3008893..3008928))		
 2008-04-18	SPBC16C6.02c	vps1302	after	II:complement(join(4322829..4331555,4331641..4331793,4331856..4331968,4332007..4332028))	also adds new gene SPBC16C6.14, complement(4322221..4322622)	PMID:18367542
