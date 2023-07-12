@@ -13877,7 +13877,7 @@ III	SPCC962.04		5'UTR	553165..553184	2011-03-24	PMID:18641648,PMID:20118936					
 III	SPCC962.05		3'UTR	556201..556248	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 III	SPCC962.05		5'UTR	553995..554520	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk/?p=8649
 III	SPCC962.05		5'UTR	554379..554520	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
-III	SPCC962.05		CDS	join(554521..554722,554792..556200)	2008-07-16			pers comm. M. O’Connell,pers. comm. Matthew O’Connell		intron position moved		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20080512/
+III	SPCC962.05		CDS	join(554521..554722,554792..556200)	2008-07-16			pers. comm. Matthew O’Connell,pers comm. M. O’Connell		intron position moved		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20080512/
 III	SPCC962.06c		3'UTR	complement(556303..556395)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 III	SPCC962.06c		5'UTR	complement(558204..558226)	2011-03-04							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110204/
 III	SPCC962.06c		5'UTR	complement(558206..558226)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
