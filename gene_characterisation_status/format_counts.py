@@ -15,9 +15,13 @@ all_data['fission_yeast_unknown'] = all_data['counts'].apply(lambda x: x[8] + x[
 all_data.drop(columns=['counts'], inplace=True)
 all_data.to_csv('results/formatted_counts.tsv', sep='\t', index=False)
 
+colors = ['#FB363B', '#FD852C', '#F0EDBF', '#88bb92' ]
+# colors = ['#f6565a', '#fdb42c', '#a4e4b0']
+
+labels = ['Published', 'Inferred role', 'Conserved unknown', 'Fission yeast unknown']
 # Plot a stackplot of the counts
 plt.figure()
-plt.stackplot(all_data['date'], all_data['published'], all_data['inferred_role'], all_data['conserved_unknown'], all_data['fission_yeast_unknown'], labels=['Published', 'Inferred role', 'Conserved unknown', 'Fission yeast unknown'])
+plt.stackplot(all_data['date'], all_data['published'], all_data['inferred_role'], all_data['conserved_unknown'], all_data['fission_yeast_unknown'], labels=labels, colors=colors)
 
 plt.xlim([datetime.date(2003,6,1), datetime.date.today()])
 # place the legend outside the plot
