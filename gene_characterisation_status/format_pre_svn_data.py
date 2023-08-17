@@ -1,4 +1,3 @@
-import pandas
 import os
 import shutil
 
