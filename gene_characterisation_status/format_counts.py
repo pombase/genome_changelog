@@ -29,6 +29,11 @@ plt.stackplot(all_data['date'], all_data['published'], all_data['inferred_role']
 plt.xlim([datetime.date(2003,6,1), datetime.date.today()])
 # place the legend outside the plot
 plt.legend(loc='lower center', bbox_to_anchor=(0.5, 1), ncol=2)
+
+fig, ax = plt.subplots()
+ax.spines.top.set(visible=False)
+ax.spines.right.set(visible=False)
+
 plt.xlabel('Year', fontsize=15)
 plt.ylabel('Number of proteins', fontsize=15)
 plt.tight_layout()
