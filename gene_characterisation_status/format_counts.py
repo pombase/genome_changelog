@@ -23,16 +23,16 @@ labels = [ 'Published', 'Inferred role', 'Conserved unknown', 'Fission yeast unk
 colors = [color_settings[x] for x in labels]
 
 # Plot a stackplot of the counts
-plt.figure()
+fig = plt.figure()
+ax = fig.add_subplot(1,1,1)
+ax.spines.top.set(visible=False)
+ax.spines.right.set(visible=False)
+
 plt.stackplot(all_data['date'], all_data['published'], all_data['inferred_role'], all_data['conserved_unknown'], all_data['fission_yeast_unknown'], labels=labels, colors=colors)
 
 plt.xlim([datetime.date(2003,6,1), datetime.date.today()])
 # place the legend outside the plot
 plt.legend(loc='lower center', bbox_to_anchor=(0.5, 1), ncol=2)
-
-fig, ax = plt.subplots()
-ax.spines.top.set(visible=False)
-ax.spines.right.set(visible=False)
 
 plt.xlabel('Year', fontsize=15)
 plt.ylabel('Number of proteins', fontsize=15)
