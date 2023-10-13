@@ -25,6 +25,8 @@ colors = [color_settings[x] for x in labels]
 # Plot a stackplot of the counts
 fig = plt.figure()
 ax = fig.add_subplot(1,1,1)
+ax.set_aspect(0.8)
+
 ax.spines.top.set(visible=False)
 ax.spines.right.set(visible=False)
 
