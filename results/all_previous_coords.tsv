@@ -8751,7 +8751,9 @@ II	SPBC25D12.04		5'UTR	3721621..3721754	2023-01-12	PMID:21511999						https://cu
 II	SPBC25D12.04		5'UTR	3721622..3721754	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 II	SPBC25D12.05		3'UTR	3725030..3725090	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 II	SPBC25D12.05		5'UTR	3723013..3723382	2022-08-25							https://curation.pombase.org/pombe-embl-repo/trunk/?p=8405
+II	SPBC25D12.05		5'UTR	3723433..3723454	2023-10-15							https://curation.pombase.org/pombe-embl-repo/trunk/?p=9227
 II	SPBC25D12.05	trm1	CDS	3723383..3725029	2022-08-25							https://curation.pombase.org/pombe-embl-repo/trunk/?p=8405
+II	SPBC25D12.05	trm1	CDS	3723455..3725029	2023-10-15							https://curation.pombase.org/pombe-embl-repo/trunk/?p=9227
 II	SPBC25D12.06		3'UTR	3727128..3727234	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 II	SPBC25D12.06		5'UTR	3725278..3725369	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk/?p=8649
 II	SPBC25D12.06		5'UTR	3725363..3725429	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
