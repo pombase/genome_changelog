@@ -1,4 +1,7 @@
 revision	user	date	chromosome	systematic_id	primary_name	feature_type	added_or_removed	value	db_xref	pombase_reference	pombase_comments
+9253	vw253	2023-10-25	II	SPBC25D12.05.2		3'UTR	added	3725030..3725138			
+9251	vw253	2023-10-24	II	SPBC25D12.05		3'UTR	removed	3725030..3725138			
+9251	vw253	2023-10-24	II	SPBC25D12.05.1		3'UTR	added	3725030..3725138			
 9228	vw253	2023-10-15	II	SPBC25D12.05		5'UTR	removed	3723433..3723454			
 9228	vw253	2023-10-15	II	SPBC25D12.05	trm1	CDS	removed	3723455..3725029			
 9228	vw253	2023-10-15	II	SPBC25D12.05.1	trm1	CDS	added	3723383..3725029			
