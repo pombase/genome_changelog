@@ -1124,7 +1124,7 @@ SPNCRNA.1046	I		lncRNA,misc_RNA,ncRNA	added_and_changed		2011-03-24	2023-01-16	5
 SPNCRNA.1047	I		lncRNA,misc_RNA,ncRNA	added_and_changed		2011-03-24	2023-01-16	complement(5119094..5120381)
 SPNCRNA.1048	I		lncRNA,misc_RNA,ncRNA	added_and_changed		2011-03-24	2023-01-16	complement(5122727..5123353)
 SPNCRNA.1049	I		lncRNA,misc_RNA,ncRNA	added_and_changed		2011-03-24	2023-01-16	5129191..5131963
-SPNCRNA.105	II		misc_RNA,ncRNA,snRNA	added_and_changed		2004-09-15	2023-07-11	4071111..4071312
+SPNCRNA.105	II		lncRNA,misc_RNA,ncRNA,snRNA	added_and_changed		2004-09-15	2023-10-27	4071111..4071312
 SPNCRNA.1050	I		lncRNA,misc_RNA,ncRNA	added_and_changed		2011-03-24	2023-01-16	complement(5136083..5137380)
 SPNCRNA.1051	I		lncRNA,misc_RNA,ncRNA	added_and_changed		2011-03-24	2023-01-16	complement(5140112..5142317)
 SPNCRNA.1052	I		lncRNA,misc_RNA,ncRNA	added_and_changed		2011-03-24	2023-01-16	complement(5152335..5153843)
