@@ -10490,6 +10490,7 @@ II	SPBC660.16		5'UTR	230269..230367	2023-01-12	PMID:21511999						https://curati
 II	SPBC660.16		5'UTR	230318..230367	2011-03-24	EMBL:D89161						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 II	SPBC660.17c		5'UTR	complement(234249..234309)	2023-01-12	EMBL:AU007990						https://curation.pombase.org/pombe-embl-repo/trunk/?p=8649
 II	SPBC685.02		5'UTR	2772768..2772883	2023-01-12	PMID:18641648,PMID:20118936						https://curation.pombase.org/pombe-embl-repo/trunk/?p=8649
+II	SPBC685.02	exo5	CDS	join(2772884..2773046,2773102..2773166,2773317..2774093,2774223..2774447)	2023-11-10							https://curation.pombase.org/pombe-embl-repo/trunk/?p=9299
 II	SPBC685.04c		3'UTR	complement(2776282..2776484)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 II	SPBC685.04c		5'UTR	complement(2776915..2777112)	2011-03-04							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110204/
 II	SPBC685.04c		5'UTR	complement(2776917..2777112)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
