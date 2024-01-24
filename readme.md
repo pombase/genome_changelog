@@ -28,8 +28,6 @@ bash update_file.sh
 # Commit changes
 ```
 
-A github action is there, but it won't work since the svn repo is not public.
-
 ## Installing dependencies
 
 To install the dependencies, we used poetry (see [poetry installation instructions](https://python-poetry.org/docs/)).
@@ -85,7 +83,8 @@ Necessary no matter what you do:
 bash get_data.sh
 ```
 
-### Access to the svn repository
+<!-- No longer important since reading from svn is now public, but kept here in case it's interesting -->
+<!-- ### Access to the svn repository
 
 You will need to make many calls to the svn server to download the files, you should set up ssh access:
 
@@ -102,7 +101,7 @@ exit
 
 # In the local machine - create an ssh key so you are not prompted for password each time
 ssh-copy-id username@curation.pombase.org
-```
+``` -->
 
 ### Getting the revisions that you want to analyse
 
