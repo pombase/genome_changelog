@@ -141,7 +141,7 @@ SPBC3E7.04c	pseudo->coding	pers. comm. Val Wood	2010-10-21
 SPBC1778.02		pers. comm. Yasushi Hiraoka	2010-10-21
 SPBC1348.12	pseudo->coding	pers. comm. Val Wood	2010-10-21
 SPBC12D12.09		pers. comm. Nicole Kosarek	2010-10-21
-SPAC3H1.04c		PMID:16823372	2010-10-21
+SPAC3H1.04c			2010-10-21
 SPAC22G7.04		pers. comm. James Iben	2010-10-20
 SPAC27F1.09c	added intron to match fully spliced	PMID:9837997	2010-09-27
 SPAC26H5.02c	second intron extended to 115 nt	pers. comm. Val Wood	2010-08-20
@@ -156,14 +156,14 @@ SPBC800.02	increased intron by 42bp 	pers. comm. Rob de Bruin	2009-07-27
 SPBC16E9.16c	gene structure revised to remove introns, genome sequence contains 2 frameshifts	PMID:18079165	2008-01-03
 SPBP23A10.07	truncated N-term to agree with orthologs; 2007960 -> 2008119	pers. comm. Val Wood	2009-03-30
 SPCC548.04	final exon 223687..223852 to 223687..223796, 223853.223860	pers. comm. Marc Feuermann, Uniprot (SIB)	2009-02-23
-SPCC1442.04c	frameshifted	PMID:16823372	2009-02-02
-SPAC1F8.07c	frameshifted	PMID:16823372	2009-02-02
-SPAC22F3.11c	frameshifted	PMID:16823372	2009-02-02
-SPBC1A4.06c	frameshifted; C term exon changed from 1987076..1987675 to 1987044..1987675	PMID:16823372	2009-02-02
-SPBC29A3.08	frameshifted; truncated to 2048336..2049892, 2049894..2049896	PMID:16823372	2009-02-02
-SPBC13E7.01	frameshifted	PMID:16823372	2009-02-02
-SPBC23G7.06c	frameshifted; now a single exon	PMID:16823372	2009-02-02
-SPBC14C8.09c	merged with SPBC14C8.08c; frameshifted	PMID:16823372	2009-02-02
+SPCC1442.04c	frameshifted		2009-02-02
+SPAC1F8.07c	frameshifted		2009-02-02
+SPAC22F3.11c	frameshifted		2009-02-02
+SPBC1A4.06c	frameshifted; C term exon changed from 1987076..1987675 to 1987044..1987675		2009-02-02
+SPBC29A3.08	frameshifted; truncated to 2048336..2049892, 2049894..2049896		2009-02-02
+SPBC13E7.01	frameshifted		2009-02-02
+SPBC23G7.06c	frameshifted; now a single exon		2009-02-02
+SPBC14C8.09c	merged with SPBC14C8.08c; frameshifted		2009-02-02
 SPBC725.12		pers. comm. Kathy Gould	2009-01-30
 SPAC31G5.12c		PMID:15590667	2008-12-19
 SPAPB1E7.14		PMID:19040720	2008-12-18
