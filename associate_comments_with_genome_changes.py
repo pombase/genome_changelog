@@ -37,10 +37,10 @@ db_xref_script = db_xref_script[['systematic_id', 'revision', 'feature_type', 'v
 # Rename value column to db_xref, that will be the final column in the output file
 db_xref_script.rename(columns={'value': 'db_xref'}, inplace=True)
 
-# Drop references included in gene_changes_comments_and_pmids/db_xref_to_exclude.tsv
+# Drop references included in gene_changes_comments_and_pmids/db_xref_to_exclude.tsv as regex
 with open('gene_changes_comments_and_pmids/db_xref_to_exclude.tsv') as ins:
     db_xref_to_exclude = set([i.strip() for i in ins])
-db_xref_script = db_xref_script[~db_xref_script['db_xref'].isin(db_xref_to_exclude)]
+db_xref_script = db_xref_script[~db_xref_script['db_xref'].str.contains('|'.join(db_xref_to_exclude), regex=True)]
 
 def formatting_references(x):
     sorted_list = sorted(list(set([i for i in x if i != ''])))
