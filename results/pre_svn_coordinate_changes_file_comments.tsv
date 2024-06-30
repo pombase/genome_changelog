@@ -27464,8 +27464,8 @@ svn_2	kmr44	2011-08-22	III	SPNCRNA.475		intron	added	926625..926671
 20080716	-	2008-07-16	III	SPCC825.02		intron	added	1027112..1027155			
 20080716	-	2008-07-16	III	SPCC895.06		intron	added	1010499..1010540			
 20080716	-	2008-07-16	III	SPCC962.04		intron	added	553566..553647			
-20080716	-	2008-07-16	III	SPCC962.05	ast1	CDS	added	join(554521..554744,554865..556200)		pers comm. M. O’Connell	intron position moved
 20080716	-	2008-07-16	III	SPCC962.05	ast1	CDS	added	join(554521..554744,554865..556200)		pers. comm. Matthew O’Connell	
+20080716	-	2008-07-16	III	SPCC962.05	ast1	CDS	added	join(554521..554744,554865..556200)		pers comm. M. O’Connell	intron position moved
 20080716	-	2008-07-16	III	SPCC962.05		CDS	removed	join(554521..554722,554792..556200)		pers comm. M. O’Connell	intron position moved
 20080716	-	2008-07-16	III	SPCC962.05		CDS	removed	join(554521..554722,554792..556200)		pers. comm. Matthew O’Connell	
 20080716	-	2008-07-16	III	SPCC962.06c		intron	added	complement(558129..558174)			

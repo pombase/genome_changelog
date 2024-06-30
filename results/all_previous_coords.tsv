@@ -6347,6 +6347,7 @@ I	SPRPTA.25		repeat_region	complement(join(5564531..5564853,5565067..5565187,556
 I	SPRPTA.26		repeat_region	5568686..5579133	2014-06-09							https://curation.pombase.org/pombe-embl-repo/trunk/?p=1782
 I	SPRPTA.3		repeat_region	15829..22113	2014-06-09							https://curation.pombase.org/pombe-embl-repo/trunk/?p=1782
 I	SPRPTA.4		repeat_region	20859..29663	2014-06-09							https://curation.pombase.org/pombe-embl-repo/trunk/?p=1782
+I	SPSNORNA.18	snoU24	snoRNA	complement(5369640..5369686)	2024-06-26							https://curation.pombase.org/pombe-embl-repo/trunk/?p=9819
 I	SPSNORNA.29	sno52	snoRNA	339548..339642	2010-02-17							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20100129/
 I	SPSNORNA.42		intron	complement(4937014..4937169)	2022-12-12							https://curation.pombase.org/pombe-embl-repo/trunk/?p=8587
 I	SPSNORNA.42	snR90	snoRNA	complement(4937170..4937394)	2022-12-12							https://curation.pombase.org/pombe-embl-repo/trunk/?p=8587
