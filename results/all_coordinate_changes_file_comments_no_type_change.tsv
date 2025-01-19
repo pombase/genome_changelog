@@ -1,4 +1,6 @@
 revision	user	date	chromosome	systematic_id	primary_name	feature_type	added_or_removed	value	db_xref	pombase_reference	pombase_comments
+10412	vw253	2025-01-17	I	SPAC144.11	rps1102	CDS	added	complement(4674612..4675070)			
+10412	vw253	2025-01-17	I	SPAC144.11	rps1102	CDS	removed	4674612..4675070			
 10372	kmr44	2025-01-09	II	SPBC685.02		5'UTR	removed	2772853..2772883			
 10372	kmr44	2025-01-09	II	SPBC685.02.1		5'UTR	added	2772853..2772883			
 10367	vw253	2025-01-08	I	SPAC1834.03c		5'UTR	added	complement(4699397..4699599)			
