@@ -19,7 +19,7 @@ all_data['fission_yeast_unknown'] = all_data['counts'].apply(lambda x: x[8] + x[
 all_data.drop(columns=['counts'], inplace=True)
 all_data.to_csv('results/formatted_counts.tsv', sep='\t', index=False)
 
-labels = [ 'Published', 'Inferred role', 'Conserved unknown', 'Fission yeast unknown']
+labels = [ 'Biological role published', 'Biological role inferred', 'Conserved unknown', 'Fission yeast unknown']
 colors = [color_settings[x] for x in labels]
 
 # Plot a stackplot of the counts
