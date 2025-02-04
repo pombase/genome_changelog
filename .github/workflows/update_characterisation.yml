@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
   # Run the second day of each month
   schedule:
-    - cron: "0 0 4 * *"
+    - cron: "0 0 2 * *"
 
 jobs:
   update-file:
