@@ -11,8 +11,8 @@ all_data['date'] = pandas.to_datetime(all_data['date'], utc=True).dt.date
 
 all_data['counts'] = all_data['counts'].apply(lambda x: [int(i) for i in x.split(' ')])
 
-all_data['published'] = all_data['counts'].apply(lambda x: x[2])
-all_data['inferred_role'] = all_data['counts'].apply(lambda x: x[7])
+all_data['biological_role_published'] = all_data['counts'].apply(lambda x: x[2])
+all_data['biological_role_inferred'] = all_data['counts'].apply(lambda x: x[7])
 all_data['conserved_unknown'] = all_data['counts'].apply(lambda x: x[10])
 all_data['fission_yeast_unknown'] = all_data['counts'].apply(lambda x: x[8] + x[12])
 
@@ -30,7 +30,7 @@ ax.set_aspect(0.8)
 ax.spines.top.set(visible=False)
 ax.spines.right.set(visible=False)
 
-plt.stackplot(all_data['date'], all_data['published'], all_data['inferred_role'], all_data['conserved_unknown'], all_data['fission_yeast_unknown'], labels=labels, colors=colors)
+plt.stackplot(all_data['date'], all_data['biological_role_published'], all_data['biological_role_inferred'], all_data['conserved_unknown'], all_data['fission_yeast_unknown'], labels=labels, colors=colors)
 
 plt.xlim([datetime.date(2003,6,1), datetime.date.today()])
 # place the legend outside the plot

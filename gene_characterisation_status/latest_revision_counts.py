@@ -5,8 +5,8 @@ all_data = pandas.read_csv('latest_revision/counts.txt', delimiter='\t', names=[
 
 all_data['counts'] = all_data['counts'].apply(lambda x: [int(i) for i in x.split(' ')])
 
-all_data['published'] = all_data['counts'].apply(lambda x: x[2])
-all_data['inferred_role'] = all_data['counts'].apply(lambda x: x[7])
+all_data['biological_role_published'] = all_data['counts'].apply(lambda x: x[2])
+all_data['biological_role_inferred'] = all_data['counts'].apply(lambda x: x[7])
 all_data['conserved_unknown'] = all_data['counts'].apply(lambda x: x[10])
 all_data['fission_yeast_unknown'] = all_data['counts'].apply(lambda x: x[8] + x[12])
 
