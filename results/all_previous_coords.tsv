@@ -684,10 +684,13 @@ I	SPAC144.10c		5'UTR	complement(4672944..4673034)	2011-03-24	PMID:18641648,PMID:
 I	SPAC144.10c		5'UTR	complement(4672944..4673090)	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk/?p=8649
 I	SPAC144.11		3'UTR	4675071..4675126	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 I	SPAC144.11		3'UTR	4675071..4675181	2025-02-11							https://curation.pombase.org/pombe-embl-repo/trunk/?p=10504
+I	SPAC144.11		3'UTR	complement(4675071..4675181)	2025-02-12							https://curation.pombase.org/pombe-embl-repo/trunk/?p=10512
 I	SPAC144.11		5'UTR	4674575..4674611	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 I	SPAC144.11		5'UTR	4674587..4674611	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk/?p=8649
 I	SPAC144.11		5'UTR	4674588..4674611	2025-02-11		PMID:30566651					https://curation.pombase.org/pombe-embl-repo/trunk/?p=10504
+I	SPAC144.11		5'UTR	complement(4674588..4674611)	2025-02-12							https://curation.pombase.org/pombe-embl-repo/trunk/?p=10512
 I	SPAC144.11	rps1102	CDS	4674612..4675070	2025-01-17							https://curation.pombase.org/pombe-embl-repo/trunk/?p=10411
+I	SPAC144.11	rps1102	CDS	complement(4674612..4675070)	2025-02-12							https://curation.pombase.org/pombe-embl-repo/trunk/?p=10512
 I	SPAC144.12		5'UTR	4675116..4676623	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk/?p=8649
 I	SPAC144.12		5'UTR	4675839..4676623	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 I	SPAC144.13c		3'UTR	complement(4677569..4678385)	2011-03-24	EMBL:AB005589						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
@@ -3532,7 +3535,7 @@ I	SPAC2F3.13c		3'UTR	complement(3947885..3947929)	2017-05-22							https://curat
 I	SPAC2F3.13c		5'UTR	complement(3950179..3950224)	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk/?p=8649
 I	SPAC2F3.13c		CDS	complement(join(3947930..3948241,3948283..3948358,3948407..3948493,3948538..3948690,3948735..3949046,3949094..3949921,3949997..3950178))	2012-12-07					removed N terminal region overlapping with plp1		https://curation.pombase.org/pombe-embl-repo/trunk/?p=770
 I	SPAC2F3.13c		CDS	complement(join(3949057..3949921,3949997..3950178))	2011-03-24						removed N terminal region overlapping with plp1	https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
-I	SPAC2F3.13c		CDS	complement(join(3972358..3972669,3972711..3972786,3972835..3972921,3972966..3973118,3973163..3973474,3973522..3974349,3974425..3974606))	2002-09-05			pers. comm. Val Wood,pers. comm. Val Wood		split to create SPAC2F3.13c and SPAC2F3.12c,annotated as SPAC2F3.13c putative tRNA-ribosyltransferase, but actually a gene merge. Split to create SPAC2F3.13c the tRNA-ribosyltransferase and new CDS SPAC2F3.17c was created from the C-terminal		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20020322/
+I	SPAC2F3.13c		CDS	complement(join(3972358..3972669,3972711..3972786,3972835..3972921,3972966..3973118,3973163..3973474,3973522..3974349,3974425..3974606))	2002-09-05			pers. comm. Val Wood,pers. comm. Val Wood		annotated as SPAC2F3.13c putative tRNA-ribosyltransferase, but actually a gene merge. Split to create SPAC2F3.13c the tRNA-ribosyltransferase and new CDS SPAC2F3.17c was created from the C-terminal,split to create SPAC2F3.13c and SPAC2F3.12c		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20020322/
 I	SPAC2F3.14c		5'UTR	complement(3951514..3951653)	2011-03-04							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110204/
 I	SPAC2F3.14c		5'UTR	complement(3951516..3951653)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 I	SPAC2F3.14c		5'UTR	complement(3951516..3951679)	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk/?p=8649

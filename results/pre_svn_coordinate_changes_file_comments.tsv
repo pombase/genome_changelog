@@ -29588,8 +29588,8 @@ svn_2	kmr44	2011-08-22	III	SPNCRNA.475		intron	added	926625..926671
 20020905	-	2002-09-05	I	SPAC2E12.02		CDS	added	join(5105664..5105991,5106334..5107835)			
 20020905	-	2002-09-05	I	SPAC2F3.13c		CDS	added	complement(join(3995247..3996111,3996187..3996368))		pers. comm. Val Wood	annotated as SPAC2F3.13c putative tRNA-ribosyltransferase, but actually a gene merge. Split to create SPAC2F3.13c the tRNA-ribosyltransferase and new CDS SPAC2F3.17c was created from the C-terminal
 20020905	-	2002-09-05	I	SPAC2F3.13c		CDS	added	complement(join(3995247..3996111,3996187..3996368))		pers. comm. Val Wood	split to create SPAC2F3.13c and SPAC2F3.12c
-20020905	-	2002-09-05	I	SPAC2F3.13c		CDS	removed	complement(join(3972358..3972669,3972711..3972786,3972835..3972921,3972966..3973118,3973163..3973474,3973522..3974349,3974425..3974606))		pers. comm. Val Wood	split to create SPAC2F3.13c and SPAC2F3.12c
 20020905	-	2002-09-05	I	SPAC2F3.13c		CDS	removed	complement(join(3972358..3972669,3972711..3972786,3972835..3972921,3972966..3973118,3973163..3973474,3973522..3974349,3974425..3974606))		pers. comm. Val Wood	annotated as SPAC2F3.13c putative tRNA-ribosyltransferase, but actually a gene merge. Split to create SPAC2F3.13c the tRNA-ribosyltransferase and new CDS SPAC2F3.17c was created from the C-terminal
+20020905	-	2002-09-05	I	SPAC2F3.13c		CDS	removed	complement(join(3972358..3972669,3972711..3972786,3972835..3972921,3972966..3973118,3973163..3973474,3973522..3974349,3974425..3974606))		pers. comm. Val Wood	split to create SPAC2F3.13c and SPAC2F3.12c
 20020905	-	2002-09-05	I	SPAC2F3.17c		CDS	added	complement(join(3994120..3994431,3994473..3994548,3994597..3994683,3994728..3994880,3994925..3995136))			
 20020905	-	2002-09-05	I	SPAC2F3.17c		CDS	removed	complement(3966826..3967158)			
 20020905	-	2002-09-05	I	SPAC2F3.18c		CDS	added	complement(3988588..3988920)			
