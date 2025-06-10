@@ -1,4 +1,6 @@
 Date	Systematic ID	Primary name	Before / After change	Coordinates	Comment	Reference
+2025-04-10	SPNCRNA.1715.1	mamRNA	after	II:join(1307681..1308190,1308418..1308984)		
+2025-04-10	SPNCRNA.1715.1	mamRNA	before	II:1307681..1308359		
 2024-06-26	SPSNORNA.18	snoU24	after	I:complement(5369613..5369691)		
 2024-06-26	SPSNORNA.18	snoU24	before	I:complement(5369640..5369686)		
 2022-12-21	SPNCRNA.105		after	II:4071111..4071312		

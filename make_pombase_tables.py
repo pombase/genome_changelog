@@ -20,7 +20,8 @@ added_genes.rename(inplace=True,columns={
     'reference_addition': 'Reference',
     })
 
-added_genes.sort_values(by='Date added', ascending=False, inplace=True)
+# Deterministic sorting
+added_genes.sort_values(by=['Date added', 'Systematic ID'], ascending=False, inplace=True)
 
 added_genes.loc[added_genes.feature_type == 'CDS', :].drop(columns='feature_type').to_csv('results/pombase_tables/new-gene-data-protein-coding.tsv', sep='\t', index=False)
 added_genes.loc[added_genes.feature_type != 'CDS', :].drop(columns='feature_type').to_csv('results/pombase_tables/new-gene-data-RNA.tsv', sep='\t', index=False)
