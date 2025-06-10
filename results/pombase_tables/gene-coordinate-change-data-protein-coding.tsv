@@ -1,6 +1,4 @@
 Date	Systematic ID	Primary name	Before / After change	Coordinates	Comment	Reference
-2025-04-24	SPBC887.14c.2	pfh1	after	II:complement(join(3567730..3568892,3568934..3570128))		
-2025-04-24	SPBC887.14c.2	pfh1	before	II:complement(join(3567730..3568892,3568934..3570125))		
 2025-02-12	SPAC144.11	rps1102	after	I:4674612..4675070		
 2025-02-12	SPAC144.11	rps1102	before	I:complement(4674612..4675070)		
 2025-01-17	SPAC144.11	rps1102	after	I:complement(4674612..4675070)		
@@ -1635,8 +1633,8 @@ Date	Systematic ID	Primary name	Before / After change	Coordinates	Comment	Refere
 2002-09-05	SPAC1296.04		before	I:join(745694..745822,745899..746297)	has 2 additional N-terminal exons	pers. comm. Val Wood
 2002-09-05	SPAC23C11.10		after	I:join(2202062..2202182,2202222..2202320,2202368..2202566,2202618..2202780,2202824..2203039)	found 3 additional C-terminal exons by eye	pers. comm. Val Wood
 2002-09-05	SPAC23C11.10		before	I:join(2180300..2180420,2180460..2180581)	found 3 additional C-terminal exons by eye	pers. comm. Val Wood
-2002-09-05	SPAC2F3.13c		after	I:complement(join(3995247..3996111,3996187..3996368))	split to create SPAC2F3.13c and SPAC2F3.12c	pers. comm. Val Wood
 2002-09-05	SPAC2F3.13c		after	I:complement(join(3995247..3996111,3996187..3996368))	annotated as SPAC2F3.13c putative tRNA-ribosyltransferase, but actually a gene merge. Split to create SPAC2F3.13c the tRNA-ribosyltransferase and new CDS SPAC2F3.17c was created from the C-terminal	pers. comm. Val Wood
+2002-09-05	SPAC2F3.13c		after	I:complement(join(3995247..3996111,3996187..3996368))	split to create SPAC2F3.13c and SPAC2F3.12c	pers. comm. Val Wood
 2002-09-05	SPAC2F3.13c		before	I:complement(join(3972358..3972669,3972711..3972786,3972835..3972921,3972966..3973118,3973163..3973474,3973522..3974349,3974425..3974606))	annotated as SPAC2F3.13c putative tRNA-ribosyltransferase, but actually a gene merge. Split to create SPAC2F3.13c the tRNA-ribosyltransferase and new CDS SPAC2F3.17c was created from the C-terminal	pers. comm. Val Wood
 2002-09-05	SPAC2F3.13c		before	I:complement(join(3972358..3972669,3972711..3972786,3972835..3972921,3972966..3973118,3973163..3973474,3973522..3974349,3974425..3974606))	split to create SPAC2F3.13c and SPAC2F3.12c	pers. comm. Val Wood
 2002-09-05	SPAC2F3.17c		after	I:complement(join(3994120..3994431,3994473..3994548,3994597..3994683,3994728..3994880,3994925..3995136))		

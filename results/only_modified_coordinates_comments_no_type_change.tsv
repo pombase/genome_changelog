@@ -1,6 +1,4 @@
 revision	user	date	chromosome	systematic_id	primary_name	feature_type	added_or_removed	value	db_xref	pombase_reference	pombase_comments
-10787	pascal	2025-04-24	II	SPBC887.14c.2	pfh1	CDS	added	complement(join(3567730..3568892,3568934..3570128))			
-10787	pascal	2025-04-24	II	SPBC887.14c.2	pfh1	CDS	removed	complement(join(3567730..3568892,3568934..3570125))			
 10513	vw253	2025-02-12	I	SPAC144.11	rps1102	CDS	added	4674612..4675070			
 10513	vw253	2025-02-12	I	SPAC144.11	rps1102	CDS	removed	complement(4674612..4675070)			
 10412	vw253	2025-01-17	I	SPAC144.11	rps1102	CDS	added	complement(4674612..4675070)			
@@ -1898,8 +1896,8 @@ svn_2	kmr44	2011-08-22	III	SPCTRNAVAL.12		tRNA	removed	complement(1065778..10658
 20020905	-	2002-09-05	I	SPAC1296.04		CDS	removed	join(745694..745822,745899..746297)		pers. comm. Val Wood	has 2 additional N-terminal exons
 20020905	-	2002-09-05	I	SPAC23C11.10		CDS	added	join(2202062..2202182,2202222..2202320,2202368..2202566,2202618..2202780,2202824..2203039)		pers. comm. Val Wood	found 3 additional C-terminal exons by eye
 20020905	-	2002-09-05	I	SPAC23C11.10		CDS	removed	join(2180300..2180420,2180460..2180581)		pers. comm. Val Wood	found 3 additional C-terminal exons by eye
-20020905	-	2002-09-05	I	SPAC2F3.13c		CDS	added	complement(join(3995247..3996111,3996187..3996368))		pers. comm. Val Wood	split to create SPAC2F3.13c and SPAC2F3.12c
 20020905	-	2002-09-05	I	SPAC2F3.13c		CDS	added	complement(join(3995247..3996111,3996187..3996368))		pers. comm. Val Wood	annotated as SPAC2F3.13c putative tRNA-ribosyltransferase, but actually a gene merge. Split to create SPAC2F3.13c the tRNA-ribosyltransferase and new CDS SPAC2F3.17c was created from the C-terminal
+20020905	-	2002-09-05	I	SPAC2F3.13c		CDS	added	complement(join(3995247..3996111,3996187..3996368))		pers. comm. Val Wood	split to create SPAC2F3.13c and SPAC2F3.12c
 20020905	-	2002-09-05	I	SPAC2F3.13c		CDS	removed	complement(join(3972358..3972669,3972711..3972786,3972835..3972921,3972966..3973118,3973163..3973474,3973522..3974349,3974425..3974606))		pers. comm. Val Wood	annotated as SPAC2F3.13c putative tRNA-ribosyltransferase, but actually a gene merge. Split to create SPAC2F3.13c the tRNA-ribosyltransferase and new CDS SPAC2F3.17c was created from the C-terminal
 20020905	-	2002-09-05	I	SPAC2F3.13c		CDS	removed	complement(join(3972358..3972669,3972711..3972786,3972835..3972921,3972966..3973118,3973163..3973474,3973522..3974349,3974425..3974606))		pers. comm. Val Wood	split to create SPAC2F3.13c and SPAC2F3.12c
 20020905	-	2002-09-05	I	SPAC2F3.17c		CDS	added	complement(join(3994120..3994431,3994473..3994548,3994597..3994683,3994728..3994880,3994925..3995136))			
