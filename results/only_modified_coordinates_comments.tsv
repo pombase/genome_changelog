@@ -1,4 +1,6 @@
 revision	user	date	chromosome	systematic_id	primary_name	feature_type	added_or_removed	value	db_xref	pombase_reference	pombase_comments
+11505	vw253	2026-01-11	I	SPAC212.06c		CDS	added	18072..18554			
+11505	vw253	2026-01-11	I	SPAC212.06c		CDS	removed	join(18072..18306,18349..18557)			
 10787	pascal	2025-04-24	II	SPBC887.14c.2	pfh1	CDS	added	complement(join(3567730..3568892,3568934..3570128))			
 10787	pascal	2025-04-24	II	SPBC887.14c.2	pfh1	CDS	removed	complement(join(3567730..3568892,3568934..3570125))			
 10730	vw253	2025-04-10	II	SPNCRNA.1715.1	mamRNA	lncRNA	added	join(1307681..1308190,1308418..1308984)			
@@ -18936,8 +18938,8 @@ svn_2	kmr44	2011-08-22	III	SPCTRNAVAL.12		tRNA	removed	complement(1065778..10658
 20080716	-	2008-07-16	II	SPBC2G2.09c	crs1	CDS	removed	complement(join(3452584..3452769,3452822..3452877,3452918..3453077,3453119..3453406))		pers. comm. Charley Chahwan	added new C-terminal exon, deleted exon 3452822..3452877, extended intron 2 by 4 nucleotides
 20080716	-	2008-07-16	III	SPCC338.08	ctp1	CDS	added	complement(join(1358891..1359082,1359127..1359819))			
 20080716	-	2008-07-16	III	SPCC338.08	ctp1	CDS	removed	complement(join(1358891..1359082,1359121..1359819))			
-20080716	-	2008-07-16	III	SPCC962.05	ast1	CDS	added	join(554521..554744,554865..556200)		pers. comm. Matthew O’Connell	
 20080716	-	2008-07-16	III	SPCC962.05	ast1	CDS	added	join(554521..554744,554865..556200)		pers comm. M. O’Connell	intron position moved
+20080716	-	2008-07-16	III	SPCC962.05	ast1	CDS	added	join(554521..554744,554865..556200)		pers. comm. Matthew O’Connell	
 20080716	-	2008-07-16	III	SPCC962.05		CDS	removed	join(554521..554722,554792..556200)		pers comm. M. O’Connell	intron position moved
 20080716	-	2008-07-16	III	SPCC962.05		CDS	removed	join(554521..554722,554792..556200)		pers. comm. Matthew O’Connell	
 20080512	-	2008-05-12	I	SPAC31G5.12c	maf1	CDS	added	complement(join(3008184..3008795,3008914..3008957,3009044..3009089))			
