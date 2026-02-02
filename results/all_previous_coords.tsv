@@ -2209,6 +2209,7 @@ I	SPAC212.04c		5'UTR	21381..21586	2023-01-12							https://curation.pombase.org/
 I	SPAC212.05c		CDS	complement(5634971..5635159)	2003-08-14							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20020905/
 I	SPAC212.06c		5'UTR	18042..18071	2023-01-12							https://curation.pombase.org/pombe-embl-repo/trunk/?p=8649
 I	SPAC212.06c		CDS	join(18042..18306,18349..18557)	2011-03-24							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
+I	SPAC212.06c		CDS	join(18072..18306,18349..18557)	2026-01-11							https://curation.pombase.org/pombe-embl-repo/trunk/?p=11504
 I	SPAC212.08c		5'UTR	11784..12157	2023-01-12							https://curation.pombase.org/pombe-embl-repo/trunk/?p=8649
 I	SPAC212.10		CDS	complement(5726..6331)	2005-07-05							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20040915/
 I	SPAC212.10		misc_feature	complement(5726..6331)	2006-02-19							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20060103/
