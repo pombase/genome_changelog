@@ -1,4 +1,8 @@
 revision	user	date	chromosome	systematic_id	primary_name	feature_type	added_or_removed	value	db_xref	pombase_reference	pombase_comments
+11757	vw253	2026-03-20	I	SPAC977.04		CDS	added	34292..34816			
+11757	vw253	2026-03-20	I	SPAC977.04		CDS	removed	34349..34816			
+11757	vw253	2026-03-20	II	SPBC530.06c	clu1	CDS	added	complement(join(799142..802651,802839..802851))			
+11757	vw253	2026-03-20	II	SPBC530.06c	clu1	CDS	removed	complement(join(799142..800838,800840..802651,802839..802851))			
 11505	vw253	2026-01-11	I	SPAC212.06c		CDS	added	18072..18554			
 11505	vw253	2026-01-11	I	SPAC212.06c		CDS	removed	join(18072..18306,18349..18557)			
 10787	pascal	2025-04-24	II	SPBC887.14c.2	pfh1	CDS	added	complement(join(3567730..3568892,3568934..3570128))			
@@ -18940,8 +18944,8 @@ svn_2	kmr44	2011-08-22	III	SPCTRNAVAL.12		tRNA	removed	complement(1065778..10658
 20080716	-	2008-07-16	III	SPCC338.08	ctp1	CDS	removed	complement(join(1358891..1359082,1359121..1359819))			
 20080716	-	2008-07-16	III	SPCC962.05	ast1	CDS	added	join(554521..554744,554865..556200)		pers comm. M. O’Connell	intron position moved
 20080716	-	2008-07-16	III	SPCC962.05	ast1	CDS	added	join(554521..554744,554865..556200)		pers. comm. Matthew O’Connell	
-20080716	-	2008-07-16	III	SPCC962.05		CDS	removed	join(554521..554722,554792..556200)		pers comm. M. O’Connell	intron position moved
 20080716	-	2008-07-16	III	SPCC962.05		CDS	removed	join(554521..554722,554792..556200)		pers. comm. Matthew O’Connell	
+20080716	-	2008-07-16	III	SPCC962.05		CDS	removed	join(554521..554722,554792..556200)		pers comm. M. O’Connell	intron position moved
 20080512	-	2008-05-12	I	SPAC31G5.12c	maf1	CDS	added	complement(join(3008184..3008795,3008914..3008957,3009044..3009089))			
 20080512	-	2008-05-12	I	SPAC31G5.12c	maf1	CDS	removed	complement(join(3008184..3008795,3008893..3008928))			
 20080418	-	2008-04-18	II	SPBC16C6.02c	vps1302	CDS	added	complement(join(4322829..4331555,4331641..4331793,4331856..4331968,4332007..4332028))		PMID:18367542	also adds new gene SPBC16C6.14, complement(4322221..4322622)
@@ -19446,8 +19450,8 @@ svn_2	kmr44	2011-08-22	III	SPCTRNAVAL.12		tRNA	removed	complement(1065778..10658
 20020905	-	2002-09-05	I	SPAC1296.04		CDS	removed	join(745694..745822,745899..746297)		pers. comm. Val Wood	has 2 additional N-terminal exons
 20020905	-	2002-09-05	I	SPAC23C11.10		CDS	added	join(2202062..2202182,2202222..2202320,2202368..2202566,2202618..2202780,2202824..2203039)		pers. comm. Val Wood	found 3 additional C-terminal exons by eye
 20020905	-	2002-09-05	I	SPAC23C11.10		CDS	removed	join(2180300..2180420,2180460..2180581)		pers. comm. Val Wood	found 3 additional C-terminal exons by eye
-20020905	-	2002-09-05	I	SPAC2F3.13c		CDS	added	complement(join(3995247..3996111,3996187..3996368))		pers. comm. Val Wood	split to create SPAC2F3.13c and SPAC2F3.12c
 20020905	-	2002-09-05	I	SPAC2F3.13c		CDS	added	complement(join(3995247..3996111,3996187..3996368))		pers. comm. Val Wood	annotated as SPAC2F3.13c putative tRNA-ribosyltransferase, but actually a gene merge. Split to create SPAC2F3.13c the tRNA-ribosyltransferase and new CDS SPAC2F3.17c was created from the C-terminal
+20020905	-	2002-09-05	I	SPAC2F3.13c		CDS	added	complement(join(3995247..3996111,3996187..3996368))		pers. comm. Val Wood	split to create SPAC2F3.13c and SPAC2F3.12c
 20020905	-	2002-09-05	I	SPAC2F3.13c		CDS	removed	complement(join(3972358..3972669,3972711..3972786,3972835..3972921,3972966..3973118,3973163..3973474,3973522..3974349,3974425..3974606))		pers. comm. Val Wood	annotated as SPAC2F3.13c putative tRNA-ribosyltransferase, but actually a gene merge. Split to create SPAC2F3.13c the tRNA-ribosyltransferase and new CDS SPAC2F3.17c was created from the C-terminal
 20020905	-	2002-09-05	I	SPAC2F3.13c		CDS	removed	complement(join(3972358..3972669,3972711..3972786,3972835..3972921,3972966..3973118,3973163..3973474,3973522..3974349,3974425..3974606))		pers. comm. Val Wood	split to create SPAC2F3.13c and SPAC2F3.12c
 20020905	-	2002-09-05	I	SPAC2F3.17c		CDS	added	complement(join(3994120..3994431,3994473..3994548,3994597..3994683,3994728..3994880,3994925..3995136))			

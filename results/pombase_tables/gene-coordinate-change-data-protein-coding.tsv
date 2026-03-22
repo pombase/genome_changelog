@@ -1,4 +1,8 @@
 Date	Systematic ID	Primary name	Before / After change	Coordinates	Comment	Reference
+2026-03-20	SPAC977.04		after	I:34292..34816		
+2026-03-20	SPAC977.04		before	I:34349..34816		
+2026-03-20	SPBC530.06c	clu1	after	II:complement(join(799142..802651,802839..802851))		
+2026-03-20	SPBC530.06c	clu1	before	II:complement(join(799142..800838,800840..802651,802839..802851))		
 2026-01-11	SPAC212.06c		after	I:18072..18554		
 2026-01-11	SPAC212.06c		before	I:join(18072..18306,18349..18557)		
 2025-04-24	SPBC887.14c.2	pfh1	after	II:complement(join(3567730..3568892,3568934..3570128))		
@@ -1183,8 +1187,8 @@ Date	Systematic ID	Primary name	Before / After change	Coordinates	Comment	Refere
 2008-07-16	SPCC338.08	ctp1	before	III:complement(join(1358891..1359082,1359121..1359819))		
 2008-07-16	SPCC962.05	ast1	after	III:join(554521..554744,554865..556200)	intron position moved	pers comm. M. O’Connell
 2008-07-16	SPCC962.05	ast1	after	III:join(554521..554744,554865..556200)		pers. comm. Matthew O’Connell
-2008-07-16	SPCC962.05		before	III:join(554521..554722,554792..556200)	intron position moved	pers comm. M. O’Connell
 2008-07-16	SPCC962.05		before	III:join(554521..554722,554792..556200)		pers. comm. Matthew O’Connell
+2008-07-16	SPCC962.05		before	III:join(554521..554722,554792..556200)	intron position moved	pers comm. M. O’Connell
 2008-05-12	SPAC31G5.12c	maf1	after	I:complement(join(3008184..3008795,3008914..3008957,3009044..3009089))		
 2008-05-12	SPAC31G5.12c	maf1	before	I:complement(join(3008184..3008795,3008893..3008928))		
 2008-04-18	SPBC16C6.02c	vps1302	after	II:complement(join(4322829..4331555,4331641..4331793,4331856..4331968,4332007..4332028))	also adds new gene SPBC16C6.14, complement(4322221..4322622)	PMID:18367542
@@ -1637,8 +1641,8 @@ Date	Systematic ID	Primary name	Before / After change	Coordinates	Comment	Refere
 2002-09-05	SPAC1296.04		before	I:join(745694..745822,745899..746297)	has 2 additional N-terminal exons	pers. comm. Val Wood
 2002-09-05	SPAC23C11.10		after	I:join(2202062..2202182,2202222..2202320,2202368..2202566,2202618..2202780,2202824..2203039)	found 3 additional C-terminal exons by eye	pers. comm. Val Wood
 2002-09-05	SPAC23C11.10		before	I:join(2180300..2180420,2180460..2180581)	found 3 additional C-terminal exons by eye	pers. comm. Val Wood
-2002-09-05	SPAC2F3.13c		after	I:complement(join(3995247..3996111,3996187..3996368))	split to create SPAC2F3.13c and SPAC2F3.12c	pers. comm. Val Wood
 2002-09-05	SPAC2F3.13c		after	I:complement(join(3995247..3996111,3996187..3996368))	annotated as SPAC2F3.13c putative tRNA-ribosyltransferase, but actually a gene merge. Split to create SPAC2F3.13c the tRNA-ribosyltransferase and new CDS SPAC2F3.17c was created from the C-terminal	pers. comm. Val Wood
+2002-09-05	SPAC2F3.13c		after	I:complement(join(3995247..3996111,3996187..3996368))	split to create SPAC2F3.13c and SPAC2F3.12c	pers. comm. Val Wood
 2002-09-05	SPAC2F3.13c		before	I:complement(join(3972358..3972669,3972711..3972786,3972835..3972921,3972966..3973118,3973163..3973474,3973522..3974349,3974425..3974606))	annotated as SPAC2F3.13c putative tRNA-ribosyltransferase, but actually a gene merge. Split to create SPAC2F3.13c the tRNA-ribosyltransferase and new CDS SPAC2F3.17c was created from the C-terminal	pers. comm. Val Wood
 2002-09-05	SPAC2F3.13c		before	I:complement(join(3972358..3972669,3972711..3972786,3972835..3972921,3972966..3973118,3973163..3973474,3973522..3974349,3974425..3974606))	split to create SPAC2F3.13c and SPAC2F3.12c	pers. comm. Val Wood
 2002-09-05	SPAC2F3.17c		after	I:complement(join(3994120..3994431,3994473..3994548,3994597..3994683,3994728..3994880,3994925..3995136))		
