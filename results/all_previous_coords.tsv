@@ -1552,6 +1552,7 @@ I	SPAC186.02c		5'UTR	complement(5530961..5531144)	2023-01-12							https://curat
 I	SPAC186.03		5'UTR	5535061..5535197	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk/?p=8649
 I	SPAC186.04c		5'UTR	complement(5539102..5539516)	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk/?p=8649
 I	SPAC186.04c		CDS	complement(5538574..5539017)	2011-03-24							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
+I	SPAC186.04c		CDS	complement(5538574..5539101)	2026-03-24							https://curation.pombase.org/pombe-embl-repo/trunk/?p=11770
 I	SPAC186.04c		CDS	complement(5584763..5585290)	2003-08-14							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20020905/
 I	SPAC186.05c		5'UTR	complement(5541139..5541502)	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk/?p=8649
 I	SPAC186.06		5'UTR	5542290..5542418	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk/?p=8649
@@ -3536,7 +3537,7 @@ I	SPAC2F3.13c		3'UTR	complement(3947885..3947929)	2017-05-22							https://curat
 I	SPAC2F3.13c		5'UTR	complement(3950179..3950224)	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk/?p=8649
 I	SPAC2F3.13c		CDS	complement(join(3947930..3948241,3948283..3948358,3948407..3948493,3948538..3948690,3948735..3949046,3949094..3949921,3949997..3950178))	2012-12-07					removed N terminal region overlapping with plp1		https://curation.pombase.org/pombe-embl-repo/trunk/?p=770
 I	SPAC2F3.13c		CDS	complement(join(3949057..3949921,3949997..3950178))	2011-03-24						removed N terminal region overlapping with plp1	https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
-I	SPAC2F3.13c		CDS	complement(join(3972358..3972669,3972711..3972786,3972835..3972921,3972966..3973118,3973163..3973474,3973522..3974349,3974425..3974606))	2002-09-05			pers. comm. Val Wood,pers. comm. Val Wood		annotated as SPAC2F3.13c putative tRNA-ribosyltransferase, but actually a gene merge. Split to create SPAC2F3.13c the tRNA-ribosyltransferase and new CDS SPAC2F3.17c was created from the C-terminal,split to create SPAC2F3.13c and SPAC2F3.12c		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20020322/
+I	SPAC2F3.13c		CDS	complement(join(3972358..3972669,3972711..3972786,3972835..3972921,3972966..3973118,3973163..3973474,3973522..3974349,3974425..3974606))	2002-09-05			pers. comm. Val Wood,pers. comm. Val Wood		split to create SPAC2F3.13c and SPAC2F3.12c,annotated as SPAC2F3.13c putative tRNA-ribosyltransferase, but actually a gene merge. Split to create SPAC2F3.13c the tRNA-ribosyltransferase and new CDS SPAC2F3.17c was created from the C-terminal		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20020322/
 I	SPAC2F3.14c		5'UTR	complement(3951514..3951653)	2011-03-04							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110204/
 I	SPAC2F3.14c		5'UTR	complement(3951516..3951653)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 I	SPAC2F3.14c		5'UTR	complement(3951516..3951679)	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk/?p=8649
@@ -13896,7 +13897,7 @@ III	SPCC962.04		5'UTR	553165..553184	2011-03-24	PMID:18641648,PMID:20118936					
 III	SPCC962.05		3'UTR	556201..556248	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 III	SPCC962.05		5'UTR	553995..554520	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk/?p=8649
 III	SPCC962.05		5'UTR	554379..554520	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
-III	SPCC962.05		CDS	join(554521..554722,554792..556200)	2008-07-16			pers. comm. Matthew O’Connell,pers comm. M. O’Connell		intron position moved		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20080512/
+III	SPCC962.05		CDS	join(554521..554722,554792..556200)	2008-07-16			pers comm. M. O’Connell,pers. comm. Matthew O’Connell		intron position moved		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20080512/
 III	SPCC962.06c		3'UTR	complement(556303..556395)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 III	SPCC962.06c		5'UTR	complement(558204..558226)	2011-03-04							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110204/
 III	SPCC962.06c		5'UTR	complement(558206..558226)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
