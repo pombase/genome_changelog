@@ -1,4 +1,6 @@
 Date	Systematic ID	Primary name	Before / After change	Coordinates	Comment	Reference
+2026-04-05	SPCC622.17	apn1	after	III:join(1435250..1435335,1435596..1435850,1435923..1436649)		PMID:21193357
+2026-04-05	SPCC622.17	apn1	before	III:join(1435549..1435850,1435923..1436649)		
 2026-03-24	SPAC186.04c		after	I:complement(5538559..5539101)		
 2026-03-24	SPAC186.04c		before	I:complement(5538574..5539101)		
 2026-03-20	SPAC977.04		after	I:34292..34816		

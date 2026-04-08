@@ -13480,7 +13480,8 @@ III	SPCC622.17	apn1	5'UTR	1435080..1435177	2023-01-12	EMBL:SP33625						https://
 III	SPCC622.17	apn1	5'UTR	1435080..1435548	2011-02-04							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20101209/
 III	SPCC622.17	apn1	CDS	join(1435178..1435181,1435272..1435335,1435596..1435850,1435923..1436649)	2011-04-18				PMID:21193357		added 2 5’ exons	https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110324/
 III	SPCC622.17	apn1	CDS	join(1435178..1435335,1435596..1435850,1435923..1436649)	2016-02-09							https://curation.pombase.org/pombe-embl-repo/trunk/?p=3281
-III	SPCC622.17	apn1	CDS	join(1435250..1435335,1435596..1435850,1435923..1436649)	2011-12-14							https://curation.pombase.org/pombe-embl-repo/?p=184
+III	SPCC622.17	apn1	CDS	join(1435250..1435335,1435596..1435850,1435923..1436649)	2011-12-14		PMID:21193357					https://curation.pombase.org/pombe-embl-repo/?p=184
+III	SPCC622.17	apn1	CDS	join(1435549..1435850,1435923..1436649)	2026-04-05							https://curation.pombase.org/pombe-embl-repo/trunk/?p=11817
 III	SPCC622.17	apn1	CDS	join(1435549..1435850,1435923..1436649)	2011-02-04			PMID:21193357		added 2 5’ exons		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20101209/
 III	SPCC622.18		3'UTR	1437741..1437930	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 III	SPCC622.18		5'UTR	1437118..1437152	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk/?p=8649
