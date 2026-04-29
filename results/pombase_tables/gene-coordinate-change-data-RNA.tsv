@@ -1,4 +1,16 @@
 Date	Systematic ID	Primary name	Before / After change	Coordinates	Comment	Reference
+2026-04-27	SPNCRNA.1325	fbp1-ot3	after	II:complement(197660..200559)		
+2026-04-27	SPNCRNA.1325	fbp1-ot3	before	II:complement(198099..200559)		
+2026-04-27	SPNCRNA.1326	fbp1-ot2	after	II:complement(197660..201812)		
+2026-04-27	SPNCRNA.1326	fbp1-ot2	before	II:complement(198099..201812)		
+2026-04-27	SPNCRNA.4604	fbp1-ot1	after	II:complement(197660..203271)		
+2026-04-27	SPNCRNA.4604	fbp1-ot1	before	II:complement(198099..203271)		
+2026-04-27	SPNCRNA.1325	fbp1-ot3	after	II:complement(198099..200559)		PMID:18820678
+2026-04-27	SPNCRNA.1325	fbp1-ot3	before	II:complement(199409..200559)		
+2026-04-27	SPNCRNA.1326	fbp1-ot2	after	II:complement(198099..201812)		PMID:18820678
+2026-04-27	SPNCRNA.1326	fbp1-ot2	before	II:complement(201348..201812)		
+2026-04-27	SPNCRNA.4604	fbp1-ot1	after	II:complement(198099..203271)		PMID:18820678
+2026-04-27	SPNCRNA.4604	fbp1-ot1	before	II:complement(202640..203271)		
 2025-04-10	SPNCRNA.1715.1	mamRNA	after	II:join(1307681..1308190,1308418..1308984)		
 2025-04-10	SPNCRNA.1715.1	mamRNA	before	II:1307681..1308359		
 2024-06-26	SPSNORNA.18	snoU24	after	I:complement(5369613..5369691)		

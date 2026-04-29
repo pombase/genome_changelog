@@ -6598,6 +6598,7 @@ II	SPBC1198.13c		5'UTR	complement(197074..197132)	2011-03-04							https://www.p
 II	SPBC1198.13c		5'UTR	complement(197076..197132)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 II	SPBC1198.13c		5'UTR	complement(197076..197189)	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk/?p=8649
 II	SPBC1198.13c		5'UTR	complement(197163..197189)	2011-12-14							https://curation.pombase.org/pombe-embl-repo/?p=184
+II	SPBC1198.14c		5'UTR	complement(199143..199369)	2026-04-27		PMID:30566651					https://curation.pombase.org/pombe-embl-repo/trunk/?p=11904
 II	SPBC1198.14c		5'UTR	complement(199143..199414)	2011-03-24	PMID:2558974						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 II	SPBC1198.14c		5'UTR	complement(199143..199474)	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk/?p=8649
 II	SPBC11B10.01		3'UTR	1487939..1488262	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
@@ -11505,6 +11506,10 @@ II	SPNCRNA.114		ncRNA	4262098..4262173	2022-12-08							https://curation.pombase
 II	SPNCRNA.1300		ncRNA	complement(21060..21754)	2014-11-06							https://curation.pombase.org/pombe-embl-repo/trunk/?p=2325
 II	SPNCRNA.1308		ncRNA	complement(103165..104528)	2014-11-06							https://curation.pombase.org/pombe-embl-repo/trunk/?p=2325
 II	SPNCRNA.1311		ncRNA	120577..121643	2014-11-06							https://curation.pombase.org/pombe-embl-repo/trunk/?p=2325
+II	SPNCRNA.1325	fbp1-ot3	lncRNA	complement(198099..200559)	2026-04-27		PMID:18820678					https://curation.pombase.org/pombe-embl-repo/trunk/?p=11905
+II	SPNCRNA.1325	fbp1-ot3	lncRNA	complement(199409..200559)	2026-04-27							https://curation.pombase.org/pombe-embl-repo/trunk/?p=11903
+II	SPNCRNA.1326	fbp1-ot2	lncRNA	complement(198099..201812)	2026-04-27		PMID:18820678					https://curation.pombase.org/pombe-embl-repo/trunk/?p=11905
+II	SPNCRNA.1326	fbp1-ot2	lncRNA	complement(201348..201812)	2026-04-27							https://curation.pombase.org/pombe-embl-repo/trunk/?p=11903
 II	SPNCRNA.1341		misc_RNA	complement(339484..340003)	2011-08-22							https://curation.pombase.org/pombe-embl-repo/?p=0
 II	SPNCRNA.1341		ncRNA	complement(339484..340003)	2022-08-26							https://curation.pombase.org/pombe-embl-repo/trunk/?p=8409
 II	SPNCRNA.1347		misc_RNA	complement(360439..363023)	2012-08-06							https://curation.pombase.org/pombe-embl-repo/trunk/?p=543
@@ -11588,6 +11593,8 @@ II	SPNCRNA.444		ncRNA	4435937..4436680	2022-12-20							https://curation.pombase
 II	SPNCRNA.445		misc_RNA	complement(3874378..3874906)	2008-09-22			pers. comm. J. Matthews		updated to extend 3’ and added splice and identified as snR6		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20080827/
 II	SPNCRNA.445		ncRNA	complement(3874254..3874906)	2022-08-26							https://curation.pombase.org/pombe-embl-repo/trunk/?p=8409
 II	SPNCRNA.4538		ncRNA	complement(63188..63561)	2022-08-26							https://curation.pombase.org/pombe-embl-repo/trunk/?p=8411
+II	SPNCRNA.4604	fbp1-ot1	lncRNA	complement(198099..203271)	2026-04-27		PMID:18820678					https://curation.pombase.org/pombe-embl-repo/trunk/?p=11905
+II	SPNCRNA.4604	fbp1-ot1	lncRNA	complement(202640..203271)	2026-04-27							https://curation.pombase.org/pombe-embl-repo/trunk/?p=11903
 II	SPNCRNA.4675		ncRNA	complement(340287..340577)	2022-08-26							https://curation.pombase.org/pombe-embl-repo/trunk/?p=8409
 II	SPNCRNA.514		ncRNA	complement(2145712..2145812)	2022-12-08							https://curation.pombase.org/pombe-embl-repo/trunk/?p=8581
 II	SPNCRNA.515		ncRNA	3962690..3962794	2022-12-08							https://curation.pombase.org/pombe-embl-repo/trunk/?p=8581

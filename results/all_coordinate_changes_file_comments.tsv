@@ -1,4 +1,18 @@
 revision	user	date	chromosome	systematic_id	primary_name	feature_type	added_or_removed	value	db_xref	pombase_reference	pombase_comments
+11906	pascal	2026-04-27	II	SPNCRNA.1325	fbp1-ot3	lncRNA	added	complement(197660..200559)			
+11906	pascal	2026-04-27	II	SPNCRNA.1325	fbp1-ot3	lncRNA	removed	complement(198099..200559)			
+11906	pascal	2026-04-27	II	SPNCRNA.1326	fbp1-ot2	lncRNA	added	complement(197660..201812)			
+11906	pascal	2026-04-27	II	SPNCRNA.1326	fbp1-ot2	lncRNA	removed	complement(198099..201812)			
+11906	pascal	2026-04-27	II	SPNCRNA.4604	fbp1-ot1	lncRNA	added	complement(197660..203271)			
+11906	pascal	2026-04-27	II	SPNCRNA.4604	fbp1-ot1	lncRNA	removed	complement(198099..203271)			
+11905	pascal	2026-04-27	II	SPBC1198.14c		5'UTR	added	complement(199143..199415)			
+11905	pascal	2026-04-27	II	SPBC1198.14c		5'UTR	removed	complement(199143..199369)			
+11904	pascal	2026-04-27	II	SPNCRNA.1325	fbp1-ot3	lncRNA	added	complement(198099..200559)	PMID:18820678		
+11904	pascal	2026-04-27	II	SPNCRNA.1325	fbp1-ot3	lncRNA	removed	complement(199409..200559)			
+11904	pascal	2026-04-27	II	SPNCRNA.1326	fbp1-ot2	lncRNA	added	complement(198099..201812)	PMID:18820678		
+11904	pascal	2026-04-27	II	SPNCRNA.1326	fbp1-ot2	lncRNA	removed	complement(201348..201812)			
+11904	pascal	2026-04-27	II	SPNCRNA.4604	fbp1-ot1	lncRNA	added	complement(198099..203271)	PMID:18820678		
+11904	pascal	2026-04-27	II	SPNCRNA.4604	fbp1-ot1	lncRNA	removed	complement(202640..203271)			
 11818	vw253	2026-04-05	III	SPCC16C4.16c		intron	added	complement(697750..697874)			
 11818	vw253	2026-04-05	III	SPCC622.17	apn1	CDS	added	join(1435250..1435335,1435596..1435850,1435923..1436649)	PMID:21193357		
 11818	vw253	2026-04-05	III	SPCC622.17	apn1	CDS	removed	join(1435549..1435850,1435923..1436649)			

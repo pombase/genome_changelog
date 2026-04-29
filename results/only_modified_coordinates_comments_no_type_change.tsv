@@ -1,4 +1,16 @@
 revision	user	date	chromosome	systematic_id	primary_name	feature_type	added_or_removed	value	db_xref	pombase_reference	pombase_comments
+11906	pascal	2026-04-27	II	SPNCRNA.1325	fbp1-ot3	lncRNA	added	complement(197660..200559)			
+11906	pascal	2026-04-27	II	SPNCRNA.1325	fbp1-ot3	lncRNA	removed	complement(198099..200559)			
+11906	pascal	2026-04-27	II	SPNCRNA.1326	fbp1-ot2	lncRNA	added	complement(197660..201812)			
+11906	pascal	2026-04-27	II	SPNCRNA.1326	fbp1-ot2	lncRNA	removed	complement(198099..201812)			
+11906	pascal	2026-04-27	II	SPNCRNA.4604	fbp1-ot1	lncRNA	added	complement(197660..203271)			
+11906	pascal	2026-04-27	II	SPNCRNA.4604	fbp1-ot1	lncRNA	removed	complement(198099..203271)			
+11904	pascal	2026-04-27	II	SPNCRNA.1325	fbp1-ot3	lncRNA	added	complement(198099..200559)	PMID:18820678		
+11904	pascal	2026-04-27	II	SPNCRNA.1325	fbp1-ot3	lncRNA	removed	complement(199409..200559)			
+11904	pascal	2026-04-27	II	SPNCRNA.1326	fbp1-ot2	lncRNA	added	complement(198099..201812)	PMID:18820678		
+11904	pascal	2026-04-27	II	SPNCRNA.1326	fbp1-ot2	lncRNA	removed	complement(201348..201812)			
+11904	pascal	2026-04-27	II	SPNCRNA.4604	fbp1-ot1	lncRNA	added	complement(198099..203271)	PMID:18820678		
+11904	pascal	2026-04-27	II	SPNCRNA.4604	fbp1-ot1	lncRNA	removed	complement(202640..203271)			
 11818	vw253	2026-04-05	III	SPCC622.17	apn1	CDS	added	join(1435250..1435335,1435596..1435850,1435923..1436649)	PMID:21193357		
 11818	vw253	2026-04-05	III	SPCC622.17	apn1	CDS	removed	join(1435549..1435850,1435923..1436649)			
 11771	vw253	2026-03-24	I	SPAC186.04c		CDS	added	complement(5538559..5539101)			
@@ -1910,8 +1922,8 @@ svn_2	kmr44	2011-08-22	III	SPCTRNAVAL.12		tRNA	removed	complement(1065778..10658
 20020905	-	2002-09-05	I	SPAC1296.04		CDS	removed	join(745694..745822,745899..746297)		pers. comm. Val Wood	has 2 additional N-terminal exons
 20020905	-	2002-09-05	I	SPAC23C11.10		CDS	added	join(2202062..2202182,2202222..2202320,2202368..2202566,2202618..2202780,2202824..2203039)		pers. comm. Val Wood	found 3 additional C-terminal exons by eye
 20020905	-	2002-09-05	I	SPAC23C11.10		CDS	removed	join(2180300..2180420,2180460..2180581)		pers. comm. Val Wood	found 3 additional C-terminal exons by eye
-20020905	-	2002-09-05	I	SPAC2F3.13c		CDS	added	complement(join(3995247..3996111,3996187..3996368))		pers. comm. Val Wood	split to create SPAC2F3.13c and SPAC2F3.12c
 20020905	-	2002-09-05	I	SPAC2F3.13c		CDS	added	complement(join(3995247..3996111,3996187..3996368))		pers. comm. Val Wood	annotated as SPAC2F3.13c putative tRNA-ribosyltransferase, but actually a gene merge. Split to create SPAC2F3.13c the tRNA-ribosyltransferase and new CDS SPAC2F3.17c was created from the C-terminal
+20020905	-	2002-09-05	I	SPAC2F3.13c		CDS	added	complement(join(3995247..3996111,3996187..3996368))		pers. comm. Val Wood	split to create SPAC2F3.13c and SPAC2F3.12c
 20020905	-	2002-09-05	I	SPAC2F3.13c		CDS	removed	complement(join(3972358..3972669,3972711..3972786,3972835..3972921,3972966..3973118,3973163..3973474,3973522..3974349,3974425..3974606))		pers. comm. Val Wood	split to create SPAC2F3.13c and SPAC2F3.12c
 20020905	-	2002-09-05	I	SPAC2F3.13c		CDS	removed	complement(join(3972358..3972669,3972711..3972786,3972835..3972921,3972966..3973118,3973163..3973474,3973522..3974349,3974425..3974606))		pers. comm. Val Wood	annotated as SPAC2F3.13c putative tRNA-ribosyltransferase, but actually a gene merge. Split to create SPAC2F3.13c the tRNA-ribosyltransferase and new CDS SPAC2F3.17c was created from the C-terminal
 20020905	-	2002-09-05	I	SPAC2F3.17c		CDS	added	complement(join(3994120..3994431,3994473..3994548,3994597..3994683,3994728..3994880,3994925..3995136))			

@@ -1433,8 +1433,8 @@ SPNCRNA.1321	II		lncRNA,misc_RNA,ncRNA	added_and_changed		2011-03-24	2023-01-16	
 SPNCRNA.1322	II		lncRNA,misc_RNA,ncRNA	added_and_changed		2011-03-24	2023-01-16	complement(181431..182194)
 SPNCRNA.1323	II		lncRNA,misc_RNA,ncRNA	added_and_changed		2011-03-24	2023-01-16	185042..186959
 SPNCRNA.1324	II		lncRNA,misc_RNA,ncRNA	added_and_changed		2011-03-24	2023-01-16	197369..200995
-SPNCRNA.1325	II		lncRNA,misc_RNA,ncRNA	added_and_changed		2011-03-24	2023-01-16	complement(199409..200559)
-SPNCRNA.1326	II		lncRNA,misc_RNA,ncRNA	added_and_changed		2011-03-24	2023-01-16	complement(201348..201812)
+SPNCRNA.1325	II	fbp1-ot3	lncRNA,misc_RNA,ncRNA	added_and_changed		2011-03-24	2026-04-27	complement(197660..200559)
+SPNCRNA.1326	II	fbp1-ot2	lncRNA,misc_RNA,ncRNA	added_and_changed		2011-03-24	2026-04-27	complement(197660..201812)
 SPNCRNA.1327	II		lncRNA,misc_RNA,ncRNA	added_and_changed		2011-03-24	2023-01-16	complement(205583..206910)
 SPNCRNA.1328	II		lncRNA,misc_RNA,ncRNA	added_and_changed		2011-03-24	2023-01-16	complement(210126..211344)
 SPNCRNA.1329	II		lncRNA,misc_RNA,ncRNA	added_and_changed		2011-03-24	2023-01-16	217881..218882
@@ -4722,7 +4722,7 @@ SPNCRNA.4600	II		lncRNA,ncRNA	added_and_changed		2022-01-12	2023-01-16	complemen
 SPNCRNA.4601	II		lncRNA,ncRNA	added_and_changed		2022-01-12	2023-01-16	192224..194027
 SPNCRNA.4602	II		lncRNA,ncRNA	added_and_changed		2022-01-12	2023-01-16	196555..197196
 SPNCRNA.4603	II		lncRNA,ncRNA	added_and_changed		2022-01-12	2023-01-16	complement(197279..197554)
-SPNCRNA.4604	II		lncRNA,ncRNA	added_and_changed		2022-01-12	2023-01-16	complement(202640..203271)
+SPNCRNA.4604	II	fbp1-ot1	lncRNA,ncRNA	added_and_changed		2022-01-12	2026-04-27	complement(197660..203271)
 SPNCRNA.4605	II		lncRNA,ncRNA	added_and_changed		2022-01-12	2023-01-16	205854..206408
 SPNCRNA.4606	II		lncRNA,ncRNA	added_and_changed		2022-01-12	2023-01-16	complement(207447..207838)
 SPNCRNA.4607	II		lncRNA,ncRNA	added_and_changed		2022-01-12	2023-01-16	complement(207940..208147)
