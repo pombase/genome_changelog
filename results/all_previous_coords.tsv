@@ -5664,6 +5664,7 @@ I	SPAC977.12		5'UTR	56484..56491	2011-03-24	PMID:18641648,PMID:20118936						htt
 I	SPAC977.14c		5'UTR	complement(60769..60843)	2011-03-04							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110204/
 I	SPAC977.14c		5'UTR	complement(60771..60843)	2011-03-24	PMID:18641648,PMID:20118936						https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20110304/
 I	SPAC977.14c		5'UTR	complement(60771..60907)	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk/?p=8649
+I	SPAC977.14c		CDS	complement(59715..60770)	2026-07-09							https://curation.pombase.org/pombe-embl-repo/trunk/?p=12077
 I	SPAC977.15		5'UTR	62961..62988	2023-01-12	PMID:21511999						https://curation.pombase.org/pombe-embl-repo/trunk/?p=8649
 I	SPAC977.16c		5'UTR	complement(66680..66980)	2023-01-12							https://curation.pombase.org/pombe-embl-repo/trunk/?p=8649
 I	SPAC977.16c		5'UTR	complement(66681..66980)	2017-05-22							https://curation.pombase.org/pombe-embl-repo/trunk/?p=4048
