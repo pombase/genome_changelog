@@ -22,12 +22,14 @@ def build_seqfeature_dict(genome: SeqRecord, use_custom_feature):
             feature = CustomSeqFeature.from_parent(normal_feature, genome)
         else:
             feature = normal_feature
+        feature_type = feature.type
+        if feature_type in ['prim_transcript']:
+            continue
         if 'systematic_id' not in feature.qualifiers:
             continue
         gene_id = feature.qualifiers['systematic_id'][0]
         if gene_id not in out_dict:
             out_dict[gene_id] = dict()
-        feature_type = feature.type
         if feature_type not in out_dict[gene_id]:
             out_dict[gene_id][feature_type] = list()
         out_dict[gene_id][feature_type].append(feature)
