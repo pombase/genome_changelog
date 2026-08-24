@@ -1,4 +1,12 @@
 revision	user	date	chromosome	systematic_id	primary_name	feature_type	added_or_removed	value
+12185	pascal	2026-08-18	II	SPSNORNA.59	snoR55	snoRNA	added	complement(3874516..3874601)
+12185	pascal	2026-08-18	II	SPSNORNA.59	snoR57	snoRNA	removed	complement(3874254..3874461)
+12185	pascal	2026-08-18	II	SPSNORNA.61	snoR61	snoRNA	added	complement(3874378..3874461)
+12185	pascal	2026-08-18	II	SPSNORNA.61	snoR61	snoRNA	removed	complement(3874798..3874906)
+12176	pascal	2026-08-17	I	SPNCRNA.87		snoRNA	added	3177924..3178029
+12176	pascal	2026-08-17	I	SPNCRNA.87		lncRNA	removed	3177931..3178309
+12176	pascal	2026-08-17	II	SPNCRNA.497	snR48	snoRNA	added	complement(4239161..4239235)
+12176	pascal	2026-08-17	II	SPNCRNA.497	snR48	snRNA	removed	complement(4239161..4239235)
 12078	vw253	2026-07-09	I	SPAC977.14c		CDS	added	complement(join(59715..60770,59715..60770))
 12078	vw253	2026-07-09	I	SPAC977.14c		CDS	removed	complement(59715..60770)
 12007	vw253	2026-06-10	I	SPAC6F6.19	sap34	CDS	added	complement(join(2759155..2759292,2759479..2759872,2759872..2759967,2760118..2760356))

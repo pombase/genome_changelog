@@ -1,4 +1,10 @@
 Date	Systematic ID	Primary name	Before / After change	Coordinates	Comment	Reference
+2026-08-18	SPSNORNA.59	snoR55	after	II:complement(3874516..3874601)		PMID:23516505
+2026-08-18	SPSNORNA.59	snoR57	before	II:complement(3874254..3874461)		PMID:18488015,PMID:23516505
+2026-08-18	SPSNORNA.61	snoR61	after	II:complement(3874378..3874461)		
+2026-08-18	SPSNORNA.61	snoR61	before	II:complement(3874798..3874906)		
+2026-08-17	SPNCRNA.87		after	I:3177924..3178029		
+2026-08-17	SPNCRNA.87		before	I:3177931..3178309		
 2026-04-27	SPNCRNA.1325	fbp1-ot3	after	II:complement(197660..200559)		
 2026-04-27	SPNCRNA.1325	fbp1-ot3	before	II:complement(198099..200559)		
 2026-04-27	SPNCRNA.1326	fbp1-ot2	after	II:complement(197660..201812)		

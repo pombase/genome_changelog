@@ -6289,6 +6289,7 @@ I	SPNCRNA.65	prl65	misc_RNA	complement(join(2472399..2472749,2472861..2472897))	
 I	SPNCRNA.681		ncRNA	776184..777243	2022-08-26							https://curation.pombase.org/pombe-embl-repo/trunk/?p=8409
 I	SPNCRNA.72	eta2-antisense-2	ncRNA	complement(3001825..3003103)	2022-08-25							https://curation.pombase.org/pombe-embl-repo/trunk/?p=8401
 I	SPNCRNA.723		ncRNA	1200009..1200876	2015-11-16							https://curation.pombase.org/pombe-embl-repo/trunk/?p=3096
+I	SPNCRNA.723		snoRNA	1200009..1200876	2026-08-15							https://curation.pombase.org/pombe-embl-repo/trunk/?p=12167
 I	SPNCRNA.727		ncRNA	1234476..1235111	2015-11-16							https://curation.pombase.org/pombe-embl-repo/trunk/?p=3096
 I	SPNCRNA.727		ncRNA	1234476..1235111	2022-08-26							https://curation.pombase.org/pombe-embl-repo/trunk/?p=8411
 I	SPNCRNA.729		ncRNA	1236996..1238533	2022-08-26							https://curation.pombase.org/pombe-embl-repo/trunk/?p=8411
@@ -6321,6 +6322,7 @@ I	SPNCRNA.860		ncRNA	complement(2931622..2932800)	2022-12-19							https://curat
 I	SPNCRNA.865		ncRNA	2956805..2959658	2022-12-19							https://curation.pombase.org/pombe-embl-repo/trunk/?p=8604
 I	SPNCRNA.866		ncRNA	complement(2971998..2975970)	2015-11-28							https://curation.pombase.org/pombe-embl-repo/trunk/?p=3137
 I	SPNCRNA.867		ncRNA	2973017..2976287	2015-11-28							https://curation.pombase.org/pombe-embl-repo/trunk/?p=3137
+I	SPNCRNA.87		lncRNA	3177931..3178309	2026-08-17							https://curation.pombase.org/pombe-embl-repo/trunk/?p=12175
 I	SPNCRNA.87		ncRNA	complement(3177948..3178309)	2022-12-19							https://curation.pombase.org/pombe-embl-repo/trunk/?p=8604
 I	SPNCRNA.88		ncRNA	3033837..3033955	2022-12-08							https://curation.pombase.org/pombe-embl-repo/trunk/?p=8581
 I	SPNCRNA.882		ncRNA	3060538..3061276	2022-12-19							https://curation.pombase.org/pombe-embl-repo/trunk/?p=8604
@@ -6329,6 +6331,7 @@ I	SPNCRNA.884		ncRNA	complement(3084619..3086087)	2022-09-27							https://curat
 I	SPNCRNA.893		lncRNA	3177931..3178309	2023-03-01							https://curation.pombase.org/pombe-embl-repo/trunk/?p=8763
 I	SPNCRNA.893		ncRNA	3177931..3179269	2022-12-19							https://curation.pombase.org/pombe-embl-repo/trunk/?p=8604
 I	SPNCRNA.901		ncRNA	complement(3316321..3316601)	2015-11-16							https://curation.pombase.org/pombe-embl-repo/trunk/?p=3096
+I	SPNCRNA.901		snoRNA	complement(3316321..3316601)	2026-08-18							https://curation.pombase.org/pombe-embl-repo/trunk/?p=12180
 I	SPNCRNA.906		ncRNA	3394883..3395271	2015-11-16							https://curation.pombase.org/pombe-embl-repo/trunk/?p=3096
 I	SPNCRNA.906		ncRNA	3394883..3395271	2022-12-08							https://curation.pombase.org/pombe-embl-repo/trunk/?p=8581
 I	SPNCRNA.91		ncRNA	5058865..5059013	2022-12-08							https://curation.pombase.org/pombe-embl-repo/trunk/?p=8581
@@ -6365,6 +6368,7 @@ I	SPSNORNA.29	sno52	snoRNA	339548..339642	2010-02-17							https://www.pombase.o
 I	SPSNORNA.42		intron	complement(4937014..4937169)	2022-12-12							https://curation.pombase.org/pombe-embl-repo/trunk/?p=8587
 I	SPSNORNA.42	snR90	snoRNA	complement(4937170..4937394)	2022-12-12							https://curation.pombase.org/pombe-embl-repo/trunk/?p=8587
 I	SPSNORNA.42	snR90	snoRNA	complement(4937237..4937394)	2010-01-29							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20091023/
+I	SPSNORNA.42	snR90	snoRNA	complement(join(4936907..4937013,4937200..4937394))	2026-08-15							https://curation.pombase.org/pombe-embl-repo/trunk/?p=12167
 I	SPSNORNA.43	snR91	misc_feature	complement(4962034..4962177)	2006-02-19							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20060103/
 I	SPSNORNA.43	snR91	misc_feature	complement(4962034..4962177)	2006-06-26							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20060517/
 I	SPSNORNA.43	snR91	misc_feature	complement(4962035..4962178)	2006-09-05							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20060701/
@@ -11596,6 +11600,7 @@ II	SPNCRNA.438		ncRNA	complement(4194849..4196008)	2022-08-26	PMID:29914874	PMID
 II	SPNCRNA.444		ncRNA	4435937..4436680	2022-12-20							https://curation.pombase.org/pombe-embl-repo/trunk/?p=8607
 II	SPNCRNA.445		misc_RNA	complement(3874378..3874906)	2008-09-22			pers. comm. J. Matthews		updated to extend 3’ and added splice and identified as snR6		https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20080827/
 II	SPNCRNA.445		ncRNA	complement(3874254..3874906)	2022-08-26							https://curation.pombase.org/pombe-embl-repo/trunk/?p=8409
+II	SPNCRNA.445	snoR61	snoRNA	complement(join(3874254..3874461,3874798..3874906))	2026-08-17				pers. comm. J. Matthews		updated to extend 3’ and added splice and identified as snR6	https://curation.pombase.org/pombe-embl-repo/trunk/?p=12175
 II	SPNCRNA.4538		ncRNA	complement(63188..63561)	2022-08-26							https://curation.pombase.org/pombe-embl-repo/trunk/?p=8411
 II	SPNCRNA.4604	fbp1-ot1	lncRNA	complement(198099..203271)	2026-04-27		PMID:18820678					https://curation.pombase.org/pombe-embl-repo/trunk/?p=11905
 II	SPNCRNA.4604	fbp1-ot1	lncRNA	complement(202640..203271)	2026-04-27							https://curation.pombase.org/pombe-embl-repo/trunk/?p=11903
@@ -11652,6 +11657,8 @@ II	SPSNORNA.39	snR36	misc_feature	complement(1959086..1959249)	2006-06-26							
 II	SPSNORNA.39	snR36	misc_feature	complement(1959086..1959249)	2006-09-05							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20060701/
 II	SPSNORNA.39	snR36	snoRNA	complement(1957286..1957449)	2006-05-17							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20060219/
 II	SPSNORNA.39	snR36	snoRNA	complement(1959086..1959249)	2006-07-01							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20060626/
+II	SPSNORNA.59	snoR57	snoRNA	complement(3874254..3874461)	2026-08-18	PMID:18488015,PMID:23516505						https://curation.pombase.org/pombe-embl-repo/trunk/?p=12184
+II	SPSNORNA.61	snoR61	snoRNA	complement(3874798..3874906)	2026-08-18							https://curation.pombase.org/pombe-embl-repo/trunk/?p=12184
 II	SPSNRNA.01	snu1	snRNA	3019819..3020472	2014-06-19			PMID:2188102		represents the actual functional RNA		https://curation.pombase.org/pombe-embl-repo/trunk/?p=1824
 II	SPSNRNA.04	snu4	snRNA	complement(467025..467823)	2014-06-19			PMID:2795654		represents the actual functional RNA		https://curation.pombase.org/pombe-embl-repo/trunk/?p=1824
 II	SPSNRNA.04	snu4	snRNA	complement(467233..467361)	2022-05-25		PMID:2795654	PMID:2795654	PMID:2795654	Jennifer Porat flagged it	represents the actual functional RNA	https://curation.pombase.org/pombe-embl-repo/trunk/?p=8237

@@ -1,20 +1,20 @@
 Systematic ID	Primary name	Date removed	Coordinates when removed	Comment	Reference
-SPMTR.04	mat3-Mc	2019-05-21	15856..16401		PomBase curators
 SPMTR.03	mat3-Mi	2019-05-21	complement(15593..15721)		PomBase curators
+SPMTR.04	mat3-Mc	2019-05-21	15856..16401		PomBase curators
 SPAC110.05		2016-07-14	complement(1905728..1905820)	Merged into SPAC110.06	PomBase curators
-SPBC713.13		2016-03-17	complement(890220..890546)	deleted; ID added as synonym to SPBC713.14c	PMID:24929437
 SPAPB1A11.05		2016-03-17	2975643..2975771	Merged into SPAC31G5.01,SPAPB1A11.06	PomBase curators
+SPBC713.13		2016-03-17	complement(890220..890546)	deleted; ID added as synonym to SPBC713.14c	PMID:24929437
 SPAC823.02		2016-03-17	join(2583804..2583902,2583941..2583973)	deleted; replaced by SPAC823.17 at same locus, but in different frame	PMID:24929437
-SPAC1D4.07c		2015-12-11	complement(649449..649889)	not protein-coding	PMID:24929437, PMID:26615217
-SPAC4H3.12c		2015-12-11	complement(3851914..3852219)	not protein-coding	PMID:24929437, PMID:26615217
-SPAC27E2.13		2015-12-11	4008511..4008693	not protein-coding	PMID:24929437, PMID:26615217
-SPBC36.13		2015-12-11	complement(845807..846079)	not protein-coding	PMID:24929437, PMID:26615217
-SPCC1672.14		2015-12-11	complement(563977..564444)	not protein-coding	PMID:24929437, PMID:26615217
-SPCC188.05		2015-12-11	1482007..1482273	not protein-coding	PMID:24929437, PMID:26615217
 SPBC354.11c		2015-12-11	complement(575773..576291)	not protein-coding	PMID:24929437, PMID:26615217
-SPBC32F12.17		2015-12-11	complement(2805085..2805417)	not protein-coding	PMID:24929437, PMID:26615217
-SPCC417.04		2015-12-11	1673314..1673856	not protein-coding	PMID:24929437, PMID:26615217
+SPAC1D4.07c		2015-12-11	complement(649449..649889)	not protein-coding	PMID:24929437, PMID:26615217
 SPCC622.05		2015-12-11	1408164..1408511	not protein-coding	PMID:24929437, PMID:26615217
+SPCC417.04		2015-12-11	1673314..1673856	not protein-coding	PMID:24929437, PMID:26615217
+SPAC27E2.13		2015-12-11	4008511..4008693	not protein-coding	PMID:24929437, PMID:26615217
+SPAC4H3.12c		2015-12-11	complement(3851914..3852219)	not protein-coding	PMID:24929437, PMID:26615217
+SPBC32F12.17		2015-12-11	complement(2805085..2805417)	not protein-coding	PMID:24929437, PMID:26615217
+SPCC188.05		2015-12-11	1482007..1482273	not protein-coding	PMID:24929437, PMID:26615217
+SPCC1672.14		2015-12-11	complement(563977..564444)	not protein-coding	PMID:24929437, PMID:26615217
+SPBC36.13		2015-12-11	complement(845807..846079)	not protein-coding	PMID:24929437, PMID:26615217
 SPBC1685.12c		2015-12-11	complement(523887..524240)	not protein-coding	PMID:24929437, PMID:26615217
 SPAC1F8.09c		2012-09-13	complement(96091..96345)	annotated in error	PomBase curators
 SPAC1F12.03c		2012-07-16	complement(join(3810367..3810458,3810639..3810660))	removed; replaced by a nuclear mitochondrial pseudogene (NUMT) feature	PomBase curators
@@ -22,9 +22,9 @@ SPBC1348.13		2011-11-20	36892..37188	Coordinates updated; now annotated as nucle
 SPCC18.19		2011-05-09	1982501..1982719	Merged into SPCC18.20	PomBase curators
 SPAC17A2.15		2011-03-24	join(3569155..3569235,3569383..3569511)	was on the reverse strand of the N-terminal extension of SPAC17A2.08	PomBase curators
 SPAC13F5.08	vts1	2011-03-24	complement(join(2178651..2178887,2179020..2179117,2179380..2179482))	Merged into SPAC13F5.04c	PomBase curators
+SPBCPT2R1.09c		2010-09-28	complement(4517649..4519024)	no coding region	PomBase curators
 SPBPB2B2.04		2010-09-28	4464941..4465474	no coding region	PomBase curators
 SPBPB2B2.03c		2010-09-28	complement(4462609..4464024)	no coding region	PomBase curators
-SPBCPT2R1.09c		2010-09-28	complement(4517649..4519024)	no coding region	PomBase curators
 SPBC11C11.12		2010-05-20	3360974..3361072	cob intron fragment currently annotated as pseudogene	PomBase curators
 SPBC14C8.08c		2009-02-19	complement(2219430..2219978)	merged with SPBC14C8.09c; frameshifted	PMID:16823372
 SPAC27D7.10c		2008-09-22	complement(4526425..4527576)	Merged into SPAC27D7.09c	PomBase curators
