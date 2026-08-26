@@ -1,4 +1,6 @@
 revision	user	date	chromosome	systematic_id	primary_name	feature_type	added_or_removed	value	db_xref	pombase_reference	pombase_comments
+12207	vw253	2026-08-25	I	SPSNORNA.42	snR90	snoRNA	added	complement(4937237..4937394)			
+12207	vw253	2026-08-25	I	SPSNORNA.90	snR90	snoRNA	removed	complement(4937237..4937394)			
 12185	pascal	2026-08-18	II	SPNCRNA.445		intron	added	complement(3874462..3874797)			
 12185	pascal	2026-08-18	II	SPSNORNA.59	snoR55	snoRNA	added	complement(3874516..3874601)	PMID:23516505		
 12185	pascal	2026-08-18	II	SPSNORNA.59	snoR57	snoRNA	removed	complement(3874254..3874461)	PMID:18488015,PMID:23516505		

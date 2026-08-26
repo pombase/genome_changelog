@@ -6373,6 +6373,7 @@ I	SPSNORNA.43	snR91	misc_feature	complement(4962034..4962177)	2006-02-19							h
 I	SPSNORNA.43	snR91	misc_feature	complement(4962034..4962177)	2006-06-26							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20060517/
 I	SPSNORNA.43	snR91	misc_feature	complement(4962035..4962178)	2006-09-05							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20060701/
 I	SPSNORNA.53	snR88	snoRNA	1316808..1316891	2006-05-17							https://www.pombase.org/data/genome_sequence_and_features/artemis_files/OLD/20060219/
+I	SPSNORNA.90	snR90	snoRNA	complement(4937237..4937394)	2026-08-25							https://curation.pombase.org/pombe-embl-repo/trunk/?p=12206
 I	SPSNRNA.02	snu2	snRNA	complement(959305..959770)	2014-06-19			PMID:3244367		represents the actual functional RNA		https://curation.pombase.org/pombe-embl-repo/trunk/?p=1824
 I	SPSNRNA.02	snu2	snRNA	complement(959370..959586)	2014-07-25		PMID:3244367		PMID:3244367		represents the actual functional RNA	https://curation.pombase.org/pombe-embl-repo/trunk/?p=1963
 I	SPSNRNA.03	snu3	snRNA	complement(987631..988266)	2014-06-19			PMID:3194197		represents the actual functional RNA		https://curation.pombase.org/pombe-embl-repo/trunk/?p=1824
