@@ -1,4 +1,36 @@
 revision	user	date	chromosome	systematic_id	primary_name	feature_type	qualifier_type	added_or_removed	value
+12337	vw253	2026-10-10	I	SPAC12B10.12c	rhp41	CDS	product	added	helix-distorting DNA lesion sensor Rhp41
+12337	vw253	2026-10-10	I	SPAC12B10.12c	rhp41	CDS	product	removed	DNA damage sensor Rhp41
+12337	vw253	2026-10-10	III	SPCC4G3.10c	rhp42	CDS	product	added	helix-distorting DNA lesion sensor Rhp42
+12337	vw253	2026-10-10	III	SPCC4G3.10c	rhp42	CDS	product	removed	DNA repair protein Rhp42
+12336	vw253	2026-10-09	I	SPAC12B10.12c	rhp41	CDS	product	added	DNA damage sensor Rhp41
+12336	vw253	2026-10-09	I	SPAC12B10.12c	rhp41	CDS	product	removed	DNA repair protein Rhp41
+12336	vw253	2026-10-09	II	SPBC14C8.05c	meu17	CDS	EC_number	added	3.2.1.3
+12336	vw253	2026-10-09	II	SPBC14C8.05c	meu17	CDS	colour	added	2
+12336	vw253	2026-10-09	II	SPBC14C8.05c	meu17	CDS	colour	removed	10
+12336	vw253	2026-10-09	II	SPBC14C8.05c	meu17	CDS	product	added	glucan alpha-1,4-glucosidase
+12336	vw253	2026-10-09	II	SPBC14C8.05c	meu17	CDS	product	removed	six-hairpin glycosidase-like superfamily
+12336	vw253	2026-10-09	II	SPBC16E9.16c	lsd90	CDS	colour	added	10
+12336	vw253	2026-10-09	II	SPBC16E9.16c	lsd90	CDS	colour	removed	2
+12336	vw253	2026-10-09	II	SPBC16E9.16c	lsd90	CDS	product	added	Lsd90 protein, implicated in long-chain fatty acid metabolism
+12336	vw253	2026-10-09	II	SPBC16E9.16c	lsd90	CDS	product	removed	Lsd90 protein
+12336	vw253	2026-10-09	III	SPCC330.02	rhp7	CDS	product	added	ubiquitin liagse adaptor Rad7/Rhp7
+12336	vw253	2026-10-09	III	SPCC330.02	rhp7	CDS	product	removed	Rad7 homolog Rhp7
+12333	vw253	2026-10-08	I	SPAC4H3.03c		CDS	colour	added	10
+12333	vw253	2026-10-08	I	SPAC4H3.03c		CDS	colour	removed	7
+12333	vw253	2026-10-08	I	SPAC4H3.03c		CDS	product	added	six-hairpin glycosidase-like superfamily
+12333	vw253	2026-10-08	I	SPAC4H3.03c		CDS	product	removed	glucan alpha-1,4-glucosidase
+12333	vw253	2026-10-08	II	SPBC14C8.05c	meu17	CDS	EC_number	removed	3.2.1.3
+12333	vw253	2026-10-08	II	SPBC14C8.05c	meu17	CDS	colour	added	10
+12333	vw253	2026-10-08	II	SPBC14C8.05c	meu17	CDS	colour	removed	2
+12333	vw253	2026-10-08	II	SPBC14C8.05c	meu17	CDS	product	added	six-hairpin glycosidase-like superfamily
+12333	vw253	2026-10-08	II	SPBC14C8.05c	meu17	CDS	product	removed	glucan alpha-1,4-glucosidase
+12333	vw253	2026-10-08	II	SPBP4H10.10	rbd3	CDS	colour	added	10
+12333	vw253	2026-10-08	II	SPBP4H10.10	rbd3	CDS	colour	removed	7
+12333	vw253	2026-10-08	II	SPBP4H10.10	rbd3	CDS	product	added	mitochondrial rhomboid family peptidase Rbd3, implicated in protein processing
+12333	vw253	2026-10-08	II	SPBP4H10.10	rbd3	CDS	product	removed	mitochondrial rhomboid family peptidase Rbd3
+12331	vw253	2026-10-08	I	SPAC13G6.01c	rad8	CDS	product	added	ATP-dependent DNA translocase and E3 ubiquitin ligase involved in DNA damage tolerance Rad8
+12331	vw253	2026-10-08	I	SPAC13G6.01c	rad8	CDS	product	removed	ATP-dependent chromatin remodeller/ubiquitin-protein ligase E3 Rad8
 12284	vw253	2026-09-22	I	SPAC21E11.03c	pcr1	CDS	product	added	DNA-binding transcription factor Pcr1
 12284	vw253	2026-09-22	I	SPAC21E11.03c	pcr1	CDS	product	removed	DNA-binding pioneer transcription factor Pcr1
 12284	vw253	2026-09-22	I	SPAC23C11.08	php3	CDS	product	added	CCAAT-binding transcription factor complex subunit B, histone fold, Php3
