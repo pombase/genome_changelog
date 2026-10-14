@@ -1,4 +1,6 @@
 revision	user	date	chromosome	systematic_id	primary_name	feature_type	qualifier_type	added_or_removed	value
+12340	vw253	2026-10-11	I	SPAC11H11.03c		CDS	product	added	ATP-dependent polydeoxyribonucleotide 5'-hydroxyl-kinase implicated in nonsense-mediated decay
+12340	vw253	2026-10-11	I	SPAC11H11.03c		CDS	product	removed	ATP-dependent polydeoxyribonucleotide 5'-hydroxyl-kinase activity implicated in DNA repair (predicted)
 12337	vw253	2026-10-10	I	SPAC12B10.12c	rhp41	CDS	product	added	helix-distorting DNA lesion sensor Rhp41
 12337	vw253	2026-10-10	I	SPAC12B10.12c	rhp41	CDS	product	removed	DNA damage sensor Rhp41
 12337	vw253	2026-10-10	III	SPCC4G3.10c	rhp42	CDS	product	added	helix-distorting DNA lesion sensor Rhp42
