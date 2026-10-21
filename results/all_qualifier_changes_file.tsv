@@ -1,4 +1,10 @@
 revision	user	date	chromosome	systematic_id	primary_name	feature_type	qualifier_type	added_or_removed	value
+12363	vw253	2026-10-21	I	SPAC26H5.10c	tif51	CDS	colour	added	2
+12363	vw253	2026-10-21	I	SPAC26H5.10c	tif51	CDS	colour	removed	7
+12363	vw253	2026-10-21	I	SPAC26H5.10c	tif51	CDS	product	added	translation elongation and termination factor eIF5A
+12363	vw253	2026-10-21	I	SPAC26H5.10c	tif51	CDS	product	removed	translation elongation and termination factor eIF5A (predicted)
+12357	vw253	2026-10-18	III	SPCC1840.02c	bgs4	CDS	product	added	cell wall and secondary septum 1,3-beta-D-glucan synthase catalytic subunit Bgs4
+12357	vw253	2026-10-18	III	SPCC1840.02c	bgs4	CDS	product	removed	cell wall and secondary septum 1,6 branched 1,3-beta-glucan synthase catalytic subunit Bgs4
 12340	vw253	2026-10-11	I	SPAC11H11.03c		CDS	product	added	ATP-dependent polydeoxyribonucleotide 5'-hydroxyl-kinase implicated in nonsense-mediated decay
 12340	vw253	2026-10-11	I	SPAC11H11.03c		CDS	product	removed	ATP-dependent polydeoxyribonucleotide 5'-hydroxyl-kinase activity implicated in DNA repair (predicted)
 12337	vw253	2026-10-10	I	SPAC12B10.12c	rhp41	CDS	product	added	helix-distorting DNA lesion sensor Rhp41
