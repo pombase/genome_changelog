@@ -1,4 +1,13 @@
 revision	user	date	chromosome	systematic_id	primary_name	feature_type	qualifier_type	added_or_removed	value
+12373	vw253	2026-10-25	I	SPAC23G3.05c	rax1	CDS	colour	added	2
+12373	vw253	2026-10-25	I	SPAC23G3.05c		CDS	colour	removed	10
+12373	vw253	2026-10-25	I	SPAC23G3.05c	rax1	CDS	db_xref	added	SPD:32/32C12
+12373	vw253	2026-10-25	I	SPAC23G3.05c		CDS	db_xref	removed	SPD:32/32C12
+12373	vw253	2026-10-25	I	SPAC23G3.05c	rax1	CDS	primary_name	added	rax1
+12373	vw253	2026-10-25	I	SPAC23G3.05c	rax1	CDS	product	added	cell polarity protein Rax1
+12373	vw253	2026-10-25	I	SPAC23G3.05c		CDS	product	removed	conserved endomembrane protein,  RGS domain, implicated in signal transduction, cell polarity, possibly via membrane tethering (predicted)
+12373	vw253	2026-10-25	I	SPAC23G3.05c	rax1	CDS	systematic_id	added	SPAC23G3.05c
+12373	vw253	2026-10-25	I	SPAC23G3.05c		CDS	systematic_id	removed	SPAC23G3.05c
 12363	vw253	2026-10-21	I	SPAC26H5.10c	tif51	CDS	colour	added	2
 12363	vw253	2026-10-21	I	SPAC26H5.10c	tif51	CDS	colour	removed	7
 12363	vw253	2026-10-21	I	SPAC26H5.10c	tif51	CDS	product	added	translation elongation and termination factor eIF5A
