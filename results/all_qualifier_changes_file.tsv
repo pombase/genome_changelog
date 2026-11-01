@@ -1,4 +1,6 @@
 revision	user	date	chromosome	systematic_id	primary_name	feature_type	qualifier_type	added_or_removed	value
+12384	vw253	2026-10-30	II	SPBC24C6.10c	dip1	CDS	product	added	ARP2/3 complex linear filament activator, primer for branching Dip1
+12384	vw253	2026-10-30	II	SPBC24C6.10c	dip1	CDS	product	removed	WISH/DIP/SPIN90 ortholog, endocytosis protein Dip1
 12373	vw253	2026-10-25	I	SPAC23G3.05c	rax1	CDS	colour	added	2
 12373	vw253	2026-10-25	I	SPAC23G3.05c		CDS	colour	removed	10
 12373	vw253	2026-10-25	I	SPAC23G3.05c	rax1	CDS	db_xref	added	SPD:32/32C12
