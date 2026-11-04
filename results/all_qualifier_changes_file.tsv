@@ -1,4 +1,8 @@
 revision	user	date	chromosome	systematic_id	primary_name	feature_type	qualifier_type	added_or_removed	value
+12392	vw253	2026-11-02	II	SPBC27.04	uds1	CDS	colour	added	10
+12392	vw253	2026-11-02	II	SPBC27.04	uds1	CDS	colour	removed	2
+12392	vw253	2026-11-02	II	SPBC27.04	uds1	CDS	product	added	septum localized protein Uds1, implicated in septation
+12392	vw253	2026-11-02	II	SPBC27.04	uds1	CDS	product	removed	septation protein Uds1
 12384	vw253	2026-10-30	II	SPBC24C6.10c	dip1	CDS	product	added	ARP2/3 complex linear filament activator, primer for branching Dip1
 12384	vw253	2026-10-30	II	SPBC24C6.10c	dip1	CDS	product	removed	WISH/DIP/SPIN90 ortholog, endocytosis protein Dip1
 12373	vw253	2026-10-25	I	SPAC23G3.05c	rax1	CDS	colour	added	2
