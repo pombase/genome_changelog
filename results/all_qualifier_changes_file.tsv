@@ -1,4 +1,12 @@
 revision	user	date	chromosome	systematic_id	primary_name	feature_type	qualifier_type	added_or_removed	value
+12399	vw253	2026-11-04	I	SPAC4F8.15	itr1	CDS	product	added	plasma membrane myo-inositol importer Itr1
+12399	vw253	2026-11-04	I	SPAC4F8.15	itr1	CDS	product	removed	myo-inositol transmembrane transporter Itr1
+12399	vw253	2026-11-04	I	SPAC869.05c	sul2	CDS	product	added	plasma membrane sulfate importer Sul2
+12399	vw253	2026-11-04	I	SPAC869.05c	sul2	CDS	product	removed	plasma membrane sulfate transmembrane transporter Sul2
+12399	vw253	2026-11-04	II	SPBC3H7.02	sul1	CDS	product	added	plasma membrane sulfate importer Sul1
+12399	vw253	2026-11-04	II	SPBC3H7.02	sul1	CDS	product	removed	plasma membrane sulfate transmembrane transporter Sul1
+12399	vw253	2026-11-04	III	SPCC320.05	sul3	CDS	product	added	plasma membrane sulfate importer Sul3
+12399	vw253	2026-11-04	III	SPCC320.05	sul3	CDS	product	removed	sulfate transmembrane transporter
 12392	vw253	2026-11-02	II	SPBC27.04	uds1	CDS	colour	added	10
 12392	vw253	2026-11-02	II	SPBC27.04	uds1	CDS	colour	removed	2
 12392	vw253	2026-11-02	II	SPBC27.04	uds1	CDS	product	added	septum localized protein Uds1, implicated in septation
