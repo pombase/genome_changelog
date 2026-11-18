@@ -1,4 +1,18 @@
 revision	user	date	chromosome	systematic_id	primary_name	feature_type	qualifier_type	added_or_removed	value
+12416	vw253	2026-11-18	II	SPBP23A10.15c	mas1	CDS	colour	added	2
+12416	vw253	2026-11-18	II	SPBP23A10.15c	mas1	CDS	colour	removed	7
+12416	vw253	2026-11-18	II	SPBP23A10.15c	mas1	CDS	product	added	mitochondrial processing peptidase (MPP) complex beta subunit/ubiquinol-cytochrome-c reductase complex core protein Mas1/Qcr1
+12416	vw253	2026-11-18	II	SPBP23A10.15c	mas1	CDS	product	removed	mitochondrial processing peptidase (MPP) complex beta subunit Mas1
+12416	vw253	2026-11-18	III	SPCC5E4.10c	saf6	CDS	colour	added	2
+12416	vw253	2026-11-18	III	SPCC5E4.10c		CDS	colour	removed	10
+12416	vw253	2026-11-18	III	SPCC5E4.10c	saf6	CDS	db_xref	added	SPD:02/02F05
+12416	vw253	2026-11-18	III	SPCC5E4.10c		CDS	db_xref	removed	SPD:02/02F05
+12416	vw253	2026-11-18	III	SPCC5E4.10c	saf6	CDS	primary_name	added	saf6
+12416	vw253	2026-11-18	III	SPCC5E4.10c	saf6	CDS	product	added	splicing associate factor Saf6 (Saf4 binding partner)
+12416	vw253	2026-11-18	III	SPCC5E4.10c		CDS	product	removed	human leukocyte receptor 1 ortholog, implicated in mRNA splicing
+12416	vw253	2026-11-18	III	SPCC5E4.10c	saf6	CDS	systematic_id	added	SPCC5E4.10c
+12416	vw253	2026-11-18	III	SPCC5E4.10c		CDS	systematic_id	removed	SPCC5E4.10c
+12416	vw253	2026-11-18	III	SPCC613.10	qcr2	CDS	synonym	added	cor2
 12399	vw253	2026-11-04	I	SPAC4F8.15	itr1	CDS	product	added	plasma membrane myo-inositol importer Itr1
 12399	vw253	2026-11-04	I	SPAC4F8.15	itr1	CDS	product	removed	myo-inositol transmembrane transporter Itr1
 12399	vw253	2026-11-04	I	SPAC869.05c	sul2	CDS	product	added	plasma membrane sulfate importer Sul2
