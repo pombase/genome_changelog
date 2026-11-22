@@ -1,4 +1,8 @@
 revision	user	date	chromosome	systematic_id	primary_name	feature_type	qualifier_type	added_or_removed	value
+12420	vw253	2026-11-19	I	SPAC27D7.04	omt2	CDS	colour	added	7
+12420	vw253	2026-11-19	I	SPAC27D7.04	omt2	CDS	colour	removed	10
+12420	vw253	2026-11-19	I	SPAC27D7.04	omt2	CDS	product	added	4-alpha-hydroxytetrahydrobiopterin dehydratase Omt2
+12420	vw253	2026-11-19	I	SPAC27D7.04	omt2	CDS	product	removed	hydro-lyase family protein (predicted) Omt2
 12416	vw253	2026-11-18	II	SPBP23A10.15c	mas1	CDS	colour	added	2
 12416	vw253	2026-11-18	II	SPBP23A10.15c	mas1	CDS	colour	removed	7
 12416	vw253	2026-11-18	II	SPBP23A10.15c	mas1	CDS	product	added	mitochondrial processing peptidase (MPP) complex beta subunit/ubiquinol-cytochrome-c reductase complex core protein Mas1/Qcr1
