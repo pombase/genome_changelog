@@ -1,4 +1,25 @@
 revision	user	date	chromosome	systematic_id	primary_name	feature_type	qualifier_type	added_or_removed	value
+12428	vw253	2026-11-24	II	SPBC1539.02		CDS	product	added	nuclear protein, human IK ortholog, implicated in meiotic chromosome segregation, splicing, or RNA surveillance
+12428	vw253	2026-11-24	II	SPBC1539.02		CDS	product	removed	nuclear protein, human IK ortholog, implicated in meiotic chromosome segregation in fission yeast, splicing or spindle checkpoint in human
+12424	vw253	2026-11-23	I	SPAC1039.10	mmf2	CDS	product	added	mitochondrial matrix deaminase-like, YjgF family protein Mmf2, reactive intermediate imine deaminase A homolog, NNf2, implicated in detoxification and branched amino acid biosynthesis, translation, mRNA stabilization and protein folding
+12424	vw253	2026-11-23	I	SPAC1039.10	mmf2	CDS	product	removed	mitochondrial matrix protein, YjgF family protein Mmf2, reactive intermediate imine deaminase A homolog, NNf2, implicated in detoxification and branched amino acid biosynthesis
+12424	vw253	2026-11-23	I	SPAC139.04c	fap2	CDS	product	added	L-saccharopine oxidase, implicated in leucine catabolism, leucine biosynthesis, or nitrogen assimilation
+12424	vw253	2026-11-23	I	SPAC139.04c	fap2	CDS	product	removed	L-saccharopine oxidase, implicated in amino acid catabolism, or nitrogen assimilation
+12424	vw253	2026-11-23	I	SPAC3H5.08c	wdr44	CDS	product	added	WD repeat protein, human WDR44 family, implicated in retrograde transport to Golgi
+12424	vw253	2026-11-23	I	SPAC3H5.08c	wdr44	CDS	product	removed	WD repeat protein, human WDR44 family, implicated in retrograde transport to Giolgi
+12424	vw253	2026-11-23	I	SPAC694.04c	myg1	CDS	colour	added	10
+12424	vw253	2026-11-23	I	SPAC694.04c		CDS	colour	removed	10
+12424	vw253	2026-11-23	I	SPAC694.04c	myg1	CDS	db_xref	added	SPD:44/44C05
+12424	vw253	2026-11-23	I	SPAC694.04c		CDS	db_xref	removed	SPD:44/44C05
+12424	vw253	2026-11-23	I	SPAC694.04c	myg1	CDS	primary_name	added	myg1
+12424	vw253	2026-11-23	I	SPAC694.04c	myg1	CDS	product	added	nuclear/mitochondrial metal-dependent protein hydrolase, human MYG1 ortholog
+12424	vw253	2026-11-23	I	SPAC694.04c		CDS	product	removed	nuclear/mitochondrial metal-dependent protein hydrolase, human MYG1 ortholog
+12424	vw253	2026-11-23	I	SPAC694.04c	myg1	CDS	systematic_id	added	SPAC694.04c
+12424	vw253	2026-11-23	I	SPAC694.04c		CDS	systematic_id	removed	SPAC694.04c
+12424	vw253	2026-11-23	I	SPAC922.06		CDS	product	added	2,4-dienoyl-CoA reductase (NADPH)
+12424	vw253	2026-11-23	I	SPAC922.06		CDS	product	removed	estradiol 17-beta-dehydrogenase 8-related
+12424	vw253	2026-11-23	I	SPAPB24D3.08c		CDS	product	added	NADP-dependent oxidoreductase, implicated in cellular detoxification, possibly in response to lipid peroxidation
+12424	vw253	2026-11-23	I	SPAPB24D3.08c		CDS	product	removed	NADP-dependent oxidoreductase, implicated in cellular detoxification (predicted)
 12420	vw253	2026-11-19	I	SPAC27D7.04	omt2	CDS	colour	added	7
 12420	vw253	2026-11-19	I	SPAC27D7.04	omt2	CDS	colour	removed	10
 12420	vw253	2026-11-19	I	SPAC27D7.04	omt2	CDS	product	added	4-alpha-hydroxytetrahydrobiopterin dehydratase Omt2
